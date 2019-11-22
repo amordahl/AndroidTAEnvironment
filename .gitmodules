@@ -1,0 +1,10 @@
+[submodule "BREW"]
+	path = BREW
+	url = https://github.com/amordahl/BREW
+	branch = batch_run
+[submodule "tools/FlowDroid"]
+	path = tools/FlowDroid
+	url = https://github.com/secure-software-engineering/FlowDroid
+[submodule "BrewRunner"]
+	path = BrewRunner
+	url = https://github.com/amordahl/BrewRunner.git

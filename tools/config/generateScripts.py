@@ -2,11 +2,14 @@ import argparse
 import os
 
 parser = argparse.ArgumentParser()
+parser.add_argument('template_file')
 parser.add_argument('config_file')
+parser.add_argument('output_dir')
+parser.add_argument('--templatestring', default="%%REPLACE%%")
 args = parser.parse_args()
 
-template_file = "./aqlRun.template"
-template_string = "$$REPLACE$$"
+template_file = args.template_file
+template_string = args.templatestring
 
 """
 Open the template and load in the contents.
@@ -23,7 +26,7 @@ with open(args.config_file, 'r') as f:
 
 for fname, flags in files_to_make:
     content = template.replace(template_string, flags.strip())
-    outfile = f'./aqlRun_{fname.strip()}.sh'
+    outfile = f'{args.output_dir}/aqlRun_{fname.strip()}.sh'
     with open(outfile, 'w') as f:
         f.write(content)
     os.chmod(outfile, 0o755)

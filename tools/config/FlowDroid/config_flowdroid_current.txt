@@ -1,0 +1,58 @@
+aliasalgonone, -aa NONE
+aliasalgofs, -aa FLOWSENSITIVE
+aliasalgoptsbased, -aa PTSBASED
+aliasalgolazy, -aa LAZY
+aliasflowins, -af
+aplength0, -al 0
+aplength1, -al 1
+aplength2, -al 2
+aplength3, -al 3
+aplength4, -al 4
+aplength5, -al 5
+aplength6, -al 6
+aplength7, -al 7
+aplength8, -al 8
+aplength9, -al 9
+aplength10, -al 10
+callbackanalyzerdef, -ca DEFAULT
+callbackanalyzerfast, -ca FAST
+cgalgoauto, -cg AUTO
+cgalgocha, -cg CHA
+cgalgovta, -cg VTA
+cgalgorta, -cg RTA
+cgalgospark, -cg SPARK
+cgalgogeom, -cg GEOM
+callgraphsourcemodenone, -cs NONE
+callgraphsourcemodeall, -cs ALL
+callgraphsourcemodesourcelist, -cs SOURCELIST
+dataflowsolvercsfs, -ds CONTEXTFLOWSENSITIVE
+dataflowsolverfins, -ds FLOWINSENSITIVE
+implicitnone, -i NONE
+implicitarronly, -i ARRAYONLY
+implicitall, -i ALL
+layoutmodenone, -l NONE
+layoutmodepwd, -l PWD
+layoutmodeall, -l ALL
+maxcallbacks1, -mc 1
+maxcallbacks5, -mc 5
+maxcallmacks10, -mc 10
+maxcallbackchain1, -md 1
+maxcallbackchain2, -md 2
+maxcallbackchain5, -md 5
+maxcallbackchain10, -md 10
+nocallbacks, -nc
+noexceptions, -ne
+nostatic, -ns
+notypechecking, -nt
+pathalgocontextsensitive, -pa CONTEXTSENSITIVE
+pathalgocontextinsensitive, -pa CONTEXTINSENSITIVE
+pathalgosourcesonly, -pa SOURCESONLY
+enablereflection, -r
+singlejoinpointabstraction, -sa
+staticmodecsfs, -sf CONTEXTFLOWSENSITIVE
+staticmodefins, -sf CONTEXTFLOWINSENSITIVE
+staticmodenone, -sf NONE
+taintwrappernone, -tw NONE
+taintwrappereasy, -tw EASY
+taintwrapperstubdroid, -tw STUBDROID
+taintwrappermulti, -tw MULTI

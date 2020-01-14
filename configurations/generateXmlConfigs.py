@@ -15,13 +15,13 @@ for root, dirs, files in os.walk(args.config_dir):
         if f.startswith('aqlRun') and f.endswith('.sh'):
             files_list.append(os.path.join(root, f))
 
-files_list = [f.replace(os.environ["ANDROID_TA_ENVIRONMENT_HOME"],
-                        "$ANDROID_TA_ENVIRONMENT_HOME") for f in files_list]
 template = ""
 with open(args.template_file) as f:
     for l in f:
         template+=l
 
+template = template.replace("$ANDROID_TA_ENVIRONMENT_HOME", os.environ["ANDROID_TA_ENVIRONMENT_HOME"])
+template = template.replace("$ANDROID_SDK_HOME", os.environ["ANDROID_SDK_HOME"])
 for f in files_list:
     content = template.replace("%%REPLACE%%", f)
     # assume that the file is named aqlRun_xxx.sh

@@ -1,0 +1,2836 @@
+# ACTS Test Suite Generation: Mon Jan 13 15:15:14 CST 2020
+#  "(don't care)" represents don't care value 
+# Degree of interaction coverage: 2
+# Number of parameters: 23
+# Maximum number of values per parameter: 10
+# Number of configurations: 101
+------------Test Cases--------------
+
+Configuration #1:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=1
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=CHA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=2
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #2:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=3
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #3:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #4:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=1
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=SPARK
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=5
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #5:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=1
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=6
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #6:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=1
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=7
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #7:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=8
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #8:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=VTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=9
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #9:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=RTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=10
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #10:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=1
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #11:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=2
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=3
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #12:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #13:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=5
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #14:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=6
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #15:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=2
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=RTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=7
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #16:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=8
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #17:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=9
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #18:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=AUTO
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=10
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #19:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=1
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #20:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=2
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=2
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #21:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=4
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #22:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=GEOM
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=5
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #23:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=6
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #24:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=CHA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=7
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #25:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=VTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=8
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #26:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=9
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #27:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=10
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #28:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=3
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=1
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #29:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=2
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #30:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=RTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=3
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #31:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=4
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=5
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #32:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=4
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=CHA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=6
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #33:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=4
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=VTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=7
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #34:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=4
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=8
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #35:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=4
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=SPARK
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=9
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #36:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=4
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=10
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #37:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=4
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=1
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #38:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=4
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=2
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #39:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=4
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=3
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #40:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=4
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=GEOM
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #41:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=5
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=6
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #42:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=7
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #43:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=5
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=8
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #44:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=9
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #45:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=10
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #46:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=1
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #47:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=VTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=2
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #48:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=3
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #49:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=VTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #50:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=5
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=5
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #51:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=6
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=7
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #52:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=6
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=8
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #53:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=6
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=9
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #54:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=6
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=10
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #55:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=6
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=1
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #56:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=6
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=2
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #57:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=6
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=3
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #58:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=6
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #59:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=6
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=GEOM
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=5
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #60:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=6
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=6
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #61:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=8
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #62:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=9
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #63:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=SPARK
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=10
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #64:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=7
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=1
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #65:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=2
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #66:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=CHA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=3
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #67:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #68:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=5
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #69:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=6
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #70:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=7
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #71:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=8
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=9
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #72:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=8
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=VTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=10
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #73:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=8
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=1
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #74:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=8
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=2
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #75:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=8
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=3
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #76:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=8
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=4
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #77:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=8
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=5
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #78:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=8
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=6
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #79:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=8
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=7
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #80:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=8
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=8
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #81:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=9
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=10
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #82:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=9
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=1
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #83:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=9
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=2
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #84:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=9
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=VTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=NONE
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=3
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #85:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=9
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=4
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #86:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=9
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=5
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #87:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=9
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=6
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #88:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
+3 = aplength=9
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=7
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #89:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=9
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=8
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #90:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
+3 = aplength=9
+4 = callbackanalyzer=FAST
+5 = codeelimination=NONE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=9
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #91:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=10
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=1
+13 = maxcallbacksdepth=1
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=NONE
+
+-------------------------------------
+
+Configuration #92:
+
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=AUTO
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=NONE
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=2
+13 = maxcallbacksdepth=2
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #93:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=PROPAGATECONST
+6 = cgalgo=CHA
+7 = callbacksourcemode=SOURCELIST
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=ALL
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=3
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #94:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=VTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=4
+13 = maxcallbacksdepth=4
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=NONE
+23 = taintwrapper=MULTI
+
+-------------------------------------
+
+Configuration #95:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=5
+13 = maxcallbacksdepth=5
+14 = nocallbacks=TRUE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+
+Configuration #96:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ARRAYONLY
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=6
+13 = maxcallbacksdepth=6
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=SOURCESONLY
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #97:
+
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=NONE
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=TRUE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=7
+13 = maxcallbacksdepth=7
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=TRUE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #98:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=PWD
+12 = maxcallbackspercomponent=8
+13 = maxcallbacksdepth=8
+14 = nocallbacks=FALSE
+15 = noexceptions=FALSE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=FAST
+19 = pathspecificresults=TRUE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=NONE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #99:
+
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=RTA
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=9
+13 = maxcallbacksdepth=9
+14 = nocallbacks=TRUE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTINSENSITIVE
+18 = pathreconstructionmode=PRECISE
+19 = pathspecificresults=FALSE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #100:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=10
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=SPARK
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=FLOWINSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=10
+13 = maxcallbacksdepth=10
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=TRUE
+20 = enablereflection=TRUE
+21 = singlejoinpointabstraction=TRUE
+22 = staticmode=CONTEXTFLOWSENSITIVE
+23 = taintwrapper=EASY
+
+-------------------------------------
+
+Configuration #101:
+
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
+3 = aplength=3
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
+6 = cgalgo=GEOM
+7 = callbacksourcemode=ALL
+8 = dataflowsolver=CONTEXTFLOWSENSITIVE
+9 = analyzeframeworks=FALSE
+10 = implicit=ALL
+11 = layoutmode=NONE
+12 = maxcallbackspercomponent=3
+13 = maxcallbacksdepth=2
+14 = nocallbacks=FALSE
+15 = noexceptions=TRUE
+16 = nothichainreduction=FALSE
+17 = pathalgo=CONTEXTSENSITIVE
+18 = pathreconstructionmode=NONE
+19 = pathspecificresults=FALSE
+20 = enablereflection=FALSE
+21 = singlejoinpointabstraction=FALSE
+22 = staticmode=CONTEXTFLOWINSENSITIVE
+23 = taintwrapper=STUBDROID
+
+-------------------------------------
+

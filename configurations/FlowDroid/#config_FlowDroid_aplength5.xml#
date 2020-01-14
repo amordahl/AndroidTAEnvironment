@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <config>
   <androidPlatforms>/home/asm140830/Documents/Android/platforms</androidPlatforms>
@@ -6,7 +7,7 @@
         <tool name="FlowDroid" version="1">
             <priority>1</priority>
             <path>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid</path>
-            <run>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/config/FlowDroid/current/aqlRun_aliasalgoptsbased.sh %MEMORY% %APP_APK% %ANDROID_PLATFORMS% %APP_APK_FILENAME%_result.txt</run>
+            <run>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/config/FlowDroid/current/aqlRun_aplength5.sh %MEMORY% %APP_APK% %ANDROID_PLATFORMS% %APP_APK_FILENAME%_result.txt</run>
             <runOnExit>/home/asm140830/Documents/git/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
             <runOnAbort>/home/asm140830/Documents/git/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
             <result>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/%APP_APK_FILENAME%_result.txt</result>

@@ -1,0 +1,27 @@
+[System]
+Name: FlowDroid
+
+[Parameter]
+aliasalgo (enum): NONE, FLOWSENSITIVE, PTSBASED, LAZY
+aliasflowins (boolean): TRUE, FALSE
+aplength (int): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100
+callbackanalyzer (enum): DEFAULT, FAST
+codeelimination (enum): NONE, PROPAGATECONST, REMOVECODE
+cgalgo (enum): AUTO, CHA, VTA, RTA, SPARK, GEOM
+callbacksourcemode (enum): NONE, ALL, SOURCELIST
+dataflowsolver (enum): CONTEXTFLOWSENSITIVE, FLOWINSENSITIVE
+analyzeframeworks (boolean): TRUE, FALSE
+implicit (enum): NONE, ARRAYONLY, ALL
+layoutmode (enum): NONE, PWD, ALL
+maxcallbackspercomponent (int): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100
+maxcallbacksdepth (int): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100
+nocallbacks (boolean): TRUE, FALSE
+noexceptions (boolean): TRUE, FALSE
+nothichainreduction (boolean): TRUE, FALSE
+pathalgo (enum): CONTEXTSENSITIVE, CONTEXTINSENSITIVE, SOURCESONLY
+pathreconstructionmode (enum): NONE, FAST, PRECISE
+pathspecificresults (boolean): TRUE, FALSE
+enablereflection (boolean): TRUE, FALSE
+singlejoinpointabstraction (boolean): TRUE, FALSE
+staticmode (enum): CONTEXTFLOWSENSITIVE, CONTEXTFLOWINSENSITIVE, NONE
+taintwrapper (enum): NONE, EASY, STUBDROID, MULTI

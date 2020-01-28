@@ -6,10 +6,10 @@
         <tool name="FlowDroid" version="1">
             <priority>1</priority>
             <path>$ANDROID_TA_ENVIRONMENT_HOME/tools/FlowDroid</path>
-            <run>%%REPLACE%% %MEMORY% %APP_APK% %ANDROID_PLATFORMS% %APP_APK_FILENAME%_result.txt</run>
+            <run>%%REPLACE%% %MEMORY% %APP_APK% %ANDROID_PLATFORMS% %APP_APK_FILENAME%_%%HASH%%.txt</run>
             <runOnExit>$ANDROID_TA_ENVIRONMENT_HOME/AQL-System/flushMemory.sh</runOnExit>
             <runOnAbort>$ANDROID_TA_ENVIRONMENT_HOME/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>$ANDROID_TA_ENVIRONMENT_HOME/tools/FlowDroid/%APP_APK_FILENAME%_result.txt</result>
+            <result>$ANDROID_TA_ENVIRONMENT_HOME/tools/FlowDroid/%APP_APK_FILENAME%_%%HASH%%.txt</result>
             <questions>IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>
@@ -21,7 +21,7 @@
             <path>$ANDROID_TA_ENVIRONMENT_HOME/preprocessor/ApkCombiner/release</path>
             <run>$ANDROID_TA_ENVIRONMENT_HOME/preprocessor/ApkCombiner/release/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
             <runOnExit>$ANDROID_TA_ENVIRONMENT_HOME/AQL-System/flushMemory.sh</runOnExit>
-            <result>$ANDROID_TA_ENVIRONMENT_HOME/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_combined.apk</result>
+            <result>$ANDROID_TA_ENVIRONMENT_HOME/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_%%HASH%%_combined.apk</result>
             <questions>COMBINE</questions>
             <instances>1</instances>
             <memoryPerInstance>4</memoryPerInstance>

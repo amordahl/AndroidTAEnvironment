@@ -7,6 +7,7 @@ parser.add_argument('output_dir')
 args = parser.parse_args()
 
 import os
+import hashlib
 
 files_list = list()
 for root, dirs, files in os.walk(args.config_dir):
@@ -24,6 +25,9 @@ template = template.replace("$ANDROID_TA_ENVIRONMENT_HOME", os.environ["ANDROID_
 template = template.replace("$ANDROID_SDK_HOME", os.environ["ANDROID_SDK_HOME"])
 for f in files_list:
     content = template.replace("%%REPLACE%%", f)
+    hashval = hashlib.md5()
+    hashval.update(content.encode())
+    content = content.replace("%%HASH%%", hashval.hexdigest())
     # assume that the file is named aqlRun_xxx.sh
     filestrip = os.path.basename(f).lstrip("aqlRun").rstrip(".sh")
     with open(f'{args.output_dir}/{args.config_prefix}{filestrip}.xml', 'w') as g:

@@ -1,0 +1,1141 @@
+[main] INFO soot.jimple.infoflow.cmd.MainClass - Analyzing app /home/asm140830/Documents/benchmarks/fossdroid/FossDroidBenchmark/apks/internet/de.baumann.browser_100.apk (1 of 1)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
+[main] WARN soot.Scene - Android API version '29' not available, using minApkVersion '21' instead
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.128997277 seconds
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 13 components...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Callback analysis done.
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class android.widget.Space
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class view
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Could not find layout class DateTimeView
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 13 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for de.baumann.browser.browser.AlbumController, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 13 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 13 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for de.baumann.browser.browser.AlbumController, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Could not find a suitable constructor for class androidx.core.view.OneShotPreDrawListener
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 0 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Callback analysis terminated normally
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Entry point calculation done.
+[main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 39 sources, 126 sinks, and 124 callback methods.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 9 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /home/asm140830/Documents/benchmarks/fossdroid/FossDroidBenchmark/apks/internet/de.baumann.browser_100.apk with 39 sources and 126 sinks...
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.557774847 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 9163 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+[main] WARN soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Running with limited join point abstractions can break context-sensitive path builders
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 23 sources and 197 sinks.
+[Service Thread] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Triggering memory warning at 21482 MB (21482 MB in tenured gen)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 19463369
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 19381002
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 94157887 forward and 30656497 backward edges solved, processing 94 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 21556 MB
+[Service Thread] WARN soot.jimple.infoflow.memory.FlowDroidMemoryWatcher - Running out of memory, solvers terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 1254 MB
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 1 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 2 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 3 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 4 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 5 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 6 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 7 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 8 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 9 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 10 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 11 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 12 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 13 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 14 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 15 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 16 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 17 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 18 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder - Running path reconstruction batch 19 with 4 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Obtainted 4 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 5611 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 90 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("android:support:fragments", $r5) in method <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0) in method <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Javascript: java.util.List list> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<de.baumann.browser.activity.Whitelist_Javascript: java.util.List list>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r9.<de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.Adapter_Whitelist: java.util.List list> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Javascript: de.baumann.browser.view.Adapter_Whitelist adapter> = $r9
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>(null)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = staticinvoke <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>($r1, null, $r2, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext> = $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<android.view.MenuInflater: void inflate(int,android.view.Menu)>(2131558400, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r4 = virtualinvoke $r3.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.view.SupportMenuInflater
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: void onSaveInstanceState(android.os.Bundle)>(null)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r5 = $r0.<androidx.activity.ComponentActivity: androidx.savedstate.SavedStateRegistryController mSavedStateRegistryController>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r5.<androidx.savedstate.SavedStateRegistryController: void performSave(android.os.Bundle)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistryController: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.savedstate.SavedStateRegistryController: androidx.savedstate.SavedStateRegistry mRegistry>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistryController: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<androidx.savedstate.SavedStateRegistry: void performSave(android.os.Bundle)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistry: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.savedstate.SavedStateRegistry: android.os.Bundle mRestoredState>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistry: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<android.os.Bundle: void putAll(android.os.Bundle)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistry: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)>("androidx.lifecycle.BundlableSavedStateRegistry.key", $r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistry: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.savedstate.SavedStateRegistryController: void performSave(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.activity.ComponentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("android:support:fragments", $r5)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.ComponentName startService(android.content.Intent)>($r3) in method <de.baumann.browser.activity.BrowserActivity: void onDestroy()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>(2) in method <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>(2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<de.baumann.browser.view.GridItem: void setFilename(java.lang.String)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridItem: void setFilename(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.GridItem: java.lang.String filename> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridItem: void setFilename(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listGrid(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r9)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listGrid(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r10.<de.baumann.browser.view.GridAdapter: void <init>(android.content.Context,java.util.List)>($r8, $r9)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridAdapter: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.GridAdapter: java.util.List list> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridAdapter: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter access$3402(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.GridAdapter)>($r2, $r10)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter access$3402(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.GridAdapter)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter gridAdapter> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter access$3402(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.GridAdapter)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @parameter0: de.baumann.browser.activity.BrowserActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r8 = staticinvoke <de.baumann.browser.activity.BrowserActivity: android.content.Context access$1700(de.baumann.browser.activity.BrowserActivity)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: android.content.Context access$1700(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @parameter0: de.baumann.browser.activity.BrowserActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<de.baumann.browser.activity.BrowserActivity$27: de.baumann.browser.activity.BrowserActivity this$0>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: de.baumann.browser.activity.BrowserActivity$27
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r38.<de.baumann.browser.activity.BrowserActivity$27: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity$27: de.baumann.browser.activity.BrowserActivity this$0> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r69.<de.baumann.browser.view.Album: void <init>(android.content.Context,de.baumann.browser.browser.AlbumController,de.baumann.browser.browser.BrowserController)>($r0, null, $r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Album: void <init>(android.content.Context,de.baumann.browser.browser.AlbumController,de.baumann.browser.browser.BrowserController)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r81.<de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void onResume()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onResume()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void updateOmnibox()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateOmnibox()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void updateProgress(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateProgress(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void updateAutoComplete()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateAutoComplete()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $i0 = staticinvoke <de.baumann.browser.unit.ViewUnit: int getWindowWidth(android.content.Context)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.unit.ViewUnit: int getWindowWidth(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.unit.ViewUnit: int getWindowWidth(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return i0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateAutoComplete()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateProgress(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> throw $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateOmnibox()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onResume()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void onDestroy()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onDestroy()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.ComponentName startService(android.content.Intent)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>(1) in method <de.baumann.browser.database.RecordAction: de.baumann.browser.database.Record getRecord(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.database.Record getRecord(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>(1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.database.Record getRecord(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<de.baumann.browser.database.Record: void setURL(java.lang.String)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.Record: void setURL(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.database.Record: java.lang.String url> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.Record: void setURL(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.database.Record getRecord(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listEntries(android.app.Activity,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r6)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listEntries(android.app.Activity,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r11.<de.baumann.browser.view.Adapter_Record: void <init>(android.content.Context,java.util.List)>($r8, $r10)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Record: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.Adapter_Record: java.util.List list> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Record: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.Adapter_Record access$3602(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.Adapter_Record)>($r2, $r11)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.Adapter_Record access$3602(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.Adapter_Record)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.Adapter_Record adapter> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.Adapter_Record access$3602(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.Adapter_Record)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @parameter0: de.baumann.browser.activity.BrowserActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r8 = staticinvoke <de.baumann.browser.activity.BrowserActivity: android.content.Context access$1700(de.baumann.browser.activity.BrowserActivity)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: android.content.Context access$1700(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @parameter0: de.baumann.browser.activity.BrowserActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<de.baumann.browser.activity.BrowserActivity$30: de.baumann.browser.activity.BrowserActivity this$0>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: de.baumann.browser.activity.BrowserActivity$30
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r44.<de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity$30: de.baumann.browser.activity.BrowserActivity this$0> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r81.<de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void onDestroy()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onDestroy()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.ComponentName startService(android.content.Intent)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>(0) in method <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>(0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<de.baumann.browser.view.GridItem: void setTitle(java.lang.String)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridItem: void setTitle(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.GridItem: java.lang.String title> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridItem: void setTitle(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: de.baumann.browser.view.GridItem getGridItem(android.database.Cursor)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listGrid(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r9)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listGrid(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r10.<de.baumann.browser.view.GridAdapter: void <init>(android.content.Context,java.util.List)>($r8, $r9)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridAdapter: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.GridAdapter: java.util.List list> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.GridAdapter: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter access$3402(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.GridAdapter)>($r2, $r10)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter access$3402(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.GridAdapter)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter gridAdapter> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: de.baumann.browser.view.GridAdapter access$3402(de.baumann.browser.activity.BrowserActivity,de.baumann.browser.view.GridAdapter)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @parameter0: de.baumann.browser.activity.BrowserActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r8 = staticinvoke <de.baumann.browser.activity.BrowserActivity: android.content.Context access$1700(de.baumann.browser.activity.BrowserActivity)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: android.content.Context access$1700(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @parameter0: de.baumann.browser.activity.BrowserActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<de.baumann.browser.activity.BrowserActivity$27: de.baumann.browser.activity.BrowserActivity this$0>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: de.baumann.browser.activity.BrowserActivity$27
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r38.<de.baumann.browser.activity.BrowserActivity$27: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity$27: de.baumann.browser.activity.BrowserActivity this$0> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$27: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r77.<de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r81.<de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$30: void <init>(de.baumann.browser.activity.BrowserActivity)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void onResume()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onResume()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void updateOmnibox()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateOmnibox()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void updateProgress(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateProgress(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void updateAutoComplete()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateAutoComplete()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $i0 = staticinvoke <de.baumann.browser.unit.ViewUnit: int getWindowWidth(android.content.Context)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.unit.ViewUnit: int getWindowWidth(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.unit.ViewUnit: int getWindowWidth(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return i0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateAutoComplete()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateProgress(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> throw $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void updateOmnibox()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onResume()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.BrowserActivity dummyMainMethod_de_baumann_browser_activity_BrowserActivity(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void onDestroy()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void onDestroy()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.ComponentName startService(android.content.Intent)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FragmentManager", $r3) in method <androidx.fragment.app.FragmentManagerImpl: void freeBackStackIndex(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0) in method <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Javascript: java.util.List list> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>(null)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = staticinvoke <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>($r1, null, $r2, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext> = $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<androidx.appcompat.view.SupportMenuInflater: void <init>(android.content.Context)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void <init>(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void <init>(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater> = $r3
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<android.view.MenuInflater: void inflate(int,android.view.Menu)>(2131558400, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r4 = virtualinvoke $r3.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.view.SupportMenuInflater
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.fragment.app.FragmentActivity: void onResume()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onResume()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.fragment.app.FragmentActivity: androidx.fragment.app.FragmentController mFragments>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onResume()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<androidx.fragment.app.FragmentController: boolean execPendingActions()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentController: boolean execPendingActions()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.fragment.app.FragmentController: androidx.fragment.app.FragmentHostCallback mHost>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentController: boolean execPendingActions()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r1.<androidx.fragment.app.FragmentHostCallback: androidx.fragment.app.FragmentManagerImpl mFragmentManager>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentController: boolean execPendingActions()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z0 = virtualinvoke $r2.<androidx.fragment.app.FragmentManagerImpl: boolean execPendingActions()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: boolean execPendingActions()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.fragment.app.FragmentManagerImpl: java.util.ArrayList mTmpRecords>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: boolean execPendingActions()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.fragment.app.FragmentManagerImpl: void removeRedundantOperationsAndExecute(java.util.ArrayList,java.util.ArrayList)>($r1, $r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void removeRedundantOperationsAndExecute(java.util.ArrayList,java.util.ArrayList)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.fragment.app.FragmentManagerImpl: void executeOpsTogether(java.util.ArrayList,java.util.ArrayList,int,int)>($r1, $r2, $i2, $i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void executeOpsTogether(java.util.ArrayList,java.util.ArrayList,int,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r4 = virtualinvoke $r1.<java.util.ArrayList: java.lang.Object get(int)>($i2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void executeOpsTogether(java.util.ArrayList,java.util.ArrayList,int,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r5 = (androidx.fragment.app.BackStackRecord) $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void executeOpsTogether(java.util.ArrayList,java.util.ArrayList,int,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $i0 = $r5.<androidx.fragment.app.BackStackRecord: int mIndex>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void executeOpsTogether(java.util.ArrayList,java.util.ArrayList,int,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.fragment.app.FragmentManagerImpl: void freeBackStackIndex(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void freeBackStackIndex(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void freeBackStackIndex(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentManagerImpl: void freeBackStackIndex(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FragmentManager", $r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r5.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2) in method <androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void setup()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0) in method <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Cookie: java.util.List list> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<de.baumann.browser.activity.Whitelist_Cookie: java.util.List list>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r9.<de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.Adapter_Whitelist: java.util.List list> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Cookie: de.baumann.browser.view.Adapter_Whitelist adapter> = $r9
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r9.<de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.Adapter_Whitelist: android.content.Context context> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: de.baumann.browser.view.Adapter_Whitelist
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Cookie: de.baumann.browser.view.Adapter_Whitelist adapter> = $r9
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Cookie: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Cookie dummyMainMethod_de_baumann_browser_activity_Whitelist__Cookie(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: void onStart()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: void onStart()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z0 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>(1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z0 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>($i1, $z0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z2 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean isActivityManifestHandlingUiMode()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean isActivityManifestHandlingUiMode()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z2 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean isActivityManifestHandlingUiMode()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean isActivityManifestHandlingUiMode()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $i1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: int mapNightMode(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: int mapNightMode(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return -1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoBatteryNightModeManager()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoBatteryNightModeManager()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager mAutoBatteryNightModeManager>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoBatteryNightModeManager()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void setup()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void setup()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void cleanup()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void cleanup()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void setup()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: android.content.BroadcastReceiver mReceiver>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager: void setup()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r5.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r6, $r8) in method <de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <de.baumann.browser.activity.BrowserActivity$41: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$41: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r5 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$41: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <de.baumann.browser.activity.BrowserActivity: void access$3900(de.baumann.browser.activity.BrowserActivity,java.lang.String,java.lang.String)>($r7, $r5, $r6)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void access$3900(de.baumann.browser.activity.BrowserActivity,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)>($r1, $r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<de.baumann.browser.activity.BrowserActivity$57: void <init>(de.baumann.browser.activity.BrowserActivity,java.lang.String,android.content.ClipboardManager)>($r0, $r1, $r5)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$57: void <init>(de.baumann.browser.activity.BrowserActivity,java.lang.String,android.content.ClipboardManager)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity$57: java.lang.String val$decrypted_userName> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$57: void <init>(de.baumann.browser.activity.BrowserActivity,java.lang.String,android.content.ClipboardManager)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r6, $r8)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putStringArray(java.lang.String,java.lang.String[])>("android:support:request_fragment_who", $r8) in method <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0) in method <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Javascript: java.util.List list> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>(null)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = staticinvoke <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>($r1, null, $r2, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext> = $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<androidx.appcompat.view.SupportMenuInflater: void <init>(android.content.Context)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void <init>(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void <init>(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater> = $r3
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r2.<android.view.MenuInflater: void inflate(int,android.view.Menu)>(2131558400, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r4 = virtualinvoke $r3.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 = $r0.<androidx.appcompat.view.SupportMenuInflater: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.view.SupportMenuInflater: void inflate(int,android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.view.SupportMenuInflater
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r0.<de.baumann.browser.activity.Whitelist_Javascript: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: android.view.MenuInflater getMenuInflater()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater mMenuInflater>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.view.MenuInflater getMenuInflater()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: void onSaveInstanceState(android.os.Bundle)>(null)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r6 = $r0.<androidx.fragment.app.FragmentActivity: androidx.collection.SparseArrayCompat mPendingFragmentActivityResults>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r9 = virtualinvoke $r6.<androidx.collection.SparseArrayCompat: java.lang.Object valueAt(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.collection.SparseArrayCompat: java.lang.Object valueAt(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.collection.SparseArrayCompat: java.lang.Object[] mValues>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.collection.SparseArrayCompat: java.lang.Object valueAt(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = $r1[$i0]
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.collection.SparseArrayCompat: java.lang.Object valueAt(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r10 = (java.lang.String) $r9
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r8[$i0] = $r10
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<android.os.Bundle: void putStringArray(java.lang.String,java.lang.String[])>("android:support:request_fragment_who", $r8)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putIntArray(java.lang.String,int[])>("android:support:request_indicies", $r7) in method <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0) in method <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>(0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> interfaceinvoke $r1.<java.util.List: boolean add(java.lang.Object)>($r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.database.RecordAction: java.util.List listDomains(java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Javascript: java.util.List list> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r9.<de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.view.Adapter_Whitelist: android.content.Context context> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.Whitelist_Javascript: de.baumann.browser.view.Adapter_Whitelist adapter> = $r9
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r9.<de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.view.Adapter_Whitelist: void <init>(android.content.Context,java.util.List)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.Whitelist_Javascript: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: void onStart()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = staticinvoke <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>($r1, null, $r2, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext> = $r4
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.content.Context,android.view.Window,androidx.appcompat.app.AppCompatCallback,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void <init>(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: androidx.appcompat.app.AppCompatDelegate create(android.app.Activity,androidx.appcompat.app.AppCompatCallback)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<androidx.appcompat.app.AppCompatDelegate: void onStart()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z0 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>(1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z0 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>($i1, $z0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r2 = virtualinvoke $r1.<android.content.Context: android.content.res.Resources getResources()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.widget.VectorEnabledTintResources: java.lang.ref.WeakReference mContextRef> = $r6
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatActivity: android.content.res.Resources mResources> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.widget.VectorEnabledTintResources: void <init>(android.content.Context,android.content.res.Resources)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.widget.VectorEnabledTintResources
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: android.content.res.Resources getResources()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatActivity
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatDelegateImpl: android.content.Context mContext>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean updateForNightMode(int,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoTimeNightModeManager()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoTimeNightModeManager()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r3.<androidx.appcompat.app.AppCompatDelegateImpl$AutoTimeNightModeManager: void <init>(androidx.appcompat.app.AppCompatDelegateImpl,androidx.appcompat.app.TwilightManager)>($r0, $r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl$AutoTimeNightModeManager: void <init>(androidx.appcompat.app.AppCompatDelegateImpl,androidx.appcompat.app.TwilightManager)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl$AutoTimeNightModeManager: androidx.appcompat.app.AppCompatDelegateImpl this$0> = $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl$AutoTimeNightModeManager: void <init>(androidx.appcompat.app.AppCompatDelegateImpl,androidx.appcompat.app.TwilightManager)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoTimeNightModeManager()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager mAutoTimeNightModeManager> = $r3
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoTimeNightModeManager()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $z0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <androidx.appcompat.app.AppCompatDelegateImpl: void markStarted(androidx.appcompat.app.AppCompatDelegate)>($r0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: void markStarted(androidx.appcompat.app.AppCompatDelegate)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r2.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: void markStarted(androidx.appcompat.app.AppCompatDelegate)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <androidx.appcompat.app.AppCompatDelegate: void removeDelegateFromActives(androidx.appcompat.app.AppCompatDelegate)>($r3)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: void removeDelegateFromActives(androidx.appcompat.app.AppCompatDelegate)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 := @parameter0: androidx.appcompat.app.AppCompatDelegate
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegate: void markStarted(androidx.appcompat.app.AppCompatDelegate)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r3 := @parameter0: androidx.appcompat.app.AppCompatDelegate
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $z0 = specialinvoke $r0.<androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>(1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight(boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: boolean applyDayNight()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatDelegateImpl: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0 := @this: androidx.appcompat.app.AppCompatDelegateImpl
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>()
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate mDelegate>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: androidx.appcompat.app.AppCompatDelegate getDelegate()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $r1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onStart()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <dummyMainClass: de.baumann.browser.activity.Whitelist_Javascript dummyMainMethod_de_baumann_browser_activity_Whitelist__Javascript(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<androidx.appcompat.app.AppCompatActivity: void onSaveInstanceState(android.os.Bundle)>(null)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.appcompat.app.AppCompatActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>($r1)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r6 = $r0.<androidx.fragment.app.FragmentActivity: androidx.collection.SparseArrayCompat mPendingFragmentActivityResults>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $i1 = virtualinvoke $r6.<androidx.collection.SparseArrayCompat: int keyAt(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.collection.SparseArrayCompat: int keyAt(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r1 = $r0.<androidx.collection.SparseArrayCompat: int[] mKeys>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.collection.SparseArrayCompat: int keyAt(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $i0 = $r1[$i0]
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.collection.SparseArrayCompat: int keyAt(int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return $i0
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r7[$i0] = $i1
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <androidx.fragment.app.FragmentActivity: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r1.<android.os.Bundle: void putIntArray(java.lang.String,int[])>("android:support:request_indicies", $r7)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r7, $r8) in method <de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r6 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <de.baumann.browser.activity.BrowserActivity$41: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	on Path: 
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$41: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r6 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$41: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> staticinvoke <de.baumann.browser.activity.BrowserActivity: void access$3900(de.baumann.browser.activity.BrowserActivity,java.lang.String,java.lang.String)>($r7, $r5, $r6)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void access$3900(de.baumann.browser.activity.BrowserActivity,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r0.<de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)>($r1, $r2)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> specialinvoke $r7.<de.baumann.browser.activity.BrowserActivity$58: void <init>(de.baumann.browser.activity.BrowserActivity,java.lang.String,android.content.ClipboardManager)>($r0, $r2, $r5)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$58: void <init>(de.baumann.browser.activity.BrowserActivity,java.lang.String,android.content.ClipboardManager)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> $r0.<de.baumann.browser.activity.BrowserActivity$58: java.lang.String val$decrypted_userPW> = $r2
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity$58: void <init>(de.baumann.browser.activity.BrowserActivity,java.lang.String,android.content.ClipboardManager)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> return
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 	 -> <de.baumann.browser.activity.BrowserActivity: void toast_login(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - 		 -> virtualinvoke $r0.<de.baumann.browser.activity.BrowserActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r7, $r8)
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 4213 seconds. Maximum memory consumption: 1180 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 8 leaks

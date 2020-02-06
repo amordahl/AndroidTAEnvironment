@@ -14,3 +14,6 @@
 [submodule "tools/DroidSafe/droidsafe-src"]
 	path = tools/DroidSafe/droidsafe-src
 	url = https://github.com/MIT-PAC/droidsafe-src.git
+[submodule "AQL-System"]
+	path = AQL-System
+	url = https://github.com/amordahl/AQL-System.git

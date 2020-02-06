@@ -8,9 +8,6 @@
 [submodule "BrewRunner"]
 	path = BrewRunner
 	url = https://github.com/amordahl/BrewRunner.git
-[submodule "AQL-System"]
-	path = AQL-System
-	url = https://github.com/FoelliX/AQL-System.git
 [submodule "preprocessor/ApkCombiner"]
 	path = preprocessor/ApkCombiner
 	url = https://github.com/lilicoding/ApkCombiner.git

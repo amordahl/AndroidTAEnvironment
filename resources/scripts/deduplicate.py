@@ -6,6 +6,7 @@ args = parser.parse_args()
 
 from typing import Dict
 import logging
+import os
 logging.basicConfig(level=logging.WARNING)
 import xml.etree.ElementTree as ET
 import re
@@ -18,14 +19,18 @@ class Flow:
     def __init__(self, element):
         logging.debug(f"Element is {element}")
         self.element = element
+        self.update_file()
     
-    # 1. Same file?
     def get_file(self) -> str:
         f = self.element[0].findall("app")[0].findall("file")[0].text
         logging.debug(f"Extracted file: {f}")
         return f
 
-    # 2. Same source and sink?
+    def update_file(self):
+        for e in self.element:
+            f = e.find("app").find("file").text
+            e.find("app").find("file").text = os.path.basename(f)
+            
     @classmethod
     def clean(cls, stmt: str) -> str:
         c = Flow.register_regex.sub("", stmt)
@@ -42,9 +47,13 @@ class Flow:
         def get_statement_full(a: ET.Element) -> str:
             return a.find("statement").find("statementfull").text
         
-        result["source"] = Flow.clean(get_statement_full(source))
+        result["source_statement_full"] = Flow.clean(get_statement_full(source))
         logging.debug(f"Source: {result}")
-        result["sink"] = Flow.clean(get_statement_full(sink))
+        result["source_method"] = source.find("method").text
+        result["source_classname"] = source.find("classname").text
+        result["sink_statement_full"] = Flow.clean(get_statement_full(sink))
+        result["sink_method"] = sink.find("method").text
+        result["sink_classname"] = sink.find("classname").text
         return result
 
     def __eq__(self, other):
@@ -54,6 +63,7 @@ class Flow:
         Criteria:
         1. Same apk.
         2. Same source and sink.
+        3. Same method and class.
         """
 
         if not isinstance(other, Flow):
@@ -63,7 +73,7 @@ class Flow:
 
     def __hash__(self):
         sas = self.get_source_and_sink()
-        return hash((self.get_file(), sas["source"], sas["sink"]))
+        return hash((self.get_file(), frozenset(sas.items())))
 
 # Read input file
 tree = ET.parse(args.input)

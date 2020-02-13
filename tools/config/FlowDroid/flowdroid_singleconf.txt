@@ -1,0 +1,64 @@
+aliasalgonone, -aa NONE
+aliasalgofs, -aa FLOWSENSITIVE
+aliasalgoptsbased, -aa PTSBASED
+aliasalgolazy, -aa LAZY
+aliasflowins, -af
+aplength1, -al 1
+aplength2, -al 2
+aplength3, -al 3
+aplength4, -al 4
+aplength5, -al 5
+aplength7, -al 7
+aplength10, -al 10
+aplength20, -al 20
+callbackanalyzerdef, -ca DEFAULT
+callbackanalyzerfast, -ca FAST
+codeeliminationnone, -ce NONE
+codeeliminationpc, -ce PROPAGATECONSTS
+codeeliminationrc, -ce REMOVECODE
+cgalgoauto, -cg AUTO
+cgalgocha, -cg CHA
+cgalgovta, -cg VTA
+cgalgorta, -cg RTA
+cgalgospark, -cg SPARK
+cgalgogeom, -cg GEOM
+dataflowsolvercsfs, -ds CONTEXTFLOWSENSITIVE
+dataflowsolverfins, -ds FLOWINSENSITIVE
+implicitnone, -i NONE
+implicitarronly, -i ARRAYONLY
+implicitall, -i ALL
+maxcallbacks1, -mc 1
+maxcallbacks50, -mc 50
+maxcallbacks80, -mc 80
+maxcallbacks90, -mc 90
+maxcallbacks100, -mc 100
+maxcallbacks110, -mc 110
+maxcallbacks120, -mc 120
+maxcallbacks150, -mc 150
+maxcallbacks200, -mc 200
+maxcallbacks600, -mc 600
+maxcallbackchain0, -md 0
+maxcallbackchain1, -md 1
+maxcallbackchain50, -md 50
+maxcallbackchain80, -md 80
+maxcallbackchain90, -md 90
+maxcallbackchain100, -md 100
+maxcallbackchain110, -md 110
+maxcallbackchain120, -md 120
+maxcallbackchain150, -md 150
+maxcallbackchain200, -md 200
+maxcallbackchain600, -md 600
+nocallbacks, -nc
+noexceptions, -ne
+nostatic, -ns
+notypechecking, -nt
+pathalgocontextsensitive, -pa CONTEXTSENSITIVE
+pathalgocontextinsensitive, -pa CONTEXTINSENSITIVE
+pathalgosourcesonly, -pa SOURCESONLY
+enablereflection, -r
+singlejoinpointabstraction, -sa
+staticmodecsfs, -sf CONTEXTFLOWSENSITIVE
+staticmodefins, -sf CONTEXTFLOWINSENSITIVE
+staticmodenone, -sf NONE
+taintwrappernone, -tw NONE
+taintwrappereasy, -tw EASY -t ~/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt

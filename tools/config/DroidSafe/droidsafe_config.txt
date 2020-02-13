@@ -1,0 +1,31 @@
+[System]
+Name: DroidSafe
+
+[Parameter]
+analyzestrings_unfiltered (boolean): TRUE, FALSE
+apicalldepth (int): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100
+filetransforms (boolean): TRUE, FALSE
+ignoreexceptionflows (boolean): TRUE, FALSE
+ignorenocontextflows (boolean): TRUE, FALSE
+implicitflow (boolean): TRUE, FALSE
+imprecisestrings (boolean): TRUE, FALSE
+kobjsens (int): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100
+limitcontextforcomplex (boolean): TRUE, FALSE
+limitcontextforgui (boolean): TRUE, FALSE
+limitcontextforstrings (boolean): TRUE, FALSE
+multipassfb (boolean): TRUE, FALSE
+noarrayindex (boolean): TRUE, FALSE
+noclinitcontext (boolean): TRUE, FALSE
+noclonestatics (boolean): TRUE, FALSE
+nofallback (boolean): TRUE, FALSE
+nojsa (boolean): TRUE, FALSE
+noscalaropts (boolean): TRUE, FALSE
+nova (boolean): TRUE, FALSE
+precision (int): 0, 1, 2, 3, 4, 5
+preciseinfoflow (boolean): TRUE, FALSE
+pta (enum): spark, paddle, geo
+trackallflows (boolean): TRUE, FALSE
+transfertaintfield (boolean): TRUE, FALSE
+typesforcontext (boolean): TRUE, FALSE
+
+

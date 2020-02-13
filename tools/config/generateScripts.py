@@ -20,9 +20,11 @@ with open(template_file) as f:
         template += l
 
 files_to_make = list()
+i = 0
 with open(args.config_file, 'r') as f:
     for l in f:
-        files_to_make.append(tuple(l.split(',')))
+        files_to_make.append((tuple(l.split(','))) if ',' in l else (str(i), l))
+        i += 1
 
 for fname, flags in files_to_make:
     content = template.replace(template_string, flags.strip())

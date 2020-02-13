@@ -14,7 +14,7 @@ for root, dirs, files in os.walk(args.config_dir):
     for f in files:
         f = os.path.basename(f)
         if f.startswith('aqlRun') and f.endswith('.sh'):
-            files_list.append(os.path.join(root, f))
+            files_list.append(os.path.abspath(os.path.join(root, f)))
 
 template = ""
 with open(args.template_file) as f:

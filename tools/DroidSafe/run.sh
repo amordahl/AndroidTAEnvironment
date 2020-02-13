@@ -5,12 +5,11 @@
 # 2: App name without .apk
 
 # Export paths
-export DROIDSAFE_SRC_HOME=/home/reprodroid/reprodroid/tools/DroidSafe/droidsafe-src
-export ANDROID_SDK_HOME=/home/reprodroid/reprodroid/Android/platforms
+export DROIDSAFE_SRC_HOME=/home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/droidsafe-src
 
 # Create folder structure
-mkdir /home/reprodroid/reprodroid/tools/DroidSafe/runs/${2}
-cd /home/reprodroid/reprodroid/tools/DroidSafe/runs/${2}
+mkdir /home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/runs/${2}
+cd /home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/runs/${2}
 cp ${1} .
 
 # Create Makefile

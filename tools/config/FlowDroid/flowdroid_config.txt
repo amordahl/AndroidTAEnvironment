@@ -17,6 +17,8 @@ nocallbacks (boolean): TRUE, FALSE
 noexceptions (boolean): TRUE, FALSE
 nothischainreduction (boolean): TRUE, FALSE
 pathalgo (enum): CONTEXTSENSITIVE, CONTEXTINSENSITIVE, SOURCESONLY
+onesourceatatime (boolean): TRUE, FALSE
+onecomponentatatime (boolean): TRUE, FALSE
 pathspecificresults (boolean): TRUE, FALSE
 enablereflection (boolean): TRUE, FALSE
 singlejoinpointabstraction (boolean): TRUE, FALSE

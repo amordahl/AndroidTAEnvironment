@@ -6,7 +6,7 @@
 
 # Export paths
 export DROIDSAFE_SRC_HOME=/home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/droidsafe-src
-
+export ANDROID_SDK_HOME=/home/asm140830/Android/Sdk/platforms
 # Create folder structure
 mkdir /home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/runs/${2}
 cd /home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/runs/${2}

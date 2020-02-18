@@ -58,5 +58,5 @@ with open(args.output, 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=configs[0].keys())
     writer.writeheader()
     for c in configs:
-        for i in range(1, args.repetitions):
+        for i in range(1, args.repetitions + 1):
             writer.writerow(c)

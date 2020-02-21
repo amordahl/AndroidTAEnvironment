@@ -1,0 +1,21 @@
+APK Name,Min Version,Target Version,Results
+ar.rulosoft.mimanganu_121.apk,15,28,FAIL
+com.games.boardgames.aeonsend_1.apk,15,26,FAIL
+com.github.yeriomin.yalpstore_46.apk,5,28,FAIL
+com.gitlab.ardash.appleflinger.android_1005006.apk,9,26,TIMEOUT
+com.itds.sms.ping_6.apk,14,27,FAIL
+com.materialos.cm.theme_5.apk,21,23,SUCCESS
+com.xlythe.calculator.material_93.apk,14,25,FAIL
+cz.martykan.webtube_17.apk,14,28,FAIL
+io.github.alketii.mightyknight_1.apk,14,23,SUCCESS
+io.github.benoitduffez.cupsprint_9.apk,19,25,FAIL
+net.ddns.mlsoftlaberge.trycorder_523.apk,16,23,FAIL
+net.sourceforge.opencamera_74.apk,15,28,FAIL
+org.afhdownloader_11.apk,16,25,FAIL
+org.billthefarmer.editor_145.apk,14,28,FAIL
+org.fdroid.fdroid_1008001.apk,14,25,FAIL
+org.jak_linux.dns66_22.apk,21,29,FAIL
+org.jfedor.frozenbubble_54.apk,12,12,SUCCESS
+org.schabi.newpipe_810.apk,19,28,FAIL
+org.zamedev.gloomydungeons2.opensource_1602221800.apk,8,15,TIMEOUT
+re.jcg.playmusicexporter_110.apk,21,25,FAIL

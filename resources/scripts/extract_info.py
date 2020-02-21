@@ -1,6 +1,6 @@
 import argparse
 
-delim = "%SEP%"
+delim = ";"
 parser = argparse.ArgumentParser()
 parser.add_argument("--result")
 parser.add_argument("--header", action="store_true")

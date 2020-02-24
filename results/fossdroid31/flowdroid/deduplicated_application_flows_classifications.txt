@@ -1,4 +1,8 @@
 <flows><flow generating_config="config_Flowdroid_aliasalgofs.xml">
+  <classification>
+    <result>FALSE</result>
+    <justification>No dataflow to the Intent creation</justification>
+  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;protect.budgetwatch.TransactionViewActivity: void startActivityForResult(android.content.Intent,int)&gt;($r5, 1)</statementfull>
@@ -3323,6 +3327,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No dataflow to the Log message (only thing is resultcode)</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r4)</statementfull>
@@ -4247,6 +4255,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_2.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>capturedUncommitted receipt is either null or a path on the file system. Not tainted from toTransaction.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -6089,6 +6101,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No dataflow to the method</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -7901,7 +7917,11 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_2.xml">
-            <reference type="to">
+          <reference type="to">
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>No dataflow to captureUncommittedReceipt except from in onActivityResult</justification>
+	    </classification>
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
                     <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
@@ -8915,6 +8935,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_7.xml">
+	  <classification>
+	    <result>TRUE</result>
+	    <justification>id is tainted from call to Transaction.toTransaction.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r2)</statementfull>
@@ -9409,7 +9433,11 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgoptsbased.xml">
-            <reference type="to">
+          <reference type="to">
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>capturedUncomittedReceipt is not tainted from toTransaction</justification>
+	    </classification>
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("receipt", $r8)</statementfull>
                     <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
@@ -11869,6 +11897,7 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putInt(java.lang.String,int)&gt;("type", $i0)</statementfull>

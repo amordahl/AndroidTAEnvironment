@@ -1,11 +1,10 @@
 # need to change data set
-attach(output_flowdroid_twoway_db30)
-
-dataset <- output_flowdroid_twoway_db30
-dependent <- dataset$timedout
-begin_column_independent <- 13
+dataset <- fossdroid31_flowdroid_2way_notimedout
+dependent <- dataset$time
+begin_column_independent <- 5
 end_column_independent <- ncol(dataset) - 1
 tests = list()
+sort_by_p_val = FALSE
 
 perform_test <- function(x, y) {
   if (class(y) == "integer" || class(y) == "numeric") {
@@ -15,6 +14,7 @@ perform_test <- function(x, y) {
       return(list(kruskal.test(y~x)))
     }
   } else {
+    print(paste("DEBUG: y=", y, " x=", x))
       tbl <- table(y, x)
       return(list(chisq.test(tbl)))
   }
@@ -23,5 +23,7 @@ perform_test <- function(x, y) {
 
 for (i in seq(begin_column_independent, end_column_independent)) {
   tests[names(dataset)[i]] <- perform_test(dataset[,i], dependent)
-  tests <- tests[order(sapply(tests, "[[", "p.value"))]
+  if (sort_by_p_val) tests <- tests[order(sapply(tests, "[[", "p.value"))]
 }
+
+for (n in names(tests)) { print(paste(n, ",", tests[[n]]$p.value)) }

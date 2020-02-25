@@ -25,6 +25,7 @@ with open(args.config_file) as f:
         for (ix,t) in enumerate(tokens):
             logging.debug(f"({ix}, {t})")
             if t.startswith("--"):
+                t = t.lstrip('-')
                 if t not in config_master:
                     # need to update config_master and backpropagate the field to all previous
                     #  configs
@@ -44,7 +45,7 @@ with open(args.config_file) as f:
                 if tokens[ix+1].startswith("--"):
                     config[t] = "TRUE"
                 else:
-                    config[t] = tokens[ix+1]
+                    config[t] = tokens[ix+1].lstrip('-')
         configs.append(config)
 
 # sanity check

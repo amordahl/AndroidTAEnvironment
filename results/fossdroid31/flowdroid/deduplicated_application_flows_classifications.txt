@@ -53,6 +53,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>id is always obtained from Random.nextLong()</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;android.os.Bundle: void putLong(java.lang.String,long)&gt;("TabModelId", $l0)</statementfull>

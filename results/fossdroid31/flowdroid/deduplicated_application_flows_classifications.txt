@@ -529,6 +529,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>The middle element of the triple is attachment hash. It is written to in two places, both in onCreate. The first place is attachments=initresult.attachment. This is written from GalleryRemote.getInitResult(), which is written from binder.getInitResult, which is from Parcel.getInt. Not tainted from the source here. The second source is from attachments=triple.of(...). This can be written to from three places, within GalleryInitData. If the field is received in an intent, then it's read in from the intent. However, GalleryInitData is only the recipient of an intent from one place, which does not attach an attachmentHash. Second, it can be read from ChanModels, which produces an MD5 hash, which kills any taint. Finally, it can be initialized from the saved state of the activity. This would written to in onSaveInstanceState. As we have discussed here, none of the sources of attachment from here are tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
@@ -813,6 +817,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result> FALSE (uncertain) </result>
+	    <justification> attachmentsFormatFilters is always set to null or a constant. currentPath is obtained from FileDialogActivity, not from setView().</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)</statementfull>
@@ -1759,6 +1767,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>There are a lot of usages of IOUtils.copyStream to go through. Need a better methodology or just a lot of time to classify.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -1949,6 +1961,7 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_52.xml">
+	  
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>

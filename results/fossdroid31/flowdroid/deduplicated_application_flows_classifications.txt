@@ -53,6 +53,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>id is always obtained from Random.nextLong()</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;android.os.Bundle: void putLong(java.lang.String,long)&gt;("TabModelId", $l0)</statementfull>
@@ -525,6 +529,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>The middle element of the triple is attachment hash. It is written to in two places, both in onCreate. The first place is attachments=initresult.attachment. This is written from GalleryRemote.getInitResult(), which is written from binder.getInitResult, which is from Parcel.getInt. Not tainted from the source here. The second source is from attachments=triple.of(...). This can be written to from three places, within GalleryInitData. If the field is received in an intent, then it's read in from the intent. However, GalleryInitData is only the recipient of an intent from one place, which does not attach an attachmentHash. Second, it can be read from ChanModels, which produces an MD5 hash, which kills any taint. Finally, it can be initialized from the saved state of the activity. This would written to in onSaveInstanceState. As we have discussed here, none of the sources of attachment from here are tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
@@ -809,6 +817,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result> FALSE (uncertain) </result>
+	    <justification> attachmentsFormatFilters is always set to null or a constant. currentPath is obtained from FileDialogActivity, not from setView().</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)</statementfull>
@@ -1755,6 +1767,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>There are a lot of usages of IOUtils.copyStream to go through. Need a better methodology or just a lot of time to classify.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -1945,6 +1961,7 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_52.xml">
+	  
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>
@@ -11897,7 +11914,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
-	  
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>type is obtained from a bundle extracted from an intent. Every bundle creation assigns _type to an enumerated value, and not to anything from DB.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putInt(java.lang.String,int)&gt;("type", $i0)</statementfull>
@@ -14200,6 +14220,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Item is created a few lines up, and it is created from two parameters, one which is created in this method untainted and the other which is created from capturedUncommittedReceipt, which we have already determined not to be tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int w(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -14914,6 +14938,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgoptsbased.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Already determined capturedUncommittedReceipt to not be tainted from database.
+	    </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r12)</statementfull>
@@ -15277,7 +15305,11 @@
                 </app>
             </reference>
         </flow>
-    <flow generating_config="config_FlowDroid_2way_2.xml">
+	<flow generating_config="config_FlowDroid_2way_2.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Already determined capturedUncommittedReceipt to not be tained from database</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -15772,6 +15804,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>the intent is newly created</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.content.Context: void sendBroadcast(android.content.Intent)&gt;($r2)</statementfull>
@@ -16332,6 +16368,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_2.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>capturedUncommittedReceipt not tainted</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -17822,6 +17862,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>capturedUncommittedReceipt is not tainted</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -18630,6 +18674,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_64.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>capturedUncommittedReceipt is not tainted</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r3)</statementfull>
@@ -20292,6 +20340,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>TRUE</result>
+	    <justification>_transactionId is tainted if the intent is from TransactionFragment</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putInt(java.lang.String,int)&gt;("id", $i0)</statementfull>
@@ -20930,6 +20982,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_7.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>imageDir is obtained from a constant environmental variable which is not written to.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int w(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r3)</statementfull>
@@ -22596,6 +22652,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_7.xml">
+	  <classification>
+	    <result>TRUE</result>
+	    <justification>Pretty obvious one. Transaction is directly tainted from call to toTransaction, then transaction.id is written to the log.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r2)</statementfull>
@@ -24390,6 +24450,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>captureUncommittedReceipt is not tainted</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r1)</statementfull>
@@ -25026,6 +25090,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_23.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>captureduncomittedReceipt is not tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r4)</statementfull>
@@ -25732,6 +25800,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_7.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>receipt is not tainted, it is from files, which is from a constant environmental variable.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r3)</statementfull>

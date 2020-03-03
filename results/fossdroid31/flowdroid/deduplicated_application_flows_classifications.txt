@@ -1961,7 +1961,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_52.xml">
-	  
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many usages</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>
@@ -2122,7 +2125,11 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_implicitall.xml">
-            <reference type="to">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Same as previous flow. Even implicitly, neither of the startActivityForResults here depend on a tainted flow.</justification>
+	  </classification>
+              <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 2)</statementfull>
                     <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)</statementgeneric>
@@ -3050,6 +3057,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No explicit or implicit flow. Is a fresh object.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: void sendBroadcast(android.content.Intent)&gt;($r5)</statementfull>
@@ -3638,6 +3649,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many to check right now</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -3886,6 +3901,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_cgalgoauto.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Created with a fresh intent</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)&gt;($r1)</statementfull>
@@ -3994,6 +4013,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_15.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No data flow into this method call; everything is new.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r8, $r9)</statementfull>
@@ -4682,6 +4705,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>The string being written is a constant.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;("text/html;\r\n\tcharset=\"utf-8\"")</statementfull>
@@ -5246,6 +5273,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Already classified this. Why is it here again?</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 2)</statementfull>
@@ -5362,6 +5393,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_64.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>All of the calls to Writer.write are writing constant values, or using boundary which is generated from Random</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;($r4)</statementfull>
@@ -5948,6 +5983,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_implicitall.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No implicit or explicit flow.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 2)</statementfull>
@@ -6013,7 +6052,11 @@
                 </app>
             </reference>
         </flow>
-    <flow generating_config="config_FlowDroid_2way_0.xml">
+	<flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many to go through</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -6586,6 +6629,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;(58)</statementfull>
@@ -7726,6 +7773,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_cgalgorta.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too far to go back</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
@@ -7772,6 +7823,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_33.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No dataflow into this method call</justification>
+	  </classification
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r8, $r9)</statementfull>
@@ -8116,6 +8171,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aplength20.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r5.&lt;android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r1, $r2)</statementfull>
@@ -8646,6 +8705,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>already investigated this, no incoming taint</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
@@ -9006,6 +9069,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many flows to track</justification>
+	  </classification
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;("text/html;\r\n\tcharset=\"utf-8\"")</statementfull>
@@ -9192,6 +9259,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to check the intents, too many to do right now</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
@@ -9304,6 +9375,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;(58)</statementfull>
@@ -9350,6 +9425,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_taintwrappereasy.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No dataflow into registerReceiver</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r8, $r9)</statementfull>
@@ -9554,8 +9633,12 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
-            <reference type="to">
-                <statement>
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code</justification>
+	  </classification>
+          <reference type="to">
+            <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;($c4)</statementfull>
                     <statementgeneric>java.io.Writer: void write(int)</statementgeneric>
                     <parameters>
@@ -9600,6 +9683,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_cgalgorta.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to to investigate boardModel</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
@@ -9840,6 +9927,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Already investigated.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
@@ -10521,7 +10612,7 @@
                         </parameter>
                         <parameter>
                             <type>java.lang.String</type>
-                            <value>"Already wake-locked</value>
+                            <value>"Already wake-locked"</value>
                         </parameter>
                     </parameters>
                 </statement>
@@ -11728,6 +11819,9 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+<result>UNKNOWN</result>
+</classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -12212,6 +12306,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Nothing flows into this call. Could be implicit but does not appear to be.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r21)</statementfull>
@@ -12365,7 +12463,11 @@
                 </app>
             </reference>
         </flow>
-    <flow generating_config="config_FlowDroid_2way_63.xml">
+	<flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>library code</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(java.lang.String)&gt;($r5)</statementfull>
@@ -12734,6 +12836,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many parameters to trace</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r7 = virtualinvoke $r6.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r1, $r4, $r2, $r3, null)</statementfull>
@@ -13096,6 +13202,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate boardmodel</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
@@ -13142,6 +13252,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_64.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Unclear which buf.write is tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r7.&lt;java.io.Writer: void write(java.lang.String)&gt;($r3)</statementfull>
@@ -13188,6 +13302,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate resources.getString</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, $z0)</statementfull>
@@ -13312,6 +13430,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_15.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;(32)</statementfull>
@@ -14058,6 +14180,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many writes to investigate</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;java.io.Writer: void write(java.lang.String)&gt;($r5)</statementfull>
@@ -14658,6 +14784,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_52.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate resources</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>
@@ -14884,6 +15014,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many calls to copyStream</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -15476,6 +15610,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_64.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;java.io.Writer: void write(java.lang.String)&gt;($r9)</statementfull>
@@ -15584,6 +15722,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No tainted data flows into the method call</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r21)</statementfull>
@@ -15691,7 +15833,11 @@
                 </app>
             </reference>
         </flow>
-    <flow generating_config="config_FlowDroid_2way_63.xml">
+	<flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;($c4)</statementfull>
@@ -15754,6 +15900,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No tainted data flows into the receiver</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r8, $r9)</statementfull>
@@ -15854,6 +16004,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many flows into this method to investigate.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r3.&lt;java.io.ByteArrayOutputStream: void write(int)&gt;($i0)</statementfull>
@@ -18016,6 +18170,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(java.lang.String)&gt;($r5)</statementfull>
@@ -18240,6 +18398,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_dataflowsolverfins.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Already investigated this.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
@@ -18806,6 +18968,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;(58)</statementfull>
@@ -18918,6 +19084,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_implicitall.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Investigate boardmodel</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)</statementfull>
@@ -19373,7 +19543,7 @@
                         </parameter>
                         <parameter>
                             <type>java.lang.String</type>
-                            <value>"Already wake-locked</value>
+                            <value>"Already wake-locked"</value>
                         </parameter>
                     </parameters>
                 </statement>
@@ -19428,6 +19598,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_52.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate the call to resources.getString</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>
@@ -20394,6 +20568,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_0.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No tainted flow into this method; all parameters are created anew.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r16, $r17, 65)</statementfull>
@@ -20448,6 +20626,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(java.lang.String)&gt;($r5)</statementfull>
@@ -21300,6 +21482,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>EXCLUDE</result>
+	    <justification>Library code</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.Writer: void write(int)&gt;($c4)</statementfull>
@@ -21346,6 +21532,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_52.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many parameters to investigate at the moment.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r7 = virtualinvoke $r6.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r1, $r4, $r2, $r3, null)</statementfull>
@@ -21764,6 +21954,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_64.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many flows</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r2.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r1, 0, $i1)</statementfull>
@@ -22768,6 +22962,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_implicitall.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate whether hash, getPostModel, and boardModel are possibly tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
@@ -23424,6 +23622,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No tainted data flows into this app. In terms of a possible implicit dataflow, neither of the conditions in the loop guard are tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r21)</statementfull>
@@ -23470,6 +23672,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_56.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>For the same reason as before, we need to investigate the parameters into this method.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>
@@ -23582,6 +23788,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>Nothing tainted flows into this call. dismissReceiver is initialized as new and is never written to. The intent filter is new.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r5.&lt;android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r1, $r2)</statementfull>
@@ -23632,6 +23842,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many calls here, although most just write string constants. need to investigate model.email and name to see if they are tainted.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;java.io.Writer: void write(java.lang.String)&gt;($r8)</statementfull>
@@ -24064,6 +24278,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate both i and selectFile</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)</statementfull>
@@ -24730,6 +24948,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_28.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Too many parameters to investigate right now.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>$r7 = virtualinvoke $r6.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r1, $r4, $r2, $r3, null)</statementfull>
@@ -24924,6 +25146,10 @@
             </reference>
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgofs.xml">
+	  <classification>
+	    <result>UNKNOWN</result>
+	    <justification>Need to investigate both i and selectFile</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 2)</statementfull>
@@ -25468,6 +25694,10 @@
             </reference>
         </flow>
         <flow generating_config="config_FlowDroid_2way_63.xml">
+	  <classification>
+	    <result>FALSE</result>
+	    <justification>No tainted data directly flows into this call. As far as I can tell from the implicit flows, there is no taint on item. In terms of whether the bundle might be tainted, the only place where extra data is placed on an intent to this activity places it based on the value of r.id, which is constant.</justification>
+	  </classification>
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: void sendBroadcast(android.content.Intent)&gt;($r5)</statementfull>

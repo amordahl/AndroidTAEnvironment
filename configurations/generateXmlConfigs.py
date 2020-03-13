@@ -29,7 +29,7 @@ for f in files_list:
     hashval.update(content.encode())
     content = content.replace("%%HASH%%", hashval.hexdigest())
     # assume that the file is named aqlRun_xxx.sh
-    filestrip = os.path.basename(f).lstrip("aqlRun").rstrip(".sh")
+    filestrip = os.path.basename(f).replace("aqlRun", "").replace(".sh", "")
     with open(f'{args.output_dir}/{args.config_prefix}{filestrip}.xml', 'w') as g:
         g.write(content)
 

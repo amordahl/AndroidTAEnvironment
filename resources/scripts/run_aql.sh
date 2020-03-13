@@ -1,3 +1,3 @@
 #!/bin/bash
-java -jar AQL-System-1.1.0-SNAPSHOT.jar -t 2h -reset -c ${1} -q "Flows IN App('${2}') ?" -o ${3}
+java -jar AQL-System-1.1.1.jar -t 2h -reset -c ${1} -q "Flows IN App('${2}') ?" -o ${3}
 

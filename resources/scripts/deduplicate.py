@@ -8,7 +8,7 @@ import logging
 import os
 logging.basicConfig(level=logging.WARNING)
 import xml.etree.ElementTree as ET
-from .Flow import Flow
+from Flow import Flow
 from tqdm import tqdm
 
 

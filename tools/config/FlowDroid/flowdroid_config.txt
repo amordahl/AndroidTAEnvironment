@@ -23,4 +23,4 @@ pathspecificresults (boolean): TRUE, FALSE
 enablereflection (boolean): TRUE, FALSE
 singlejoinpointabstraction (boolean): TRUE, FALSE
 staticmode (enum): CONTEXTFLOWSENSITIVE, CONTEXTFLOWINSENSITIVE, NONE
-taintwrapper (enum): NONE, EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+taintwrapper (enum): NONE, EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt, DEFAULT, DEFAULTFALLBACK

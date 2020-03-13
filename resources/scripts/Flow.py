@@ -3,6 +3,8 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 import os
 import re
+import xml.etree.ElementTree as ET
+
 class Flow:
 
     register_regex = re.compile(r"\$[a-z]\d+")

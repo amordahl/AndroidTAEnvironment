@@ -1,7 +1,7 @@
-# ACTS Test Suite Generation: Mon Feb 24 21:32:23 UTC 2020
+# ACTS Test Suite Generation: Thu Mar 19 18:46:07 UTC 2020
 #  "(don't care)" represents don't care value 
 # Degree of interaction coverage: 2
-# Number of parameters: 24
+# Number of parameters: 23
 # Maximum number of values per parameter: 11
 # Number of configurations: 77
 ------------Test Cases--------------
@@ -29,9 +29,8 @@ Configuration #1:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -58,9 +57,8 @@ Configuration #2:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -87,9 +85,8 @@ Configuration #3:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -116,9 +113,8 @@ Configuration #4:
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -145,9 +141,8 @@ Configuration #5:
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -174,9 +169,8 @@ Configuration #6:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -203,9 +197,8 @@ Configuration #7:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -232,9 +225,8 @@ Configuration #8:
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -261,9 +253,8 @@ Configuration #9:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -290,9 +281,8 @@ Configuration #10:
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -319,9 +309,8 @@ Configuration #11:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -348,9 +337,8 @@ Configuration #12:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -377,9 +365,8 @@ Configuration #13:
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -406,9 +393,8 @@ Configuration #14:
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -435,9 +421,8 @@ Configuration #15:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -464,9 +449,8 @@ Configuration #16:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -493,23 +477,22 @@ Configuration #17:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #18:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=50
 3 = filetransforms=FALSE
 4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=FALSE
-6 = implicitflow=TRUE
-7 = imprecisestrings=FALSE
+6 = implicitflow=FALSE
+7 = imprecisestrings=TRUE
 8 = kobjsens=4
-9 = limitcontextforcomplex=TRUE
+9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=TRUE
@@ -518,13 +501,12 @@ Configuration #18:
 15 = noclonestatics=FALSE
 16 = nofallback=TRUE
 17 = nojsa=FALSE
-18 = noscalaropts=FALSE
-19 = nova=TRUE
+18 = noscalaropts=TRUE
+19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -532,28 +514,27 @@ Configuration #19:
 
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=50
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=5
-9 = limitcontextforcomplex=TRUE
+9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=FALSE
-12 = multipassfb=FALSE
-13 = noarrayindex=FALSE
+12 = multipassfb=TRUE
+13 = noarrayindex=TRUE
 14 = noclinitcontext=FALSE
 15 = noclonestatics=FALSE
-16 = nofallback=TRUE
+16 = nofallback=FALSE
 17 = nojsa=FALSE
-18 = noscalaropts=FALSE
+18 = noscalaropts=TRUE
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -561,28 +542,27 @@ Configuration #20:
 
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=50
-3 = filetransforms=TRUE
+3 = filetransforms=FALSE
 4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
+7 = imprecisestrings=TRUE
 8 = kobjsens=6
 9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
+11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
 13 = noarrayindex=TRUE
-14 = noclinitcontext=TRUE
-15 = noclonestatics=FALSE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=TRUE
 16 = nofallback=FALSE
 17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -592,26 +572,25 @@ Configuration #21:
 2 = apicalldepth=50
 3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=FALSE
+5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
-7 = imprecisestrings=FALSE
+7 = imprecisestrings=TRUE
 8 = kobjsens=18
-9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=FALSE
+9 = limitcontextforcomplex=FALSE
+10 = limitcontextforgui=TRUE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
 14 = noclinitcontext=FALSE
-15 = noclonestatics=FALSE
+15 = noclonestatics=TRUE
 16 = nofallback=FALSE
 17 = nojsa=FALSE
 18 = noscalaropts=FALSE
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -638,9 +617,8 @@ Configuration #22:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -667,51 +645,21 @@ Configuration #23:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #24:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=80
 3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
+4 = ignoreexceptionflows=TRUE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=3
-9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=FALSE
-12 = multipassfb=FALSE
-13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=TRUE
-17 = nojsa=FALSE
-18 = noscalaropts=TRUE
-19 = nova=FALSE
-20 = preciseinfoflow=FALSE
-21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
-
--------------------------------------
-
-Configuration #25:
-
-1 = analyzestrings_unfiltered=FALSE
-2 = apicalldepth=80
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=FALSE
-6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
-8 = kobjsens=4
 9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
@@ -721,13 +669,40 @@ Configuration #25:
 15 = noclonestatics=FALSE
 16 = nofallback=FALSE
 17 = nojsa=FALSE
-18 = noscalaropts=TRUE
-19 = nova=FALSE
+18 = noscalaropts=FALSE
+19 = nova=TRUE
+20 = preciseinfoflow=TRUE
+21 = pta=spark
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
+
+-------------------------------------
+
+Configuration #25:
+
+1 = analyzestrings_unfiltered=FALSE
+2 = apicalldepth=80
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=TRUE
+6 = implicitflow=FALSE
+7 = imprecisestrings=FALSE
+8 = kobjsens=4
+9 = limitcontextforcomplex=TRUE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=FALSE
+13 = noarrayindex=TRUE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=TRUE
+16 = nofallback=TRUE
+17 = nojsa=TRUE
+18 = noscalaropts=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=FALSE
-21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+21 = pta=spark
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -735,57 +710,55 @@ Configuration #26:
 
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=80
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=FALSE
-6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
+3 = filetransforms=FALSE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=TRUE
+6 = implicitflow=TRUE
+7 = imprecisestrings=TRUE
 8 = kobjsens=5
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
+10 = limitcontextforgui=TRUE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=FALSE
+13 = noarrayindex=FALSE
 14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=TRUE
+15 = noclonestatics=FALSE
+16 = nofallback=FALSE
 17 = nojsa=TRUE
 18 = noscalaropts=TRUE
 19 = nova=TRUE
-20 = preciseinfoflow=TRUE
+20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #27:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=80
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=FALSE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=TRUE
 5 = ignorenocontextflows=FALSE
 6 = implicitflow=TRUE
-7 = imprecisestrings=TRUE
+7 = imprecisestrings=FALSE
 8 = kobjsens=6
 9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
-13 = noarrayindex=TRUE
+13 = noarrayindex=FALSE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=TRUE
 16 = nofallback=TRUE
-17 = nojsa=TRUE
+17 = nojsa=FALSE
 18 = noscalaropts=FALSE
-19 = nova=TRUE
-20 = preciseinfoflow=FALSE
-21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+19 = nova=FALSE
+20 = preciseinfoflow=TRUE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -794,27 +767,26 @@ Configuration #28:
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=80
 3 = filetransforms=FALSE
-4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=TRUE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=FALSE
 6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
+7 = imprecisestrings=FALSE
 8 = kobjsens=18
 9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=FALSE
+11 = limitcontextforstrings=TRUE
 12 = multipassfb=FALSE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
+14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
 16 = nofallback=TRUE
 17 = nojsa=TRUE
 18 = noscalaropts=FALSE
 19 = nova=FALSE
-20 = preciseinfoflow=TRUE
+20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -841,9 +813,8 @@ Configuration #29:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -870,67 +841,64 @@ Configuration #30:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #31:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=90
-3 = filetransforms=FALSE
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
-7 = imprecisestrings=TRUE
-8 = kobjsens=3
-9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
-14 = noclinitcontext=TRUE
-15 = noclonestatics=FALSE
-16 = nofallback=FALSE
-17 = nojsa=FALSE
-18 = noscalaropts=FALSE
-19 = nova=FALSE
-20 = preciseinfoflow=FALSE
-21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
-
--------------------------------------
-
-Configuration #32:
-
-1 = analyzestrings_unfiltered=TRUE
-2 = apicalldepth=90
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
+5 = ignorenocontextflows=FALSE
 6 = implicitflow=FALSE
 7 = imprecisestrings=TRUE
-8 = kobjsens=4
-9 = limitcontextforcomplex=FALSE
+8 = kobjsens=3
+9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=TRUE
 16 = nofallback=TRUE
 17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=TRUE
+19 = nova=FALSE
 20 = preciseinfoflow=TRUE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
+
+-------------------------------------
+
+Configuration #32:
+
+1 = analyzestrings_unfiltered=FALSE
+2 = apicalldepth=90
+3 = filetransforms=FALSE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=FALSE
+7 = imprecisestrings=FALSE
+8 = kobjsens=4
+9 = limitcontextforcomplex=TRUE
+10 = limitcontextforgui=TRUE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=TRUE
+13 = noarrayindex=TRUE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=TRUE
+16 = nofallback=TRUE
+17 = nojsa=FALSE
+18 = noscalaropts=TRUE
+19 = nova=FALSE
+20 = preciseinfoflow=TRUE
+21 = pta=geo
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -938,34 +906,33 @@ Configuration #33:
 
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=90
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=FALSE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=TRUE
 6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
+7 = imprecisestrings=TRUE
 8 = kobjsens=5
 9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
+14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
 16 = nofallback=FALSE
-17 = nojsa=TRUE
+17 = nojsa=FALSE
 18 = noscalaropts=FALSE
-19 = nova=TRUE
+19 = nova=FALSE
 20 = preciseinfoflow=TRUE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+21 = pta=geo
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #34:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=90
 3 = filetransforms=FALSE
 4 = ignoreexceptionflows=FALSE
@@ -977,27 +944,26 @@ Configuration #34:
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
-13 = noarrayindex=TRUE
-14 = noclinitcontext=TRUE
+13 = noarrayindex=FALSE
+14 = noclinitcontext=FALSE
 15 = noclonestatics=TRUE
-16 = nofallback=TRUE
+16 = nofallback=FALSE
 17 = nojsa=FALSE
 18 = noscalaropts=FALSE
 19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #35:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=90
 3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
+4 = ignoreexceptionflows=TRUE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
 7 = imprecisestrings=FALSE
@@ -1008,16 +974,15 @@ Configuration #35:
 12 = multipassfb=FALSE
 13 = noarrayindex=TRUE
 14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=FALSE
+15 = noclonestatics=FALSE
+16 = nofallback=TRUE
 17 = nojsa=TRUE
-18 = noscalaropts=TRUE
-19 = nova=FALSE
+18 = noscalaropts=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=TRUE
-21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+21 = pta=geo
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1044,9 +1009,8 @@ Configuration #36:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1073,56 +1037,82 @@ Configuration #37:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #38:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=100
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=TRUE
+3 = filetransforms=FALSE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
+6 = implicitflow=FALSE
 7 = imprecisestrings=TRUE
 8 = kobjsens=3
-9 = limitcontextforcomplex=TRUE
+9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
-13 = noarrayindex=FALSE
-14 = noclinitcontext=TRUE
+12 = multipassfb=FALSE
+13 = noarrayindex=TRUE
+14 = noclinitcontext=FALSE
 15 = noclonestatics=TRUE
-16 = nofallback=FALSE
-17 = nojsa=TRUE
-18 = noscalaropts=FALSE
-19 = nova=FALSE
-20 = preciseinfoflow=FALSE
+16 = nofallback=TRUE
+17 = nojsa=FALSE
+18 = noscalaropts=TRUE
+19 = nova=TRUE
+20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #39:
 
+1 = analyzestrings_unfiltered=TRUE
+2 = apicalldepth=100
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
+7 = imprecisestrings=TRUE
+8 = kobjsens=4
+9 = limitcontextforcomplex=FALSE
+10 = limitcontextforgui=TRUE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=FALSE
+13 = noarrayindex=FALSE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=FALSE
+16 = nofallback=TRUE
+17 = nojsa=FALSE
+18 = noscalaropts=FALSE
+19 = nova=FALSE
+20 = preciseinfoflow=TRUE
+21 = pta=geo
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
+
+-------------------------------------
+
+Configuration #40:
+
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=100
 3 = filetransforms=FALSE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
-7 = imprecisestrings=FALSE
-8 = kobjsens=4
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=FALSE
+7 = imprecisestrings=TRUE
+8 = kobjsens=5
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
+10 = limitcontextforgui=TRUE
+11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
-13 = noarrayindex=FALSE
+13 = noarrayindex=TRUE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
 16 = nofallback=TRUE
@@ -1130,68 +1120,37 @@ Configuration #39:
 18 = noscalaropts=FALSE
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
-
--------------------------------------
-
-Configuration #40:
-
-1 = analyzestrings_unfiltered=TRUE
-2 = apicalldepth=100
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
-7 = imprecisestrings=FALSE
-8 = kobjsens=5
-9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=FALSE
-12 = multipassfb=FALSE
-13 = noarrayindex=TRUE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=TRUE
-17 = nojsa=TRUE
-18 = noscalaropts=FALSE
-19 = nova=TRUE
-20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #41:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=100
 3 = filetransforms=TRUE
 4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=FALSE
 7 = imprecisestrings=TRUE
 8 = kobjsens=6
-9 = limitcontextforcomplex=TRUE
+9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=TRUE
+14 = noclinitcontext=TRUE
+15 = noclonestatics=FALSE
+16 = nofallback=FALSE
 17 = nojsa=FALSE
 18 = noscalaropts=FALSE
 19 = nova=FALSE
-20 = preciseinfoflow=FALSE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+20 = preciseinfoflow=TRUE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1199,28 +1158,27 @@ Configuration #42:
 
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=100
-3 = filetransforms=FALSE
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=FALSE
-6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
+5 = ignorenocontextflows=TRUE
+6 = implicitflow=TRUE
+7 = imprecisestrings=TRUE
 8 = kobjsens=18
-9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=TRUE
+9 = limitcontextforcomplex=FALSE
+10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=TRUE
-12 = multipassfb=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=TRUE
+14 = noclinitcontext=FALSE
 15 = noclonestatics=FALSE
-16 = nofallback=TRUE
+16 = nofallback=FALSE
 17 = nojsa=FALSE
 18 = noscalaropts=TRUE
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
-21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1247,9 +1205,8 @@ Configuration #43:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1276,67 +1233,64 @@ Configuration #44:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #45:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=110
 3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=3
 9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=FALSE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
+14 = noclinitcontext=TRUE
+15 = noclonestatics=FALSE
 16 = nofallback=TRUE
 17 = nojsa=TRUE
 18 = noscalaropts=TRUE
 19 = nova=TRUE
-20 = preciseinfoflow=FALSE
+20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
 Configuration #46:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=110
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
+6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=4
-9 = limitcontextforcomplex=FALSE
+9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
 13 = noarrayindex=TRUE
 14 = noclinitcontext=TRUE
-15 = noclonestatics=FALSE
-16 = nofallback=FALSE
-17 = nojsa=FALSE
+15 = noclonestatics=TRUE
+16 = nofallback=TRUE
+17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=FALSE
-21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+21 = pta=paddle
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1345,11 +1299,39 @@ Configuration #47:
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=110
 3 = filetransforms=TRUE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
+7 = imprecisestrings=FALSE
+8 = kobjsens=5
+9 = limitcontextforcomplex=FALSE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=TRUE
+13 = noarrayindex=TRUE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=FALSE
+16 = nofallback=FALSE
+17 = nojsa=FALSE
+18 = noscalaropts=FALSE
+19 = nova=FALSE
+20 = preciseinfoflow=FALSE
+21 = pta=geo
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
+
+-------------------------------------
+
+Configuration #48:
+
+1 = analyzestrings_unfiltered=FALSE
+2 = apicalldepth=110
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
 7 = imprecisestrings=FALSE
-8 = kobjsens=5
+8 = kobjsens=6
 9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=TRUE
@@ -1363,38 +1345,8 @@ Configuration #47:
 19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
-
--------------------------------------
-
-Configuration #48:
-
-1 = analyzestrings_unfiltered=TRUE
-2 = apicalldepth=110
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
-7 = imprecisestrings=TRUE
-8 = kobjsens=6
-9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
-13 = noarrayindex=FALSE
-14 = noclinitcontext=TRUE
-15 = noclonestatics=TRUE
-16 = nofallback=FALSE
-17 = nojsa=TRUE
-18 = noscalaropts=TRUE
-19 = nova=TRUE
-20 = preciseinfoflow=TRUE
-21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1403,27 +1355,26 @@ Configuration #49:
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=110
 3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
+4 = ignoreexceptionflows=TRUE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
-7 = imprecisestrings=FALSE
+7 = imprecisestrings=TRUE
 8 = kobjsens=18
-9 = limitcontextforcomplex=FALSE
+9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=TRUE
 13 = noarrayindex=TRUE
 14 = noclinitcontext=FALSE
 15 = noclonestatics=TRUE
-16 = nofallback=FALSE
-17 = nojsa=TRUE
-18 = noscalaropts=FALSE
+16 = nofallback=TRUE
+17 = nojsa=FALSE
+18 = noscalaropts=TRUE
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
-21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1450,9 +1401,8 @@ Configuration #50:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1479,38 +1429,36 @@ Configuration #51:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #52:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=120
 3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=FALSE
 6 = implicitflow=TRUE
 7 = imprecisestrings=FALSE
 8 = kobjsens=3
-9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
+9 = limitcontextforcomplex=TRUE
+10 = limitcontextforgui=TRUE
+11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
+14 = noclinitcontext=TRUE
 15 = noclonestatics=TRUE
 16 = nofallback=TRUE
-17 = nojsa=TRUE
+17 = nojsa=FALSE
 18 = noscalaropts=TRUE
-19 = nova=TRUE
+19 = nova=FALSE
 20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1518,57 +1466,55 @@ Configuration #53:
 
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=120
-3 = filetransforms=FALSE
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=FALSE
 6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
+7 = imprecisestrings=TRUE
 8 = kobjsens=4
 9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=FALSE
+10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=FALSE
-12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=TRUE
-17 = nojsa=FALSE
-18 = noscalaropts=TRUE
-19 = nova=FALSE
-20 = preciseinfoflow=TRUE
-21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
-
--------------------------------------
-
-Configuration #54:
-
-1 = analyzestrings_unfiltered=FALSE
-2 = apicalldepth=120
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
-8 = kobjsens=5
-9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
 12 = multipassfb=FALSE
 13 = noarrayindex=FALSE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
 16 = nofallback=FALSE
 17 = nojsa=FALSE
+18 = noscalaropts=TRUE
+19 = nova=TRUE
+20 = preciseinfoflow=TRUE
+21 = pta=paddle
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
+
+-------------------------------------
+
+Configuration #54:
+
+1 = analyzestrings_unfiltered=TRUE
+2 = apicalldepth=120
+3 = filetransforms=FALSE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
+7 = imprecisestrings=FALSE
+8 = kobjsens=5
+9 = limitcontextforcomplex=FALSE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=FALSE
+13 = noarrayindex=TRUE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=FALSE
+16 = nofallback=TRUE
+17 = nojsa=TRUE
 18 = noscalaropts=FALSE
 19 = nova=TRUE
-20 = preciseinfoflow=FALSE
+20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1576,28 +1522,27 @@ Configuration #55:
 
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=120
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
+6 = implicitflow=FALSE
 7 = imprecisestrings=FALSE
 8 = kobjsens=6
 9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=FALSE
+10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=FALSE
-13 = noarrayindex=FALSE
+13 = noarrayindex=TRUE
 14 = noclinitcontext=FALSE
 15 = noclonestatics=FALSE
 16 = nofallback=TRUE
-17 = nojsa=TRUE
+17 = nojsa=FALSE
 18 = noscalaropts=FALSE
-19 = nova=FALSE
-20 = preciseinfoflow=TRUE
-21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+19 = nova=TRUE
+20 = preciseinfoflow=FALSE
+21 = pta=geo
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1606,27 +1551,26 @@ Configuration #56:
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=120
 3 = filetransforms=FALSE
-4 = ignoreexceptionflows=FALSE
+4 = ignoreexceptionflows=TRUE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=18
 9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=FALSE
+11 = limitcontextforstrings=TRUE
 12 = multipassfb=TRUE
 13 = noarrayindex=TRUE
-14 = noclinitcontext=TRUE
+14 = noclinitcontext=FALSE
 15 = noclonestatics=TRUE
-16 = nofallback=TRUE
+16 = nofallback=FALSE
 17 = nojsa=TRUE
 18 = noscalaropts=FALSE
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1653,9 +1597,8 @@ Configuration #57:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1682,9 +1625,8 @@ Configuration #58:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1694,26 +1636,25 @@ Configuration #59:
 2 = apicalldepth=150
 3 = filetransforms=FALSE
 4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=FALSE
+5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
-7 = imprecisestrings=TRUE
+7 = imprecisestrings=FALSE
 8 = kobjsens=3
-9 = limitcontextforcomplex=TRUE
+9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=FALSE
-12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
+11 = limitcontextforstrings=TRUE
+12 = multipassfb=FALSE
+13 = noarrayindex=FALSE
 14 = noclinitcontext=TRUE
-15 = noclonestatics=FALSE
-16 = nofallback=FALSE
+15 = noclonestatics=TRUE
+16 = nofallback=TRUE
 17 = nojsa=TRUE
 18 = noscalaropts=FALSE
 19 = nova=FALSE
-20 = preciseinfoflow=FALSE
+20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1722,27 +1663,26 @@ Configuration #60:
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=150
 3 = filetransforms=TRUE
-4 = ignoreexceptionflows=TRUE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=FALSE
 6 = implicitflow=FALSE
 7 = imprecisestrings=TRUE
 8 = kobjsens=4
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=FALSE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=TRUE
 12 = multipassfb=FALSE
-13 = noarrayindex=TRUE
+13 = noarrayindex=FALSE
 14 = noclinitcontext=FALSE
-15 = noclonestatics=FALSE
+15 = noclonestatics=TRUE
 16 = nofallback=TRUE
-17 = nojsa=FALSE
+17 = nojsa=TRUE
 18 = noscalaropts=TRUE
-19 = nova=TRUE
+19 = nova=FALSE
 20 = preciseinfoflow=TRUE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1750,10 +1690,10 @@ Configuration #61:
 
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=150
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=FALSE
 7 = imprecisestrings=TRUE
 8 = kobjsens=5
 9 = limitcontextforcomplex=FALSE
@@ -1765,13 +1705,12 @@ Configuration #61:
 15 = noclonestatics=FALSE
 16 = nofallback=FALSE
 17 = nojsa=TRUE
-18 = noscalaropts=TRUE
-19 = nova=FALSE
+18 = noscalaropts=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=FALSE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1779,57 +1718,55 @@ Configuration #62:
 
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=150
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
+6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=6
-9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=FALSE
+9 = limitcontextforcomplex=FALSE
+10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
+12 = multipassfb=FALSE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=TRUE
-15 = noclonestatics=FALSE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=TRUE
 16 = nofallback=TRUE
-17 = nojsa=FALSE
-18 = noscalaropts=FALSE
-19 = nova=TRUE
-20 = preciseinfoflow=TRUE
-21 = pta=geo
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+17 = nojsa=TRUE
+18 = noscalaropts=TRUE
+19 = nova=FALSE
+20 = preciseinfoflow=FALSE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #63:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=150
 3 = filetransforms=FALSE
 4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=FALSE
+5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
 7 = imprecisestrings=FALSE
 8 = kobjsens=18
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
+10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
-14 = noclinitcontext=TRUE
-15 = noclonestatics=TRUE
+12 = multipassfb=FALSE
+13 = noarrayindex=FALSE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=FALSE
 16 = nofallback=TRUE
 17 = nojsa=TRUE
-18 = noscalaropts=TRUE
+18 = noscalaropts=FALSE
 19 = nova=TRUE
-20 = preciseinfoflow=FALSE
-21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+20 = preciseinfoflow=TRUE
+21 = pta=geo
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -1856,9 +1793,8 @@ Configuration #64:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1885,38 +1821,36 @@ Configuration #65:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #66:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=200
-3 = filetransforms=TRUE
-4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
+3 = filetransforms=FALSE
+4 = ignoreexceptionflows=TRUE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
+7 = imprecisestrings=FALSE
 8 = kobjsens=3
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=FALSE
+10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
+13 = noarrayindex=FALSE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=TRUE
-16 = nofallback=TRUE
+16 = nofallback=FALSE
 17 = nojsa=FALSE
 18 = noscalaropts=FALSE
 19 = nova=FALSE
-20 = preciseinfoflow=FALSE
+20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -1924,86 +1858,83 @@ Configuration #67:
 
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=200
-3 = filetransforms=FALSE
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=FALSE
-6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
+5 = ignorenocontextflows=TRUE
+6 = implicitflow=TRUE
+7 = imprecisestrings=TRUE
 8 = kobjsens=4
-9 = limitcontextforcomplex=FALSE
+9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=TRUE
 11 = limitcontextforstrings=TRUE
 12 = multipassfb=FALSE
-13 = noarrayindex=TRUE
+13 = noarrayindex=FALSE
 14 = noclinitcontext=FALSE
 15 = noclonestatics=FALSE
 16 = nofallback=FALSE
-17 = nojsa=FALSE
+17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=FALSE
-21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
 Configuration #68:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=200
-3 = filetransforms=FALSE
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
 5 = ignorenocontextflows=TRUE
-6 = implicitflow=FALSE
+6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=5
-9 = limitcontextforcomplex=TRUE
+9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=FALSE
 12 = multipassfb=FALSE
 13 = noarrayindex=TRUE
-14 = noclinitcontext=FALSE
+14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
-16 = nofallback=FALSE
-17 = nojsa=FALSE
+16 = nofallback=TRUE
+17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=FALSE
-20 = preciseinfoflow=TRUE
-21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+19 = nova=TRUE
+20 = preciseinfoflow=FALSE
+21 = pta=paddle
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
 Configuration #69:
 
-1 = analyzestrings_unfiltered=FALSE
+1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=200
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=TRUE
 6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
+7 = imprecisestrings=FALSE
 8 = kobjsens=6
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
-13 = noarrayindex=TRUE
-14 = noclinitcontext=FALSE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=FALSE
+13 = noarrayindex=FALSE
+14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
 16 = nofallback=TRUE
-17 = nojsa=FALSE
+17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=TRUE
-20 = preciseinfoflow=FALSE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+19 = nova=FALSE
+20 = preciseinfoflow=TRUE
+21 = pta=geo
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -2012,27 +1943,26 @@ Configuration #70:
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=200
 3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
+4 = ignoreexceptionflows=FALSE
 5 = ignorenocontextflows=FALSE
-6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
+6 = implicitflow=TRUE
+7 = imprecisestrings=FALSE
 8 = kobjsens=18
 9 = limitcontextforcomplex=FALSE
 10 = limitcontextforgui=FALSE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=TRUE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=FALSE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=TRUE
-16 = nofallback=FALSE
-17 = nojsa=FALSE
+14 = noclinitcontext=TRUE
+15 = noclonestatics=FALSE
+16 = nofallback=TRUE
+17 = nojsa=TRUE
 18 = noscalaropts=TRUE
-19 = nova=TRUE
-20 = preciseinfoflow=TRUE
-21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+19 = nova=FALSE
+20 = preciseinfoflow=FALSE
+21 = pta=spark
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
@@ -2059,9 +1989,8 @@ Configuration #71:
 19 = nova=TRUE
 20 = preciseinfoflow=TRUE
 21 = pta=paddle
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -2088,67 +2017,64 @@ Configuration #72:
 19 = nova=FALSE
 20 = preciseinfoflow=FALSE
 21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
 Configuration #73:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=600
-3 = filetransforms=FALSE
+3 = filetransforms=TRUE
 4 = ignoreexceptionflows=FALSE
-5 = ignorenocontextflows=FALSE
+5 = ignorenocontextflows=TRUE
 6 = implicitflow=TRUE
 7 = imprecisestrings=TRUE
 8 = kobjsens=3
 9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=FALSE
-12 = multipassfb=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=TRUE
+14 = noclinitcontext=FALSE
 15 = noclonestatics=TRUE
-16 = nofallback=TRUE
-17 = nojsa=TRUE
-18 = noscalaropts=FALSE
+16 = nofallback=FALSE
+17 = nojsa=FALSE
+18 = noscalaropts=TRUE
 19 = nova=TRUE
-20 = preciseinfoflow=TRUE
+20 = preciseinfoflow=FALSE
 21 = pta=spark
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
 Configuration #74:
 
-1 = analyzestrings_unfiltered=TRUE
+1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=600
-3 = filetransforms=TRUE
+3 = filetransforms=FALSE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=TRUE
-6 = implicitflow=TRUE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=FALSE
 7 = imprecisestrings=TRUE
 8 = kobjsens=4
-9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=TRUE
+9 = limitcontextforcomplex=TRUE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=FALSE
 12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
-14 = noclinitcontext=TRUE
-15 = noclonestatics=FALSE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=TRUE
 16 = nofallback=TRUE
 17 = nojsa=TRUE
-18 = noscalaropts=FALSE
-19 = nova=TRUE
-20 = preciseinfoflow=TRUE
+18 = noscalaropts=TRUE
+19 = nova=FALSE
+20 = preciseinfoflow=FALSE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+22 = transfertaintfield=TRUE
+23 = typesforcontext=FALSE
 
 -------------------------------------
 
@@ -2156,86 +2082,83 @@ Configuration #75:
 
 1 = analyzestrings_unfiltered=FALSE
 2 = apicalldepth=600
-3 = filetransforms=FALSE
-4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=FALSE
-6 = implicitflow=FALSE
-7 = imprecisestrings=TRUE
-8 = kobjsens=5
-9 = limitcontextforcomplex=TRUE
-10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=FALSE
-12 = multipassfb=TRUE
-13 = noarrayindex=FALSE
-14 = noclinitcontext=FALSE
-15 = noclonestatics=FALSE
-16 = nofallback=TRUE
-17 = nojsa=FALSE
-18 = noscalaropts=FALSE
-19 = nova=TRUE
-20 = preciseinfoflow=TRUE
-21 = pta=geo
-22 = trackallflows=FALSE
-23 = transfertaintfield=TRUE
-24 = typesforcontext=TRUE
-
--------------------------------------
-
-Configuration #76:
-
-1 = analyzestrings_unfiltered=FALSE
-2 = apicalldepth=600
 3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=FALSE
-6 = implicitflow=TRUE
-7 = imprecisestrings=TRUE
-8 = kobjsens=6
+5 = ignorenocontextflows=TRUE
+6 = implicitflow=FALSE
+7 = imprecisestrings=FALSE
+8 = kobjsens=5
 9 = limitcontextforcomplex=FALSE
-10 = limitcontextforgui=TRUE
+10 = limitcontextforgui=FALSE
 11 = limitcontextforstrings=TRUE
-12 = multipassfb=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=TRUE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=FALSE
 16 = nofallback=TRUE
 17 = nojsa=TRUE
 18 = noscalaropts=FALSE
-19 = nova=FALSE
-20 = preciseinfoflow=FALSE
+19 = nova=TRUE
+20 = preciseinfoflow=TRUE
 21 = pta=spark
-22 = trackallflows=TRUE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=TRUE
+22 = transfertaintfield=FALSE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 
-Configuration #77:
+Configuration #76:
 
 1 = analyzestrings_unfiltered=TRUE
 2 = apicalldepth=600
 3 = filetransforms=TRUE
 4 = ignoreexceptionflows=TRUE
-5 = ignorenocontextflows=FALSE
+5 = ignorenocontextflows=TRUE
 6 = implicitflow=FALSE
-7 = imprecisestrings=FALSE
-8 = kobjsens=18
+7 = imprecisestrings=TRUE
+8 = kobjsens=6
 9 = limitcontextforcomplex=TRUE
 10 = limitcontextforgui=TRUE
-11 = limitcontextforstrings=TRUE
-12 = multipassfb=FALSE
+11 = limitcontextforstrings=FALSE
+12 = multipassfb=TRUE
 13 = noarrayindex=FALSE
 14 = noclinitcontext=TRUE
 15 = noclonestatics=TRUE
 16 = nofallback=FALSE
+17 = nojsa=TRUE
+18 = noscalaropts=TRUE
+19 = nova=TRUE
+20 = preciseinfoflow=FALSE
+21 = pta=spark
+22 = transfertaintfield=FALSE
+23 = typesforcontext=FALSE
+
+-------------------------------------
+
+Configuration #77:
+
+1 = analyzestrings_unfiltered=FALSE
+2 = apicalldepth=600
+3 = filetransforms=TRUE
+4 = ignoreexceptionflows=FALSE
+5 = ignorenocontextflows=FALSE
+6 = implicitflow=TRUE
+7 = imprecisestrings=TRUE
+8 = kobjsens=18
+9 = limitcontextforcomplex=TRUE
+10 = limitcontextforgui=FALSE
+11 = limitcontextforstrings=TRUE
+12 = multipassfb=FALSE
+13 = noarrayindex=FALSE
+14 = noclinitcontext=FALSE
+15 = noclonestatics=TRUE
+16 = nofallback=FALSE
 17 = nojsa=FALSE
 18 = noscalaropts=TRUE
-19 = nova=FALSE
+19 = nova=TRUE
 20 = preciseinfoflow=FALSE
-21 = pta=paddle
-22 = trackallflows=FALSE
-23 = transfertaintfield=FALSE
-24 = typesforcontext=FALSE
+21 = pta=geo
+22 = transfertaintfield=TRUE
+23 = typesforcontext=TRUE
 
 -------------------------------------
 

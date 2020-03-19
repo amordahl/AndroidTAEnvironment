@@ -16,6 +16,6 @@ cp ${1} .
 # Create Makefile
 printf "NAME := ${2}\nAPK  := ${2}.apk\n\n" > Makefile
 printf 'ifndef DROIDSAFE_SRC_HOME\n\t$(error DROIDSAFE_SRC_HOME is undefined)\nendif\n\ninclude $(DROIDSAFE_SRC_HOME)/android-apps/Makefile.common\n' >> Makefile
-printf 'DSARGS ?= --apicalldepth 80 --implicitflow --imprecisestrings --kobjsens 6 --limitcontextforcomplex --noarrayindex --noclinitcontext --noclonestatics --nofallback --nojsa --nova --pta geo --typesforcontext\n' >> Makefile
+printf 'DSARGS ?= --analyzestrings_unfiltered --apicalldepth 80 --filetransforms --ignoreexceptionflows --implicitflow --kobjsens 6 --limitcontextforcomplex --noclinitcontext --noclonestatics --nofallback --preciseinfoflow --pta spark --transfertaintfield --typesforcontext\n' >> Makefile
 # Run DroidSafe analysis
 make specdump-apk

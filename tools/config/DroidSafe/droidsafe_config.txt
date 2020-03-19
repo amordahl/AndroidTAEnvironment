@@ -23,6 +23,5 @@ noscalaropts (boolean): TRUE, FALSE
 nova (boolean): TRUE, FALSE
 preciseinfoflow (boolean): TRUE, FALSE
 pta (enum): spark, paddle, geo
-trackallflows (boolean): TRUE, FALSE
 transfertaintfield (boolean): TRUE, FALSE
 typesforcontext (boolean): TRUE, FALSE

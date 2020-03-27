@@ -31,7 +31,7 @@ with open(args.config_file) as f:
                     #  configs
                     
                     # is it a binary or value option?
-                    if tokens[ix+1].startswith("--"):
+                    if len(tokens) == ix + 1 or tokens[ix+1].startswith("--"):
                         # binary, so all previous configs should have "FALSE" as default
                         config_master[t] = "FALSE"
                         for c in configs:
@@ -42,7 +42,7 @@ with open(args.config_file) as f:
                         config_master[t] = "DEFAULT"
                         for c in configs:
                             c[t] = "DEFAULT"
-                if tokens[ix+1].startswith("--"):
+                if len(tokens) == ix + 1 or tokens[ix+1].startswith("--"):
                     config[t] = "TRUE"
                 else:
                     config[t] = tokens[ix+1].lstrip('-')

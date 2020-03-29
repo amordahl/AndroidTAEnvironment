@@ -1,6 +1,6 @@
 from typing import Dict
 import logging
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 import os
 import re
 import xml.etree.ElementTree as ET
@@ -15,14 +15,15 @@ class Flow:
         self.update_file()
     
     def get_file(self) -> str:
-        f = self.element[0].findall("app")[0].findall("file")[0].text
+        f = self.element.find("reference").findall("app")[0].findall("file")[0].text
         logging.debug(f"Extracted file: {f}")
         return f
 
     def update_file(self):
         for e in self.element:
-            f = e.find("app").find("file").text
-            e.find("app").find("file").text = os.path.basename(f)
+            if e.tag == "reference":
+                f = e.find("app").find("file").text
+                e.find("app").find("file").text = os.path.basename(f)
             
     @classmethod
     def clean(cls, stmt: str) -> str:

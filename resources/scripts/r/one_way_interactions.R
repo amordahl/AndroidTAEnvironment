@@ -1,29 +1,79 @@
-# need to change data set
-dataset <- fossdroid31_flowdroid_2way_notimedout
-dependent <- dataset$time
-begin_column_independent <- 5
-end_column_independent <- ncol(dataset) - 1
+# parameters to change
+datasets <- list(list(droidbench_data[droidbench_data$completed == TRUE,], 'droidbench'),
+                 list(flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$completed==TRUE,], 'fossdroid'),
+                 list(flowdroid_googleplay_2way[flowdroid_googleplay_2way$completed==TRUE,], 'googleplay'))
+ 
+datasets <- list(list(googleplay_singleconf,
+                      'googleplay'))               
+dependent <- 'num_flows' # target variable
 tests = list()
 sort_by_p_val = FALSE
+do_all_pairs = TRUE
 
+flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimination', 'cgalgo',
+                        'dataflowsolver', 'implicit', 'maxcallbackspercomponent', 'maxcallbacksdepth',
+                        'pathalgo', 'staticmode', 'taintwrapper', 'aliasflowins', 'nocallbacks',
+                        'noexceptions', 'nothischainreduction', 'onesourceatatime', 'onecomponentatatime',
+                        'pathspecificresults', 'enablereflection', 'singlejoinpointabstraction')
+
+# redefine for the subset of features that appears in the single-conf results
+flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimination', 'cgalgo',
+                        'dataflowsolver', 'implicit', 'maxcallbackspercomponent', 'maxcallbacksdepth',
+                        'pathalgo', 'staticmode', 'taintwrapper', 'aliasflowins', 'nocallbacks',
+                        'noexceptions', 'enablereflection', 'singlejoinpointabstraction')
+
+features <- flowdroid_features
 perform_test <- function(x, y) {
-  if (class(y) == "integer" || class(y) == "numeric") {
+  # if y is all one class, return -1
+  if (length(unique(y)) == 1) {
+    r <- list()
+    r[["p.value"]] = -1
+    return(r)
+  }
+  if (length(unique(x)) == 1) {
+    r <- list()
+    r[["p.value"]] = -1
+    return(r)
+  }
+  else if (class(y) == "integer" || class(y) == "numeric") {
     if (length(levels(x)) == 2) {
-      return(list(wilcox.test(y~x)))
+      return(wilcox.test(y~x))
     } else {
-      return(list(kruskal.test(y~x)))
+      return(kruskal.test(y~x))
     }
   } else {
-    print(paste("DEBUG: y=", y, " x=", x))
       tbl <- table(y, x)
-      return(list(chisq.test(tbl)))
+      return(chisq.test(tbl))
   }
-  return(l)
 }
 
-for (i in seq(begin_column_independent, end_column_independent)) {
-  tests[names(dataset)[i]] <- perform_test(dataset[,i], dependent)
-  if (sort_by_p_val) tests <- tests[order(sapply(tests, "[[", "p.value"))]
+
+run_tests <- function(ds, fs) {
+  results <- NULL
+for (d in ds) {
+  tests <- list()
+  for (i in fs) {
+    fac = as.factor(d[[1]][[i]])
+    if (length(levels(fac)) > 2 && do_all_pairs) {
+      # get all pairs
+      pairs = combn(levels(fac), 2, simplify = FALSE)
+      for (p in pairs) {
+        fd <- d[[1]][d[[1]][[i]] == p[1] | d[[1]][[i]] == p[2],]
+        # perform test
+        tests[[paste(i, p[1], p[2], sep="_")]] <- perform_test(fd[[i]], fd[[dependent]])
+      }
+    }
+    else {
+      tests[[i]] <- perform_test(d[[1]][[i]], d[[1]][[dependent]])
+    }
+  }
+  if (is.null(results)) {
+    results <- data.frame(row.names = names(tests))
+  }
+  results[[ d[[2]] ]] <- unlist(lapply(tests, `[`, "p.value"))
+}
+  return(results)
 }
 
-for (n in names(tests)) { print(paste(n, ",", tests[[n]]$p.value)) }
+results <- run_tests(datasets, features)
+# for (n in names(tests)) { print(paste(n, ",", tests[[n]]$p.value)) }

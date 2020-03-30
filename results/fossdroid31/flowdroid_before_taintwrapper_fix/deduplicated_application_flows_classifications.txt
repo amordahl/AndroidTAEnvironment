@@ -703,7 +703,7 @@
 	<flow generating_config="config_FlowDroid_2way_2.xml">
 	  <classification>
 	    <result>FALSE</result>
-	    <justification>Already determined capturedUncommittedReceipt to not be tained from database</justification>
+	    <justification>Already determined capturedUncommittedReceipt to not be tainted from database</justification>
 	  </classification>
             <reference type="to">
                 <statement>
@@ -17112,8 +17112,8 @@
         </flow>
         <flow generating_config="config_FlowDroid_2way_3.xml">
 	  <classification>
-	    <result>TAG is not tained</result>
-	    <justification></justification>
+	    <result>FALS</result>
+	    <justification>TAG is not tainted</justification>
 	  </classification>
             <reference type="to">
                 <statement>
@@ -17666,8 +17666,8 @@
         </flow>
         <flow generating_config="config_Flowdroid_aliasalgoptsbased.xml">
 	  <classification>
-	    <result>alarmid is not tainted from getString</result>
-	    <justification></justification>
+	    <result>FALSE</result>
+	    <justification>alarmid is not tainted from getString</justification>
 	  </classification>
             <reference type="to">
                 <statement>

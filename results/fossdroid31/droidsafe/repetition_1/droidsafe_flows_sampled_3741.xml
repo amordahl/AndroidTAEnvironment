@@ -6477,7 +6477,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>which is not tainted, since it's a call from the android framework</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6517,7 +6517,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Exception is not thrown by application but rather by Thread.class</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -6571,7 +6571,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6617,7 +6617,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Exception is not from application code</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6667,7 +6667,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>InterruptedException thrown by Android framework, not by application code</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -6721,7 +6721,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6761,7 +6761,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>too many dataflows for volume</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6801,7 +6801,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>IOException thrown by android framework</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6841,7 +6841,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>name is a constant from SERVICE_NAME</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -6895,7 +6895,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>exception from framework</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -6945,7 +6945,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -6985,7 +6985,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7031,7 +7031,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>Depends on whether m_serviceIntent is tainted which would be determined by solving the last flow marked as unknown</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -7071,7 +7071,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Tracing usages of m_serviceConnection, it looks like tainted data is never added to it. It is just created and then started.</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -7111,7 +7111,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>See previous</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -7151,7 +7151,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>dependent on whether audioVolume is tainted</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7205,7 +7205,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>AudioVolume is written as a constant integer from getProgress</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -7255,7 +7255,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Same as other exception flows, from framework</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7301,7 +7301,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>m_frameSize is not tainted, bytesready has a more complicated flow</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7341,7 +7341,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -7391,7 +7391,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>see previous flow with this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7445,7 +7445,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -7485,7 +7485,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -7531,7 +7531,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7581,7 +7581,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>see previous</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -7627,7 +7627,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Exception thrown from framework</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -7667,7 +7667,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Everything is from the NsdServiceInfo system class</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -7713,7 +7713,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>same as previous exceptions</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7767,7 +7767,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>All constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7807,7 +7807,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7861,7 +7861,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>m_serviceConnection is not tainted</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -7911,7 +7911,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>IOException thrown from framework</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -7957,7 +7957,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8011,7 +8011,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already determined m_serviceIntent is not tainted</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -8057,7 +8057,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already determined m_serviceConnection to be untainted</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -8107,7 +8107,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>depends on other unknown flow</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8147,7 +8147,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>too many parameters</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8197,7 +8197,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Neither of these contain the deviceID. componentName is the name of a component; even if the data is tainted in the component this is just the name. bindRC is a boolean, again, not tainted from the deviceId.</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -8247,7 +8247,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>m_name is a constant: "Channel_00"</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8293,7 +8293,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already investigated</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8339,7 +8339,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -8385,7 +8385,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>depends on whether autovolume is tainted from other unknown flow</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -8425,7 +8425,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>m_serviceIntent already determined to not be tainted from previous study</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8471,7 +8471,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>previously justified</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -8511,7 +8511,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous exceptional flows</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8561,7 +8561,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -8601,7 +8601,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+            <classification><result>FALSE</result><justification>like other exceptional flows</justification></classification></flow>
         <flow generating_config="config_DroidSafe_59.xml">
             <reference type="from">
                 <statement>
@@ -8647,7 +8647,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -8701,7 +8701,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>too many flows for bytesReady</justification></classification></flow>
         <flow generating_config="config_DroidSafe_58.xml">
             <reference type="from">
                 <statement>
@@ -8751,7 +8751,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -10909,7 +10909,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>position is from the android framework. queryResult is obtained from getting the index of the </justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -10949,7 +10949,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>clip is created in the line above by a call to newPlainText, which takes number. Number is obtained from a call to logEntryAdapter.getPhoneNumber, which gets the data at the constant position determined by COLUMN_NUMBER.</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -10989,7 +10989,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>order is read from getText in onItemLongClick, but openSpeedDialPreferenceDialog is not called from that method</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>

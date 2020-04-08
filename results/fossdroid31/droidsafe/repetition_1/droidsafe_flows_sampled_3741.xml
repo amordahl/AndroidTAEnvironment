@@ -10909,7 +10909,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>FALSE</result><justification>position is from the android framework. queryResult is obtained from getting the index of the </justification></classification></flow>
+        <classification><result>FALSE</result><justification>position is from the android framework. queryResult is obtained from getting the index of the position</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11029,7 +11029,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>previously investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11069,7 +11069,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>previously investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11109,7 +11109,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already explained this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11149,7 +11149,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already explained this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11189,7 +11189,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already explained this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -11229,7 +11229,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already explained this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_24.xml">
             <reference type="from">
                 <statement>
@@ -11269,7 +11269,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>context</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11309,7 +11309,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11349,7 +11349,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_11.xml">
             <reference type="from">
                 <statement>
@@ -11389,7 +11389,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>context</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11429,7 +11429,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11469,7 +11469,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11509,7 +11509,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investgated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_61.xml">
             <reference type="from">
                 <statement>
@@ -11549,7 +11549,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>only constants</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11589,7 +11589,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_75.xml">
             <reference type="from">
                 <statement>
@@ -11629,7 +11629,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>previously investigated this flow</justification></classification></flow>
         <flow generating_config="config_DroidSafe_11.xml">
             <reference type="from">
                 <statement>
@@ -11669,7 +11669,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>already investigated this sink</justification></classification></flow>
         <flow generating_config="config_DroidSafe_8.xml">
             <reference type="from">
                 <statement>

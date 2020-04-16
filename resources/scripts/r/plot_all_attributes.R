@@ -5,7 +5,7 @@ library(ggplot2)
 library(scales)
 
 fossdroid <- flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$completed==TRUE,]
-droidbench <- droidbench_data[droidbench_data$completed==TRUE,]
+droidbench <- droidbench_dåata[droidbench_data$completed==TRUE,]
 googleplay <- flowdroid_googleplay_2way[flowdroid_googleplay_2way$completed==TRUE,]
 # 
 # fossdroid <- fossdroid[fossdroid$num_flows>0,]

@@ -1,14 +1,13 @@
 # parameters to change
-datasets <- list(list(droidbench_data[droidbench_data$completed == TRUE,], 'droidbench'),
-                 list(flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$completed==TRUE,], 'fossdroid'),
-                 list(flowdroid_googleplay_2way[flowdroid_googleplay_2way$completed==TRUE,], 'googleplay'))
- 
-datasets <- list(list(googleplay_singleconf,
-                      'googleplay'))               
-dependent <- 'num_flows' # target variable
+datasets <- list(list(droidbench_data[droidbench_data$completed & droidbench_data$total_apk_flows>0,], 'droidbench'),
+                 list(flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$completed & flowdroid_fossdroid_2way$total_apk_flows>0,], 'fossdroid'),
+                 list(flowdroid_googleplay_2way[flowdroid_googleplay_2way$completed & flowdroid_googleplay_2way$total_apk_flows>0,], 'googleplay'))
+
+datasets <- list(list(droidbench_data[droidbench_data$completed,], "droidbench"))
+dependent <- 'apk_precision' # target variable
 tests = list()
 sort_by_p_val = FALSE
-do_all_pairs = TRUE
+do_all_pairs = FALSE
 
 flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimination', 'cgalgo',
                         'dataflowsolver', 'implicit', 'maxcallbackspercomponent', 'maxcallbacksdepth',
@@ -16,11 +15,11 @@ flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimin
                         'noexceptions', 'nothischainreduction', 'onesourceatatime', 'onecomponentatatime',
                         'pathspecificresults', 'enablereflection', 'singlejoinpointabstraction')
 
-# redefine for the subset of features that appears in the single-conf results
-flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimination', 'cgalgo',
-                        'dataflowsolver', 'implicit', 'maxcallbackspercomponent', 'maxcallbacksdepth',
-                        'pathalgo', 'staticmode', 'taintwrapper', 'aliasflowins', 'nocallbacks',
-                        'noexceptions', 'enablereflection', 'singlejoinpointabstraction')
+# # redefine for the subset of features that appears in the single-conf results
+# flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimination', 'cgalgo',
+#                         'dataflowsolver', 'implicit', 'maxcallbackspercomponent', 'maxcallbacksdepth',
+#                         'pathalgo', 'staticmode', 'taintwrapper', 'aliasflowins', 'nocallbacks',
+#                         'noexceptions', 'enablereflection', 'singlejoinpointabstraction')
 
 features <- flowdroid_features
 perform_test <- function(x, y) {

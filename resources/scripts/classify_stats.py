@@ -25,6 +25,8 @@ for k, v in apks.items():
         try:
             classification = f.element.find("classification")
             result = classification.find("result")
+            if result.text.strip() == "":
+                raise AttributeError("empty result")
             if result.text.upper() not in types:
                 types[result.text.upper()] = 0
             if result.text.upper() not in global_types:

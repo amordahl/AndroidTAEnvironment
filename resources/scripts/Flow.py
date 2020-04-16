@@ -1,3 +1,5 @@
+# Copyright 2020 Austin Mordahl
+
 from typing import Dict
 import logging
 #logging.basicConfig(level=logging.DEBUG)
@@ -6,6 +8,9 @@ import re
 import xml.etree.ElementTree as ET
 
 class Flow:
+    """
+    Class that represents a flow returned by AQL.
+    """
 
     register_regex = re.compile(r"\$[a-z]\d+")
 
@@ -24,12 +29,13 @@ class Flow:
             if e.tag == "reference":
                 f = e.find("app").find("file").text
                 e.find("app").find("file").text = os.path.basename(f)
-            
+                
     @classmethod
     def clean(cls, stmt: str) -> str:
         c = Flow.register_regex.sub("", stmt)
+        c = re.sub(r"_ds_method_clone_[\d]*", "", c)
         logging.debug(f"Before clean: {stmt}\nAfter clean: {c}")
-        return c
+        return c.strip()
     
     def get_source_and_sink(self) -> Dict[str, str]:
         result = dict()
@@ -40,12 +46,15 @@ class Flow:
 
         def get_statement_full(a: ET.Element) -> str:
             return a.find("statement").find("statementfull").text
-        
-        result["source_statement_full"] = Flow.clean(get_statement_full(source))
+
+        def get_statement_generic(a: ET.Element) -> str:
+            return a.find("statement").find("statementgeneric").text
+
+        result["source_statement_generic"] = Flow.clean(get_statement_generic(source))
         logging.debug(f"Source: {result}")
         result["source_method"] = source.find("method").text
         result["source_classname"] = source.find("classname").text
-        result["sink_statement_full"] = Flow.clean(get_statement_full(sink))
+        result["sink_statement_generic"] = Flow.clean(get_statement_generic(sink))
         result["sink_method"] = sink.find("method").text
         result["sink_classname"] = sink.find("classname").text
         return result
@@ -68,3 +77,37 @@ class Flow:
     def __hash__(self):
         sas = self.get_source_and_sink()
         return hash((self.get_file(), frozenset(sas.items())))
+
+    def __gt__(self, other):
+        """ Sort by file, then by sink, class, then by sink method, then by sink statement, then by source."""
+        if not isinstance(other, Flow):
+            raise TypeError(f"{other} is not of type Flow")
+
+        if self.get_file() != other.get_file():
+            return self.get_file() > other.get_file()
+        else:
+            d1 = self.get_source_and_sink()
+            d2 = other.get_source_and_sink()
+            if d1['sink_classname'] != d2['sink_classname']:
+                return d1['sink_classname'] > d2['sink_classname']
+            elif d1['sink_method'] != d2['sink_method']:
+                return d1['sink_method'] != d2['sink_method']
+            elif d1['sink_statement_generic'] != d2['sink_statement_generic']:
+                return d1['sink_statement_generic'] != d2['sink_statement_generic']
+            elif d1['sink_classname'] != d2['sink_classname']:
+                return d1['sink_classname'] > d2['sink_classname']
+            elif d1['sink_method'] != d2['sink_method']:
+                return d1['sink_method'] != d2['sink_method']
+            elif d1['sink_statement_generic'] != d2['sink_statement_generic']:
+                return d1['sink_statement_generic'] != d2['sink_statement_generic']
+            else: # completely equal in every way
+                return False
+
+    def __lt__(self, other):
+        return not(self == other) and not(self > other)
+
+    def __le__(self, other):
+        return self == other or self < other
+
+    def __ge__(self, other):
+        return self == other or self > other

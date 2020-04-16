@@ -13,13 +13,13 @@ args = parser.parse_args()
 root = ET.parse(args.input).getroot()
 flows = [Flow(f) for f in root]
 
-apks_to_not_sample = ["org.dyndns.sven",
-                      "com.github.yeriomin",
-                      "ru.henridellal.dialer",
-                      "pt.isec.tp.am",
-                      "org.tuxpaint",
-                      "daniel_32",
-                      "anupam.acrylic"]
+# compute counts:
+counts = dict()
+for f in flows:
+    if f.get_file() not in counts:
+        counts[f.get_file()] = 0
+    counts[f.get_file()] += 1
+
 already_looked_at = list()
 
 new_flows = ET.Element("flows")
@@ -31,7 +31,7 @@ if args.seed is not None:
 
 for f in flows:
     if f.get_file() not in already_looked_at:
-        if True in [f.get_file().startswith(a) for a in apks_to_not_sample]:
+        if counts[f.get_file()] <= 50:
             # add all
             k = [g for g in flows if g.get_file() == f.get_file()]
         else:
@@ -40,8 +40,7 @@ for f in flows:
         [new_flows.append(g.element) for g in k]
         already_looked_at.append(f.get_file())
 
-if len(new_flows) != 408:
-    raise RuntimeError("Wrong number of flows")
+print(f"{len(new_flows)} flows sampled")
 
 new_tree.write(args.output)
 

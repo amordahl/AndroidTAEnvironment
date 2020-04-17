@@ -9232,7 +9232,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>There are many calls to write here but only two have non-constant fields: the first uses system.gettime and the second uses random; neither use getDataColumn</justification></classification></flow>
         <flow generating_config="config_FlowDroid_7.xml">
             <reference type="to">
                 <statement>
@@ -9278,7 +9278,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Same as flow with sink as the write calls in this method</justification></classification></flow>
         <flow generating_config="config_FlowDroid_11.xml">
             <reference type="to">
                 <statement>
@@ -9382,7 +9382,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Every call uses a constant parameter</justification></classification></flow>
         <flow generating_config="config_FlowDroid_28.xml">
             <reference type="to">
                 <statement>
@@ -9432,7 +9432,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>dismissReceiver is newly created in this class, and is never rewritten</justification></classification></flow>
         <flow generating_config="config_FlowDroid_5.xml">
             <reference type="to">
                 <statement>

@@ -9754,7 +9754,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>Hundreds of calls to sort through</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -9824,7 +9824,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>See previous of this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -9878,7 +9878,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>See previous of this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_7.xml">
             <reference type="to">
                 <statement>
@@ -9932,7 +9932,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>See previous of this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_7.xml">
             <reference type="to">
                 <statement>
@@ -9978,7 +9978,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>EXCLUDE</result><justification>Library</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -10028,7 +10028,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>tabid is from getRandom</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -10074,7 +10074,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Only parameter is a constant</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -10120,7 +10120,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>only parameter is constant</justification></classification></flow>
         <flow generating_config="config_FlowDroid_29.xml">
             <reference type="to">
                 <statement>
@@ -10166,7 +10166,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>All intents in this method are created only with constants.</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -10212,7 +10212,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>intent is created only wiht constant activitiy</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -10274,7 +10274,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>intent is created only with constant</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -10366,7 +10366,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>All getstring calls are constants</justification></classification></flow>
         <flow generating_config="config_FlowDroid_105.xml">
             <reference type="to">
                 <statement>
@@ -10412,7 +10412,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>just constant parameter</justification></classification></flow>
         <flow generating_config="config_FlowDroid_7.xml">
             <reference type="to">
                 <statement>
@@ -10508,7 +10508,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>parameter is constant to this specific call</justification></classification></flow>
         <flow generating_config="config_FlowDroid_95.xml">
             <reference type="to">
                 <statement>
@@ -10662,10 +10662,6 @@
 	    <result>UNKNOWN</result>
 	    <justification>Need to investigate both i and selectFile</justification>
 	  </classification>
-            <classification>
-	    <result>UNKNOWN</result>
-	    <justification>Need to investigate both i and selectFile</justification>
-	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_0.xml">
             <reference type="to">
@@ -10716,10 +10712,6 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>Already classified this. Why is it here again?</justification>
-	  </classification>
             <classification>
 	    <result>FALSE (uncertain) </result>
 	    <justification> attachmentsFormatFilters is always set to null or a constant. currentPath is obtained from FileDialogActivity, not from setView().</justification>
@@ -10778,7 +10770,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>This is probably false but again, don't know whether to taint contexts</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -10832,7 +10824,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>See previous flow</justification></classification></flow>
         <flow generating_config="config_FlowDroid_49.xml">
             <reference type="to">
                 <statement>
@@ -10878,7 +10870,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>write() calls this, and we already discussed not being able to classify that because of the huge number of </justification></classification></flow>
         <flow generating_config="config_FlowDroid_105.xml">
             <reference type="to">
                 <statement>
@@ -10924,7 +10916,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>intent in sink is new and doesn't have any data added to it</justification></classification></flow>
         <flow generating_config="config_FlowDroid_29.xml">
             <reference type="to">
                 <statement>
@@ -10975,12 +10967,8 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
-	    <justification>Need to investigate resources.getString</justification>
-	  </classification>
-            <classification>
-	    <result>UNKNOWN</result>
-	    <justification>Need to investigate the call to resources.getString</justification>
+	    <result>FALSE</result>
+	    <justification>all chans are constants or from uri.getString().</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_29.xml">
@@ -11103,8 +11091,8 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
-	    <justification>Need to investigate resources</justification>
+	    <result>FALSE</result>
+	    <justification>Traced back and found that all chans are from constants, or from uri.getString</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_11.xml">
@@ -11313,10 +11301,6 @@
         <classification>
 	    <result>FALSE</result>
 	    <justification>See previous flow.</justification>
-	  </classification>
-            <classification>
-	    <result>FALSE</result>
-	    <justification>See previous</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_88.xml">
@@ -11566,7 +11550,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>See previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -11964,7 +11948,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Already investigated this pair</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml">
             <reference type="to">
                 <statement>
@@ -12026,17 +12010,9 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>Straightfoward</justification>
-	  </classification>
             <classification>
 	    <result>FALSE</result>
 	    <justification>Sink is called before source always </justification>
-	  </classification>
-            <classification>
-	    <result>FALSE</result>
-	    <justification>The call on line 734 doesn't flow into the query call, and neither does the one on 744.</justification>
 	  </classification>
             </flow>
     <flow generating_config="config_FlowDroid_88.xml">
@@ -12399,8 +12375,8 @@
                 </app>
             </reference>
         <classification>
-	    <result>FALSE</result>
-	    <justification>The data generated by the source(s) go straight to the android system to </justification>
+	    <result>UNKNOWN</result>
+	    <justification>Context</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_88.xml">
@@ -12452,7 +12428,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>context</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -12898,7 +12874,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>Context</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -13254,7 +13230,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>context</justification></classification></flow>
         <flow generating_config="config_FlowDroid_88.xml">
             <reference type="to">
                 <statement>
@@ -14072,7 +14048,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>Too complicated of a dataflow for the remoteAddress</justification></classification></flow>
         <flow generating_config="config_FlowDroid_42.xml">
             <reference type="to">
                 <statement>
@@ -14188,7 +14164,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>dataflow too complicated for getRemoteAddress</justification></classification></flow>
         <flow generating_config="config_FlowDroid_29.xml">
             <reference type="to">
                 <statement>
@@ -14246,7 +14222,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>See previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_29.xml">
             <reference type="to">
                 <statement>
@@ -14362,7 +14338,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>audioVolume from intent</justification></classification></flow>
         <flow generating_config="config_FlowDroid_29.xml">
             <reference type="to">
                 <statement>
@@ -14420,7 +14396,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>only constants</justification></classification></flow>
         <flow generating_config="config_FlowDroid_4.xml">
             <reference type="to">
                 <statement>
@@ -14516,7 +14492,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>intent is new</justification></classification></flow>
         <flow generating_config="config_FlowDroid_63.xml">
             <reference type="to">
                 <statement>
@@ -14620,7 +14596,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>Dataflow is too complicated</justification></classification></flow>
         <flow generating_config="config_FlowDroid_63.xml">
             <reference type="to">
                 <statement>
@@ -14778,7 +14754,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>Receipt is created with either transaction ID or with random UUID.</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -14828,7 +14804,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>UNKNOWN</result><justification>transaction.id is too difficult to track</justification></classification></flow>
         <flow generating_config="config_FlowDroid_63.xml">
             <reference type="to">
                 <statement>
@@ -14936,7 +14912,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>onActivityResult is called upon return from an activity that this intent starts. Only one call to startActivityForResult, which gets called with two possible intents; both are implicit intents, and no component accepts these intents</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -14990,7 +14966,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15048,7 +15024,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15102,7 +15078,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous</justification></classification></flow>
     <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15156,7 +15132,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>exception is from the system framework, not from application code</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15214,7 +15190,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous witht this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15268,7 +15244,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15322,7 +15298,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_2.xml">
             <reference type="to">
                 <statement>
@@ -15538,7 +15514,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>all exceptions are thrown from the android framework</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15592,7 +15568,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -15650,7 +15626,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous</justification></classification></flow>
         <flow generating_config="config_FlowDroid_2.xml">
             <reference type="to">
                 <statement>
@@ -15970,7 +15946,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>action is from a call to getAction for the intent, which is never called with any unusual actions</justification></classification></flow>
         <flow generating_config="config_FlowDroid_5.xml">
             <reference type="to">
                 <statement>
@@ -16240,7 +16216,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>see previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_4.xml">
             <reference type="to">
                 <statement>
@@ -16524,7 +16500,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>FALSE</result><justification>intent is created anew and there are two fields, number and speeddialslot. both are directly from the user through ui controls but not from the listed source.</justification></classification></flow>
     <flow generating_config="config_FlowDroid_0.xml">
             <reference type="to">
                 <statement>
@@ -16638,7 +16614,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>BROKEN</result><justification>missing source code</justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml">
             <reference type="to">
                 <statement>
@@ -16704,7 +16680,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>BROKEN</result><justification>missing source code</justification></classification></flow>
         <flow generating_config="config_FlowDroid_42.xml">
             <reference type="to">
                 <statement>
@@ -17912,7 +17888,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>BROKEN</result><justification>incorrectly labeled source code</justification></classification></flow>
         <flow generating_config="config_FlowDroid_35.xml">
             <reference type="to">
                 <statement>
@@ -17990,7 +17966,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>BROKEN</result><justification>incorrectly labeled source code</justification></classification></flow>
     <flow generating_config="config_FlowDroid_0.xml">
             <reference type="to">
                 <statement>
@@ -18368,7 +18344,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result> </result><justification> </justification></classification></flow>
+        <classification><result>BROKEN</result><justification>incorreclty labeled source code</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml">
             <reference type="to">
                 <statement>

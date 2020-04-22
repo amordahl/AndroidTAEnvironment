@@ -4,22 +4,21 @@ library(reshape2)
 library(ggplot2)
 library(scales)
 
-fossdroid <- flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$completed==TRUE,]
-droidbench <- droidbench_dåata[droidbench_data$completed==TRUE,]
+#fossdroid <- flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$completed==TRUE,]
+fossdroid <- flowdroid_fossdroid_2way[flowdroid_fossdroid_2way$time<7200000,]
+droidbench <- droidbench_data[droidbench_data$completed==TRUE,]
 googleplay <- flowdroid_googleplay_2way[flowdroid_googleplay_2way$completed==TRUE,]
 # 
 # fossdroid <- fossdroid[fossdroid$num_flows>0,]
 # droidbench <- droidbench[droidbench$num_flows>0,]
 # googleplay <- googleplay[googleplay$num_flows>0,]
 
-datasets = list(list(fossdroid, "fossdroid"),
-             list(googleplay, "googleplay"),
-             list(droidbench, "droidbench"))
+datasets = list(list(fossdroid, "fossdroid"))
 
 features = rownames(results)
 plots = list()
 
-characteristic = 'num_flows'
+characteristic = 'precision'
 for (f in features) {
   a = data.frame()
   for (d in datasets) {

@@ -4,7 +4,8 @@ datasets <- list(list(droidbench_data[droidbench_data$completed & droidbench_dat
                  list(flowdroid_googleplay_2way[flowdroid_googleplay_2way$completed & flowdroid_googleplay_2way$total_apk_flows>0,], 'googleplay'))
 
 datasets <- list(list(droidbench_data[droidbench_data$completed,], "droidbench"))
-dependent <- 'apk_precision' # target variable
+datasets <- list(list(droidsafe_twoway[droidsafe_twoway$time<7200000,], 'fossdroid'))
+dependent <- 'precision' # target variable
 tests = list()
 sort_by_p_val = FALSE
 do_all_pairs = FALSE
@@ -15,13 +16,19 @@ flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimin
                         'noexceptions', 'nothischainreduction', 'onesourceatatime', 'onecomponentatatime',
                         'pathspecificresults', 'enablereflection', 'singlejoinpointabstraction')
 
+droidsafe_features <- c('apicalldepth','kobjsens','pta','analyzestrings_unfiltered',
+                        'filetransforms','ignoreexceptionflows','ignorenocontextflows',
+                        'implicitflow','imprecisestrings','limitcontextforcomplex','limitcontextforgui',
+                        'limitcontextforstrings','multipassfb','noarrayindex','noclinitcontext',
+                        'noclonestatics','nofallback','nojsa','noscalaropts','nova','preciseinfoflow',
+                        'trackallflows','transfertaintfield','typesforcontext')
 # # redefine for the subset of features that appears in the single-conf results
 # flowdroid_features <- c('aliasalgo', 'aplength', 'callbackanalyzer', 'codeelimination', 'cgalgo',
 #                         'dataflowsolver', 'implicit', 'maxcallbackspercomponent', 'maxcallbacksdepth',
 #                         'pathalgo', 'staticmode', 'taintwrapper', 'aliasflowins', 'nocallbacks',
 #                         'noexceptions', 'enablereflection', 'singlejoinpointabstraction')
 
-features <- flowdroid_features
+features <- droidsafe_features
 perform_test <- function(x, y) {
   # if y is all one class, return -1
   if (length(unique(y)) == 1) {

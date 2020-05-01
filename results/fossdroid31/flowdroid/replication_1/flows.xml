@@ -6812,7 +6812,7 @@
 	    <justification>already investigated</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_2.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>$r4 = virtualinvoke $r1.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r2, $r3, null, null, null)</statementfull>
@@ -6889,12 +6889,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>id is from getlong not query</justification>
+        <classification old_result="false">
+	    <result>UNKNOWN</result>
+	    <justification>id is from getlong not query, but application context makes this unknown</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_2.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>$r4 = virtualinvoke $r1.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r2, $r3, null, null, null)</statementfull>
@@ -6971,12 +6971,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>id is alarmid, which we've already determined is not tainted from query.</justification>
+        <classification old_result="false">
+	    <result>UNKNOWN</result>
+	    <justification>id is alarmid, which we've already determined is not tainted from query. however, the application context makes this unknown</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_3.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_3.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>$r4 = virtualinvoke $r1.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r2, $r3, null, null, null)</statementfull>
@@ -7037,12 +7037,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>id is the only non-constant parameter passed in, and it is always obtained from getLongExtra, not getString.</justification>
+        <classification old_result="false">
+	    <result>UNKNOWN</result>
+	    <justification>id is the only non-constant parameter passed in, and it is always obtained from getLongExtra, not getString. getApplicationContext is making this unknown</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_2.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>$r4 = virtualinvoke $r1.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r2, $r3, null, null, null)</statementfull>
@@ -7103,12 +7103,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>id is not read from getString</justification>
+        <classification old_result="false">
+	    <result>UNKNOWN</result>
+	    <justification>id is not read from getString. This seems to be false except for the getApplicationContext</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="true" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7157,12 +7157,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>enabledalarms</justification>
+        <classification old_result="true">
+	    <result>FALSE</result>
+	    <justification>enabledalarms does not receive dataflow from DBUtil$Settings; it queries the content resolver of the context it receives in onCreate. Track usages of the table URI to see where the data is inserted (AlarmNotificationService.java:54)</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="true" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7227,12 +7227,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>enabledAlarms calls query</justification>
+        <classification old_result="true">
+	    <result>FALSE</result>
+	    <justification>enabledAlarms calls query, but not DBUtil$Settings.query</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="true" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7297,12 +7297,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>enabledAlarms does issue a query</justification>
+        <classification old_result="true">
+	    <result>FALSE</result>
+	    <justification>enabledAlarms does issue a query, but that query does not receive dataflow from the listed source.</justification>
 	  </classification>
             </flow>
-    <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
+    <flow generating_config="config_FlowDroid_0.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7372,7 +7372,7 @@
 	    <justification>enabledalarms</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_2.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r4.&lt;android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])&gt;($r5, $r2, null, null)</statementfull>
@@ -7450,7 +7450,7 @@
 	    <justification>val is freshly created with a constant.</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="true" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7515,12 +7515,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>query is called from within the enabledAlarms method.</justification>
+        <classification old_result="true">
+	    <result>FALSE</result>
+	    <justification>query is called from within the enabledAlarms method, but not from the DBUtil$Alarm method.</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7585,12 +7585,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>enabledAlarms uses query</justification>
+        <classification old_result="true">
+	    <result>UNKNOWN</result>
+	    <justification>Although onRefreshNotifyBar() does not produce tainted dataflow, we cannot rule this out as it uses an application context.</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_2.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r3, "Installed...")</statementfull>
@@ -7659,16 +7659,8 @@
 	    <result>FALSE</result>
 	    <justification>This call to log.i has nothing but constants in it.</justification>
 	  </classification>
-            <classification>
-	    <result>FALSE</result>
-	    <justification>TAG is not tainted</justification>
-	  </classification>
-            <classification>
-	    <result>FALSE</result>
-	    <justification>TAG is not tainted</justification>
-	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_0.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7738,7 +7730,7 @@
 	    <justification>enabledAlarms calls query.</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r7, $r9)</statementfull>
@@ -7803,12 +7795,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>TRUE</result>
-	    <justification>enabledAlarms calls query</justification>
+        <classification old_result="true">
+	    <result>UNKNOWN</result>
+	    <justification>this call uses an application context, which makes it unknown</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_2.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>$r5 = virtualinvoke $r1.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r2, $r3, "enabled == 1", null, null)</statementfull>
@@ -7837,7 +7829,7 @@
                     </parameters>
                 </statement>
                 <method>&lt;com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)&gt;</method>
-                <classname>com.angrydoughnuts.android.alarmclock.SystemMessageReceiver</classname>
+                <classname>com.angrydoughnuts.android.alarmclock.SystemMessageReceiver</classnamee>
                 <app>
                     <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
                     <hashes>
@@ -7890,7 +7882,7 @@
 	    <justification>no variable data here</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;("com.notriddle.budget.LOCK")</statementfull>
@@ -7940,7 +7932,7 @@
 	    <justification>Argument is a constant?</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_5.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_5.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r0.&lt;com.notriddle.budget.PinActivity: void setResult(int,android.content.Intent)&gt;(-1, $r2)</statementfull>
@@ -7994,7 +7986,7 @@
 	    <justification>Parameter is constant. No implicit flow, as mNextActivity, as explained above, is not from findViewById</justification>
 	  </classification>
             </flow>
-    <flow generating_config="config_FlowDroid_2.xml" confirmed="false">
+    <flow generating_config="config_FlowDroid_2.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Budget", $r5)</statementfull>
@@ -8043,12 +8035,12 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>getActivity has two possible parameters taht could be tainted. a.getApplicationContext() is not tainted from getString, and neither is j</justification>
+        <classification old_result="FALSE">
+	    <result>UNKNOWN</result>
+	    <justification>getActivity has two possible parameters taht could be tainted. a.getApplicationContext() makes this unknown, since we don't know how to taint application contexts. J is an intent, also created from the application context.</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_72.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>$r6 = interfaceinvoke $r6.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;("com.notriddle.budget.unlocked", 1)</statementfull>
@@ -8102,7 +8094,7 @@
 	    <justification>This call isn't even in the check function, but looking at calls elsewhere, it does not appear to be tainted. Just looking at the arguments, both are constants, so not tainted. Furthermore, tracking the writings to com.notriddle.budget.unlocked, there is is no taint from findViewById. </justification>
 	  </classification>
             </flow>
-    <flow generating_config="config_FlowDroid_5.xml" confirmed="false">
+    <flow generating_config="config_FlowDroid_5.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Budget", $r5)</statementfull>
@@ -8151,9 +8143,9 @@
                     </hashes>
                 </app>
             </reference>
-        <classification>
-	    <result>FALSE</result>
-	    <justification>mNextActivity is freshly created above.</justification>
+        <classification old_result='false'>
+	    <result>UNKNOWN</result>
+	    <justification>mNextActivity is freshly created above. When we track potential sources of the i.getParcelableExtra, there is an intent created in ensureUnlocked which gets the pJ.</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_7.xml" confirmed="false">
@@ -8203,7 +8195,7 @@
             </reference>
         <classification>
 	    <result>UNKNOWN</result>
-	    <justification>context</justification>
+	    <justification>Context is potentially an application context.</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_7.xml" confirmed="false">
@@ -8306,7 +8298,7 @@
 	    <justification>context</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_7.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_7.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)</statementfull>
@@ -8356,7 +8348,7 @@
 	    <justification>context</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_29.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_29.xml" confirmed="true" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r2.&lt;android.os.Bundle: void putLong(java.lang.String,long)&gt;("manga", $l0)</statementfull>
@@ -8405,7 +8397,9 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>BROKEN</result><justification>Cannot find the source</justification></classification></flow>
+            <classification old_result="broken">
+	      <result>TRUE</result>
+	<justification>Trace dataflow to here on manga reveals that one potential source of manga is the sink </justification></classification></flow>
         <flow generating_config="config_FlowDroid_72.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -8446,7 +8440,7 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
+	    <result>EXCESSIVE</result>
 	    <justification>too many potential flows into interval</justification>
 	  </classification>
             </flow>
@@ -8490,7 +8484,7 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
+	    <result>EXCESSIVE</result>
 	    <justification>similar flow above; too many to investigate</justification>
 	  </classification>
             </flow>
@@ -8539,7 +8533,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>UNKNOWN</result><justification>context</justification></classification></flow>
+        <classification><result>EXCESSIVE</result><justification>Too many potential values of interval to investigate.</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -8589,7 +8583,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>UNKNOWN</result><justification>Way too much possible data flow to threadnumber.</justification></classification></flow>
+        <classification><result>EXCESSIVE</result><justification>Way too much possible data flow to threadnumber.</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -8639,7 +8633,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>UNKNOWN</result><justification>See previous with this sink</justification></classification></flow>
+        <classification><result>EXCESSIVE</result><justification>See previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -8689,7 +8683,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>UNKNOWN</result><justification>See previous with this sink</justification></classification></flow>
+        <classification><result>EXCESSIVE</result><justification>See previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -8739,7 +8733,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>UNKNOWN</result><justification>See previous with this sink</justification></classification></flow>
+        <classification><result>EXCESSIVE</result><justification>See previous with this sink</justification></classification></flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -8794,7 +8788,8 @@
                 </app>
             </reference>
         <classification>
-<result>UNKNOWN</result>
+	  <result>EXCESSIVE</result>
+	  <justification>Lots of dataflow both from the source and into the sink.</justification>
 </classification>
             </flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
@@ -8851,8 +8846,8 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
-	    <justification>Too many to check right now</justification>
+	    <result>EXCESSIVE</result>
+	    <justification>Only possible flow is an implicit flow, but the implicit flow depends on the value of posts[i].number, which is set in too many places to exhaustively look through.</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
@@ -8909,8 +8904,8 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
-	    <justification>Too many calls to copyStream</justification>
+	    <result>EXCESSIVE</result>
+	    <justification>Too many calls to copyStream, and dataflow from the source</justification>
 	  </classification>
             </flow>
         <flow generating_config="config_FlowDroid_107.xml" confirmed="false">
@@ -8966,8 +8961,8 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>UNKNOWN</result><justification>Way too many calls</justification></classification></flow>
-        <flow generating_config="config_FlowDroid_49.xml" confirmed="false">
+        <classification><result>EXCESSIVE</result><justification>Way too many calls</justification></classification></flow>
+        <flow generating_config="config_FlowDroid_49.xml" confirmed="false" changed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r1.&lt;java.io.OutputStream: void write(byte[],int,int)&gt;($r2, 0, $i0)</statementfull>
@@ -9020,7 +9015,7 @@
                     </hashes>
                 </app>
             </reference>
-        <classification><result>FALSE</result><justification>Too many calls.</justification></classification></flow>
+        <classification old_result="false"><result>EXCESSIVE</result><justification>Too many calls to the source method.</justification></classification></flow>
     <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
             <reference type="to">
                 <statement>
@@ -9075,7 +9070,7 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
+	    <result>EXCESSIVE</result>
 	    <justification>Too many to go through</justification>
 	  </classification>
             </flow>
@@ -9133,11 +9128,11 @@
                 </app>
             </reference>
         <classification>
-	    <result>UNKNOWN</result>
+	    <result>EXCESSIVE</result>
 	    <justification>There are a lot of usages of IOUtils.copyStream to go through. Need a better methodology or just a lot of time to classify.</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_0.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;($r4)</statementfull>
@@ -9187,7 +9182,7 @@
 	    <justification>All of the calls to Writer.write are writing constant values, or using boundary which is generated from Random</justification>
 	  </classification>
             </flow>
-        <flow generating_config="config_FlowDroid_0.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_0.xml" confirmed="true">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;($r4)</statementfull>
@@ -9233,7 +9228,7 @@
                 </app>
             </reference>
         <classification><result>FALSE</result><justification>There are many calls to write here but only two have non-constant fields: the first uses system.gettime and the second uses random; neither use getDataColumn</justification></classification></flow>
-        <flow generating_config="config_FlowDroid_7.xml" confirmed="false">
+        <flow generating_config="config_FlowDroid_7.xml" confirmed="false" marker="here">
             <reference type="to">
                 <statement>
                     <statementfull>virtualinvoke $r2.&lt;java.io.OutputStream: void write(byte[])&gt;($r1)</statementfull>

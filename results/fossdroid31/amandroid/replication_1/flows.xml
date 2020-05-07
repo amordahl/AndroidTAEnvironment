@@ -43,6 +43,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification> </justification>
+	    </classification>
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -89,6 +93,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification> </justification>
+	    </classification>
         </flow>
     <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -135,7 +143,11 @@
                     </hashes>
                 </app>
             </reference>
-        </flow>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification> </justification>
+	    </classification>
+    </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
                 <statement>
@@ -181,6 +193,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>getbroadcast does not interact with alarmids. Its result is only used to set an alarm in the android system.</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -227,6 +244,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>alarmid is not tainted by getbroadcast; the result of getbroadcast is only used to schedule the alarm</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -273,6 +295,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>getActivity produced a pending intent. This pending intent does not contain the extra data that is written into d in oncreate.</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -319,6 +346,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>TRUE</result>
+	      <justification>getActivity in ensureUnlocked produces pJ. pJ is put into i with the key com.notriddle.budget.NEXT_ACTIVITY, and then started.</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -365,6 +397,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>There are two parameters passed to Log.d. componentName is from the call to startService, and bindRC is from bindService, neither of which use data from the pending intent.</justification>
+	    </classification>
+
         </flow>
     <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -411,6 +448,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>tick is only used to cancel the alarm. It doesn't flow out of the method.</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -457,6 +499,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>schedule is passed to cancel, and doesn't flow out of this method.</justification>
+	    </classification>
+
         </flow>
     <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -503,6 +550,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>schedule does not flow out removeTrigger</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -549,6 +601,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>FALSE</result>
+	      <justification>service does not flow out of the method</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -595,6 +652,11 @@
                     </hashes>
                 </app>
             </reference>
+	    	    <classification>
+	      <result>BROKEN</result>
+	      <justification> </justification>
+	    </classification>
+
         </flow>
     <flow generating_config="config_Amandroid_default.xml">
             <reference type="from">
@@ -641,5 +703,11 @@
                     </hashes>
                 </app>
             </reference>
-        </flow>
+	    	    <classification>
+	      <result>TRUE</result>
+	      <justification>source is the line right before the sink</justification>
+	    </classification>
+
+    </flow>
+    
     </flows>

@@ -9,7 +9,7 @@ callbackanalyzer (enum): DEFAULT, FAST
 codeelimination (enum): NONE, PROPAGATECONSTS, REMOVECODE
 cgalgo (enum): AUTO, CHA, VTA, RTA, SPARK, GEOM
 dataflowsolver (enum): CONTEXTFLOWSENSITIVE, FLOWINSENSITIVE
-analyzeframeworks (boolean:) TRUE, FALSE
+analyzeframeworks (boolean): TRUE, FALSE
 implicit (enum): NONE, ARRAYONLY, ALL
 maxcallbackspercomponent (int): 1, 50, 80, 90, 100, 110, 120, 150, 200, 600
 maxcallbacksdepth (int): 0, 1, 50, 80, 90, 100, 110, 120, 150, 200, 600

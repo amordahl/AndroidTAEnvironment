@@ -1,7 +1,7 @@
-# ACTS Test Suite Generation: Fri Mar 13 22:57:41 UTC 2020
+# ACTS Test Suite Generation: Mon May 11 20:06:10 UTC 2020
 #  "(don't care)" represents don't care value 
 # Degree of interaction coverage: 2
-# Number of parameters: 21
+# Number of parameters: 22
 # Maximum number of values per parameter: 11
 # Number of configurations: 114
 ------------Test Cases--------------
@@ -15,20 +15,21 @@ Configuration #1:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=0
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=0
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -41,20 +42,21 @@ Configuration #2:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=0
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=0
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -67,20 +69,21 @@ Configuration #3:
 5 = codeelimination=NONE
 6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=0
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=0
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -93,20 +96,21 @@ Configuration #4:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=0
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=0
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -119,20 +123,21 @@ Configuration #5:
 5 = codeelimination=NONE
 6 = cgalgo=GEOM
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=0
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=0
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -145,20 +150,21 @@ Configuration #6:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=0
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=0
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -171,20 +177,21 @@ Configuration #7:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=CHA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=0
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=0
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -197,20 +204,21 @@ Configuration #8:
 5 = codeelimination=NONE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=0
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=0
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -223,20 +231,21 @@ Configuration #9:
 5 = codeelimination=NONE
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=0
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=0
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -249,20 +258,21 @@ Configuration #10:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=0
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=0
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -275,20 +285,21 @@ Configuration #11:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=1
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=1
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -301,20 +312,21 @@ Configuration #12:
 5 = codeelimination=NONE
 6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=1
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=1
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -327,20 +339,21 @@ Configuration #13:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=1
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=1
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -353,20 +366,21 @@ Configuration #14:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=1
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=1
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -379,20 +393,21 @@ Configuration #15:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=1
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=1
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -405,20 +420,21 @@ Configuration #16:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=1
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=1
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -431,20 +447,21 @@ Configuration #17:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=1
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=1
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -457,20 +474,21 @@ Configuration #18:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=1
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=1
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -483,20 +501,21 @@ Configuration #19:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=1
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=1
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -509,20 +528,21 @@ Configuration #20:
 5 = codeelimination=NONE
 6 = cgalgo=VTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=1
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=1
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -535,20 +555,21 @@ Configuration #21:
 5 = codeelimination=NONE
 6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=50
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=50
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -561,20 +582,21 @@ Configuration #22:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=50
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=50
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -587,20 +609,21 @@ Configuration #23:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=GEOM
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=50
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=50
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -613,20 +636,21 @@ Configuration #24:
 5 = codeelimination=NONE
 6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=50
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=50
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -639,20 +663,21 @@ Configuration #25:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=50
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=50
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -665,20 +690,21 @@ Configuration #26:
 5 = codeelimination=NONE
 6 = cgalgo=CHA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=50
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=50
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -691,20 +717,21 @@ Configuration #27:
 5 = codeelimination=NONE
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=50
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=50
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -713,24 +740,25 @@ Configuration #28:
 1 = aliasalgo=PTSBASED
 2 = aliasflowins=TRUE
 3 = aplength=5
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=REMOVECODE
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=50
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=50
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -739,50 +767,52 @@ Configuration #29:
 1 = aliasalgo=NONE
 2 = aliasflowins=FALSE
 3 = aplength=7
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=50
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=50
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #30:
 
 1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=FALSE
+2 = aliasflowins=TRUE
 3 = aplength=10
 4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=50
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=50
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -795,20 +825,21 @@ Configuration #31:
 5 = codeelimination=NONE
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=80
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=80
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -821,20 +852,21 @@ Configuration #32:
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=80
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=80
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -847,20 +879,21 @@ Configuration #33:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=80
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=80
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -869,50 +902,52 @@ Configuration #34:
 1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
 3 = aplength=3
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=80
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=80
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #35:
 
 1 = aliasalgo=PTSBASED
-2 = aliasflowins=FALSE
+2 = aliasflowins=TRUE
 3 = aplength=4
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=NONE
 6 = cgalgo=CHA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=80
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=80
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -925,46 +960,48 @@ Configuration #36:
 5 = codeelimination=NONE
 6 = cgalgo=VTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=80
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=80
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #37:
 
 1 = aliasalgo=NONE
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=7
 4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=80
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=80
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -977,20 +1014,21 @@ Configuration #38:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=CHA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=80
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=80
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -999,50 +1037,52 @@ Configuration #39:
 1 = aliasalgo=LAZY
 2 = aliasflowins=FALSE
 3 = aplength=20
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=VTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=80
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=80
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #40:
 
 1 = aliasalgo=PTSBASED
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=1
 4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=80
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=80
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -1055,20 +1095,21 @@ Configuration #41:
 5 = codeelimination=NONE
 6 = cgalgo=GEOM
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=90
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1081,20 +1122,21 @@ Configuration #42:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=90
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=90
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -1103,24 +1145,25 @@ Configuration #43:
 1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
 3 = aplength=5
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=90
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=90
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
@@ -1129,180 +1172,187 @@ Configuration #44:
 1 = aliasalgo=PTSBASED
 2 = aliasflowins=TRUE
 3 = aplength=7
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=90
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #45:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
 3 = aplength=10
 4 = callbackanalyzer=DEFAULT
 5 = codeelimination=NONE
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=90
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=90
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #46:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=TRUE
+1 = aliasalgo=NONE
+2 = aliasflowins=FALSE
 3 = aplength=20
 4 = callbackanalyzer=FAST
-5 = codeelimination=REMOVECODE
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=90
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #47:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=FALSE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
 3 = aplength=1
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=90
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #48:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=FALSE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
 3 = aplength=2
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=90
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #49:
 
 1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=FALSE
+2 = aliasflowins=TRUE
 3 = aplength=3
 4 = callbackanalyzer=FAST
-5 = codeelimination=PROPAGATECONSTS
+5 = codeelimination=NONE
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=90
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=90
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #50:
 
 1 = aliasalgo=NONE
-2 = aliasflowins=FALSE
+2 = aliasflowins=TRUE
 3 = aplength=4
 4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=90
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1315,20 +1365,21 @@ Configuration #51:
 5 = codeelimination=NONE
 6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=100
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=100
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1341,46 +1392,48 @@ Configuration #52:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=CHA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=100
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=100
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #53:
 
 1 = aliasalgo=NONE
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=10
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=100
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=100
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -1390,179 +1443,186 @@ Configuration #54:
 2 = aliasflowins=TRUE
 3 = aplength=20
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+5 = codeelimination=REMOVECODE
 6 = cgalgo=GEOM
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=100
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=100
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #55:
 
-1 = aliasalgo=LAZY
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=FALSE
 3 = aplength=1
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=100
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=100
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #56:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=TRUE
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
 3 = aplength=2
 4 = callbackanalyzer=FAST
-5 = codeelimination=REMOVECODE
+5 = codeelimination=NONE
 6 = cgalgo=VTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=100
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=100
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #57:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=FALSE
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
 3 = aplength=3
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=AUTO
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=100
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=100
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #58:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=FALSE
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=TRUE
 3 = aplength=4
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=100
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=100
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #59:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=FALSE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
 3 = aplength=5
 4 = callbackanalyzer=FAST
-5 = codeelimination=PROPAGATECONSTS
+5 = codeelimination=NONE
 6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=100
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=100
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #60:
 
-1 = aliasalgo=NONE
+1 = aliasalgo=LAZY
 2 = aliasflowins=FALSE
 3 = aplength=7
 4 = callbackanalyzer=FAST
 5 = codeelimination=NONE
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=100
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=100
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -1575,20 +1635,21 @@ Configuration #61:
 5 = codeelimination=NONE
 6 = cgalgo=VTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=110
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=110
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1601,20 +1662,21 @@ Configuration #62:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=110
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=110
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -1623,24 +1685,25 @@ Configuration #63:
 1 = aliasalgo=NONE
 2 = aliasflowins=FALSE
 3 = aplength=1
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=110
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=110
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1649,102 +1712,106 @@ Configuration #64:
 1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
 3 = aplength=2
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=NONE
 6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=110
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=110
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #65:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=TRUE
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
 3 = aplength=3
 4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=AUTO
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=110
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=110
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #66:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=FALSE
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
 3 = aplength=4
-4 = callbackanalyzer=FAST
-5 = codeelimination=REMOVECODE
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
 6 = cgalgo=GEOM
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=110
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=110
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #67:
 
-1 = aliasalgo=PTSBASED
+1 = aliasalgo=NONE
 2 = aliasflowins=TRUE
 3 = aplength=5
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=REMOVECODE
+5 = codeelimination=NONE
 6 = cgalgo=CHA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=110
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=110
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1754,75 +1821,78 @@ Configuration #68:
 2 = aliasflowins=FALSE
 3 = aplength=7
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
-6 = cgalgo=RTA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=110
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=110
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #69:
 
 1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=10
 4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
-6 = cgalgo=RTA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=110
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+6 = cgalgo=CHA
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=110
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #70:
 
 1 = aliasalgo=PTSBASED
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=20
-4 = callbackanalyzer=FAST
-5 = codeelimination=PROPAGATECONSTS
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
 6 = cgalgo=AUTO
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=110
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=110
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -1835,20 +1905,21 @@ Configuration #71:
 5 = codeelimination=NONE
 6 = cgalgo=CHA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=120
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=120
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -1861,20 +1932,21 @@ Configuration #72:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=120
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=120
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -1886,21 +1958,22 @@ Configuration #73:
 4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=120
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=120
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -1909,180 +1982,187 @@ Configuration #74:
 1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
 3 = aplength=4
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=REMOVECODE
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=120
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=120
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #75:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
 3 = aplength=5
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=PROPAGATECONSTS
+5 = codeelimination=REMOVECODE
 6 = cgalgo=GEOM
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=120
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=120
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #76:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=FALSE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=TRUE
 3 = aplength=7
 4 = callbackanalyzer=DEFAULT
 5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=120
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=120
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #77:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=TRUE
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
 3 = aplength=10
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
-6 = cgalgo=GEOM
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=120
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=120
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #78:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=TRUE
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
 3 = aplength=20
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=REMOVECODE
+5 = codeelimination=NONE
 6 = cgalgo=SPARK
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=120
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=120
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #79:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=FALSE
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
 3 = aplength=1
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
-6 = cgalgo=RTA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=120
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+6 = cgalgo=GEOM
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=120
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #80:
 
-1 = aliasalgo=PTSBASED
+1 = aliasalgo=NONE
 2 = aliasflowins=TRUE
 3 = aplength=2
-4 = callbackanalyzer=FAST
-5 = codeelimination=NONE
-6 = cgalgo=CHA
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=120
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=120
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -2095,20 +2175,21 @@ Configuration #81:
 5 = codeelimination=NONE
 6 = cgalgo=CHA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -2121,20 +2202,21 @@ Configuration #82:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=150
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=150
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -2143,206 +2225,214 @@ Configuration #83:
 1 = aliasalgo=NONE
 2 = aliasflowins=FALSE
 3 = aplength=5
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=150
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #84:
 
 1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=FALSE
+2 = aliasflowins=TRUE
 3 = aplength=7
 4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #85:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=FALSE
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
 3 = aplength=10
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=PROPAGATECONSTS
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
 6 = cgalgo=GEOM
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #86:
 
-1 = aliasalgo=FLOWSENSITIVE
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=TRUE
 3 = aplength=20
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=150
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #87:
 
-1 = aliasalgo=NONE
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=TRUE
 3 = aplength=1
 4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
-6 = cgalgo=GEOM
+6 = cgalgo=CHA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #88:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
 3 = aplength=2
 4 = callbackanalyzer=FAST
-5 = codeelimination=REMOVECODE
-6 = cgalgo=AUTO
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+5 = codeelimination=PROPAGATECONSTS
+6 = cgalgo=VTA
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #89:
 
-1 = aliasalgo=LAZY
-2 = aliasflowins=FALSE
-3 = aplength=1
-4 = callbackanalyzer=DEFAULT
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
+3 = aplength=4
+4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
-6 = cgalgo=SPARK
+6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=150
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=150
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #90:
 
-1 = aliasalgo=LAZY
+1 = aliasalgo=NONE
 2 = aliasflowins=FALSE
-3 = aplength=20
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+3 = aplength=10
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=150
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=150
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -2355,20 +2445,21 @@ Configuration #91:
 5 = codeelimination=NONE
 6 = cgalgo=CHA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=200
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=200
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -2381,20 +2472,21 @@ Configuration #92:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=200
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=200
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -2403,102 +2495,106 @@ Configuration #93:
 1 = aliasalgo=NONE
 2 = aliasflowins=TRUE
 3 = aplength=5
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=200
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=200
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #94:
 
 1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=7
-4 = callbackanalyzer=FAST
-5 = codeelimination=NONE
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
 6 = cgalgo=SPARK
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=200
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=200
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #95:
 
 1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+2 = aliasflowins=FALSE
 3 = aplength=10
-4 = callbackanalyzer=FAST
-5 = codeelimination=PROPAGATECONSTS
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=NONE
 6 = cgalgo=GEOM
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=200
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=200
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #96:
 
 1 = aliasalgo=NONE
-2 = aliasflowins=FALSE
+2 = aliasflowins=TRUE
 3 = aplength=20
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
 6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=200
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=200
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -2509,100 +2605,104 @@ Configuration #97:
 3 = aplength=1
 4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
-6 = cgalgo=VTA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=200
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+6 = cgalgo=AUTO
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=200
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #98:
 
-1 = aliasalgo=FLOWSENSITIVE
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=TRUE
 3 = aplength=2
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=REMOVECODE
-6 = cgalgo=VTA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=200
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+6 = cgalgo=RTA
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=200
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #99:
 
-1 = aliasalgo=NONE
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=FALSE
-3 = aplength=7
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
-6 = cgalgo=GEOM
+3 = aplength=1
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONSTS
+6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=200
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=200
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
 Configuration #100:
 
-1 = aliasalgo=PTSBASED
+1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
-3 = aplength=20
-4 = callbackanalyzer=FAST
-5 = codeelimination=PROPAGATECONSTS
-6 = cgalgo=GEOM
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=200
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+3 = aplength=7
+4 = callbackanalyzer=DEFAULT
+5 = codeelimination=REMOVECODE
+6 = cgalgo=RTA
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=200
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -2615,20 +2715,21 @@ Configuration #101:
 5 = codeelimination=NONE
 6 = cgalgo=CHA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=1
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=1
+11 = maxcallbacksdepth=600
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
@@ -2641,20 +2742,21 @@ Configuration #102:
 5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=50
-10 = maxcallbacksdepth=600
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=50
+11 = maxcallbacksdepth=600
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
@@ -2663,24 +2765,25 @@ Configuration #103:
 1 = aliasalgo=NONE
 2 = aliasflowins=FALSE
 3 = aplength=5
-4 = callbackanalyzer=DEFAULT
+4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=NONE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=600
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 
 -------------------------------------
 
@@ -2689,284 +2792,295 @@ Configuration #104:
 1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
 3 = aplength=7
-4 = callbackanalyzer=FAST
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=REMOVECODE
 6 = cgalgo=SPARK
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=600
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #105:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=FALSE
+1 = aliasalgo=NONE
+2 = aliasflowins=TRUE
 3 = aplength=10
 4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=GEOM
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=600
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #106:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
+1 = aliasalgo=LAZY
+2 = aliasflowins=FALSE
 3 = aplength=20
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=REMOVECODE
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=AUTO
 7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=600
-11 = nocallbacks=TRUE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=600
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=NONE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #107:
 
-1 = aliasalgo=LAZY
-2 = aliasflowins=TRUE
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
 3 = aplength=1
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=PROPAGATECONSTS
-6 = cgalgo=GEOM
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
+6 = cgalgo=AUTO
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=120
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=SOURCESONLY
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=DEFAULT
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=120
+11 = maxcallbacksdepth=600
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #108:
 
-1 = aliasalgo=NONE
-2 = aliasflowins=TRUE
+1 = aliasalgo=FLOWSENSITIVE
+2 = aliasflowins=FALSE
 3 = aplength=2
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=150
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULTFALLBACK
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=150
+11 = maxcallbacksdepth=600
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #109:
 
-1 = aliasalgo=LAZY
-2 = aliasflowins=TRUE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
 3 = aplength=5
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
-6 = cgalgo=RTA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=200
-10 = maxcallbacksdepth=600
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWINSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+4 = callbackanalyzer=FAST
+5 = codeelimination=PROPAGATECONSTS
+6 = cgalgo=SPARK
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=200
+11 = maxcallbacksdepth=600
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWSENSITIVE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #110:
 
-1 = aliasalgo=PTSBASED
+1 = aliasalgo=FLOWSENSITIVE
 2 = aliasflowins=TRUE
-3 = aplength=1
+3 = aplength=4
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=REMOVECODE
-6 = cgalgo=GEOM
+5 = codeelimination=PROPAGATECONSTS
+6 = cgalgo=RTA
 7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ARRAYONLY
-9 = maxcallbackspercomponent=600
-10 = maxcallbacksdepth=600
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=600
+11 = maxcallbacksdepth=600
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=FALSE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #111:
 
-1 = aliasalgo=PTSBASED
-2 = aliasflowins=FALSE
+1 = aliasalgo=LAZY
+2 = aliasflowins=TRUE
 3 = aplength=7
 4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=CHA
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=ALL
-9 = maxcallbackspercomponent=90
-10 = maxcallbacksdepth=90
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=TRUE
-19 = singlejoinpointabstraction=FALSE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=90
+11 = maxcallbacksdepth=90
+12 = nocallbacks=FALSE
+13 = noexceptions=TRUE
+14 = nothischainreduction=FALSE
+15 = pathalgo=CONTEXTSENSITIVE
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 
 Configuration #112:
 
-1 = aliasalgo=FLOWSENSITIVE
-2 = aliasflowins=TRUE
-3 = aplength=20
-4 = callbackanalyzer=DEFAULT
-5 = codeelimination=NONE
+1 = aliasalgo=PTSBASED
+2 = aliasflowins=FALSE
+3 = aplength=2
+4 = callbackanalyzer=FAST
+5 = codeelimination=REMOVECODE
 6 = cgalgo=VTA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=80
-10 = maxcallbacksdepth=80
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=ALL
+10 = maxcallbackspercomponent=80
+11 = maxcallbacksdepth=1
+12 = nocallbacks=TRUE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=CONTEXTINSENSITIVE
+16 = onesourceatatime=TRUE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=FALSE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULTFALLBACK
 
 -------------------------------------
 
 Configuration #113:
 
-1 = aliasalgo=FLOWSENSITIVE
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=FALSE
-3 = aplength=5
-4 = callbackanalyzer=FAST
+3 = aplength=1
+4 = callbackanalyzer=DEFAULT
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=RTA
-7 = dataflowsolver=CONTEXTFLOWSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=110
-10 = maxcallbacksdepth=50
-11 = nocallbacks=FALSE
-12 = noexceptions=TRUE
-13 = nothischainreduction=TRUE
-14 = pathalgo=CONTEXTINSENSITIVE
-15 = onesourceatatime=TRUE
-16 = onecomponentatatime=TRUE
-17 = pathspecificresults=FALSE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=CONTEXTFLOWSENSITIVE
-21 = taintwrapper=NONE
+7 = dataflowsolver=FLOWINSENSITIVE
+8 = analyzeframeworks=TRUE
+9 = implicit=NONE
+10 = maxcallbackspercomponent=110
+11 = maxcallbacksdepth=80
+12 = nocallbacks=FALSE
+13 = noexceptions=FALSE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=TRUE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=TRUE
+21 = staticmode=CONTEXTFLOWINSENSITIVE
+22 = taintwrapper=NONE
 
 -------------------------------------
 
 Configuration #114:
 
-1 = aliasalgo=FLOWSENSITIVE
+1 = aliasalgo=PTSBASED
 2 = aliasflowins=TRUE
-3 = aplength=1
-4 = callbackanalyzer=DEFAULT
+3 = aplength=5
+4 = callbackanalyzer=FAST
 5 = codeelimination=PROPAGATECONSTS
 6 = cgalgo=SPARK
-7 = dataflowsolver=FLOWINSENSITIVE
-8 = implicit=NONE
-9 = maxcallbackspercomponent=100
-10 = maxcallbacksdepth=600
-11 = nocallbacks=TRUE
-12 = noexceptions=FALSE
-13 = nothischainreduction=FALSE
-14 = pathalgo=CONTEXTSENSITIVE
-15 = onesourceatatime=FALSE
-16 = onecomponentatatime=FALSE
-17 = pathspecificresults=TRUE
-18 = enablereflection=FALSE
-19 = singlejoinpointabstraction=TRUE
-20 = staticmode=NONE
-21 = taintwrapper=DEFAULT
+7 = dataflowsolver=CONTEXTFLOWSENSITIVE
+8 = analyzeframeworks=FALSE
+9 = implicit=ARRAYONLY
+10 = maxcallbackspercomponent=100
+11 = maxcallbacksdepth=50
+12 = nocallbacks=TRUE
+13 = noexceptions=TRUE
+14 = nothischainreduction=TRUE
+15 = pathalgo=SOURCESONLY
+16 = onesourceatatime=FALSE
+17 = onecomponentatatime=FALSE
+18 = pathspecificresults=TRUE
+19 = enablereflection=TRUE
+20 = singlejoinpointabstraction=FALSE
+21 = staticmode=NONE
+22 = taintwrapper=DEFAULT
 
 -------------------------------------
 

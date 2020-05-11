@@ -1,0 +1,26 @@
+[System]
+Name: FlowDroid
+
+[Parameter]
+aliasalgo (enum): NONE, FLOWSENSITIVE, PTSBASED, LAZY
+aliasflowins (boolean): TRUE, FALSE
+aplength (int): 1, 2, 3, 4, 5, 7, 10, 20
+callbackanalyzer (enum): DEFAULT, FAST
+codeelimination (enum): NONE, PROPAGATECONSTS, REMOVECODE
+cgalgo (enum): AUTO, CHA, VTA, RTA, SPARK, GEOM
+dataflowsolver (enum): CONTEXTFLOWSENSITIVE, FLOWINSENSITIVE
+analyzeframeworks (boolean:) TRUE, FALSE
+implicit (enum): NONE, ARRAYONLY, ALL
+maxcallbackspercomponent (int): 1, 50, 80, 90, 100, 110, 120, 150, 200, 600
+maxcallbacksdepth (int): 0, 1, 50, 80, 90, 100, 110, 120, 150, 200, 600
+nocallbacks (boolean): TRUE, FALSE
+noexceptions (boolean): TRUE, FALSE
+nothischainreduction (boolean): TRUE, FALSE
+pathalgo (enum): CONTEXTSENSITIVE, CONTEXTINSENSITIVE, SOURCESONLY
+onesourceatatime (boolean): TRUE, FALSE
+onecomponentatatime (boolean): TRUE, FALSE
+pathspecificresults (boolean): TRUE, FALSE
+enablereflection (boolean): TRUE, FALSE
+singlejoinpointabstraction (boolean): TRUE, FALSE
+staticmode (enum): CONTEXTFLOWSENSITIVE, CONTEXTFLOWINSENSITIVE, NONE
+taintwrapper (enum): NONE, EASY -t /home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt, DEFAULT, DEFAULTFALLBACK

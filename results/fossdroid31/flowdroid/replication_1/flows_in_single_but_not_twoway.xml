@@ -47,6 +47,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>getString(2) produces cached_numer_label which gets put into the Calls content resolver with the label CACHED_NUMBER_LABEL. The sink writes phone number, which is from the intent that created this activity in DialerActivity. In turn, this phone number is from SelectNumberDialog, which obtains it from a View, not from the CALLS content resolver.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -91,6 +95,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -135,6 +143,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -179,6 +191,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -229,6 +245,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>onSaveInstanceState puts in the middle value, which is the attachementHash. AttachmentHash can come from the GalleryInitResult constructor with parcel, where hash is the second thing read.Otherise, the middle element is the attachmentHash from initData. In initData, it seems that attachmentHash is put from EXTRA_SAVED_ATTACHMENTHASH, which is from the savedinstance bundle. it can also be obtained from initResult, which receives the attachment hash from an android parcel (Inter-process communication). I think this is very likely a false positive but I can't confirm with confidence.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -273,6 +293,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -317,6 +341,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -379,6 +407,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>three potential tainted fields: hash (from EXTRA_PAGE_HASH), boardModel (from EXTRA_BOARD_MODEL), and sendPostModel (from EXTRA_SEND_POST_MODEL). all three are read form the intent sent to this class. Intents are sent from the following playes: 1) MainActivity:oncreate, 2) ShareActivity.onListItemClick, 3) PostingService.PostingTask.run(), and 4) BoardFragment.openPostForm. 1) puts in all of that information from the intent sent to mainActivity as a broadcast, which is sent from PostingService. the three params are set in the constructor of posting task, which the one call to puts info from an intent. One of these intents is directly from the source so this is circular. the other doesn't put this info. 2) puts in the data from onListItemClick. too complicated to trace dataflow back through list items.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -445,6 +477,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>dataflow is too complicated to classify with confidence</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -495,6 +531,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>dataflow is too complicated to classify with confidence</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -545,6 +585,11 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	    <result>FALSE</result>
+	      <justification>getstring flows into phoneNumber which does not flow out of the sink method.</justification>
+	    </classification>
+
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -611,6 +656,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification>both c and c2 come from query. C is used to get cachedName and number. c2 is used for updating the calls table. We already investigated and learned that onSavedInstanceState is not tainted with data from calls.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -661,6 +710,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>no variable dataflow into this method.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -707,6 +760,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>All calls to sendBroadcast in the sink method only use constant data</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -757,6 +814,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Dataflow is too complicated around sink</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -803,6 +864,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>All sendbroadcasts use only constant data</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -853,6 +918,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>phoneNumber is tainted from the source, which flows into startquery. it is passed as the cookie which is passed to onQueryComplete. since the key is TOKEN_SHOW_CONTACT_FOR_NUMBER, we go to the relevant case block. cookie flows into addPhoneNumber. phoneNumber gets put into an intent that gets sent to SHOW_OR_CREATE_CONTACT. Another call to getString is in the else branch of onItemLongClick. lookupkey again gets sent as a cookie, and then to ContactViewDialog. Flows into mLookupKey. in onCreate, and thdn into the tag of R.id.ContactViewDialogName. The tag gets read back and returned as lookupkey, which then flows into viewContact. after the contactviewdialog returns. It then flows into an implicit intent with ACTION_VIEW. Parse intent only leaks the data if the URI is a telephone number.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -903,6 +972,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Already investigated the flow out of this source.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -949,6 +1022,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Too many flows into the sink</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -999,6 +1076,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too many sources</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -1049,6 +1130,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Only constant data is written</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -1095,6 +1180,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>All calls to sendBroadcast use only constant data.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -1141,6 +1230,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too much flow into the sink</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength3.xml">
             <reference type="to">
@@ -1187,6 +1280,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Only constant data flows into sink</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -1253,6 +1350,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>this source gets phone types and puts it in the call table. tracing phonetypes, it comes from the contactviewdialog class, which is calle with an intent from dialeractivity. it is read from the data content resolver, and not from the calls one.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -1303,6 +1404,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Previously investigated</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -1347,6 +1452,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification></justification>
+	    </classification>
         </flow>
     <flow generating_config="config_FlowDroid_cgalgorta.xml">
             <reference type="to">
@@ -1393,6 +1502,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too much dataflow into boardModel and attachmentModel</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -1439,6 +1552,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>only constants flow into sendbroadcast</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -1489,6 +1606,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Too much dataflow into the sink</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -1539,6 +1660,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>all types are constants</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aplength1.xml">
             <reference type="to">
@@ -1589,6 +1714,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>TRUE</result>
+	      <justification>In transactionFragment, transaction is read on 110 from toTransaction, from which the id is extracted and sent through a bundle</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgoptsbased.xml">
             <reference type="to">
@@ -1639,6 +1768,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>In two-way flows, alarmid was determined not to be tainted from alarmid</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgoptsbased.xml">
             <reference type="to">
@@ -1689,6 +1822,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>TRUE</result>
+	      <justification>receipt is read from a view which has its text set from transaction in TransactionViewActivity:263</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgoptsbased.xml">
             <reference type="to">
@@ -1739,6 +1876,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>alarmid is from newAlarm, not from DbUtil$Alarm.</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_cgalgorta.xml">
             <reference type="to">
@@ -1785,6 +1926,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too much dataflow into the source</justification>
+	    </classification>
         </flow>
     <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
             <reference type="to">
@@ -1835,6 +1980,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Too much dataflow to investigate</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_cgalgoauto.xml">
             <reference type="to">
@@ -1881,6 +2030,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>new intent is passed, only constructed with constant data</justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_implicitall.xml">
             <reference type="to">
@@ -1931,6 +2084,10 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
             <reference type="to">
@@ -1981,5 +2138,9 @@
                     </hashes>
                 </app>
             </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification></justification>
+	    </classification>
         </flow>
         </flows>

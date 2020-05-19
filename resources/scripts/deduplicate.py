@@ -20,6 +20,7 @@ result = set()
 for f in tqdm(root):
     flow = Flow(f)
     result.add(flow)
+result = sorted(result)
 
 print(f"Finished deduplicating. In total, {len(result)} flows are unique.")
 print(f"Writing to file...")

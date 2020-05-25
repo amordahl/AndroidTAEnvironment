@@ -94,12 +94,12 @@ class Flow:
                 return d1['sink_method'] != d2['sink_method']
             elif d1['sink_statement_generic'] != d2['sink_statement_generic']:
                 return d1['sink_statement_generic'] != d2['sink_statement_generic']
-            elif d1['sink_classname'] != d2['sink_classname']:
-                return d1['sink_classname'] > d2['sink_classname']
-            elif d1['sink_method'] != d2['sink_method']:
-                return d1['sink_method'] != d2['sink_method']
-            elif d1['sink_statement_generic'] != d2['sink_statement_generic']:
-                return d1['sink_statement_generic'] != d2['sink_statement_generic']
+            elif d1['source_classname'] != d2['source_classname']:
+                return d1['source_classname'] > d2['source_classname']
+            elif d1['source_method'] != d2['source_method']:
+                return d1['source_method'] != d2['source_method']
+            elif d1['source_statement_generic'] != d2['source_statement_generic']:
+                return d1['source_statement_generic'] != d2['source_statement_generic']
             else: # completely equal in every way
                 return False
 

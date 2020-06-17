@@ -1,0 +1,2146 @@
+<flows><flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("phoneNumber", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneNumber"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectSpeedDialSlotDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectSpeedDialSlotDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r9 = interfaceinvoke $r12.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>getString(2) produces cached_numer_label which gets put into the Calls content resolver with the label CACHED_NUMBER_LABEL. The sink writes phone number, which is from the intent that created this activity in DialerActivity. In turn, this phone number is from SelectNumberDialog, which obtains it from a View, not from the CALLS content resolver.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r2.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;("locationActive", $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"locationActive"</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void d(android.content.Context,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d2 = virtualinvoke $r4.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r2.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;("locationActive", $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"locationActive"</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void d(android.content.Context,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d3 = virtualinvoke $r4.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r2, $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void h(android.content.Context,int,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d2 = virtualinvoke $r4.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"attachmenthash"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.gallery.GalleryActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>onSaveInstanceState puts in the middle value, which is the attachementHash. AttachmentHash can come from the GalleryInitResult constructor with parcel, where hash is the second thing read.Otherise, the middle element is the attachmentHash from initData. In initData, it seems that attachmentHash is put from EXTRA_SAVED_ATTACHMENTHASH, which is from the savedinstance bundle. it can also be obtained from initResult, which receives the attachment hash from an android parcel (Inter-process communication). I think this is very likely a false positive but I can't confirm with confidence.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)&gt;($r2, $i0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void n(android.content.Context,int,int)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d2 = virtualinvoke $r4.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r2, $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void h(android.content.Context,int,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d3 = virtualinvoke $r4.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void send()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.posting.PostFormActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r1, $r4, $r2, $r3, null)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r4</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])&gt;</method>
+                <classname>nya.miku.wishmaster.lib.UriFileUtils</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>three potential tainted fields: hash (from EXTRA_PAGE_HASH), boardModel (from EXTRA_BOARD_MODEL), and sendPostModel (from EXTRA_SEND_POST_MODEL). all three are read form the intent sent to this class. Intents are sent from the following playes: 1) MainActivity:oncreate, 2) ShareActivity.onListItemClick, 3) PostingService.PostingTask.run(), and 4) BoardFragment.openPostForm. 1) puts in all of that information from the intent sent to mainActivity as a broadcast, which is sent from PostingService. the three params are set in the constructor of posting task, which the one call to puts info from an intent. One of these intents is directly from the source so this is circular. the other doesn't put this info. 2) puts in the data from onListItemClick. too complicated to trace dataflow back through list items.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.posting.PostFormActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r1, $r4, $r2, $r3, null)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r4</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])&gt;</method>
+                <classname>nya.miku.wishmaster.lib.UriFileUtils</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>dataflow is too complicated to classify with confidence</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)&gt;($r2, 2)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.posting.PostFormActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r1 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>dataflow is too complicated to classify with confidence</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)&gt;("phoneTypes", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneTypes"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.util.ArrayList</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectNumberDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectNumberDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = interfaceinvoke $r5.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	    <result>FALSE</result>
+	      <justification>getstring flows into phoneNumber which does not flow out of the sink method.</justification>
+	    </classification>
+
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("phoneNumber", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneNumber"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectSpeedDialSlotDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectSpeedDialSlotDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r12 = virtualinvoke $r5.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r6, $r3, null, null, null)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification>both c and c2 come from query. C is used to get cachedName and number. c2 is used for updating the calls table. We already investigated and learned that onSavedInstanceState is not tainted with data from calls.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)&gt;($r8, $r9)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.BroadcastReceiver</type>
+                            <value>$r8</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.content.IntentFilter</type>
+                            <value>$r9</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: void onCreate()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.tabs.TabsTrackerService</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = interfaceinvoke $r4.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: java.util.List getFavorites()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>no variable dataflow into this method.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r13.&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)&gt;($r8)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r8</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>All calls to sendBroadcast in the sink method only use constant data</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"attachmenthash"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.gallery.GalleryActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r1 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Dataflow is too complicated around sink</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r13.&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)&gt;($r8)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r8</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)&gt;(2131361948)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2131361948</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.posting.PostFormActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>All sendbroadcasts use only constant data</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("phoneNumber", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneNumber"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectSpeedDialSlotDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectSpeedDialSlotDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = interfaceinvoke $r5.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>phoneNumber is tainted from the source, which flows into startquery. it is passed as the cookie which is passed to onQueryComplete. since the key is TOKEN_SHOW_CONTACT_FOR_NUMBER, we go to the relevant case block. cookie flows into addPhoneNumber. phoneNumber gets put into an intent that gets sent to SHOW_OR_CREATE_CONTACT. Another call to getString is in the else branch of onItemLongClick. lookupkey again gets sent as a cookie, and then to ContactViewDialog. Flows into mLookupKey. in onCreate, and thdn into the tag of R.id.ContactViewDialogName. The tag gets read back and returned as lookupkey, which then flows into viewContact. after the contactviewdialog returns. It then flows into an implicit intent with ACTION_VIEW. Parse intent only leaks the data if the URI is a telephone number.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)&gt;("phoneTypes", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneTypes"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.util.ArrayList</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectNumberDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectNumberDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r9 = interfaceinvoke $r12.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Already investigated the flow out of this source.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;("text/html;\r\n\tcharset=\"utf-8\"")</statementfull>
+                    <statementgeneric>java.io.Writer: void write(java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"text/html;\r\n\tcharset=\"utf-8\""</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.containers.WriteableMHTML: java.io.OutputStream openStream(java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.containers.WriteableMHTML</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r1 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Too many flows into the sink</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"attachmenthash"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.gallery.GalleryActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)&gt;(2131361948)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2131361948</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.posting.PostFormActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too many sources</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putBoolean(java.lang.String,boolean)&gt;("update", 1)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"update"</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.TransactionViewActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;</method>
+                <classname>protect.budgetwatch.TransactionViewActivity</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.Transaction: protect.budgetwatch.Transaction toTransaction(android.database.Cursor)&gt;</method>
+                <classname>protect.budgetwatch.Transaction</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Only constant data is written</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r13.&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)&gt;($r8)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r8</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r1 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>All calls to sendBroadcast use only constant data.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r3.&lt;java.io.Writer: void write(java.lang.String)&gt;("text/html;\r\n\tcharset=\"utf-8\"")</statementfull>
+                    <statementgeneric>java.io.Writer: void write(java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"text/html;\r\n\tcharset=\"utf-8\""</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.containers.WriteableMHTML: java.io.OutputStream openStream(java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.containers.WriteableMHTML</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too much flow into the sink</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength3.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService: void sendBroadcast(android.content.Intent)&gt;($r5)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.tabs.TabsTrackerService: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.tabs.TabsTrackerService$TrackerLoop: void run()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.tabs.TabsTrackerService$TrackerLoop</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Only constant data flows into sink</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)&gt;("phoneTypes", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneTypes"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.util.ArrayList</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectNumberDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectNumberDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r12 = virtualinvoke $r5.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r6, $r3, null, null, null)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>this source gets phone types and puts it in the call table. tracing phonetypes, it comes from the contactviewdialog class, which is calle with an intent from dialeractivity. it is read from the data content resolver, and not from the calls one.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("phoneNumber", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneNumber"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectSpeedDialSlotDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectSpeedDialSlotDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = interfaceinvoke $r5.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>Previously investigated</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)&gt;($r2, $i0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void n(android.content.Context,int,int)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d3 = virtualinvoke $r4.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+    <flow generating_config="config_FlowDroid_cgalgorta.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: void downloadAttachment()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.gallery.GalleryActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r1 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too much dataflow into boardModel and attachmentModel</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r13.&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)&gt;($r8)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r8</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])&gt;</method>
+                <classname>nya.miku.wishmaster.lib.UriFileUtils</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>only constants flow into sendbroadcast</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("attachmenthash", $r5)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"attachmenthash"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.gallery.GalleryActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])&gt;</method>
+                <classname>nya.miku.wishmaster.lib.UriFileUtils</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Too much dataflow into the sink</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putInt(java.lang.String,int)&gt;("type", $i0)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putInt(java.lang.String,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"type"</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.TransactionViewActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;</method>
+                <classname>protect.budgetwatch.TransactionViewActivity</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.Transaction: protect.budgetwatch.Transaction toTransaction(android.database.Cursor)&gt;</method>
+                <classname>protect.budgetwatch.Transaction</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>all types are constants</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aplength1.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"BudgetWatch"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.TransactionViewActivity$5: void onClick(android.content.DialogInterface,int)&gt;</method>
+                <classname>protect.budgetwatch.TransactionViewActivity$5</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.Transaction: protect.budgetwatch.Transaction toTransaction(android.database.Cursor)&gt;</method>
+                <classname>protect.budgetwatch.Transaction</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>TRUE</result>
+	      <justification>In transactionFragment, transaction is read on 110 from toTransaction, from which the id is extracted and sent through a bundle</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgoptsbased.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r5, $r7)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r7</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm(android.content.Context,int)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void &lt;init&gt;(android.database.Cursor)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.DbUtil$Alarm</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>In two-way flows, alarmid was determined not to be tainted from alarmid</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgoptsbased.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;("receipt", $r8)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"receipt"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r8</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.TransactionViewActivity$4: void onClick(android.view.View)&gt;</method>
+                <classname>protect.budgetwatch.TransactionViewActivity$4</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.Transaction: protect.budgetwatch.Transaction toTransaction(android.database.Cursor)&gt;</method>
+                <classname>protect.budgetwatch.Transaction</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>TRUE</result>
+	      <justification>receipt is read from a view which has its text set from transaction in TransactionViewActivity:263</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgoptsbased.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;($r6, $r10)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r10</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void &lt;init&gt;(android.database.Cursor)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.DbUtil$Alarm</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>alarmid is from newAlarm, not from DbUtil$Alarm.</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_cgalgorta.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.gallery.GalleryActivity: void downloadAttachment()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.gallery.GalleryActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>too much dataflow into the source</justification>
+	    </classification>
+        </flow>
+    <flow generating_config="config_FlowDroid_dataflowsolverfins.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;android.os.Bundle: void putLong(java.lang.String,long)&gt;("TabModelId", $l0)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putLong(java.lang.String,long)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"TabModelId"</value>
+                        </parameter>
+                        <parameter>
+                            <type>long</type>
+                            <value>$l0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.BoardsListFragment: nya.miku.wishmaster.ui.BoardsListFragment newInstance(long)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.BoardsListFragment</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)&gt;(2131361948)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2131361948</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.posting.PostFormActivity</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>UNKNOWN</result>
+	      <justification>Too much dataflow to investigate</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_cgalgoauto.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)&gt;($r1)</statementfull>
+                    <statementgeneric>nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.downloading.DownloadingService: void onStart(android.content.Intent,int)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.downloading.DownloadingService</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification>new intent is passed, only constructed with constant data</justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_implicitall.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r2, $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void g(android.content.Context,int,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = interfaceinvoke $r8.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b.a: uk.co.yahoo.p1rpp.calendartrigger.b.a$a a(android.content.Context,long)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b.a</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>BROKEN</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml">
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)&gt;("phoneTypes", $r2)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneTypes"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.util.ArrayList</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.SelectNumberDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.SelectNumberDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = interfaceinvoke $r5.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+	    <classification>
+	      <result>FALSE</result>
+	      <justification></justification>
+	    </classification>
+        </flow>
+        </flows>

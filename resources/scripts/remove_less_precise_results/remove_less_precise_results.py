@@ -4,16 +4,12 @@ parser = argparse.ArgumentParser("Helps filter out flows based on the precision 
 "not generated in a configuration that is strictly more precise than it, then it will"
 "be filtered out.")
 
-parser.add_argument("flows", help="file with the flows")
-parser.add_argument("--precision_function", default="./precision_function.json",
-                    help="precision function in a json file")
-args = parser.parse_args()
 
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
 import xml.etree.ElementTree as ET
-
+d
 logging.debug(f"Opening {args.flows}")
 flows_root = ET.parse(args.flows).getroot()
 for flow in flows_root:

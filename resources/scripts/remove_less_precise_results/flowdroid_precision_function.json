@@ -1,35 +1,35 @@
 {
     "flowdroid" : [
 	{
-	    "option_name": "--aliasflowins",
+	    "option_name": "aliasflowins",
 	    "values": [true, false]
 	},
 	{
-	    "option_name": "--aplength",
+	    "option_name": "aplength",
 	    "values": [1, 2, 3, 4, 5, 7, 10, 20]
 	},
 	{
-	    "option_name": "--callbackanalyzer",
+	    "option_name": "callbackanalyzer",
 	    "values": ["FAST", "DEFAULT"]
 	},
 	{
-	    "option_name": "--codeelimination",
+	    "option_name": "codeelimination",
 	    "values": ["NONE", "*"]
 	},
 	{
-	    "option_name": "--dataflowsolver",
+	    "option_name": "dataflowsolver",
 	    "values": ["FLOWINSENSITIVE", "CONTEXTFLOWSENSITIVE"]
 	},
 	{
-	    "option_name": "--nothischainreduction",
+	    "option_name": "nothischainreduction",
 	    "values": [false, true]
 	},
 	{
-	    "option_name": "--notypechecking",
+	    "option_name": "notypechecking",
 	    "values": [true, false]
 	},
 	{
-	    "option_name": "--staticmode",
+	    "option_name": "staticmode",
 	    "values": ["CONTEXTFLOWINSENSITIVE", "CONTEXTFLOWSENSITIVE"]
 	}
     ]

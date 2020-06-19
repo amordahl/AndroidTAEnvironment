@@ -20,7 +20,7 @@ with open(args.config_file) as f:
         tokens = [t for t in tokens if not (t.isspace() or t == '')]
         logging.debug(f"{tokens}")
         config = copy.deepcopy(config_master)
-        config["file"] = file_index
+        config["file"] = f"config_{file_index}"
         file_index += 1
         for (ix,t) in enumerate(tokens):
             logging.debug(f"({ix}, {t})")

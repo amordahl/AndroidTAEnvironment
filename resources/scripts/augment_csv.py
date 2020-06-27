@@ -3,6 +3,8 @@ import logging
 import csv
 from typing import List
 from tqdm import tqdm
+from multiprocessing import Pool
+from functools import partial
 import argparse
 p = argparse.ArgumentParser()
 p.add_argument("csv_file")
@@ -16,7 +18,6 @@ records = list()
 with open(args.csv_file) as f:
     reader = csv.DictReader(f)
     [records.append(r) for r in reader]
-logging.debug(f"Records: {records}")
 
 if args.mode == "rw":
     raise NotImplementedError("Haven't implemented this yet.")
@@ -58,7 +59,7 @@ else:
 
     logging.info("Starting to compute precision, recall, and f-measure")
     
-    for r in tqdm(records):
+    def process_record(records: List[Record], r: Record):
         num_tp = compute_num_true_pos(r, records)
         num_fp = compute_num_false_pos(r, records)
         num_fn = compute_num_false_neg(r, records)
@@ -75,6 +76,11 @@ else:
 
         r.r["f-measure"] = statistics.harmonic_mean(
             [r.r["precision"], r.r["recall"]])
+
+    prt = partial(process_record, records)
+    logging.info("Processing records")
+    with Pool(8) as p:
+        p.map(prt, records)
 
     logging.info("Writing to output file....")
 

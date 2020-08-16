@@ -14,13 +14,14 @@ if args.filter and args.tool is None:
     raise RuntimeError("If filter is turned on, a tool must be provided.")
 
 import logging
-logging.basicConfig(level=logging.WARNING)
+logging.basicConfig(level=logging.DEBUG)
 import json
 import xml.etree.ElementTree as ET
 sizes = list()
 flows = ET.Element("flows")
 with open(args.results_list) as infile:
     for f in tqdm(infile):
+        logging.debug(f)
         tree = ET.parse(f.strip())
         root = tree.getroot()
         if len(root) > 0:

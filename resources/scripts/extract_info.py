@@ -13,9 +13,9 @@ import os
 
 if (args.header):
     if args.groundtruths is not None:
-        print(f"apk{delim}config{delim}num_flows{delim}time{delim}total_TP{delim}detected_TP{delim}total_FP{delim}detected_FP")
+        print(f'apk{delim}generating_script{delim}num_flows{delim}time{delim}total_TP{delim}detected_TP{delim}total_FP{delim}detected_FP')
     else:
-        print(f"apk{delim}config{delim}num_flows{delim}time")
+        print(f"apk{delim}generating_script{delim}num_flows{delim}time")
 else:
     import xml.etree.ElementTree as ET
 
@@ -40,20 +40,22 @@ else:
         
         # We now need to add some extra fields
         gd_root = ET.parse(args.groundtruths).getroot()
-        if numflows > 0:
+        try:
             flows = [Flow(f) for f in root[0]]
-            gd_flows = [Flow(f) for f in gd_root]
-            for f in gd_flows:
-                if os.path.basename(f.get_file()) == os.path.basename(apk):
-                    classification_result = f.element.find('classification').text
-                    if classification_result.lower() == 'true':
-                        total_TP += 1
-                        if f in flows:
-                            detected_TP += 1
-                    elif classification_result.lower() == 'false':
-                        total_FP += 1
-                        if f in flows:
-                            detected_FP += 1
+        except IndexError as ie:
+            flows = []
+        gd_flows = [Flow(f) for f in gd_root]
+        for f in gd_flows:
+            if os.path.basename(f.get_file()) == os.path.basename(apk):
+                classification_result = f.element.find('classification').text
+                if classification_result.lower() == 'true':
+                    total_TP += 1
+                    if f in flows:
+                        detected_TP += 1
+                elif classification_result.lower() == 'false':
+                    total_FP += 1
+                    if f in flows:
+                        detected_FP += 1
         print(f"{apk}{delim}{config}{delim}{numflows}{delim}{time}{delim}{total_TP}{delim}{detected_TP}{delim}{total_FP}{delim}{detected_FP}")
     else:
         print(f"{apk}{delim}{config}{delim}{numflows}{delim}{time}")

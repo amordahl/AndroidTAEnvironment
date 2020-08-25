@@ -1,4 +1,4 @@
-﻿repetition,apk,config,num_flows,time,total_TP,detected_TP,total_FP,detected_FP,completed,run_time,option_under_investigation,kcontext
+﻿repetition,apk,generating_script,num_flows,time,total_TP,detected_TP,total_FP,detected_FP,completed,run_time,option_under_investigation,kcontext
 1,anupam.acrylic_17.apk,config_Amandroid_default.xml,0,387919.0728,0,0,28,0,1,47133120.57,kcontext,1
 1,com.angrydoughnuts.android.alarmclock_15.apk,config_Amandroid_default.xml,6,783081.7274,27,4,215,2,1,47133120.57,kcontext,1
 1,com.github.yeriomin.workoutlog_2.apk,config_Amandroid_default.xml,0,723416.2489,0,0,12,0,1,47133120.57,kcontext,1

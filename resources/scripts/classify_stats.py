@@ -23,8 +23,7 @@ for k, v in apks.items():
     types = dict()
     for f in v:
         try:
-            classification = f.element.find("classification")
-            result = classification.find("result")
+            result = f.element.find("classification")
             if result.text.strip() == "":
                 raise AttributeError("empty result")
             if result.text.upper() not in types:

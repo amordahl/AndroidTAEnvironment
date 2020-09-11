@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <config>
-  <androidPlatforms>/home/asm140830/Documents/Android/platforms</androidPlatforms>
+  <androidPlatforms>/home/asm140830/AndroidTA/Android/platforms</androidPlatforms>
     <maxMemory>4</maxMemory>
     <tools>
         <tool name="FlowDroid" version="1">
             <priority>1</priority>
-            <path>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid</path>
-            <run>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/config/FlowDroid/3-way/aqlRun_1745.sh %MEMORY% %APP_APK% %ANDROID_PLATFORMS% %APP_APK_FILENAME%_350cd37a1be7a7dff3b0f921c4671a08.txt</run>
-            <runOnExit>/home/asm140830/Documents/git/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
-            <runOnAbort>/home/asm140830/Documents/git/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>/home/asm140830/Documents/git/AndroidTAEnvironment/tools/FlowDroid/%APP_APK_FILENAME%_350cd37a1be7a7dff3b0f921c4671a08.txt</result>
+            <path>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/FlowDroid</path>
+            <run>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/config/FlowDroid/3-way/aqlRun_1745.sh %MEMORY% %APP_APK% %ANDROID_PLATFORMS% %APP_APK_FILENAME%_350cd37a1be7a7dff3b0f921c4671a08.txt</run>
+            <runOnExit>/home/asm140830/AndroidTA/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <runOnAbort>/home/asm140830/AndroidTA/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
+            <result>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/FlowDroid/%APP_APK_FILENAME%_350cd37a1be7a7dff3b0f921c4671a08.txt</result>
             <questions>IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>
@@ -18,10 +18,10 @@
     <preprocessors>
         <tool name="ApkCombiner" version="1">
             <priority>1</priority>
-            <path>/home/asm140830/Documents/git/AndroidTAEnvironment/preprocessor/ApkCombiner/release</path>
-            <run>/home/asm140830/Documents/git/AndroidTAEnvironment/preprocessor/ApkCombiner/release/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
-            <runOnExit>/home/asm140830/Documents/git/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
-            <result>/home/asm140830/Documents/git/AndroidTAEnvironment/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_350cd37a1be7a7dff3b0f921c4671a08_combined.apk</result>
+            <path>/home/asm140830/AndroidTA/AndroidTAEnvironment/preprocessor/ApkCombiner/release</path>
+            <run>/home/asm140830/AndroidTA/AndroidTAEnvironment/preprocessor/ApkCombiner/release/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
+            <runOnExit>/home/asm140830/AndroidTA/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <result>/home/asm140830/AndroidTA/AndroidTAEnvironment/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_350cd37a1be7a7dff3b0f921c4671a08_combined.apk</result>
             <questions>COMBINE</questions>
             <instances>1</instances>
             <memoryPerInstance>4</memoryPerInstance>

@@ -1,1 +1,1 @@
-../../resources/scripts/runaql.py
+../resources/scripts/runaql.py

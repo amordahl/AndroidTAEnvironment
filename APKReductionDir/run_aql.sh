@@ -1,1 +1,1 @@
-../../resources/scripts/run_aql.sh
+../resources/scripts/run_aql.sh

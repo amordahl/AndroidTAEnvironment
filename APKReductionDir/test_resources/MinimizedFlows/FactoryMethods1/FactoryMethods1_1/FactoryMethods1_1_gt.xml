@@ -1,0 +1,43 @@
+<flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r6.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\GeneralJava\FactoryMethods1.apk</file>
+                    <hashes>
+                        <hash type="MD5">d6ebb330d76494e0bfdea826519ea3f2</hash>
+                        <hash type="SHA-1">5b7eb5e96df60052e26b54397c82d66aca9c365b</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Latitude", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Latitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\GeneralJava\FactoryMethods1.apk</file>
+                    <hashes>
+                        <hash type="MD5">d6ebb330d76494e0bfdea826519ea3f2</hash>
+                        <hash type="SHA-1">5b7eb5e96df60052e26b54397c82d66aca9c365b</hash>
+                        <hash type="SHA-256">76a636a3d053952bff751a632ba3b09ce1acedbc844f1a0e0a25faa8ef24aa31</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>

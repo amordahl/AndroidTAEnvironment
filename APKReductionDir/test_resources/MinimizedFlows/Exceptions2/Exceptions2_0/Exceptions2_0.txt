@@ -1,0 +1,9 @@
+"Exceptions2.0": {
+    "config_pairs_length": 1,
+    "flow_type": true,
+    "sink": "android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)",
+    "source": "android.telephony.TelephonyManager: java.lang.String getDeviceId()",
+    "config_pairs": [
+      "[\\home\\asm140830\\AndroidTA\\AndroidTAEnvironment\\configurations\\FlowDroid\\1-way\\config_FlowDroid_aliasalgonone.xml, \\home\\asm140830\\AndroidTA\\AndroidTAEnvironment\\configurations\\FlowDroid\\1-way\\config_FlowDroid_aliasalgolazy.xml]"
+    ]
+  }

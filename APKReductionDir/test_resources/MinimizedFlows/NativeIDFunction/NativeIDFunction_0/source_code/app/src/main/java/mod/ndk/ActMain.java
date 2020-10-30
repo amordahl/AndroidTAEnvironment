@@ -43,7 +43,6 @@ public class ActMain extends Activity {
 			public void onClick(View arg0) {
 				
 				String strIMEI = "";
-				
 				TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 				strIMEI = telephonyManager.getDeviceId() + "foo";
 

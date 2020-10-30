@@ -1,0 +1,56 @@
+<flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.Exceptions1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.Exceptions1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\GeneralJava\Exceptions1.apk</file>
+                    <hashes>
+                        <hash type="MD5">4cf52d654ca676daa86a0bc3e0485844</hash>
+                        <hash type="SHA-1">576aecb46a30db0f964f634041cdb92948eaca90</hash>
+                        <hash type="SHA-256">fc48e0b1dd22ad57545a62b993d36df6505bea0280661f6e3fe5d6c46cf1e1d6</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r3, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.Exceptions1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.Exceptions1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\GeneralJava\Exceptions1.apk</file>
+                    <hashes>
+                        <hash type="MD5">4cf52d654ca676daa86a0bc3e0485844</hash>
+                        <hash type="SHA-1">576aecb46a30db0f964f634041cdb92948eaca90</hash>
+                        <hash type="SHA-256">fc48e0b1dd22ad57545a62b993d36df6505bea0280661f6e3fe5d6c46cf1e1d6</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>

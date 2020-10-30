@@ -28,8 +28,8 @@ public class ArrayAccess1 extends Activity {
         
         arrayData = new String[3];
 		
-		//arrayData[0] = "element 1 is tainted:";
-		//arrayData[1] = ((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId(); //source
+		arrayData[0] = "element 1 is tainted:";
+		arrayData[1] = ((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId(); //source
 		//arrayData[2] is not tainted
 		arrayData[2] = "neutral text";
 		

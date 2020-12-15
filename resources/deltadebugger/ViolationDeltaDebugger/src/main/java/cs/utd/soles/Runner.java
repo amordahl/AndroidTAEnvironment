@@ -96,6 +96,9 @@ public class Runner {
         }
         if(currentNode instanceof ClassOrInterfaceDeclaration){
             handleNodeListBodyDec(((ClassOrInterfaceDeclaration) currentNode).getMembers());
+
+            //method call that gives error
+            //handleNodeList(((ClassOrInterfaceDeclaration) currentNode).getMembers());
         }
 
         if(currentNode instanceof BlockStmt) {
@@ -135,6 +138,32 @@ public class Runner {
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
                 NodeList<BodyDeclaration<?>> subList = new NodeList<>(list.subList(j,j+i));
+                list.removeAll(subList);
+                //System.out.println(list);
+                if(!checkChanges(list.getParentNodeForChildren())){
+                    list.addAll(j, subList);
+                }else{
+                    //restart the search from the top (something might have changed so we can remove it now)
+
+                    j=list.size();
+                    i=list.size();
+                }
+
+            }
+        }
+        if(list.size()==0){
+            list.getParentNodeForChildren().remove();
+        }
+
+    }
+
+
+    //Method that we want to replace to handle all types of node lists
+    private static void handleNodeList(NodeList<Node> list){
+
+        for(int i=list.size();i>0;i/=2){
+            for(int j=0;j<list.size();j+=i){
+                NodeList<Node> subList = new NodeList<>(list.subList(j,j+i));
                 list.removeAll(subList);
                 //System.out.println(list);
                 if(!checkChanges(list.getParentNodeForChildren())){

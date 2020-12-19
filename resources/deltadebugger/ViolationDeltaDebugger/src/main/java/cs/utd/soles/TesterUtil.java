@@ -296,6 +296,7 @@ public class TesterUtil {
 
             output+=s+"\n";
         }
+        System.out.println("Output of AQL: "+output);
         return output;
     }
 

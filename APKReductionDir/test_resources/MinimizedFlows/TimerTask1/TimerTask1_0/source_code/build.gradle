@@ -15,3 +15,8 @@ allprojects {
         google()
     }
 }
+task Hello{
+    doLast{
+        println 'Hello World'
+    }
+}

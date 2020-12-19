@@ -150,10 +150,6 @@ public class TesterUtil {
 
     public boolean createApk(String gradlewFilePath, String rootDir){
         String[] command = {gradlewFilePath, "assembleDebug", "-p", rootDir};
-        if(!SystemUtils.IS_OS_WINDOWS){
-            command[0]="./"+command[0];
-        }
-
         try {
             Process p = Runtime.getRuntime().exec(command);
             p.waitFor();

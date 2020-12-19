@@ -1,0 +1,48 @@
+<answer time="4107.0813136175275">
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("DroidBench", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.LooperThread$1: void handleMessage(android.os.Message)&gt;</method>
+                <classname>de.ecspride.LooperThread$1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/Looper1/Looper1_0/apk/Looper1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">3d91249594ce55d6b2128a761f5d1529</hash>
+                        <hash type="SHA-1">4057d2412cd57e4b291f662ceced90ffec75b35</hash>
+                        <hash type="SHA-256">2d16bc111cb8991ccf0d9bb3b6b2920d83303b3daa22ae6731bbdb22708df4bb</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r9 = virtualinvoke $r8.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/Looper1/Looper1_0/apk/Looper1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">3d91249594ce55d6b2128a761f5d1529</hash>
+                        <hash type="SHA-1">4057d2412cd57e4b291f662ceced90ffec75b35</hash>
+                        <hash type="SHA-256">2d16bc111cb8991ccf0d9bb3b6b2920d83303b3daa22ae6731bbdb22708df4bb</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

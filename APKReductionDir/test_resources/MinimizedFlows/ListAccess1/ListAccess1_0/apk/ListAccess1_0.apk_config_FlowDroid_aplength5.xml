@@ -1,9 +1,9 @@
-<answer time="3547.653656452894">
+<answer time="3558.610244654119">
     <flows>
         <flow>
             <reference type="to">
                 <statement>
-                    <statementfull>virtualinvoke $r8.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
+                    <statementfull>virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
                     <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
                     <parameters>
                         <parameter>
@@ -28,30 +28,30 @@
                         </parameter>
                     </parameters>
                 </statement>
-                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
-                <classname>mod.ndk.ActMain$1</classname>
+                <method>&lt;de.ecspride.ListAccess1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ListAccess1</classname>
                 <app>
-                    <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
+                    <file>test_resources/MinimizedFlows/ListAccess1/ListAccess1_0/apk/ListAccess1_0.apk</file>
                     <hashes>
-                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
-                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
-                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                        <hash type="MD5">162c23f73f6ab4ebdf9eff8d7172c66d</hash>
+                        <hash type="SHA-1">7084e0a4cb2da0bf055ada06e9bc94cfcb125aed</hash>
+                        <hash type="SHA-256">4605f623e84435a5fad77ab9f3190fcddde6690071d5f4e0477377e27ffda72a</hash>
                     </hashes>
                 </app>
             </reference>
             <reference type="from">
                 <statement>
-                    <statementfull>$r6 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementfull>$r6 = virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
                     <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
                 </statement>
-                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
-                <classname>mod.ndk.ActMain$1</classname>
+                <method>&lt;de.ecspride.ListAccess1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ListAccess1</classname>
                 <app>
-                    <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
+                    <file>test_resources/MinimizedFlows/ListAccess1/ListAccess1_0/apk/ListAccess1_0.apk</file>
                     <hashes>
-                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
-                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
-                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                        <hash type="MD5">162c23f73f6ab4ebdf9eff8d7172c66d</hash>
+                        <hash type="SHA-1">7084e0a4cb2da0bf055ada06e9bc94cfcb125aed</hash>
+                        <hash type="SHA-256">4605f623e84435a5fad77ab9f3190fcddde6690071d5f4e0477377e27ffda72a</hash>
                     </hashes>
                 </app>
             </reference>

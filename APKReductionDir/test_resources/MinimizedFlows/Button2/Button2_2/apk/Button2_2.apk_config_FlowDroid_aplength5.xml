@@ -1,0 +1,48 @@
+<answer time="3548.1401178985834">
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("TAG", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"TAG"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.Button2: void clickOnButton3(android.view.View)&gt;</method>
+                <classname>de.ecspride.Button2</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/Button2/Button2_2/apk/Button2_2.apk</file>
+                    <hashes>
+                        <hash type="MD5">0a3ced429ad1d7e1bc13a8e8e72bbaaf</hash>
+                        <hash type="SHA-1">89223d8495c8a02cbfacb637260ce0c71370ffbc</hash>
+                        <hash type="SHA-256">15d29b1bbf0270b4fbf3975ae6753bce0834c053b6c240abf854ee0209f86134</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.Button2: void clickOnButton3(android.view.View)&gt;</method>
+                <classname>de.ecspride.Button2</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/Button2/Button2_2/apk/Button2_2.apk</file>
+                    <hashes>
+                        <hash type="MD5">0a3ced429ad1d7e1bc13a8e8e72bbaaf</hash>
+                        <hash type="SHA-1">89223d8495c8a02cbfacb637260ce0c71370ffbc</hash>
+                        <hash type="SHA-256">15d29b1bbf0270b4fbf3975ae6753bce0834c053b6c240abf854ee0209f86134</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

@@ -1,9 +1,9 @@
-<answer time="3547.653656452894">
+<answer time="4056.3099831342697">
     <flows>
         <flow>
             <reference type="to">
                 <statement>
-                    <statementfull>virtualinvoke $r8.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
+                    <statementfull>virtualinvoke $r2.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r4, null, null)</statementfull>
                     <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
                     <parameters>
                         <parameter>
@@ -16,7 +16,7 @@
                         </parameter>
                         <parameter>
                             <type>java.lang.String</type>
-                            <value>$r6</value>
+                            <value>$r4</value>
                         </parameter>
                         <parameter>
                             <type>android.app.PendingIntent</type>
@@ -28,30 +28,30 @@
                         </parameter>
                     </parameters>
                 </statement>
-                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
-                <classname>mod.ndk.ActMain$1</classname>
+                <method>&lt;de.ecspride.Button2$1: void onClick(android.view.View)&gt;</method>
+                <classname>de.ecspride.Button2$1</classname>
                 <app>
-                    <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
+                    <file>test_resources/MinimizedFlows/Button2/Button2_0/apk/Button2_0.apk</file>
                     <hashes>
-                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
-                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
-                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                        <hash type="MD5">214cb403a6763af05f0d13b2cc7f9001</hash>
+                        <hash type="SHA-1">13a975661328ffc8751978b6b40be0b9f1df9284</hash>
+                        <hash type="SHA-256">39e9445a72ceed3f6446864b9c90d0bc63303ca5c5a35d1bc663a67fb0b15ddf</hash>
                     </hashes>
                 </app>
             </reference>
             <reference type="from">
                 <statement>
-                    <statementfull>$r6 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
                     <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
                 </statement>
-                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
-                <classname>mod.ndk.ActMain$1</classname>
+                <method>&lt;de.ecspride.Button2: void clickOnButton3(android.view.View)&gt;</method>
+                <classname>de.ecspride.Button2</classname>
                 <app>
-                    <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
+                    <file>test_resources/MinimizedFlows/Button2/Button2_0/apk/Button2_0.apk</file>
                     <hashes>
-                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
-                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
-                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                        <hash type="MD5">214cb403a6763af05f0d13b2cc7f9001</hash>
+                        <hash type="SHA-1">13a975661328ffc8751978b6b40be0b9f1df9284</hash>
+                        <hash type="SHA-256">39e9445a72ceed3f6446864b9c90d0bc63303ca5c5a35d1bc663a67fb0b15ddf</hash>
                     </hashes>
                 </app>
             </reference>

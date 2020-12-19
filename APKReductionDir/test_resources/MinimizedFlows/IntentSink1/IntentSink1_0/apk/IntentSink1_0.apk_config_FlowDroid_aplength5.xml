@@ -1,0 +1,48 @@
+<answer time="3559.597968123853">
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r0.&lt;de.ecspride.IntentSink1: void setResult(int,android.content.Intent)&gt;(-1, $r5)</statementfull>
+                    <statementgeneric>de.ecspride.IntentSink1: void setResult(int,android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>-1</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.IntentSink1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.IntentSink1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/IntentSink1/IntentSink1_0/apk/IntentSink1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">695183e021c327913b6aa55841f0211e</hash>
+                        <hash type="SHA-1">dbc53eebdf16f8ab41488db0f851fba2bf9a2942</hash>
+                        <hash type="SHA-256">52cafdc32a097502e51966747f4434adad3a5e87799e1dc6e593e3e01deb978f</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.IntentSink1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.IntentSink1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/IntentSink1/IntentSink1_0/apk/IntentSink1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">695183e021c327913b6aa55841f0211e</hash>
+                        <hash type="SHA-1">dbc53eebdf16f8ab41488db0f851fba2bf9a2942</hash>
+                        <hash type="SHA-256">52cafdc32a097502e51966747f4434adad3a5e87799e1dc6e593e3e01deb978f</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

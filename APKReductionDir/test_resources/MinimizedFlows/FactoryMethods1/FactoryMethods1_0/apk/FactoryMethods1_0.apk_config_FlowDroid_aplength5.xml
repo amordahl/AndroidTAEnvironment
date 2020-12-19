@@ -1,0 +1,48 @@
+<answer time="3517.734235152602">
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Longtitude", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Longtitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/FactoryMethods1/FactoryMethods1_0/apk/FactoryMethods1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">5f6ab12168c0f282ed25efdd77c71fe9</hash>
+                        <hash type="SHA-1">2f6279f36861b67b13430c46b9ecd3e51e1e363c</hash>
+                        <hash type="SHA-256">b032939c24c3f4da9d3a521e7e881a1818498d1027e89a6f9e6d07dfce1c9cc0</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r6.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/FactoryMethods1/FactoryMethods1_0/apk/FactoryMethods1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">5f6ab12168c0f282ed25efdd77c71fe9</hash>
+                        <hash type="SHA-1">2f6279f36861b67b13430c46b9ecd3e51e1e363c</hash>
+                        <hash type="SHA-256">b032939c24c3f4da9d3a521e7e881a1818498d1027e89a6f9e6d07dfce1c9cc0</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

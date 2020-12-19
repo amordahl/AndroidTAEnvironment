@@ -1,9 +1,9 @@
-<answer time="3547.653656452894">
+<answer time="3548.758371733129">
     <flows>
         <flow>
             <reference type="to">
                 <statement>
-                    <statementfull>virtualinvoke $r8.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
+                    <statementfull>virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
                     <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
                     <parameters>
                         <parameter>
@@ -33,9 +33,9 @@
                 <app>
                     <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
                     <hashes>
-                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
-                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
-                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                        <hash type="MD5">2728263f2478ab5405f36462ea8897d8</hash>
+                        <hash type="SHA-1">30d3e4d72dbeab19598a1f9468176e474f8d233</hash>
+                        <hash type="SHA-256">4a988216f490743d52bedb209e32ec2eb92fdddecc5d5f3fdea9928660d8f648</hash>
                     </hashes>
                 </app>
             </reference>
@@ -49,9 +49,9 @@
                 <app>
                     <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
                     <hashes>
-                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
-                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
-                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                        <hash type="MD5">2728263f2478ab5405f36462ea8897d8</hash>
+                        <hash type="SHA-1">30d3e4d72dbeab19598a1f9468176e474f8d233</hash>
+                        <hash type="SHA-256">4a988216f490743d52bedb209e32ec2eb92fdddecc5d5f3fdea9928660d8f648</hash>
                     </hashes>
                 </app>
             </reference>

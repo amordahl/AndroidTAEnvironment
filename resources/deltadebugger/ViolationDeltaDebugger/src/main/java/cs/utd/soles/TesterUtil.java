@@ -2,6 +2,7 @@ package cs.utd.soles;
 
 import com.utdallas.cs.alps.flows.AQLFlowFileReader;
 import com.utdallas.cs.alps.flows.Flow;
+import org.apache.commons.lang3.SystemUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -146,10 +147,13 @@ public class TesterUtil {
 
     //this just calls gradlew assembleDebug in the right directory
     //this needs the gradlew file path and the root directory of the project
-    //TODO:: It looks like if we want to modify things in place we are going to have to change the gradle.build to exclude all files under /unmodified_src/
-    // if we don't do this the gradle build will fail
+
     public boolean createApk(String gradlewFilePath, String rootDir){
         String[] command = {gradlewFilePath, "assembleDebug", "-p", rootDir};
+        if(!SystemUtils.IS_OS_WINDOWS){
+            command[0]="./"+command[0];
+        }
+
         try {
             Process p = Runtime.getRuntime().exec(command);
             p.waitFor();

@@ -169,7 +169,7 @@ public class Runner {
         System.out.println("Before loop: "+list);
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
-                NodeList<BodyDeclaration<?>> subList = new NodeList<>(list.subList(j,j+i));
+                NodeList<BodyDeclaration<?>> subList = new NodeList<>(list.subList(j,Math.min((j + i), list.size())));
                 list.removeAll(subList);
                 System.out.println("After remove: "+list);
                 if(!checkChanges(list.getParentNodeForChildren())){

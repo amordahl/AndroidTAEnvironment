@@ -55,9 +55,10 @@ public class Runner {
 
 
         try {
-            String filePathName = "src/differentComps/BestCu";
+            String filePathName = "debugger/java_files/bestCU";
             for (int i = 0; i < bestCUList.size(); i++) {
                 File file = new File(filePathName + (i + 1) + ".java");
+                file.mkdirs();
                 FileWriter fw = new FileWriter(file);
                 if (file.exists())
                     file.delete();

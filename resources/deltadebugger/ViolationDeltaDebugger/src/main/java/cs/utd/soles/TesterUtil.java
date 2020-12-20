@@ -162,6 +162,7 @@ public class TesterUtil {
             }
             if(out.length()>0){
                 //assembling project failed we don't care why
+                System.out.println(out);
                 return false;
             }
         }catch(IOException | InterruptedException e){

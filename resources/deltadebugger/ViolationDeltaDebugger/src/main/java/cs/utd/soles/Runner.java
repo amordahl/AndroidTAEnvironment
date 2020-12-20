@@ -55,10 +55,10 @@ public class Runner {
 
 
         try {
-            String filePathName = "debugger/java_files/bestCU";
+            String filePathName = "debugger/java_files/";
             for (int i = 0; i < bestCUList.size(); i++) {
                 File file = new File(filePathName + (i + 1) + ".java");
-                file.mkdirs();
+
                 FileWriter fw = new FileWriter(file);
                 if (file.exists())
                     file.delete();
@@ -222,15 +222,17 @@ public class Runner {
         boolean returnVal=false;
 
         try {
-            if(testerForThis.createApk(gradlew_path,project_root_path)&& testerForThis.runAQL(apk_path,generating_config1_path,generating_config2_path)){
-                returnVal=true;
-                System.out.println(n.findCompilationUnit().get());
-                //bestCu = StaticJavaParser.parse(n.findCompilationUnit().get().toString());
+            if(testerForThis.createApk(gradlew_path,project_root_path)) {
+                if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path)) {
+                    returnVal = true;
+                    //System.out.println(n.findCompilationUnit().get());
+                    //bestCu = StaticJavaParser.parse(n.findCompilationUnit().get().toString());
 
-                minimized=false;
-                System.out.println("Successful One\n\n------------------------------------\n\n\n");
-                for(CompilationUnit x: bestCUList){
-                    System.out.println(x);
+                    minimized = false;
+                    System.out.println("Successful One\n\n------------------------------------\n\n\n");
+                    for (CompilationUnit x : bestCUList) {
+                        System.out.println(x);
+                    }
                 }
             }
         } catch (IOException e) {

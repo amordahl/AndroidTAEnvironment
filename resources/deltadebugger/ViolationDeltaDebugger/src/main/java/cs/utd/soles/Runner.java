@@ -47,8 +47,10 @@ public class Runner {
         while(!minimized){
             //this is set here because if a change is made to ANY file we want to say it isnt minimized yet
             minimized=true;
+            int i=0;
             for (CompilationUnit compilationUnit : bestCUList) {
-                depthFirstTraverse(compilationUnit);
+                depthFirstTraverse(i, compilationUnit);
+                i++;
             }
             System.out.println("Done with 1 rotation");
         }
@@ -109,20 +111,20 @@ public class Runner {
 
     //main recursion that loops through all nodes
     //we process parents before children
-    public static void depthFirstTraverse(Node currentNode){
+    public static void depthFirstTraverse(int currentCU, Node currentNode){
 
 
-        process(currentNode);
+        process(currentCU, currentNode);
 
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){
 
-            depthFirstTraverse(n);
+            depthFirstTraverse(currentCU, n);
         }
 
     }
     //matches the currentNode to what type it is and handles appropriately
-    public static void process(Node currentNode){
+    public static void process(int currentCUPos, Node currentNode){
 
         if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
             return;
@@ -191,30 +193,45 @@ public class Runner {
     }
 
 
-    //Method that we want to replace to handle all types of node lists
-    private static void handleNodeList(NodeList<Node> list){
+
+    private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
+
+
+        //save this compilationUnit so we can replace it
+        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
+
+        ArrayList<Node> alterableList = new ArrayList<Node>(list);
 
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
-                NodeList<Node> subList = new NodeList<>(list.subList(j,j+i));
-                list.removeAll(subList);
+                List<Node> subList = new ArrayList<>(list.subList(j,Math.min((j + i), list.size())));
+                alterableList.retainAll(subList);
+                for(Node x: alterableList){
+                    x.remove();
+                }
+
+
                 //System.out.println(list);
-                if(!checkChanges(list.getParentNodeForChildren())){
-                    list.addAll(j, subList);
+                if(!checkChanges(currentNode)){
+                    //our changes didnt work so just replace unit with unaltered unit
+                    bestCUList.set(compPosition, copiedUnit);
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
-
+                    //update the copied unit to reflect the most recent ast
+                    copiedUnit = bestCUList.get(compPosition).clone();
                     j=list.size();
                     i=list.size();
                 }
 
             }
         }
-        if(list.size()==0){
-            list.getParentNodeForChildren().remove();
-        }
+
 
     }
+
+
+
+
 
     //this method is run our ast and see if the changes we made are good or bad (returning true or false) depending
     private static boolean checkChanges(Node n) {

@@ -149,12 +149,13 @@ public class TesterUtil {
 
     //this saves the compilation units to the correct files
     private void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files) throws IOException {
-
+        int i=0;
         for(File x: files){
             FileWriter fw = new FileWriter(x);
-            fw.write(list.toString());
+            fw.write(list.get(i).toString());
             fw.flush();
             fw.close();
+            i++;
         }
     }
 

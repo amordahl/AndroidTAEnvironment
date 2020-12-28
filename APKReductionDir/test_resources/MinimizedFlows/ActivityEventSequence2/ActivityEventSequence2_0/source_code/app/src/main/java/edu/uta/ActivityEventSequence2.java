@@ -23,7 +23,6 @@ public class ActivityEventSequence2 extends Activity {
 	private String d3 = "";
 	private String d4 = "";
 	private String recpNo = "5556";
-
 	@Override
 	public void onCreate(Bundle instance){
 		super.onCreate(instance);

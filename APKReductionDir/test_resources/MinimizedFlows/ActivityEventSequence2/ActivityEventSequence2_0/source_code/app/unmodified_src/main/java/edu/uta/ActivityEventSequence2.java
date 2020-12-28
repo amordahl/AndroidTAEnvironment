@@ -1,5 +1,6 @@
 package edu.uta;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -18,11 +19,10 @@ import android.telephony.TelephonyManager;
 public class ActivityEventSequence2 extends Activity {
 
 	private String d1 = "";
-	/*private String d2 = "";
+	private String d2 = "";
 	private String d3 = "";
-	private String d4 = "";*/
+	private String d4 = "";
 	private String recpNo = "5556";
-
 	@Override
 	public void onCreate(Bundle instance){
 		super.onCreate(instance);
@@ -31,14 +31,14 @@ public class ActivityEventSequence2 extends Activity {
 	}
 
 
-	/*@SuppressLint("MissingSuperCall")
+	@SuppressLint("MissingSuperCall")
 	@Override
-	public void onRestart()
+	protected void onRestart()
 	{
 		super.onStart();
 		this.d1 = "";
-		
-	}*/
+
+	}
 
 	
 	@Override
@@ -49,7 +49,7 @@ public class ActivityEventSequence2 extends Activity {
 		this.d1 = tMgr.getDeviceId();
 		
 	}
-	/*@Override
+	@Override
 	public void onResume()
 	{
 		super.onResume();
@@ -62,7 +62,7 @@ public class ActivityEventSequence2 extends Activity {
 		this.d1 = "";
 		super.onSaveInstanceState(state);
 		
-	}*/
+	}
 	
 	@Override
 	public void onStop()

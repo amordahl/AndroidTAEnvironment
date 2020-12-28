@@ -253,7 +253,12 @@ public class TesterUtil {
             f.delete();
         f.createNewFile();
 
-        String xmlString = outString.substring(outString.indexOf("<answer>"), outString.indexOf("</answer>")+9);
+        String xmlString ="";
+        if(outString.contains("<answer/>")){
+            xmlString ="<answer>\n</answer>";
+        }else {
+            xmlString = outString.substring(outString.indexOf("<answer>"), outString.indexOf("</answer>") + 9);
+        }
         String header = "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n";
 
         FileWriter fw = new FileWriter(f);

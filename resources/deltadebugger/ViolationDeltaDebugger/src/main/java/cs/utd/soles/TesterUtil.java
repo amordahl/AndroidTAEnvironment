@@ -152,6 +152,7 @@ public class TesterUtil {
         int i=0;
         for(File x: files){
             FileWriter fw = new FileWriter(x);
+            System.out.println("CompilationUnit: "+list.get(i).toString());
             fw.write(list.get(i).toString());
             fw.flush();
             fw.close();
@@ -283,11 +284,19 @@ public class TesterUtil {
             flowList.addAll(getFlowStrings(o2));
             flowList.removeAll(getFlowStrings(o1));
         }
-        System.out.println("Flow List: "+flowList);
+        boolean returnVal=false;
+        for(Flow x: flowList){
+            System.out.println("Flow Source: " + x.getSource()+"  Flow Sink: " + x.getSink());
+            System.out.println("Target Flow Source: "+ targetFlow.getSource()+"  Flow Sink: "+targetFlow.getSink());
+            if(x.equals(targetFlow)){
+                returnVal=true;
+            }
+
+        }
 
         //in the case of soundness, the first list has a flow the second does not (so we recreate the violation if we remove all the common flows AND the targetflow is still in the list)
         //same for precision except we remove from the second
-        return flowList.contains(targetFlow);
+        return returnVal;
     }
 
     public ArrayList<Flow> getFlowStrings(File xmlFile){
@@ -317,7 +326,7 @@ public class TesterUtil {
 
             output+=s+"\n";
         }
-        System.out.println("Output of AQL: "+output);
+        //System.out.println("Output of AQL: "+output);
         return output;
     }
 

@@ -46,7 +46,7 @@ public class TesterUtil {
 
             soundness = (boolean) obj.get("flow_type");
             String aqlString = (String) obj.get("aql_string");
-            handleTargetXMLString(aqlString);
+            targetFlow = handleTargetXMLString(aqlString);
 
         } catch (IOException | ParseException e) {
             e.printStackTrace();
@@ -286,8 +286,8 @@ public class TesterUtil {
         }
         boolean returnVal=false;
         for(Flow x: flowList){
-            System.out.println("Flow Source: " + x.getSource()+"  Flow Sink: " + x.getSink());
-            System.out.println("Target Flow Source: "+ targetFlow.getSource()+"  Flow Sink: "+targetFlow.getSink());
+            System.out.println("Flow Source: " + x.getSource().toString()+"  Flow Sink: " + x.getSink().toString());
+            System.out.println("Target Flow Source: "+ targetFlow.getSource().toString()+"  Flow Sink: "+targetFlow.getSink().toString());
             if(x.equals(targetFlow)){
                 returnVal=true;
             }

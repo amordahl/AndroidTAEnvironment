@@ -108,7 +108,8 @@ public class Runner {
     static boolean minimized=false;
     static ArrayList<CompilationUnit> bestCUList = new ArrayList<>();
     static ArrayList<String> programFileNames= new ArrayList<>();
-
+    static ArrayList<File> javaFiles = new ArrayList<>();
+    static ArrayList<File> originalFiles = new ArrayList<>();
     //main recursion that loops through all nodes
     //we process parents before children
     public static void depthFirstTraverse(int currentCU, Node currentNode){
@@ -169,15 +170,15 @@ public class Runner {
     }
     //handles NodeList<BodyDeclaration<?>>
     private static void handleNodeListBodyDec(NodeList<BodyDeclaration<?>> list){
-        System.out.println("Before loop: "+list);
+       // System.out.println("Before loop: "+list);
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
                 NodeList<BodyDeclaration<?>> subList = new NodeList<>(list.subList(j,Math.min((j + i), list.size())));
                 list.removeAll(subList);
-                System.out.println("After remove: "+list);
+                //System.out.println("After remove: "+list);
                 if(!checkChanges(list.getParentNodeForChildren())){
                     list.addAll(j, subList);
-                    System.out.println("After add back: "+list);
+                   // System.out.println("After add back: "+list);
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
 
@@ -187,7 +188,7 @@ public class Runner {
 
             }
         }
-        System.out.println("After loop: "+list);
+        //System.out.println("After loop: "+list);
 
 
     }
@@ -239,7 +240,7 @@ public class Runner {
         boolean returnVal=false;
 
         try {
-            if(testerForThis.createApk(gradlew_path,project_root_path)) {
+            if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles)) {
                 if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path)) {
                     returnVal = true;
                     //System.out.println(n.findCompilationUnit().get());
@@ -278,11 +279,13 @@ public class Runner {
             if(!x.getAbsolutePath().contains("unmodified_src")) {
                 nameList.add(x.getName().substring(0, x.getName().length() - 5));
                 returnList.add(StaticJavaParser.parse(x.getAbsoluteFile()));
+                javaFiles.add(x.getAbsoluteFile());
             }
             createInPlaceCopy(x, f);
         }
         bestCUList = returnList;
         programFileNames = nameList;
+
 
 
         return true;

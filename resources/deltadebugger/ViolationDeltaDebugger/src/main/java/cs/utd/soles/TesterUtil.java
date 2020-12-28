@@ -1,5 +1,6 @@
 package cs.utd.soles;
 
+import com.github.javaparser.ast.CompilationUnit;
 import com.utdallas.cs.alps.flows.AQLFlowFileReader;
 import com.utdallas.cs.alps.flows.Flow;
 import org.apache.commons.lang3.SystemUtils;
@@ -145,12 +146,25 @@ public class TesterUtil {
 
     }*/
 
+
+    //this saves the compilation units to the correct files
+    private void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files) throws IOException {
+
+        for(File x: files){
+            FileWriter fw = new FileWriter(x);
+            fw.write(list.toString());
+            fw.flush();
+            fw.close();
+        }
+    }
+
+
     //this just calls gradlew assembleDebug in the right directory
     //this needs the gradlew file path and the root directory of the project
-
-    public boolean createApk(String gradlewFilePath, String rootDir){
+    public boolean createApk(String gradlewFilePath, String rootDir, ArrayList<CompilationUnit> list, ArrayList<File> javaFiles){
         String[] command = {gradlewFilePath, "assembleDebug", "-p", rootDir};
         try {
+            saveCompilationUnits(list,javaFiles);
             Process p = Runtime.getRuntime().exec(command);
             p.waitFor();
             BufferedReader stream = new BufferedReader(new InputStreamReader(p.getErrorStream()));

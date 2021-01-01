@@ -259,7 +259,7 @@ public class Runner {
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-        System.out.println(copiedNode);
+        System.out.println("This is "+ (copiedNode==null? "NULL": copiedNode));
 
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
 

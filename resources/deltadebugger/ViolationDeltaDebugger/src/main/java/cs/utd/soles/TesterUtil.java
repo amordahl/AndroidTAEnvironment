@@ -152,7 +152,7 @@ public class TesterUtil {
         int i=0;
         for(File x: files){
             FileWriter fw = new FileWriter(x);
-            System.out.println("CompilationUnit: "+list.get(i).toString());
+           // System.out.println("CompilationUnit: "+list.get(i).toString());
             fw.write(list.get(i).toString());
             fw.flush();
             fw.close();

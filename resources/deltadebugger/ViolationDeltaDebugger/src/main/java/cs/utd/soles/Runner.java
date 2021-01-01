@@ -220,13 +220,17 @@ public class Runner {
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
                 List<Node> subList = new ArrayList<>(list.subList(j,Math.min((j + i), list.size())));
-                alterableList.retainAll(subList);
-                for(Node x: alterableList){
-                    x.remove();
+                for(Node x: subList){
+                    if(alterableList.contains(x)){
+                        x.remove();
+                    }
                 }
 
 
-                //System.out.println(list);
+
+                System.out.println("1"+list);
+                System.out.println("2"+alterableList);
+                System.out.println("3"+subList);
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
                     bestCUList.set(compPosition, copiedUnit);

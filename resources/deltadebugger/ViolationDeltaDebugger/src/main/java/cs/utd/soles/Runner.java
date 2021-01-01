@@ -232,17 +232,22 @@ public class Runner {
             System.out.println(x.getClass().toGenericString());
         }
         Node returnNode=null;
-        curNode = bestCUList.get(compPosition);
+        curNode = copiedUnit;
         traverseList.remove(0);
+
         while(!traverseList.isEmpty()){
             for(Node x: curNode.getChildNodes()){
                 if(x.equals(traverseList.get(0))){
-
-                    curNode=x;
-                    returnNode= traverseList.remove(0);
+                    if(traverseList.size()==1){
+                        returnNode = traverseList.get(0);
+                        return returnNode;
+                    }
+                    break;
                 }
             }
+            traverseList.remove(0);
         }
+
         return returnNode;
 
     }

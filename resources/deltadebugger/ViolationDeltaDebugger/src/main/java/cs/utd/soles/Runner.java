@@ -217,6 +217,27 @@ public class Runner {
 
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
+        if(copiedUnit.equals(bestCUList.get(compPosition))){
+            System.out.println("they equal each other");
+        }
+
+        Node curNode = currentNode;
+        List<Node> traverseList = new ArrayList<>();
+        while(!(curNode instanceof CompilationUnit)){
+            traverseList.add(0, curNode);
+            curNode = curNode.getParentNode().get();
+        }
+        curNode = bestCUList.get(compPosition);
+        traverseList.remove(0);
+        while(!traverseList.isEmpty()){
+            for(Node x: curNode.getChildNodes()){
+                if(x.equals(traverseList.get(0))){
+                    System.out.println("Found equals: "+traverseList.get(0).toString() +"         "+x.toString());
+                    traverseList.remove(0);
+                    curNode = x;
+                }
+            }
+        }
 
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
 
@@ -227,7 +248,7 @@ public class Runner {
 
                 for(Node x: subList){
                     if(alterableList.contains(x)){
-                        x.remove();
+                        currentNode.remove(x);
                     }
                 }
                 System.out.println("after remove: "+bestCUList.get(compPosition).toString());
@@ -235,6 +256,7 @@ public class Runner {
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
                     bestCUList.set(compPosition, copiedUnit);
+
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
                     //update the copied unit to reflect the most recent ast

@@ -250,6 +250,17 @@ public class Runner {
 
     }
 
+    //just like how with currentNode we have to find it in the ast, we have to find the children we were working on as well
+    public static ArrayList<Node> getCurrentNodeList(Node currentNode, List<Node> list){
+
+
+        ArrayList<Node> childrenWeCareAbout = new ArrayList<>(list);
+        List<Node> cloneList = currentNode.getChildNodes();
+        childrenWeCareAbout.retainAll(cloneList);
+        return childrenWeCareAbout;
+
+    }
+
 
     private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
@@ -259,13 +270,12 @@ public class Runner {
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-        System.out.println("This is "+ (copiedNode==null? "NULL": copiedNode));
-
+        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, list);
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
 
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
-                List<Node> subList = new ArrayList<>(list.subList(j,Math.min((j + i), list.size())));
+                List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
                 System.out.println("before remove: "+bestCUList.get(compPosition).toString());
 
                 for(Node x: subList){
@@ -277,14 +287,17 @@ public class Runner {
 
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
+                    //we also update currentNode and alterableList  with the correct objects for the new ast
                     bestCUList.set(compPosition, copiedUnit);
                     currentNode=copiedNode;
+                    alterableList = copiedList;
 
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
                     //update the copied unit to reflect the most recent ast
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
+                    copiedList = getCurrentNodeList(copiedNode, alterableList);
                     j=list.size();
                     i=list.size()/2;
                 }

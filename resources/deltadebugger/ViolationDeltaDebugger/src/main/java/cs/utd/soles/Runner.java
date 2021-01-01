@@ -210,16 +210,15 @@ public class Runner {
     }
 
 
+    /**
+     * OK, so this method is required because when we remove something from an ast the way we "reset" the ast to it's pre-removal form is by replacing that ast with a copied ast, turns out
+     * the "currentNode" object is an object that is in the first tree (the tree we removed something from). So when we replace the entire tree we need to save our position. This method just finds the
+     * currentNode that we were working on in the copied tree and then returns it. If we don't do this then the only time we would ever change the tree would be the first time we complete a change-then-replace cycle.
+     *
+     *
+     */
 
-    private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
-
-        PerfTimer.startOneASTChange();
-
-        //save this compilationUnit so we can replace it
-        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
-        if(copiedUnit.equals(bestCUList.get(compPosition))){
-            System.out.println("they equal each other");
-        }
+    public static Node findCurrentNode(Node currentNode, int compPosition, CompilationUnit copiedUnit){
 
         Node curNode = currentNode;
         List<Node> traverseList = new ArrayList<>();
@@ -229,18 +228,31 @@ public class Runner {
             traverseList.add(0, curNode);
 
         }
-        System.out.println(traverseList);
+        Node returnNode=null;
         curNode = bestCUList.get(compPosition);
         traverseList.remove(0);
         while(!traverseList.isEmpty()){
             for(Node x: curNode.getChildNodes()){
                 if(x.equals(traverseList.get(0))){
-                    System.out.println("Found equals: "+traverseList.get(0).getClass().toGenericString() +"         "+x.getClass().toGenericString());
-                    traverseList.remove(0);
-                    curNode = x;
+
+                    curNode=x;
+                    returnNode= traverseList.remove(0);
                 }
             }
         }
+        return returnNode;
+
+    }
+
+
+    private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
+
+        PerfTimer.startOneASTChange();
+
+        //save this compilationUnit so we can replace it
+        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
+
+        Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
 
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
 
@@ -259,11 +271,13 @@ public class Runner {
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
                     bestCUList.set(compPosition, copiedUnit);
+                    currentNode=copiedNode;
 
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
                     //update the copied unit to reflect the most recent ast
                     copiedUnit = bestCUList.get(compPosition).clone();
+                    copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
                     j=list.size();
                     i=list.size()/2;
                 }

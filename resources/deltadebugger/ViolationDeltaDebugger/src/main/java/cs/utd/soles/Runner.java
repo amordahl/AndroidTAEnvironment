@@ -120,6 +120,9 @@ public class Runner {
     //we process parents before children
     public static void depthFirstTraverse(int currentCU, Node currentNode){
 
+        if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
+            return;
+        }
 
         process(currentCU, currentNode);
 
@@ -220,17 +223,15 @@ public class Runner {
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
                 List<Node> subList = new ArrayList<>(list.subList(j,Math.min((j + i), list.size())));
+                System.out.println("before remove: "+bestCUList.get(compPosition).toString());
+
                 for(Node x: subList){
                     if(alterableList.contains(x)){
                         x.remove();
                     }
                 }
+                System.out.println("after remove: "+bestCUList.get(compPosition).toString());
 
-
-
-                System.out.println("1"+list);
-                System.out.println("2"+alterableList);
-                System.out.println("3"+subList);
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
                     bestCUList.set(compPosition, copiedUnit);
@@ -266,10 +267,10 @@ public class Runner {
                     returnVal = true;
                     minimized = false;
 
-                    System.out.println("Successful One\n\n------------------------------------\n\n\n");
-                    for (CompilationUnit x : bestCUList) {
-                        System.out.println(x);
-                    }
+                    //System.out.println("Successful One\n\n------------------------------------\n\n\n");
+                    //for (CompilationUnit x : bestCUList) {
+                    //    System.out.println(x);
+                    //}
                 }
             }
         } catch (IOException e) {

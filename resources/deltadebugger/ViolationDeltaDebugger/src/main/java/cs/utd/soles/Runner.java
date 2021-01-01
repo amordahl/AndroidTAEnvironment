@@ -228,6 +228,9 @@ public class Runner {
             traverseList.add(0, curNode);
 
         }
+        for(Node x: traverseList){
+            System.out.println(x.getClass().toGenericString());
+        }
         Node returnNode=null;
         curNode = bestCUList.get(compPosition);
         traverseList.remove(0);

@@ -257,6 +257,10 @@ public class Runner {
         ArrayList<Node> childrenWeCareAbout = new ArrayList<>(list);
         List<Node> cloneList = currentNode.getChildNodes();
         childrenWeCareAbout.retainAll(cloneList);
+
+        System.out.println(childrenWeCareAbout);
+
+
         return childrenWeCareAbout;
 
     }

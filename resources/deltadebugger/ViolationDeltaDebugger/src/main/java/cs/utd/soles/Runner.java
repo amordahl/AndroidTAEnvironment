@@ -6,8 +6,10 @@ import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.Statement;
+import javassist.compiler.ast.FieldDecl;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.apache.commons.io.FileUtils;
@@ -135,22 +137,22 @@ public class Runner {
             return;
         }
         if(currentNode instanceof ClassOrInterfaceDeclaration){
-            //handleNodeListBodyDec(((ClassOrInterfaceDeclaration) currentNode).getMembers());
-
             ClassOrInterfaceDeclaration node = (ClassOrInterfaceDeclaration) currentNode;
 
+            List<Node> childList = new ArrayList<Node>();
             for(Node x: node.getChildNodes()){
-                System.out.println("Node: " +x.toString() + " Node Type: "+x.getClass().toGenericString());
+                if(x instanceof BodyDeclaration<?>){
+                    childList.add(x);
+                }
             }
+            handleNodeList(currentCUPos,currentNode, childList);
 
         }
 
         if(currentNode instanceof BlockStmt) {
 
             BlockStmt node = ((BlockStmt) currentNode).asBlockStmt();
-            for(Node x: node.getChildNodes()){
-                System.out.println("Node: " +x.toString() + " Node Type: "+x.getClass().toGenericString());
-            }
+            handleNodeList(currentCUPos,node, node.getChildNodes());
         }
 
 

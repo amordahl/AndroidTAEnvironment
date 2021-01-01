@@ -223,9 +223,11 @@ public class Runner {
 
         Node curNode = currentNode;
         List<Node> traverseList = new ArrayList<>();
+        traverseList.add(curNode);
         while(!(curNode instanceof CompilationUnit)){
-            traverseList.add(0, curNode);
             curNode = curNode.getParentNode().get();
+            traverseList.add(0, curNode);
+
         }
         System.out.println(traverseList);
         curNode = bestCUList.get(compPosition);

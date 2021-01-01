@@ -253,10 +253,10 @@ public class Runner {
     //just like how with currentNode we have to find it in the ast, we have to find the children we were working on as well
     public static ArrayList<Node> getCurrentNodeList(Node currentNode, List<Node> list){
 
-
-        ArrayList<Node> childrenWeCareAbout = new ArrayList<>(list);
         List<Node> cloneList = currentNode.getChildNodes();
-        childrenWeCareAbout.retainAll(cloneList);
+        ArrayList<Node> childrenWeCareAbout = new ArrayList<>(cloneList);
+
+        childrenWeCareAbout.retainAll(list);
 
         System.out.println(childrenWeCareAbout);
 

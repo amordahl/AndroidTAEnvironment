@@ -229,7 +229,6 @@ public class Runner {
 
         }
 
-        Node returnNode=null;
         curNode = copiedUnit;
         traverseList.remove(0);
 
@@ -237,8 +236,7 @@ public class Runner {
             for(Node x: curNode.getChildNodes()){
                 if(x.equals(traverseList.get(0))){
                     if(traverseList.size()==1){
-                        returnNode = x;
-                        return returnNode;
+                        return x;
                     }
 
                     System.out.println("Found matching: "+ x.getClass().toGenericString()+"      "+traverseList.get(0).getClass().toGenericString());
@@ -248,7 +246,7 @@ public class Runner {
             traverseList.remove(0);
         }
 
-        return returnNode;
+        return null;
 
     }
 
@@ -261,6 +259,7 @@ public class Runner {
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+        System.out.println(copiedNode);
 
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
 

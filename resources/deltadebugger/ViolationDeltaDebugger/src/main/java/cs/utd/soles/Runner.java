@@ -228,9 +228,7 @@ public class Runner {
             traverseList.add(0, curNode);
 
         }
-        for(Node x: traverseList){
-            System.out.println(x.getClass().toGenericString());
-        }
+
         Node returnNode=null;
         curNode = copiedUnit;
         traverseList.remove(0);
@@ -239,9 +237,11 @@ public class Runner {
             for(Node x: curNode.getChildNodes()){
                 if(x.equals(traverseList.get(0))){
                     if(traverseList.size()==1){
-                        returnNode = traverseList.get(0);
+                        returnNode = x;
                         return returnNode;
                     }
+
+                    System.out.println("Found matching: "+ x.getClass().toGenericString()+"      "+traverseList.get(0).getClass().toGenericString());
                     break;
                 }
             }

@@ -235,7 +235,7 @@ public class Runner {
         while(!traverseList.isEmpty()){
             for(Node x: curNode.getChildNodes()){
                 if(x.equals(traverseList.get(0))){
-                    System.out.println("Found equals: "+traverseList.get(0).toString() +"         "+x.toString());
+                    System.out.println("Found equals: "+traverseList.get(0).getClass().toGenericString() +"         "+x.getClass().toGenericString());
                     traverseList.remove(0);
                     curNode = x;
                 }

@@ -164,6 +164,7 @@ public class TesterUtil {
     //this just calls gradlew assembleDebug in the right directory
     //this needs the gradlew file path and the root directory of the project
     public boolean createApk(String gradlewFilePath, String rootDir, ArrayList<CompilationUnit> list, ArrayList<File> javaFiles){
+        PerfTimer.startOneCompileRun();
         String[] command = {gradlewFilePath, "assembleDebug", "-p", rootDir};
         try {
             saveCompilationUnits(list,javaFiles);
@@ -179,17 +180,18 @@ public class TesterUtil {
             if(out.length()>0){
                 //assembling project failed we don't care why
                 System.out.println(out);
+                PerfTimer.endOneCompileRun();
                 return false;
             }
         }catch(IOException | InterruptedException e){
             e.printStackTrace();
         }
-
+        PerfTimer.endOneCompileRun();
         return true;
     }
 
     public boolean runAQL(String apk, String generatingConfig1, String generatingConfig2) throws IOException {
-
+        PerfTimer.startOneAQLRun();
         //this bit runs and captures the output of the aql script
         String command1 = "python3 runaql.py "+generatingConfig1+" "+apk+" -f";
         String command2 = "python3 runaql.py "+generatingConfig2+" "+apk+" -f";
@@ -212,7 +214,7 @@ public class TesterUtil {
 
         File output1 = handleOutput(1, command1Out);
         File output2 = handleOutput(2, command2Out);
-
+        PerfTimer.endOneAQLRun();
         return handleAQL(output1, output2);
 
     }

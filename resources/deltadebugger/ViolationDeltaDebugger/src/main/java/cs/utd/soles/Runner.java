@@ -8,7 +8,6 @@ import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.Statement;
-import com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.apache.commons.io.FileUtils;
@@ -27,6 +26,7 @@ public class Runner {
 
     static TesterUtil testerForThis=null;
     public static void main(String[] args){
+        PerfTimer.startProgramRunTime();
         try {
             readConfig(args[0]);
             SchemaGenerator.generateSchema();
@@ -42,10 +42,11 @@ public class Runner {
         }catch(IOException e){
             e.printStackTrace();
         }
-        //testerForThis.createApk(gradlew_path,project_root_path);
         //start the delta debugging process
+
         while(!minimized){
-            //this is set here because if a change is made to ANY file we want to say it isnt minimized yet
+            //this is set here because if a change is made to ANY ast we want to say we haven't minimized yet
+            PerfTimer.startOneRotation();
             minimized=true;
             int i=0;
             for (CompilationUnit compilationUnit : bestCUList) {
@@ -53,26 +54,30 @@ public class Runner {
                 i++;
             }
             System.out.println("Done with 1 rotation");
+            PerfTimer.endOneRotation();
         }
 
 
         try {
             String filePathName = "debugger/java_files/";
             for (int i = 0; i < bestCUList.size(); i++) {
-                File file = new File(filePathName + (i + 1) + ".java");
+                File file = new File(filePathName +programFileNames.get(i) + ".java");
 
-                FileWriter fw = new FileWriter(file);
                 if (file.exists())
                     file.delete();
                 file.createNewFile();
-                fw.write(LexicalPreservingPrinter.print(bestCUList.get(i)));
+                FileWriter fw = new FileWriter(file);
+                fw.write(bestCUList.get(i).toString());
                 fw.flush();
                 fw.close();
             }
+
+
+
         }catch(IOException e){
             e.printStackTrace();
         }
-
+        PerfTimer.getProgramRunTime();
     }
     //this method handles the filepath to the fileconfig.json which is what we are going to be reading for our config
     private static void readConfig(String path)throws Exception {
@@ -109,7 +114,6 @@ public class Runner {
     static ArrayList<CompilationUnit> bestCUList = new ArrayList<>();
     static ArrayList<String> programFileNames= new ArrayList<>();
     static ArrayList<File> javaFiles = new ArrayList<>();
-    static ArrayList<File> originalFiles = new ArrayList<>();
     //main recursion that loops through all nodes
     //we process parents before children
     public static void depthFirstTraverse(int currentCU, Node currentNode){
@@ -131,15 +135,22 @@ public class Runner {
             return;
         }
         if(currentNode instanceof ClassOrInterfaceDeclaration){
-            handleNodeListBodyDec(((ClassOrInterfaceDeclaration) currentNode).getMembers());
+            //handleNodeListBodyDec(((ClassOrInterfaceDeclaration) currentNode).getMembers());
 
-            //method call that gives error
-            //handleNodeList(((ClassOrInterfaceDeclaration) currentNode).getMembers());
+            ClassOrInterfaceDeclaration node = (ClassOrInterfaceDeclaration) currentNode;
+
+            for(Node x: node.getChildNodes()){
+                System.out.println("Node: " +x.toString() + " Node Type: "+x.getClass().toGenericString());
+            }
+
         }
 
         if(currentNode instanceof BlockStmt) {
 
-            handleNodeListState(((BlockStmt) currentNode).getStatements());
+            BlockStmt node = ((BlockStmt) currentNode).asBlockStmt();
+            for(Node x: node.getChildNodes()){
+                System.out.println("Node: " +x.toString() + " Node Type: "+x.getClass().toGenericString());
+            }
         }
 
 
@@ -197,6 +208,7 @@ public class Runner {
 
     private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
+        PerfTimer.startOneASTChange();
 
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
@@ -221,13 +233,13 @@ public class Runner {
                     //update the copied unit to reflect the most recent ast
                     copiedUnit = bestCUList.get(compPosition).clone();
                     j=list.size();
-                    i=list.size();
+                    i=list.size()/2;
                 }
 
             }
         }
 
-
+        PerfTimer.endOneASTChange();
     }
 
 
@@ -240,13 +252,14 @@ public class Runner {
         boolean returnVal=false;
 
         try {
-            if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles)) {
-                if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path)) {
-                    returnVal = true;
-                    //System.out.println(n.findCompilationUnit().get());
-                    //bestCu = StaticJavaParser.parse(n.findCompilationUnit().get().toString());
 
+            if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles)) {
+
+                if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path)) {
+
+                    returnVal = true;
                     minimized = false;
+
                     System.out.println("Successful One\n\n------------------------------------\n\n\n");
                     for (CompilationUnit x : bestCUList) {
                         System.out.println(x);

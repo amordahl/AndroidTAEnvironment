@@ -1,0 +1,119 @@
+package cs.utd.soles;
+
+public class PerfTimer {
+    public static long getTotalOfRotations() {
+        return totalOfRotations;
+    }
+
+    public static long getTotalRotations() {
+        return totalRotations;
+    }
+
+    public static double getAverageOfRotations() {
+        return ((double)totalOfRotations)/totalRotations;
+    }
+
+    public static long getTotalProgramTime() {
+        return totalProgramTime;
+    }
+
+    public static long getTotalOfASTChanges() {
+        return totalOfASTChanges;
+    }
+
+    public static long getTotalASTChanges() {
+        return totalASTChanges;
+    }
+
+    public static double getAverageOfASTChanges() {
+        return ((double)totalOfASTChanges)/totalASTChanges;
+    }
+
+    public static long getTotalOfAQLRuns() {
+        return totalOfAQLRuns;
+    }
+
+    public static long getTotalAQLRuns() {
+        return totalAQLRuns;
+    }
+
+    public static double getAverageOfAQLRuns() {
+        return ((double)totalOfAQLRuns)/totalAQLRuns;
+    }
+
+    public static long getTotalOfCompileRuns() {
+        return totalOfCompileRuns;
+    }
+
+    public static long getTotalCompileRuns() {
+        return totalCompileRuns;
+    }
+
+    public static double getAverageOfCompileRuns() {
+        return ((double)totalOfCompileRuns)/totalCompileRuns;
+    }
+
+
+    public static void startOneRotation(){
+        thisRotation=System.currentTimeMillis();
+    }
+    public static void endOneRotation(){
+        totalOfRotations += System.currentTimeMillis() - thisRotation;
+        totalRotations++;
+    }
+    public static void startOneAQLRun(){
+        thisAQLRun=System.currentTimeMillis();
+    }
+    public static void endOneAQLRun(){
+        totalOfAQLRuns += System.currentTimeMillis() - thisAQLRun;
+        totalAQLRuns++;
+    }
+    public static void startOneCompileRun(){
+        thisCompileRun=System.currentTimeMillis();
+    }
+    public static void endOneCompileRun(){
+        totalOfCompileRuns += System.currentTimeMillis() - thisCompileRun;
+        totalCompileRuns++;
+    }
+    public static void startOneASTChange(){
+        thisCompileRun=System.currentTimeMillis();
+    }
+    public static void endOneASTChange(){
+        totalOfASTChanges += System.currentTimeMillis() - thisASTChange;
+        totalASTChanges++;
+    }
+
+    public static void startProgramRunTime(){
+        thisProgramRuntime=System.currentTimeMillis();
+    }
+    public static long getProgramRunTime(){
+        return System.currentTimeMillis()-thisProgramRuntime;
+    }
+
+    private static long thisProgramRuntime=0;
+
+    private static long thisRotation=0;
+
+    private static long thisAQLRun=0;
+
+    private static long thisASTChange=0;
+    private static long thisCompileRun=0;
+
+
+    private static long totalOfRotations=0;
+    private static long totalRotations=0;
+
+    private static long totalProgramTime=0;
+
+    private static long totalOfASTChanges=0;
+    private static long totalASTChanges=0;
+
+    private static long totalOfAQLRuns=0;
+    private static long totalAQLRuns=0;
+
+    private static long totalOfCompileRuns=0;
+    private static long totalCompileRuns=0;
+
+
+
+}

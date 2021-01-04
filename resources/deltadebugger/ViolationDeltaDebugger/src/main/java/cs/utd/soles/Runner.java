@@ -281,14 +281,14 @@ public class Runner {
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
                 List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
-                System.out.println("before remove: "+bestCUList.get(compPosition).toString());
+                //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
 
                 for(Node x: subList){
                     if(alterableList.contains(x)){
                         currentNode.remove(x);
                     }
                 }
-                System.out.println("after remove: "+bestCUList.get(compPosition).toString());
+                //System.out.println("after remove: "+bestCUList.get(compPosition).toString());
 
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
@@ -336,10 +336,10 @@ public class Runner {
                     returnVal = true;
                     minimized = false;
 
-                    //System.out.println("Successful One\n\n------------------------------------\n\n\n");
-                    //for (CompilationUnit x : bestCUList) {
-                    //    System.out.println(x);
-                    //}
+                    System.out.println("Successful One\n\n------------------------------------\n\n\n");
+                    for (CompilationUnit x : bestCUList) {
+                        System.out.println(x);
+                    }
                 }
             }
         } catch (IOException e) {

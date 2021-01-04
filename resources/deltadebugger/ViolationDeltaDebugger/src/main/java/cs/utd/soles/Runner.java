@@ -6,10 +6,8 @@ import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.Statement;
-import javassist.compiler.ast.FieldDecl;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.apache.commons.io.FileUtils;
@@ -74,12 +72,30 @@ public class Runner {
                 fw.close();
             }
 
+            filePathName = "debugger/"+testerForThis.targetFlow.getApk()+"_time.txt";
+            File file = new File(filePathName);
+
+            if (file.exists())
+                file.delete();
+            file.createNewFile();
+            FileWriter fw = new FileWriter(file);
+            fw.write("Total Program Runtime: "+PerfTimer.getProgramRunTime()+"\n"+"\n");
+            fw.write("Average Of Rotations: " + PerfTimer.getAverageOfRotations()+"\n");
+            fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()+"\n"+"\n");
+            fw.write("Average Of AST Changes: "+ PerfTimer.getAverageOfASTChanges()+"\n");
+            fw.write("Total AST Changes: " + PerfTimer.getTotalASTChanges()+"\n"+"\n");
+            fw.write("Average Of AQL Runs: " + PerfTimer.getAverageOfAQLRuns()+"\n");
+            fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()+"\n"+"\n");
+            fw.write("Average Of Compile Runs: " +PerfTimer.getAverageOfCompileRuns()+"\n");
+            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()+"\n");
+            fw.flush();
+            fw.close();
+
 
 
         }catch(IOException e){
             e.printStackTrace();
         }
-        PerfTimer.getProgramRunTime();
     }
     //this method handles the filepath to the fileconfig.json which is what we are going to be reading for our config
     private static void readConfig(String path)throws Exception {
@@ -257,10 +273,6 @@ public class Runner {
         ArrayList<Node> childrenWeCareAbout = new ArrayList<>(cloneList);
 
         childrenWeCareAbout.retainAll(list);
-
-        System.out.println(childrenWeCareAbout);
-
-
         return childrenWeCareAbout;
 
     }

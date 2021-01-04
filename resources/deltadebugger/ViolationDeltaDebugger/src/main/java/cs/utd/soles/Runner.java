@@ -308,8 +308,8 @@ public class Runner {
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
-                    j=list.size();
-                    i=list.size()/2;
+                    j=alterableList.size();
+                    i=alterableList.size()/2;
                 }
 
             }

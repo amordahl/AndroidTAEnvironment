@@ -274,8 +274,9 @@ public class Runner {
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, list);
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
+        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
+
 
         for(int i=list.size();i>0;i/=2){
             for(int j=0;j<list.size();j+=i){
@@ -295,6 +296,11 @@ public class Runner {
                     bestCUList.set(compPosition, copiedUnit);
                     currentNode=copiedNode;
                     alterableList = copiedList;
+
+                    copiedUnit = bestCUList.get(compPosition).clone();
+                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+                    copiedList = getCurrentNodeList(copiedNode, alterableList);
+
 
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)

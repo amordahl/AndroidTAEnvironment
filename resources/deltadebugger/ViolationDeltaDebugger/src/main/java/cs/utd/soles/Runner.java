@@ -284,7 +284,7 @@ public class Runner {
 
     private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
-        PerfTimer.startOneASTChange();
+
 
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
@@ -296,6 +296,7 @@ public class Runner {
 
         for(int i=alterableList.size();i>0;i/=2){
             for(int j=0;j<alterableList.size();j+=i){
+                PerfTimer.startOneASTChange();
                 List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
                 //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
 
@@ -327,11 +328,12 @@ public class Runner {
                     j=alterableList.size();
                     i=alterableList.size()/2;
                 }
+                PerfTimer.endOneASTChange();
 
             }
         }
 
-        PerfTimer.endOneASTChange();
+
     }
 
 

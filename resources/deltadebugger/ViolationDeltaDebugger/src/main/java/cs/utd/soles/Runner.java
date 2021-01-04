@@ -79,16 +79,16 @@ public class Runner {
                 file.delete();
             file.createNewFile();
             FileWriter fw = new FileWriter(file);
-            long finalRunTimeVar= PerfTimer.getProgramRunTime();
+            long finalRunTimeVar= PerfTimer.getProgramRunTime()/1000;
             fw.write("Total Program Runtime: "+finalRunTimeVar+"\n"+"\n");
-            fw.write("Average Of Rotations: " + PerfTimer.getAverageOfRotations()+"\n");
-            fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()+"\n"+"\n");
-            fw.write("Average Of AST Changes: "+ PerfTimer.getAverageOfASTChanges()+"\n");
-            fw.write("Total AST Changes: " + PerfTimer.getTotalASTChanges()+"\n"+"\n");
-            fw.write("Average Of AQL Runs: " + PerfTimer.getAverageOfAQLRuns()+"\n");
-            fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()+"\n"+"\n");
-            fw.write("Average Of Compile Runs: " +PerfTimer.getAverageOfCompileRuns()+"\n");
-            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()+"\n"+"\n");
+            fw.write("Average Of Rotations: " + PerfTimer.getAverageOfRotations()/1000+"\n");
+            fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()/1000+"\n"+"\n");
+            fw.write("Average Of AST Changes: "+ PerfTimer.getAverageOfASTChanges()/1000+"\n");
+            fw.write("Total AST Changes: " + PerfTimer.getTotalASTChanges()/1000+"\n"+"\n");
+            fw.write("Average Of AQL Runs: " + PerfTimer.getAverageOfAQLRuns()/1000+"\n");
+            fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()/1000+"\n"+"\n");
+            fw.write("Average Of Compile Runs: " +PerfTimer.getAverageOfCompileRuns()/1000+"\n");
+            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()/1000+"\n"+"\n");
             fw.write("Percentages:\n"+PerfTimer.getPercentages());
 
 

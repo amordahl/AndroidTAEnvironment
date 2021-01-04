@@ -278,8 +278,8 @@ public class Runner {
         ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
 
 
-        for(int i=list.size();i>0;i/=2){
-            for(int j=0;j<list.size();j+=i){
+        for(int i=alterableList.size();i>0;i/=2){
+            for(int j=0;j<alterableList.size();j+=i){
                 List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
                 //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
 

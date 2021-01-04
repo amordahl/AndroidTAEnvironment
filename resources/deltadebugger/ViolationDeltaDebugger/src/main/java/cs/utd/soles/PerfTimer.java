@@ -118,9 +118,9 @@ public class PerfTimer {
 
         String returnString ="";
 
-        returnString+="Percent Of Program Time Taken By AST Changes: "+(totalOfASTChanges/totalRunTime)+"\n";
-        returnString+="Percent Of Program Time Taken By AQL Runs: "+(totalOfAQLRuns/totalRunTime)+"\n";
-        returnString+="Percent Of Program Time Taken By Compile Runs: "+(totalOfCompileRuns/totalRunTime)+"\n";
+        returnString+="Percent Of Program Time Taken By AST Changes: "+((totalOfASTChanges/totalRunTime)*100)+"\n";
+        returnString+="Percent Of Program Time Taken By AQL Runs: "+((totalOfAQLRuns/totalRunTime)*100)+"\n";
+        returnString+="Percent Of Program Time Taken By Compile Runs: "+((totalOfCompileRuns/totalRunTime)*100)+"\n";
         return returnString;
     }
 

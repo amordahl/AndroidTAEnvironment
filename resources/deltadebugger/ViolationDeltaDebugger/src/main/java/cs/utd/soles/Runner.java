@@ -82,13 +82,13 @@ public class Runner {
             long finalRunTimeVar= PerfTimer.getProgramRunTime()/1000;
             fw.write("Total Program Runtime: "+finalRunTimeVar+"\n"+"\n");
             fw.write("Average Of Rotations: " + PerfTimer.getAverageOfRotations()/1000+"\n");
-            fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()/1000+"\n"+"\n");
+            fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()+"\n"+"\n");
             fw.write("Average Of AST Changes: "+ PerfTimer.getAverageOfASTChanges()/1000+"\n");
-            fw.write("Total AST Changes: " + PerfTimer.getTotalASTChanges()/1000+"\n"+"\n");
+            fw.write("Total AST Changes: " + PerfTimer.getTotalASTChanges()+"\n"+"\n");
             fw.write("Average Of AQL Runs: " + PerfTimer.getAverageOfAQLRuns()/1000+"\n");
-            fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()/1000+"\n"+"\n");
+            fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()+"\n"+"\n");
             fw.write("Average Of Compile Runs: " +PerfTimer.getAverageOfCompileRuns()/1000+"\n");
-            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()/1000+"\n"+"\n");
+            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()+"\n"+"\n");
             fw.write("Percentages:\n"+PerfTimer.getPercentages());
 
 
@@ -296,7 +296,7 @@ public class Runner {
 
         for(int i=alterableList.size();i>0;i/=2){
             for(int j=0;j<alterableList.size();j+=i){
-                PerfTimer.startOneASTChange();
+
                 List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
                 //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
 
@@ -328,7 +328,7 @@ public class Runner {
                     j=alterableList.size();
                     i=alterableList.size()/2;
                 }
-                PerfTimer.endOneASTChange();
+
 
             }
         }

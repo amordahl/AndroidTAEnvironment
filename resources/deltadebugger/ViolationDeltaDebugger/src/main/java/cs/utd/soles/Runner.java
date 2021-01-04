@@ -79,7 +79,8 @@ public class Runner {
                 file.delete();
             file.createNewFile();
             FileWriter fw = new FileWriter(file);
-            fw.write("Total Program Runtime: "+PerfTimer.getProgramRunTime()+"\n"+"\n");
+            long finalRunTimeVar= PerfTimer.getProgramRunTime();
+            fw.write("Total Program Runtime: "+finalRunTimeVar+"\n"+"\n");
             fw.write("Average Of Rotations: " + PerfTimer.getAverageOfRotations()+"\n");
             fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()+"\n"+"\n");
             fw.write("Average Of AST Changes: "+ PerfTimer.getAverageOfASTChanges()+"\n");
@@ -87,7 +88,10 @@ public class Runner {
             fw.write("Average Of AQL Runs: " + PerfTimer.getAverageOfAQLRuns()+"\n");
             fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()+"\n"+"\n");
             fw.write("Average Of Compile Runs: " +PerfTimer.getAverageOfCompileRuns()+"\n");
-            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()+"\n");
+            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()+"\n"+"\n");
+            fw.write("Percentages:\n"+PerfTimer.getPercentages());
+
+
             fw.flush();
             fw.close();
 

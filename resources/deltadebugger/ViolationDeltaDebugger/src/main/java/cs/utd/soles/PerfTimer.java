@@ -13,9 +13,6 @@ public class PerfTimer {
         return ((double)totalOfRotations)/totalRotations;
     }
 
-    public static long getTotalProgramTime() {
-        return totalProgramTime;
-    }
 
     public static long getTotalOfASTChanges() {
         return totalOfASTChanges;
@@ -87,7 +84,8 @@ public class PerfTimer {
         thisProgramRuntime=System.currentTimeMillis();
     }
     public static long getProgramRunTime(){
-        return System.currentTimeMillis()-thisProgramRuntime;
+        totalProgramTime=System.currentTimeMillis()-thisProgramRuntime;
+        return totalProgramTime;
     }
 
     private static long thisProgramRuntime=0;
@@ -113,6 +111,18 @@ public class PerfTimer {
 
     private static long totalOfCompileRuns=0;
     private static long totalCompileRuns=0;
+
+    public static String getPercentages(){
+
+        double totalRunTime = totalProgramTime;
+
+        String returnString ="";
+
+        returnString+="Percent Of Program Time Taken By AST Changes: "+(totalRunTime/totalOfASTChanges)+"\n";
+        returnString+="Percent Of Program Time Taken By AQL Runs: "+(totalRunTime/totalOfASTChanges)+"\n";
+        returnString+="Percent Of Program Time Taken By Compile Runs: "+(totalRunTime/totalOfASTChanges)+"\n";
+        return returnString;
+    }
 
 
 

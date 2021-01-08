@@ -234,8 +234,6 @@ public class Runner {
      * OK, so this method is required because when we remove something from an ast the way we "reset" the ast to it's pre-removal form is by replacing that ast with a copied ast, turns out
      * the "currentNode" object is an object that is in the first tree (the tree we removed something from). So when we replace the entire tree we need to save our position. This method just finds the
      * currentNode that we were working on in the copied tree and then returns it. If we don't do this then the only time we would ever change the tree would be the first time we complete a change-then-replace cycle.
-     *
-     *
      */
 
     public static Node findCurrentNode(Node currentNode, int compPosition, CompilationUnit copiedUnit){
@@ -317,8 +315,6 @@ public class Runner {
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
-
-
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
                     //update the copied unit to reflect the most recent ast

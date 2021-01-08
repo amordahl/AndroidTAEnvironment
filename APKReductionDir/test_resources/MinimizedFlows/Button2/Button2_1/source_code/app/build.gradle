@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 19
     buildToolsVersion "29.0.2"
 
     defaultConfig {
         applicationId "de.ecspride"
-        minSdkVersion 8
-        targetSdkVersion 17
+        minSdkVersion 14
     }
 
     buildTypes {
@@ -19,5 +18,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:support-v4:19.0.0'
 }

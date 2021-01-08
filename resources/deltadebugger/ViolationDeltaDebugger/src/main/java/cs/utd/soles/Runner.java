@@ -188,7 +188,13 @@ public class Runner {
         if(currentNode instanceof BlockStmt) {
 
             BlockStmt node = ((BlockStmt) currentNode);
-            returnNode=handleNodeList(currentCUPos,node, node.getChildNodes());
+            List<Node> childList = new ArrayList<>();
+            for(Node x: node.getChildNodes()){
+                if(x instanceof  Statement){
+                    childList.add(x);
+                }
+            }
+            returnNode=handleNodeList(currentCUPos,currentNode, childList);
         }
 
         return returnNode;

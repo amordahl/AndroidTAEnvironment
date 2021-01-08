@@ -149,7 +149,10 @@ public class Runner {
             return;
         }
 
-        process(currentCU, currentNode);
+        //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
+        currentNode=process(currentCU, currentNode);
+
+        if(currentNode==null)return;
 
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){
@@ -159,10 +162,13 @@ public class Runner {
 
     }
     //matches the currentNode to what type it is and handles appropriately
-    public static void process(int currentCUPos, Node currentNode){
+    //this returns the currentNode (could be the node we gave it or it's equivalent copy whenever we copied and killed tons of trees)
+    public static Node process(int currentCUPos, Node currentNode){
+
+        Node returnNode=null;
 
         if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
-            return;
+            return null;
         }
         if(currentNode instanceof ClassOrInterfaceDeclaration){
             ClassOrInterfaceDeclaration node = (ClassOrInterfaceDeclaration) currentNode;
@@ -173,16 +179,17 @@ public class Runner {
                     childList.add(x);
                 }
             }
-            handleNodeList(currentCUPos,currentNode, childList);
+            returnNode=handleNodeList(currentCUPos,currentNode, childList);
 
         }
 
         if(currentNode instanceof BlockStmt) {
 
             BlockStmt node = ((BlockStmt) currentNode).asBlockStmt();
-            handleNodeList(currentCUPos,node, node.getChildNodes());
+            returnNode=handleNodeList(currentCUPos,node, node.getChildNodes());
         }
 
+        return returnNode;
 
     }
     //handles NodeLists<Statements>
@@ -262,7 +269,7 @@ public class Runner {
                         return x;
                     }
 
-                    System.out.println("Found matching: "+ x.getClass().toGenericString()+"      "+traverseList.get(0).getClass().toGenericString());
+                    //System.out.println("Found matching: "+ x.getClass().toGenericString()+"      "+traverseList.get(0).getClass().toGenericString());
                     break;
                 }
             }
@@ -285,9 +292,9 @@ public class Runner {
     }
 
 
-    private static void handleNodeList(int compPosition, Node currentNode, List<Node> list){
+    private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
-
+        //set this to true when we make a bad change
 
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
@@ -301,14 +308,16 @@ public class Runner {
             for(int j=0;j<alterableList.size();j+=i){
 
                 List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
-                //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
+                if(LOG_MESSAGES)
+                System.out.println("before remove: "+bestCUList.get(compPosition).toString());
 
                 for(Node x: subList){
                     if(alterableList.contains(x)){
                         currentNode.remove(x);
                     }
                 }
-                //System.out.println("after remove: "+bestCUList.get(compPosition).toString());
+                if(LOG_MESSAGES)
+                System.out.println("after remove: "+bestCUList.get(compPosition).toString());
 
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
@@ -320,6 +329,7 @@ public class Runner {
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
+
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
                     //update the copied unit to reflect the most recent ast
@@ -334,7 +344,7 @@ public class Runner {
             }
         }
 
-
+        return currentNode;
     }
 
 

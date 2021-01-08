@@ -187,7 +187,7 @@ public class Runner {
 
         if(currentNode instanceof BlockStmt) {
 
-            BlockStmt node = ((BlockStmt) currentNode).asBlockStmt();
+            BlockStmt node = ((BlockStmt) currentNode);
             returnNode=handleNodeList(currentCUPos,node, node.getChildNodes());
         }
 

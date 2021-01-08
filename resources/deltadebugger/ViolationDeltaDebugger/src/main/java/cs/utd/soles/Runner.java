@@ -276,7 +276,7 @@ public class Runner {
                     if(traverseList.size()==1){
                         return x;
                     }
-
+                    curNode=x;
                     //System.out.println("Found matching: "+ x.getClass().toGenericString()+"      "+traverseList.get(0).getClass().toGenericString());
                     break;
                 }

@@ -23,12 +23,17 @@ import java.util.List;
 
 public class Runner {
 
-
+    public static boolean LOG_MESSAGES=false;
     static TesterUtil testerForThis=null;
     public static void main(String[] args){
         PerfTimer.startProgramRunTime();
         try {
             readConfig(args[0]);
+            if(args.length==2){
+                if(args[1].equals("-l")){
+                    LOG_MESSAGES=true;
+                }
+            }
             SchemaGenerator.generateSchema();
         }catch(Exception e){
             e.printStackTrace();

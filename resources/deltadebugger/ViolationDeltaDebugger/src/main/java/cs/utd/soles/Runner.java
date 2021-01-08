@@ -172,7 +172,7 @@ public class Runner {
         if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
             return null;
         }
-        if(currentNode instanceof ClassOrInterfaceDeclaration){
+        /*if(currentNode instanceof ClassOrInterfaceDeclaration){
             ClassOrInterfaceDeclaration node = (ClassOrInterfaceDeclaration) currentNode;
 
             List<Node> childList = new ArrayList<Node>();
@@ -183,7 +183,7 @@ public class Runner {
             }
             returnNode=handleNodeList(currentCUPos,currentNode, childList);
 
-        }
+        }*/
 
         if(currentNode instanceof BlockStmt) {
 

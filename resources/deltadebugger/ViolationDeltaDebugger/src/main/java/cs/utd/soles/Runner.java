@@ -150,9 +150,11 @@ public class Runner {
         }
 
         //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
-        currentNode=process(currentCU, currentNode);
+        Node tempNode=process(currentCU,currentNode);
 
-        if(currentNode==null)return;
+        if(tempNode!=null)
+            currentNode=tempNode;
+
 
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){

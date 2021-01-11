@@ -272,7 +272,6 @@ public class Runner {
         while(!(curNode instanceof CompilationUnit)){
             curNode = curNode.getParentNode().get();
             traverseList.add(0, curNode);
-
         }
 
         curNode = copiedUnit;
@@ -320,7 +319,10 @@ public class Runner {
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
+        System.out.println("Unit given: "+currentNode.findCompilationUnit());
+        System.out.println("unit copied: "+copiedUnit);
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+
         System.out.println("copied Node original: "+copiedNode.toString());
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
         ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);

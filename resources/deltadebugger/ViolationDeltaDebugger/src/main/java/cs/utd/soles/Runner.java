@@ -314,10 +314,14 @@ public class Runner {
 
     private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
+
+        System.out.println("CurrentNode passed to nodeList: "+currentNode.toString());
+
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+        System.out.println("copied Node original: "+copiedNode.toString());
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
         ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
 

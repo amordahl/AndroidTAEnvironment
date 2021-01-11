@@ -345,7 +345,8 @@ public class Runner {
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
                     j=alterableList.size();
-                    i=alterableList.size()/2;
+                   // i=alterableList.size()/2;
+                    i=0;
                 }
 
 

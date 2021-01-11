@@ -150,11 +150,18 @@ public class Runner {
         }
 
         //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
+        if(LOG_MESSAGES)
+            System.out.println(currentNode.toString());
 
         currentNode= process(currentCU,currentNode);
 
+        if(LOG_MESSAGES)
+            System.out.println(currentNode == null ? "NULL":currentNode.toString());
+
         if(currentNode==null)
             return;
+
+
 
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){
@@ -316,16 +323,18 @@ public class Runner {
             for(int j=0;j<alterableList.size();j+=i){
 
                 List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
-                if(LOG_MESSAGES)
-                System.out.println("before remove: "+bestCUList.get(compPosition).toString());
+                //if(LOG_MESSAGES)
+                //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
+                ArrayList<Node> removedNodes = new ArrayList<>();
 
                 for(Node x: subList){
                     if(alterableList.contains(x)){
                         currentNode.remove(x);
+                        removedNodes.add(x);
                     }
                 }
-                if(LOG_MESSAGES)
-                System.out.println("after remove: "+bestCUList.get(compPosition).toString());
+                //if(LOG_MESSAGES)
+                //System.out.println("after remove: "+bestCUList.get(compPosition).toString());
 
                 if(!checkChanges(currentNode)){
                     //our changes didnt work so just replace unit with unaltered unit
@@ -341,6 +350,8 @@ public class Runner {
                 }else{
                     //restart the search from the top (something might have changed so we can remove it now)
                     //update the copied unit to reflect the most recent ast
+                    alterableList.removeAll(removedNodes);
+
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
                     copiedList = getCurrentNodeList(copiedNode, alterableList);

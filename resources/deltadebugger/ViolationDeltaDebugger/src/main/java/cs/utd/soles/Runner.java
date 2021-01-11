@@ -149,14 +149,15 @@ public class Runner {
             return;
         }
 
-        //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
-        if(LOG_MESSAGES)
-            System.out.println(currentNode.toString());
 
+        //if(LOG_MESSAGES)
+        //    System.out.println(currentNode.toString());
+
+        //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
         currentNode= process(currentCU,currentNode);
 
-        if(LOG_MESSAGES)
-            System.out.println(currentNode == null ? "NULL":currentNode.toString());
+        //if(LOG_MESSAGES)
+        //    System.out.println(currentNode == null ? "NULL":currentNode.toString());
 
         if(currentNode==null)
             return;
@@ -179,7 +180,7 @@ public class Runner {
         if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
             return null;
         }
-        /*if(currentNode instanceof ClassOrInterfaceDeclaration){
+        if(currentNode instanceof ClassOrInterfaceDeclaration){
             ClassOrInterfaceDeclaration node = (ClassOrInterfaceDeclaration) currentNode;
 
             List<Node> childList = new ArrayList<Node>();
@@ -190,7 +191,7 @@ public class Runner {
             }
             returnNode=handleNodeList(currentCUPos,currentNode, childList);
 
-        }*/
+        }
 
         if(currentNode instanceof BlockStmt) {
 

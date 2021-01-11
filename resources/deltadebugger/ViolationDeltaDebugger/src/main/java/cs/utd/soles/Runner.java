@@ -249,9 +249,9 @@ public class Runner {
     //just like how with currentNode we have to find it in the ast, we have to find the children we were working on as well
     public static ArrayList<Node> getCurrentNodeList(Node currentNode, List<Node> list){
 
-        if(LOG_MESSAGES){
-            System.out.println("Current Node in gCNL: " + currentNode);
-        }
+        //if(LOG_MESSAGES){
+           // System.out.println("Current Node in gCNL: " + currentNode);
+      //  }
         List<Node> cloneList = currentNode.getChildNodes();
 
         ArrayList<Node> childrenWeCareAbout = new ArrayList<>(cloneList);
@@ -265,16 +265,18 @@ public class Runner {
     private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
 
-        System.out.println("CurrentNode passed to nodeList: "+currentNode.toString());
+        //System.out.println("CurrentNode passed to nodeList: "+currentNode.toString());
 
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
 
-        System.out.println("Unit given: "+currentNode.findCompilationUnit());
-        System.out.println("unit copied: "+copiedUnit);
+        //System.out.println("Unit given: "+currentNode.findCompilationUnit());
+        //System.out.println("unit copied: "+copiedUnit);
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
 
-        System.out.println("copied Node original: "+copiedNode.toString());
+        if(copiedNode==null)
+            return null;
+
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
         ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
 
@@ -313,13 +315,13 @@ public class Runner {
                     alterableList.removeAll(removedNodes);
 
 
-                    System.out.println("Unit given AFTER SUCCESS: "+currentNode.findCompilationUnit());
-                    System.out.println("unit in best cu lsit : "+bestCUList.get(compPosition));
+                   // System.out.println("Unit given AFTER SUCCESS: "+currentNode.findCompilationUnit());
+                    //System.out.println("unit in best cu lsit : "+bestCUList.get(compPosition));
 
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
 
-                    System.out.println("unit copied AFTER SUCCESS: "+copiedUnit);
+                    //System.out.println("unit copied AFTER SUCCESS: "+copiedUnit);
 
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
                     i=alterableList.size()/2;

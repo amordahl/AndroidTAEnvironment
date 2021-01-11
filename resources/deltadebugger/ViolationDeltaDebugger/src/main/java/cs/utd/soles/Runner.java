@@ -153,7 +153,7 @@ public class Runner {
         if(LOG_MESSAGES)
             System.out.println(currentNode.toString());
 
-        //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
+
         currentNode= process(currentCU,currentNode);
 
         if(LOG_MESSAGES)
@@ -300,6 +300,9 @@ public class Runner {
     public static ArrayList<Node> getCurrentNodeList(Node currentNode, List<Node> list){
 
         List<Node> cloneList = currentNode.getChildNodes();
+        if(LOG_MESSAGES){
+            System.out.println("Current Node in gCNL: " + currentNode);
+        }
         ArrayList<Node> childrenWeCareAbout = new ArrayList<>(cloneList);
 
         childrenWeCareAbout.retainAll(list);
@@ -353,6 +356,13 @@ public class Runner {
 
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
+
+
+                    if(LOG_MESSAGES){
+                        System.out.println("Copied Node: "+copiedNode.toString());
+                        System.out.println("Current Node:main "+currentNode.toString());
+                    }
+
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
                     i=alterableList.size()/2;
                     break;

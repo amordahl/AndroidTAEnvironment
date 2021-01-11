@@ -208,55 +208,6 @@ public class Runner {
         return returnNode;
 
     }
-    //handles NodeLists<Statements>
-    //all these methods just remove things by cutting the list in half each time
-    //once it finds something to remove it then restarts the loop and does it until it can remove anything
-    private static void handleNodeListState(NodeList<Statement> list){
-
-
-        for(int i=list.size();i>0;i/=2){
-            for(int j=0;j<list.size();j+=i){
-                NodeList<Statement> subList = new NodeList<>(list.subList(j, Math.min((j + i), list.size())));
-                list.removeAll(subList);
-                //System.out.println(list);
-                if(!checkChanges(list.getParentNodeForChildren())){
-                    list.addAll(j, subList);
-                }else{
-                    //restart the search from the top (something might have changed so we can remove it now)
-
-                    j=list.size();
-                    i=list.size();
-                }
-
-            }
-        }
-
-    }
-    //handles NodeList<BodyDeclaration<?>>
-    private static void handleNodeListBodyDec(NodeList<BodyDeclaration<?>> list){
-       // System.out.println("Before loop: "+list);
-        for(int i=list.size();i>0;i/=2){
-            for(int j=0;j<list.size();j+=i){
-                NodeList<BodyDeclaration<?>> subList = new NodeList<>(list.subList(j,Math.min((j + i), list.size())));
-                list.removeAll(subList);
-                //System.out.println("After remove: "+list);
-                if(!checkChanges(list.getParentNodeForChildren())){
-                    list.addAll(j, subList);
-                   // System.out.println("After add back: "+list);
-                }else{
-                    //restart the search from the top (something might have changed so we can remove it now)
-
-                    j=list.size();
-                    i=list.size();
-                }
-
-            }
-        }
-        //System.out.println("After loop: "+list);
-
-
-    }
-
 
     /**
      * OK, so this method is required because when we remove something from an ast the way we "reset" the ast to it's pre-removal form is by replacing that ast with a copied ast, turns out
@@ -345,7 +296,7 @@ public class Runner {
                 //if(LOG_MESSAGES)
                 //System.out.println("after remove: "+bestCUList.get(compPosition).toString());
 
-                if(!checkChanges(currentNode)){
+                if(!checkChanges()){
                     //our changes didnt work so just replace unit with unaltered unit
                     //we also update currentNode and alterableList  with the correct objects for the new ast
                     bestCUList.set(compPosition, copiedUnit);
@@ -361,17 +312,14 @@ public class Runner {
                     //update the copied unit to reflect the most recent ast
                     alterableList.removeAll(removedNodes);
 
-                    if(LOG_MESSAGES){
-                        System.out.println("Current Node:main "+currentNode.toString());
-                    }
+
+                    System.out.println("Unit given AFTER SUCCESS: "+currentNode.findCompilationUnit());
+                    System.out.println("unit in best cu lsit : "+bestCUList.get(compPosition));
 
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
 
-
-                    if(LOG_MESSAGES){
-                        System.out.println("Copied Node: "+copiedNode.toString());
-                    }
+                    System.out.println("unit copied AFTER SUCCESS: "+copiedUnit);
 
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
                     i=alterableList.size()/2;
@@ -395,7 +343,7 @@ public class Runner {
 
 
     //this method is run our ast and see if the changes we made are good or bad (returning true or false) depending
-    private static boolean checkChanges(Node n) {
+    private static boolean checkChanges() {
 
         boolean returnVal=false;
 

@@ -333,6 +333,8 @@ public class Runner {
             }
         }
 
+        bestCUList.set(compPosition, copiedUnit);
+        currentNode=copiedNode;
         return currentNode;
     }
 

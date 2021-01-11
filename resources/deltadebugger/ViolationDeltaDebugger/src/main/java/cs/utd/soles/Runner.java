@@ -344,9 +344,11 @@ public class Runner {
                     copiedUnit = bestCUList.get(compPosition).clone();
                     copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
-                    j=alterableList.size();
+                    i=alterableList.size()/2;
+                    break;
                    // i=alterableList.size()/2;
-                    i=0;
+                    //i=0 gets us good results but we are no longer greedy...
+
                 }
 
 

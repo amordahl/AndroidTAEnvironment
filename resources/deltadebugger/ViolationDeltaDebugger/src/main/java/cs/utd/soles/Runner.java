@@ -150,14 +150,14 @@ public class Runner {
         }
 
 
-        //if(LOG_MESSAGES)
-        //    System.out.println(currentNode.toString());
+        if(LOG_MESSAGES)
+            System.out.println(currentNode.toString());
 
         //if process returned true than this depthFirst is traversing a tree we killed off, this means we need to get our current place in the new tree
         currentNode= process(currentCU,currentNode);
 
-        //if(LOG_MESSAGES)
-        //    System.out.println(currentNode == null ? "NULL":currentNode.toString());
+        if(LOG_MESSAGES)
+            System.out.println(currentNode == null ? "NULL":currentNode.toString());
 
         if(currentNode==null)
             return;
@@ -309,8 +309,6 @@ public class Runner {
 
 
     private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
-
-        //set this to true when we make a bad change
 
         //save this compilationUnit so we can replace it
         CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();

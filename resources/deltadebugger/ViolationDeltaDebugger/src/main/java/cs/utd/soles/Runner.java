@@ -324,7 +324,8 @@ public class Runner {
                     //System.out.println("unit copied AFTER SUCCESS: "+copiedUnit);
 
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
-                    i=alterableList.size()/2;
+                    i=0;
+                    //i=alterableList.size()/2;
                     break;
                    // i=alterableList.size()/2;
                     //i=0 gets us good results but we are no longer greedy...
@@ -334,9 +335,6 @@ public class Runner {
 
             }
         }
-
-        bestCUList.set(compPosition, copiedUnit);
-        currentNode=copiedNode;
         return currentNode;
     }
 

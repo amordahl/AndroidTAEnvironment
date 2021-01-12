@@ -167,7 +167,9 @@ public class Runner {
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){
 
-            depthFirstTraverse(currentCU, n);
+
+            if(n.findCompilationUnit().get().equals(bestCUList.get(currentCU)))
+                depthFirstTraverse(currentCU, n);
         }
 
     }
@@ -274,9 +276,6 @@ public class Runner {
         //System.out.println("unit copied: "+copiedUnit);
         Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
 
-        if(copiedNode==null)
-            return null;
-
         ArrayList<Node> alterableList = new ArrayList<Node>(list);
         ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
 
@@ -324,8 +323,7 @@ public class Runner {
                     //System.out.println("unit copied AFTER SUCCESS: "+copiedUnit);
 
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
-                    i=0;
-                    //i=alterableList.size()/2;
+                    i=alterableList.size()/2;
                     break;
                    // i=alterableList.size()/2;
                     //i=0 gets us good results but we are no longer greedy...

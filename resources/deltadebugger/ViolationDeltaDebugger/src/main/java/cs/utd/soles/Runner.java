@@ -166,10 +166,7 @@ public class Runner {
 
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){
-
-
-            if(n.findCompilationUnit().get().equals(bestCUList.get(currentCU)))
-                depthFirstTraverse(currentCU, n);
+            depthFirstTraverse(currentCU, n);
         }
 
     }
@@ -191,7 +188,7 @@ public class Runner {
                     childList.add(x);
                 }
             }
-            returnNode=handleNodeList(currentCUPos,currentNode, childList);
+            returnNode=handleNodeListCopy(currentCUPos,currentNode, childList);
 
         }
 
@@ -204,7 +201,7 @@ public class Runner {
                     childList.add(x);
                 }
             }
-            returnNode=handleNodeList(currentCUPos,currentNode, childList);
+            returnNode=handleNodeListCopy(currentCUPos,currentNode, childList);
         }
 
         return returnNode;
@@ -264,7 +261,7 @@ public class Runner {
     }
 
 
-    private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
+    /*private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
 
         //System.out.println("CurrentNode passed to nodeList: "+currentNode.toString());
@@ -333,6 +330,57 @@ public class Runner {
 
             }
         }
+
+        return currentNode;
+    }*/
+
+    private static Node handleNodeListCopy(int compPosition, Node currentNode, List<Node> list){
+
+        //make copy
+        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
+        Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+        ArrayList<Node> alterableList = new ArrayList<Node>(list);
+        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
+
+        for(int i=copiedList.size();i>0;i/=2){
+            for(int j=0;j<copiedList.size();j+=i){
+
+                List<Node> subList = new ArrayList<>(copiedList.subList(j,Math.min((j+i),copiedList.size())));
+                //change copy
+                List<Node> removedNodes = new ArrayList<>();
+                for(Node x: subList){
+                    if(copiedList.contains(x)){
+                       copiedNode.remove(x);
+                       removedNodes.add(x);
+                    }
+                }
+
+                //check changes
+                if(checkChanges(compPosition, copiedUnit)){
+                    //if changed then replace compPositionWith CompilationUnit
+                    bestCUList.set(compPosition,copiedUnit);
+                    currentNode=copiedNode;
+                    copiedList.removeAll(removedNodes);
+
+
+                    //make another copy and try to run the loop again
+                    copiedUnit = bestCUList.get(compPosition).clone();
+                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+                    copiedList = getCurrentNodeList(copiedNode, alterableList);
+                    i=copiedList.size()/2;
+                    break;
+                }
+
+
+            }
+        }
+
+
+
+
+
+
+
         return currentNode;
     }
 
@@ -343,13 +391,13 @@ public class Runner {
 
 
     //this method is run our ast and see if the changes we made are good or bad (returning true or false) depending
-    private static boolean checkChanges() {
+    private static boolean checkChanges(int compPosition, CompilationUnit copiedu) {
 
         boolean returnVal=false;
 
         try {
 
-            if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles)) {
+            if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles, compPosition, copiedu)) {
 
                 if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path)) {
 

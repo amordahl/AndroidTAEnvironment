@@ -369,8 +369,11 @@ public class Runner {
                     copiedList = getCurrentNodeList(copiedNode, alterableList);
                     i=copiedList.size()/2;
                     break;
+                } else{
+                    copiedUnit = bestCUList.get(compPosition).clone();
+                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+                    copiedList = getCurrentNodeList(copiedNode, alterableList);
                 }
-
 
             }
         }

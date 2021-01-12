@@ -153,8 +153,14 @@ public class TesterUtil {
         for(File x: files){
 
             FileWriter fw = new FileWriter(x);
-            if(Runner.LOG_MESSAGES)
-                System.out.println("CompilationUnit: "+list.get(i).toString());
+            if(Runner.LOG_MESSAGES) {
+
+                if(i==positionChanged)
+                    System.out.println(changedUnit.toString());
+                else
+                    System.out.println("CompilationUnit: " + list.get(i).toString());
+            }
+
             if(i==positionChanged){
                 fw.write(changedUnit.toString());
             }else {

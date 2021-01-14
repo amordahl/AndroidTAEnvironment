@@ -179,8 +179,13 @@ public class Runner {
             Node cur = nodeChilds.remove(0);
 
             Node childNode = depthFirstTraverse(currentCU, cur);
-            if(!childNode.equals(cur)){
+            if(!(cur==childNode)){
+
+
+                System.out.println("The tree changed on this depthFirst so we see");
+                System.out.println("Old nodeChilds: "+nodeChilds);
                 nodeChilds = new ArrayList<>(childNode.getParentNode().get().getChildNodes());
+                System.out.println("New nodeChilds: "+nodeChilds);
             }
             i++;
         }

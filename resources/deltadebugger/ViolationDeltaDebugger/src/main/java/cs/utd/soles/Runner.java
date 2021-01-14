@@ -170,18 +170,11 @@ public class Runner {
         if(currentNode==null)
             return null;
         //pass list and update when we copy tree through recursion?
-        List<Node> nodeChildren = currentNode.getChildNodes();
-        for(Node n: nodeChildren){
-            //if this call successfully changes the ast then the other nodeChildren are not going to be found (the Node is in an old ast)
-            //so instead whenever we change the ast we need to re-call currentNode.getChildNodes();
-            //the problem is we don't know currentNode in the new tree so after we traverse we need to be able to find currentNode again
 
-            depthFirstTraverse(currentCU, currentNode);
-
-        }
         List<Node> nodeChilds = new ArrayList<>(currentNode.getChildNodes());
-
-        while(!nodeChilds.isEmpty()){
+        int maxLength=nodeChilds.size();
+        int i=0;
+        while(!nodeChilds.isEmpty()&&i<maxLength){
 
             Node cur = nodeChilds.remove(0);
 
@@ -189,7 +182,7 @@ public class Runner {
             if(!childNode.equals(cur)){
                 nodeChilds = new ArrayList<>(childNode.getParentNode().get().getChildNodes());
             }
-
+            i++;
         }
         return currentNode;
     }

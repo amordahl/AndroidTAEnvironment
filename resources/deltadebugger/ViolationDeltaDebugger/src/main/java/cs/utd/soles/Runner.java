@@ -203,7 +203,7 @@ public class Runner {
         process(currentCU, currentNode);
         //traverse children
         for(Node x: currentNode.getChildNodes()){
-            traverseTree(currentCU, currentNode);
+            traverseTree(currentCU, x);
         }
 
     }

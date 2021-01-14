@@ -143,10 +143,12 @@ public class Runner {
     static ArrayList<File> javaFiles = new ArrayList<>();
     //main recursion that loops through all nodes
     //we process parents before children
-    public static void depthFirstTraverse(int currentCU, Node currentNode){
 
-        if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
-            return;
+    private static boolean changeMade=false;
+    public static Node depthFirstTraverse(int currentCU, Node currentNode){
+
+        if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)||currentNode==null){
+            return null;
         }
 
 
@@ -154,21 +156,42 @@ public class Runner {
         //    System.out.println(currentNode.toString());
 
 
+        Node beforeAttemptNode = currentNode;
+
         currentNode= process(currentCU,currentNode);
+
+        if(beforeAttemptNode == currentNode){
+            changeMade=true;
+        }
 
         //if(LOG_MESSAGES)
         //    System.out.println(currentNode == null ? "NULL":currentNode.toString());
 
         if(currentNode==null)
-            return;
-
-
-
+            return null;
+        //pass list and update when we copy tree through recursion?
         List<Node> nodeChildren = currentNode.getChildNodes();
         for(Node n: nodeChildren){
-            depthFirstTraverse(currentCU, n);
-        }
+            //if this call successfully changes the ast then the other nodeChildren are not going to be found (the Node is in an old ast)
+            //so instead whenever we change the ast we need to re-call currentNode.getChildNodes();
+            //the problem is we don't know currentNode in the new tree so after we traverse we need to be able to find currentNode again
 
+            depthFirstTraverse(currentCU, currentNode);
+
+        }
+        List<Node> nodeChilds = new ArrayList<>(currentNode.getChildNodes());
+
+        while(!nodeChilds.isEmpty()){
+
+            Node cur = nodeChilds.remove(0);
+
+            Node childNode = depthFirstTraverse(currentCU, cur);
+            if(!childNode.equals(cur)){
+                nodeChilds = new ArrayList<>(childNode.getParentNode().get().getChildNodes());
+            }
+
+        }
+        return currentNode;
     }
     //matches the currentNode to what type it is and handles appropriately
     //this returns the currentNode (could be the node we gave it or it's equivalent copy whenever we copied and killed tons of trees)

@@ -225,7 +225,7 @@ public class Runner {
 
                 List<Node> removedNodes = new ArrayList<>();
                 List<Node> alterableRemoves = new ArrayList<>();
-                int index=0;
+                int index=j;
                 for(Node x: subList){
                     if(copiedList.contains(x)){
                         copiedNode.remove(x);
@@ -431,6 +431,7 @@ public class Runner {
                     for (CompilationUnit x : bestCUList) {
                         System.out.println(x);
                     }
+                    System.out.println("CopiedUnit:" + copiedu);
                 }
             }
         } catch (IOException e) {

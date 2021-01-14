@@ -55,7 +55,7 @@ public class Runner {
             minimized=true;
             int i=0;
             for (CompilationUnit compilationUnit : bestCUList) {
-                depthFirstTraverse(i, compilationUnit);
+                traverseTree(i, compilationUnit);
                 i++;
             }
             System.out.println("Done with 1 rotation");
@@ -158,7 +158,7 @@ public class Runner {
 
         Node beforeAttemptNode = currentNode;
 
-        currentNode= process(currentCU,currentNode);
+        process(currentCU,currentNode);
 
         if(beforeAttemptNode == currentNode){
             changeMade=true;
@@ -192,14 +192,84 @@ public class Runner {
         }
         return currentNode;
     }
+
+
+    public static void traverseTree(int currentCU, Node currentNode){
+
+        if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)||currentNode==null){
+            return;
+        }
+        //process node
+        process(currentCU, currentNode);
+        //traverse children
+        for(Node x: currentNode.getChildNodes()){
+            traverseTree(currentCU, currentNode);
+        }
+
+    }
+
+    public static void handleNodeList(int compPosition, Node currentNode, List<Node> childList){
+
+        //make a copy of the tree
+
+        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
+        Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+        ArrayList<Node> alterableList = new ArrayList<Node>(childList);
+        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
+
+
+        //change the copy
+        for(int i=copiedList.size();i>0;i/=2){
+            for(int j=0;j<copiedList.size();j+=i){
+                List<Node> subList = new ArrayList<>(copiedList.subList(j,Math.min((j+i),copiedList.size())));
+
+                List<Node> removedNodes = new ArrayList<>();
+                List<Node> alterableRemoves = new ArrayList<>();
+                int index=0;
+                for(Node x: subList){
+                    if(copiedList.contains(x)){
+                        copiedNode.remove(x);
+                        removedNodes.add(x);
+                        alterableRemoves.add(alterableList.get(index));
+                    }
+                    index++;
+                }
+
+                if(checkChanges(compPosition, copiedUnit)){
+                    //if changed remove the nodes we removed from the original ast
+                    for(Node x:alterableRemoves){
+                        currentNode.remove(x);
+                    }
+
+
+                    copiedList.removeAll(removedNodes);
+                    alterableList.removeAll(alterableRemoves);
+
+
+                    //make another copy and try to run the loop again
+                    copiedUnit = bestCUList.get(compPosition).clone();
+                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+                    copiedList = getCurrentNodeList(copiedNode, alterableList);
+                    i=copiedList.size()/2;
+                    break;
+                } else{
+                    copiedUnit = bestCUList.get(compPosition).clone();
+                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
+                    copiedList = getCurrentNodeList(copiedNode, alterableList);
+                }
+            }
+        }
+        //check changes
+        //if they worked REMOVE THE SAME NODES FROM ORIGINAL DONT COPY ANYTHING
+    }
+
+
     //matches the currentNode to what type it is and handles appropriately
     //this returns the currentNode (could be the node we gave it or it's equivalent copy whenever we copied and killed tons of trees)
-    public static Node process(int currentCUPos, Node currentNode){
-
-        Node returnNode=currentNode;
+    public static void process(int currentCUPos, Node currentNode){
 
         if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)){
-            return null;
+            return;
         }
         if(currentNode instanceof ClassOrInterfaceDeclaration){
             ClassOrInterfaceDeclaration node = (ClassOrInterfaceDeclaration) currentNode;
@@ -210,7 +280,7 @@ public class Runner {
                     childList.add(x);
                 }
             }
-            returnNode=handleNodeListCopy(currentCUPos,currentNode, childList);
+            handleNodeList(currentCUPos,currentNode, childList);
 
         }
 
@@ -223,10 +293,9 @@ public class Runner {
                     childList.add(x);
                 }
             }
-            returnNode=handleNodeListCopy(currentCUPos,currentNode, childList);
+            handleNodeList(currentCUPos,currentNode, childList);
         }
 
-        return returnNode;
 
     }
 
@@ -283,78 +352,7 @@ public class Runner {
     }
 
 
-    /*private static Node handleNodeList(int compPosition, Node currentNode, List<Node> list){
 
-
-        //System.out.println("CurrentNode passed to nodeList: "+currentNode.toString());
-
-        //save this compilationUnit so we can replace it
-        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
-
-        //System.out.println("Unit given: "+currentNode.findCompilationUnit());
-        //System.out.println("unit copied: "+copiedUnit);
-        Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-
-        ArrayList<Node> alterableList = new ArrayList<Node>(list);
-        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
-
-
-        for(int i=alterableList.size();i>0;i/=2){
-            for(int j=0;j<alterableList.size();j+=i){
-
-                List<Node> subList = new ArrayList<>(alterableList.subList(j,Math.min((j + i), alterableList.size())));
-                //if(LOG_MESSAGES)
-                //System.out.println("before remove: "+bestCUList.get(compPosition).toString());
-                ArrayList<Node> removedNodes = new ArrayList<>();
-
-                for(Node x: subList){
-                    if(alterableList.contains(x)){
-                        currentNode.remove(x);
-                        removedNodes.add(x);
-                    }
-                }
-                //if(LOG_MESSAGES)
-                //System.out.println("after remove: "+bestCUList.get(compPosition).toString());
-
-                if(!checkChanges()){
-                    //our changes didnt work so just replace unit with unaltered unit
-                    //we also update currentNode and alterableList  with the correct objects for the new ast
-                    bestCUList.set(compPosition, copiedUnit);
-                    currentNode=copiedNode;
-                    alterableList = copiedList;
-
-                    copiedUnit = bestCUList.get(compPosition).clone();
-                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-                    copiedList = getCurrentNodeList(copiedNode, alterableList);
-
-                }else{
-                    //restart the search from the top (something might have changed so we can remove it now)
-                    //update the copied unit to reflect the most recent ast
-                    alterableList.removeAll(removedNodes);
-
-
-                   // System.out.println("Unit given AFTER SUCCESS: "+currentNode.findCompilationUnit());
-                    //System.out.println("unit in best cu lsit : "+bestCUList.get(compPosition));
-
-                    copiedUnit = bestCUList.get(compPosition).clone();
-                    copiedNode = findCurrentNode(currentNode, compPosition,copiedUnit);
-
-                    //System.out.println("unit copied AFTER SUCCESS: "+copiedUnit);
-
-                    copiedList = getCurrentNodeList(copiedNode, alterableList);
-                    i=alterableList.size()/2;
-                    break;
-                   // i=alterableList.size()/2;
-                    //i=0 gets us good results but we are no longer greedy...
-
-                }
-
-
-            }
-        }
-
-        return currentNode;
-    }*/
 
     private static Node handleNodeListCopy(int compPosition, Node currentNode, List<Node> list){
 

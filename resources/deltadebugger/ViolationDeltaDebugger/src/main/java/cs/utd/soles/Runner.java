@@ -185,6 +185,7 @@ public class Runner {
                 System.out.println("The tree changed on this depthFirst so we see");
                 System.out.println("Old nodeChilds: "+nodeChilds);
                 nodeChilds = new ArrayList<>(childNode.getParentNode().get().getChildNodes());
+                currentNode=childNode.getParentNode().get();
                 System.out.println("New nodeChilds: "+nodeChilds);
             }
             i++;

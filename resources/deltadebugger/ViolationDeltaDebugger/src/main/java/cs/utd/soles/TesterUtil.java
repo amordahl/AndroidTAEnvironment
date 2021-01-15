@@ -157,8 +157,8 @@ public class TesterUtil {
 
                 if(i==positionChanged)
                     System.out.println(changedUnit.toString());
-                else
-                    System.out.println("CompilationUnit: " + list.get(i).toString());
+                //else
+                    //System.out.println("CompilationUnit: " + list.get(i).toString());
             }
 
             if(i==positionChanged){

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <config>
-    <androidPlatforms>/media/sf_sdks/platforms/</androidPlatforms>
+    <androidPlatforms>/home/asm140830/AndroidTA/platforms/</androidPlatforms>
     <maxMemory>4</maxMemory>
     <tools>
         <tool name="DidFail" version="1">
             <priority>1</priority>
-            <path>/home/reprodroid/reprodroid/tools/DidFail/AQL</path>
-            <run>/home/reprodroid/reprodroid/tools/DidFail/cert/run-didfail.sh /home/reprodroid/reprodroid/tools/DidFail/AQL/results/%APP_APK_FILENAME% %APP_APK%</run>
-            <runOnExit>/home/reprodroid/reprodroid/AQL-System/flushMemory.sh</runOnExit>
-            <runOnAbort>/home/reprodroid/reprodroid/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>/home/reprodroid/reprodroid/tools/DidFail/AQL/results/%APP_APK_FILENAME%</result>
+            <path>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DidFail/AQL</path>
+            <run>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DidFail/cert/run-didfail.sh /home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DidFail/AQL/results/%APP_APK_FILENAME% %APP_APK%</run>
+            <runOnExit>/home/asm140830/AndroidTA/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <runOnAbort>/home/asm140830/AndroidTA/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
+            <result>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DidFail/AQL/results/%APP_APK_FILENAME%</result>
             <questions>InterAppFlows, IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>

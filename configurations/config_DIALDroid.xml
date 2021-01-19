@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <config>
-    <androidPlatforms>/home/reprodroid/reprodroid/Android/platforms</androidPlatforms>
+    <androidPlatforms>/home/asm140830/AndroidTA/Android/platforms</androidPlatforms>
     <maxMemory>4</maxMemory>
     <tools>
         <tool name="DIALDroid" version="1">
             <priority>1</priority>
-            <path>/home/reprodroid/reprodroid/tools/DIALDroid/build</path>
-            <run>/home/reprodroid/reprodroid/tools/DIALDroid/build/aqlRun.sh %APP_APK% results/%APP_APK_FILENAME%.log %MEMORY%</run>
-            <runOnExit>/home/reprodroid/reprodroid/tools/DIALDroid/resetDB.sh</runOnExit>
-            <runOnAbort>/home/reprodroid/reprodroid/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>/home/reprodroid/reprodroid/tools/DIALDroid/build/results/%APP_APK_FILENAME%.log</result>
+            <path>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DIALDroid/build</path>
+            <run>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DIALDroid/build/aqlRun.sh %APP_APK% results/%APP_APK_FILENAME%.log %MEMORY%</run>
+            <runOnExit>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DIALDroid/resetDB.sh</runOnExit>
+            <runOnAbort>/home/asm140830/AndroidTA/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
+            <result>/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DIALDroid/build/results/%APP_APK_FILENAME%.log</result>
             <questions>InterAppFlows, IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>

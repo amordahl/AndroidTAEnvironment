@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Latitude", $r1)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Latitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.LocationLeak2: void onResume()&gt;</method>
+                <classname>de.ecspride.LocationLeak2</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/LocationLeak2/LocationLeak2_1/apk/LocationLeak2_1.apk</file>
+                    <hashes>
+                        <hash type="MD5">e9011ab23da3e9e0d082f95f5b96250e</hash>
+                        <hash type="SHA-1">d72f56c35ec24f43dcd6b7983116247fce3eef18</hash>
+                        <hash type="SHA-256">81c560cf51351e81443817397b960b5fa3e080e25587091cf131cf18c037004</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.LocationLeak2: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>de.ecspride.LocationLeak2</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/LocationLeak2/LocationLeak2_1/apk/LocationLeak2_1.apk</file>
+                    <hashes>
+                        <hash type="MD5">e9011ab23da3e9e0d082f95f5b96250e</hash>
+                        <hash type="SHA-1">d72f56c35ec24f43dcd6b7983116247fce3eef18</hash>
+                        <hash type="SHA-256">81c560cf51351e81443817397b960b5fa3e080e25587091cf131cf18c037004</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

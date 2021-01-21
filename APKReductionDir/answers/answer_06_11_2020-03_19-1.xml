@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])&gt;($r5, $r3, "number=?", $r6)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.content.ContentValues</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"number=?"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r6</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialer/minimized_dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">5538c039dd927cd04153434e091e9809</hash>
+                        <hash type="SHA-1">28a0179c2f5911f39a1c322b236ba8654a5ef90f</hash>
+                        <hash type="SHA-256">fe109ee9bddb555b6d6638acdd5aa770b2d59059a4afee24a8663fbf525b388a</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r10 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialer/minimized_dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">5538c039dd927cd04153434e091e9809</hash>
+                        <hash type="SHA-1">28a0179c2f5911f39a1c322b236ba8654a5ef90f</hash>
+                        <hash type="SHA-256">fe109ee9bddb555b6d6638acdd5aa770b2d59059a4afee24a8663fbf525b388a</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])&gt;($r5, $r3, "number=?", $r6)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.content.ContentValues</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"number=?"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r6</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialer/minimized_dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">5538c039dd927cd04153434e091e9809</hash>
+                        <hash type="SHA-1">28a0179c2f5911f39a1c322b236ba8654a5ef90f</hash>
+                        <hash type="SHA-256">fe109ee9bddb555b6d6638acdd5aa770b2d59059a4afee24a8663fbf525b388a</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r10 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialer/minimized_dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">5538c039dd927cd04153434e091e9809</hash>
+                        <hash type="SHA-1">28a0179c2f5911f39a1c322b236ba8654a5ef90f</hash>
+                        <hash type="SHA-256">fe109ee9bddb555b6d6638acdd5aa770b2d59059a4afee24a8663fbf525b388a</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

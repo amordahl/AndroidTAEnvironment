@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Latitude", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Latitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/FactoryMethods1/FactoryMethods1_1/source_code/app/build/outputs/apk/debug/app-debug.apk</file>
+                    <hashes>
+                        <hash type="MD5">23e33e5b5e3d6d49a7a8509440b2b3f0</hash>
+                        <hash type="SHA-1">63366c61c6e785a39e2665bdbe53b531d07ee865</hash>
+                        <hash type="SHA-256">b956f5e8d2cf9102d17ffb306c840deb118a8f920b5521b71718ebe01889ff25</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r6.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/FactoryMethods1/FactoryMethods1_1/source_code/app/build/outputs/apk/debug/app-debug.apk</file>
+                    <hashes>
+                        <hash type="MD5">23e33e5b5e3d6d49a7a8509440b2b3f0</hash>
+                        <hash type="SHA-1">63366c61c6e785a39e2665bdbe53b531d07ee865</hash>
+                        <hash type="SHA-256">b956f5e8d2cf9102d17ffb306c840deb118a8f920b5521b71718ebe01889ff25</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Longtitude", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Longtitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/FactoryMethods1/FactoryMethods1_1/source_code/app/build/outputs/apk/debug/app-debug.apk</file>
+                    <hashes>
+                        <hash type="MD5">23e33e5b5e3d6d49a7a8509440b2b3f0</hash>
+                        <hash type="SHA-1">63366c61c6e785a39e2665bdbe53b531d07ee865</hash>
+                        <hash type="SHA-256">b956f5e8d2cf9102d17ffb306c840deb118a8f920b5521b71718ebe01889ff25</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r6.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.FactoryMethods1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.FactoryMethods1</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/FactoryMethods1/FactoryMethods1_1/source_code/app/build/outputs/apk/debug/app-debug.apk</file>
+                    <hashes>
+                        <hash type="MD5">23e33e5b5e3d6d49a7a8509440b2b3f0</hash>
+                        <hash type="SHA-1">63366c61c6e785a39e2665bdbe53b531d07ee865</hash>
+                        <hash type="SHA-256">b956f5e8d2cf9102d17ffb306c840deb118a8f920b5521b71718ebe01889ff25</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

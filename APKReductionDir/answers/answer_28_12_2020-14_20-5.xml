@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r3.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.uta.ActivityEventSequence2: void onStop()&gt;</method>
+                <classname>edu.uta.ActivityEventSequence2</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/ActivityEventSequence2/ActivityEventSequence2_0/source_code/app/build/outputs/apk/debug/app-debug.apk</file>
+                    <hashes>
+                        <hash type="MD5">a5a4b66c39e0d265d031c0b397bbcb1e</hash>
+                        <hash type="SHA-1">b98d5c95118792c8499fe182421ab73da25250ed</hash>
+                        <hash type="SHA-256">507c253f51147faa160429c0c0f50ba61bfcc4f7ca538317c6bc4cd523da0334</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.uta.ActivityEventSequence2: void onStart()&gt;</method>
+                <classname>edu.uta.ActivityEventSequence2</classname>
+                <app>
+                    <file>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/ActivityEventSequence2/ActivityEventSequence2_0/source_code/app/build/outputs/apk/debug/app-debug.apk</file>
+                    <hashes>
+                        <hash type="MD5">a5a4b66c39e0d265d031c0b397bbcb1e</hash>
+                        <hash type="SHA-1">b98d5c95118792c8499fe182421ab73da25250ed</hash>
+                        <hash type="SHA-256">507c253f51147faa160429c0c0f50ba61bfcc4f7ca538317c6bc4cd523da0334</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

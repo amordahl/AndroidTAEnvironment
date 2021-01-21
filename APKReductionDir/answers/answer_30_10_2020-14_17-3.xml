@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.ListAccess1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ListAccess1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/ListAccess1/ListAccess1_0/apk/ListAccess1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">162c23f73f6ab4ebdf9eff8d7172c66d</hash>
+                        <hash type="SHA-1">7084e0a4cb2da0bf055ada06e9bc94cfcb125aed</hash>
+                        <hash type="SHA-256">4605f623e84435a5fad77ab9f3190fcddde6690071d5f4e0477377e27ffda72a</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ListAccess1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ListAccess1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/ListAccess1/ListAccess1_0/apk/ListAccess1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">162c23f73f6ab4ebdf9eff8d7172c66d</hash>
+                        <hash type="SHA-1">7084e0a4cb2da0bf055ada06e9bc94cfcb125aed</hash>
+                        <hash type="SHA-256">4605f623e84435a5fad77ab9f3190fcddde6690071d5f4e0477377e27ffda72a</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

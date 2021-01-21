@@ -25,10 +25,11 @@ public class Runner {
 
     public static boolean LOG_MESSAGES=false;
     static TesterUtil testerForThis=null;
+    static String configFileName="";
     public static void main(String[] args){
         PerfTimer.startProgramRunTime();
         try {
-            readConfig(args[0]);
+            configFileName=readConfig(args[0]);
             if(args.length==2){
                 if(args[1].equals("-l")){
                     LOG_MESSAGES=true;
@@ -64,10 +65,10 @@ public class Runner {
 
 
         try {
-            String filePathName = "debugger/java_files/";
+            String filePathName = "debugger/java_files/"+configFileName;
             for (int i = 0; i < bestCUList.size(); i++) {
                 File file = new File(filePathName +programFileNames.get(i) + ".java");
-
+                file.mkdirs();
                 if (file.exists())
                     file.delete();
                 file.createNewFile();
@@ -77,7 +78,7 @@ public class Runner {
                 fw.close();
             }
 
-            filePathName = "debugger/"+testerForThis.targetFlow.getApk()+"_time.txt";
+            filePathName = "debugger/"+configFileName+"_time.txt";
             File file = new File(filePathName);
 
             if (file.exists())
@@ -107,7 +108,7 @@ public class Runner {
         }
     }
     //this method handles the filepath to the fileconfig.json which is what we are going to be reading for our config
-    private static void readConfig(String path)throws Exception {
+    private static String readConfig(String path)throws Exception {
         JSONParser parser = new JSONParser();
         try(FileReader reader = new FileReader(Paths.get(path).toFile())) {
 
@@ -126,6 +127,7 @@ public class Runner {
         if(targetFilePath==null|java_directory_path==null|gradlew_path==null|project_root_path==null|apk_path==null|generating_config1_path==null|generating_config2_path==null){
             throw new Exception("Config file incomplete");
         }
+        return Paths.get(path).toFile().getName().replace(".json","");
     }
 
 

@@ -111,6 +111,7 @@ public class Runner {
     //this method handles the filepath to the fileconfig.json which is what we are going to be reading for our config
     private static String readConfig(String path)throws Exception {
         JSONParser parser = new JSONParser();
+        System.out.println(path);
         try(FileReader reader = new FileReader(Paths.get(path).toFile())) {
 
             JSONObject obj = (JSONObject) parser.parse(reader);

@@ -148,7 +148,7 @@ public class TesterUtil {
 
 
     //this saves the compilation units to the correct files
-    private void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files, int positionChanged, CompilationUnit changedUnit) throws IOException {
+    public static void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files, int positionChanged, CompilationUnit changedUnit) throws IOException {
         int i=0;
         for(File x: files){
 

@@ -102,7 +102,8 @@ public class Runner {
             fw.close();
 
 
-
+            //revert program to it's original form
+            TesterUtil.saveCompilationUnits(originalCUnits,javaFiles, originalCUnits.size()+1,null);
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -141,6 +142,7 @@ public class Runner {
 
     static boolean minimized=false;
     static ArrayList<CompilationUnit> bestCUList = new ArrayList<>();
+    static ArrayList<CompilationUnit> originalCUnits = new ArrayList();
     static ArrayList<String> programFileNames= new ArrayList<>();
     static ArrayList<File> javaFiles = new ArrayList<>();
     //main recursion that loops through all nodes
@@ -456,19 +458,23 @@ public class Runner {
         List<File> allJFiles = ((List<File>) FileUtils.listFiles(f, extensions, true));
 
         ArrayList<CompilationUnit> returnList = new ArrayList<>();
+        ArrayList<CompilationUnit> cloneList = new ArrayList<>();
         ArrayList<String> nameList = new ArrayList<>();
+        int i=0;
         for(File x: allJFiles){
             //don't add the unmodified source files cause they will just duplicate endlessly
             if(!x.getAbsolutePath().contains("unmodified_src")) {
                 nameList.add(x.getName().substring(0, x.getName().length() - 5));
                 returnList.add(StaticJavaParser.parse(x.getAbsoluteFile()));
+                cloneList.add(returnList.get(i).clone());
+                i++;
                 javaFiles.add(x.getAbsoluteFile());
             }
             createInPlaceCopy(x, f);
         }
         bestCUList = returnList;
         programFileNames = nameList;
-
+        originalCUnits = cloneList;
 
 
         return true;

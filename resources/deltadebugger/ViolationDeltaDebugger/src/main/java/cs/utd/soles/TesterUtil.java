@@ -267,7 +267,7 @@ public class TesterUtil {
         if(f.exists())
             f.delete();
         f.createNewFile();
-
+        System.out.println(outString);
         String xmlString ="";
         if(outString.contains("<answer/>")){
             xmlString ="<answer>\n</answer>";

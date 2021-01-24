@@ -54,99 +54,6 @@ public class TesterUtil {
     }
 
 
-    //compiles a project then calls runProgram and then return whether the program we just ran contains "Failure", to simulate a bug in a program
-   /* boolean compileAndRunProject(ArrayList<CompilationUnit> list, ArrayList<String> names) {
-        //new Thread(() -> {
-            try {
-                //what index we are on
-                boolean compilationFailed=false;
-                for(int i=list.size()-1;i>-1;i--){
-                    //make new file
-                    File f = new File("src/differentComps/inProgress/"+names.get(i)+".java");
-                    f.mkdirs();
-                    if(f.exists())
-                        f.delete();
-                    f.createNewFile();
-                    //delete old class file
-
-                    //write current compilation units to own .java file
-                    FileWriter fw = new FileWriter(f);
-                    fw.write(list.get(i).toString());
-                    fw.flush();
-                    fw.close();
-
-                   // System.out.println(list.get(i));
-                    //compile our .java files
-                    Process p =null;
-                    String[] command = {"javac","-cp","src/differentComps/inProgress", "src/differentComps/inProgress/"+names.get(i)+".java"};
-                    p = Runtime.getRuntime().exec(command);
-                    //System.out.println(Arrays.toString(command));
-                    p.waitFor();
-
-                    BufferedReader stream = new BufferedReader(new InputStreamReader(p.getErrorStream()));
-
-                    String out="";
-                    String s="";
-                    while( (s = stream.readLine())!=null){
-                        out+=s;
-                    }
-                    if(out.length()>0){
-                        //our compilation failed we dont care why
-                        compilationFailed=true;
-                        System.out.println(out);
-                    }
-
-                }
-
-
-                if(!compilationFailed){
-                    //if compilation was successful run the program
-                    return runProgram(names);
-                }
-
-
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-            }
-
-        //}).run();
-
-        return false;
-    }*/
-
-
-    //runs program
-    /*boolean runProgram(ArrayList<String> fileNames){
-
-        //new Thread(()->{
-            try{
-
-
-                //it doesnt matter cause this part is getting removed but this needs to know what is the main class (for now its just fileNames.get(0))
-                String[] command = new String[]{"java", "-cp", "C:\\Users\\dakot\\Desktop\\College Job stuff very important\\Code Gremlin job\\work things\\Newer Stuff\\Programs\\JavaParserExp\\src\\differentComps\\inProgress", "Main"};
-                Process p= Runtime.getRuntime().exec(command);
-                p.waitFor();
-                BufferedReader stream = new BufferedReader(new InputStreamReader(p.getInputStream()));
-                String out="";
-                String s="";
-                while( (s = stream.readLine())!=null){
-                    out+=s;
-                }
-                //returns whether this run maintained an error or not
-
-                return catchThreadOut(out);
-            }catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-            }
-
-        //}).run();
-
-
-        throw new RuntimeException();
-
-    }*/
-
-
     //this saves the compilation units to the correct files
     public static void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files, int positionChanged, CompilationUnit changedUnit) throws IOException {
         int i=0;
@@ -191,7 +98,8 @@ public class TesterUtil {
             }
             if(out.length()>0){
                 //assembling project failed we don't care why
-                System.out.println(out);
+                if(Runner.LOG_MESSAGES)
+                    System.out.println(out);
                 PerfTimer.endOneCompileRun();
                 return false;
             }
@@ -214,7 +122,6 @@ public class TesterUtil {
             e.printStackTrace();
         }
         String command1Out =catchOutput(command1Run);
-        System.out.println(command1Out);
 
 
         Process command2Run = Runtime.getRuntime().exec(command2);
@@ -227,7 +134,6 @@ public class TesterUtil {
 
         File output1 = handleOutput(1, command1Out);
         File output2 = handleOutput(2, command2Out);
-        System.out.println(command2Out);
         PerfTimer.endOneAQLRun();
         return handleAQL(output1, output2);
 
@@ -269,7 +175,6 @@ public class TesterUtil {
         if(f.exists())
             f.delete();
         f.createNewFile();
-        System.out.println(outString);
         String xmlString ="";
         if(outString.contains("<answer/>")){
             xmlString ="<answer>\n</answer>";
@@ -306,8 +211,10 @@ public class TesterUtil {
         }
         boolean returnVal=false;
         for(Flow x: flowList){
-            System.out.println("Flow Source: " + x.getSource().toString()+"  Flow Sink: " + x.getSink().toString());
-            System.out.println("Target Flow Source: "+ targetFlow.getSource().toString()+"  Flow Sink: "+targetFlow.getSink().toString());
+            if(Runner.LOG_MESSAGES) {
+                System.out.println("Flow Source: " + x.getSource().toString() + "  Flow Sink: " + x.getSink().toString());
+                System.out.println("Target Flow Source: " + targetFlow.getSource().toString() + "  Flow Sink: " + targetFlow.getSink().toString());
+            }
             if(x.equals(targetFlow)){
                 returnVal=true;
             }

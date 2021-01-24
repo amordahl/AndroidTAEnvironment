@@ -65,7 +65,7 @@ public class Runner {
 
 
         try {
-            String filePathName = "debugger/java_files/"+configFileName;
+            String filePathName = "debugger/java_files/"+configFileName+"/";
             for (int i = 0; i < bestCUList.size(); i++) {
                 File file = new File(filePathName +programFileNames.get(i) + ".java");
                 file.mkdirs();

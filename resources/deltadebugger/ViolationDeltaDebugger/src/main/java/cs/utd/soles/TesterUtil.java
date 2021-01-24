@@ -214,6 +214,7 @@ public class TesterUtil {
             e.printStackTrace();
         }
         String command1Out =catchOutput(command1Run);
+        System.out.println(command1Out);
 
 
         Process command2Run = Runtime.getRuntime().exec(command2);
@@ -226,6 +227,7 @@ public class TesterUtil {
 
         File output1 = handleOutput(1, command1Out);
         File output2 = handleOutput(2, command2Out);
+        System.out.println(command2Out);
         PerfTimer.endOneAQLRun();
         return handleAQL(output1, output2);
 
@@ -271,8 +273,10 @@ public class TesterUtil {
         String xmlString ="";
         if(outString.contains("<answer/>")){
             xmlString ="<answer>\n</answer>";
-        }else {
+        }else if(outString.contains("<answer>")){
             xmlString = outString.substring(outString.indexOf("<answer>"), outString.indexOf("</answer>") + 9);
+        }else{
+            return null;
         }
         String header = "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n";
 
@@ -287,6 +291,8 @@ public class TesterUtil {
 
     private boolean handleAQL(File o1, File o2){
 
+        if(o1==null||o2==null)
+            return false;
         ArrayList<Flow> flowList = new ArrayList<>();
 
 

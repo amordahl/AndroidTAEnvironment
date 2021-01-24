@@ -41,7 +41,7 @@ public class Runner {
             System.exit(-1);
         }
 
-        testerForThis = new TesterUtil(targetFilePath, SchemaGenerator.SCHEMA_PATH);
+        testerForThis = new TesterUtil(targetFilePath, SchemaGenerator.SCHEMA_PATH, configFileName);
 
         try{
             handleSrcDirectory(java_directory_path);
@@ -427,7 +427,7 @@ public class Runner {
 
             if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles, compPosition, copiedu)) {
 
-                if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path)) {
+                if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path,configFileName)) {
 
                     returnVal = true;
                     minimized = false;

@@ -29,11 +29,12 @@ public class TesterUtil {
     String targetFile=null;
     String xmlSchemaFile=null;
     Flow targetFlow=null;
+    String generatingConfig =null;
 
-    public TesterUtil(String targetFile, String xmlSchemaFile){
+    public TesterUtil(String targetFile, String xmlSchemaFile, String configFileName){
         this.targetFile=targetFile;
         this.xmlSchemaFile=xmlSchemaFile;
-
+        this.generatingConfig=configFileName;
         handleTargetFile();
     }
 
@@ -46,7 +47,7 @@ public class TesterUtil {
 
             soundness = (boolean) obj.get("flow_type");
             String aqlString = (String) obj.get("aql_string");
-            targetFlow = handleTargetXMLString(aqlString);
+            targetFlow = handleTargetXMLString(aqlString,generatingConfig);
 
         } catch (IOException | ParseException e) {
             e.printStackTrace();
@@ -110,7 +111,7 @@ public class TesterUtil {
         return true;
     }
 
-    public boolean runAQL(String apk, String generatingConfig1, String generatingConfig2) throws IOException {
+    public boolean runAQL(String apk, String generatingConfig1, String generatingConfig2, String programConfigString) throws IOException {
         PerfTimer.startOneAQLRun();
         //this bit runs and captures the output of the aql script
         String command1 = "python3 runaql.py "+generatingConfig1+" "+apk+" -f";
@@ -132,16 +133,16 @@ public class TesterUtil {
         }
         String command2Out =catchOutput(command2Run);
 
-        File output1 = handleOutput(1, command1Out);
-        File output2 = handleOutput(2, command2Out);
+        File output1 = handleOutput(Long.toHexString(System.currentTimeMillis()), command1Out,programConfigString);
+        File output2 = handleOutput(Long.toHexString(System.currentTimeMillis()), command2Out,programConfigString);
         PerfTimer.endOneAQLRun();
         return handleAQL(output1, output2);
 
     }
 
 
-    private Flow handleTargetXMLString(String xmlString){
-        String fp = "debugger/tempfiles/aqlfiles/target";
+    private Flow handleTargetXMLString(String xmlString, String uniqueTargetConfig){
+        String fp = "debugger/tempfiles/aqlfiles/"+uniqueTargetConfig+".xml";
         File f = Paths.get(fp).toFile();
         try {
 
@@ -166,9 +167,9 @@ public class TesterUtil {
     }
 
 
-    private File handleOutput(int id, String outString) throws IOException {
+    private File handleOutput(String id, String outString, String programConfigString) throws IOException {
 
-        String fp = "debugger/tempfiles/aqlfiles/"+id+"out.xml";
+        String fp = "debugger/tempfiles/aqlfiles/"+programConfigString+id+"out.xml";
 
         File f = Paths.get(fp).toFile();
         f.mkdirs();

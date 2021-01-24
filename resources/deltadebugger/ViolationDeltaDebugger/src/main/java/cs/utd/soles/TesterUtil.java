@@ -29,12 +29,12 @@ public class TesterUtil {
     String targetFile=null;
     String xmlSchemaFile=null;
     Flow targetFlow=null;
-    String generatingConfig =null;
+    String configFileName =null;
 
     public TesterUtil(String targetFile, String xmlSchemaFile, String configFileName){
         this.targetFile=targetFile;
         this.xmlSchemaFile=xmlSchemaFile;
-        this.generatingConfig=configFileName;
+        this.configFileName=configFileName;
         handleTargetFile();
     }
 
@@ -47,7 +47,7 @@ public class TesterUtil {
 
             soundness = (boolean) obj.get("flow_type");
             String aqlString = (String) obj.get("aql_string");
-            targetFlow = handleTargetXMLString(aqlString,generatingConfig);
+            targetFlow = handleTargetXMLString(aqlString,configFileName);
 
         } catch (IOException | ParseException e) {
             e.printStackTrace();

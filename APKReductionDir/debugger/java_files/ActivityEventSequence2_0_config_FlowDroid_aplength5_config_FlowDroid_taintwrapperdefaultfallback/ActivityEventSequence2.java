@@ -17,22 +17,19 @@ import android.telephony.TelephonyManager;
  */
 public class ActivityEventSequence2 extends Activity {
 
-    private String d1 = "";
-
-    private String recpNo = "5556";
-
     @Override
-    public void onStart() {
-        TelephonyManager tMgr = (TelephonyManager) getApplicationContext().getSystemService(TELEPHONY_SERVICE);
-        this.d1 = tMgr.getDeviceId();
+    public void onCreate(Bundle instance) {
+        super.onCreate(instance);
+        setContentView(R.layout.activity_main);
     }
 
+    @SuppressLint("MissingSuperCall")
     @Override
-    public void onSaveInstanceState(Bundle state) {
+    protected void onRestart() {
         this.d1 = "";
     }
 
     @Override
-    public void onStop() {
+    public void onSaveInstanceState(Bundle state) {
     }
 }

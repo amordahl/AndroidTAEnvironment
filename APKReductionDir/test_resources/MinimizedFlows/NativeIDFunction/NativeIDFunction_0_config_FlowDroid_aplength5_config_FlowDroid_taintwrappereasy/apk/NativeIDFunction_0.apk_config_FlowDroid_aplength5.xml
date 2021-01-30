@@ -1,0 +1,60 @@
+<answer time="3547.653656452894">
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r8.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
+                <classname>mod.ndk.ActMain$1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
+                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
+                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
+                <classname>mod.ndk.ActMain$1</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/NativeIDFunction/NativeIDFunction_0/apk/NativeIDFunction_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">4cb5bebd5dedc7d208fa63f5c9e88d32</hash>
+                        <hash type="SHA-1">337c6c5db16f038436ac8581ce391371133c3ef6</hash>
+                        <hash type="SHA-256">baaff1ca403dfb6dd3427511ebfe93bad964813d1d4e26c7c6d91a602a30428d</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

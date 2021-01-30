@@ -8,9 +8,9 @@ import android.view.Menu;
 /**
  * @testcase_name RegisterGlobal1
  * @version 0.1
- * @author Secure Software Engineering Group (SSE), European Center for Security and Privacy by Design (EC SPRIDE)
+ * @author Secure Software Engineering Group (SSE), European Center for Security and Privacy by Design (EC SPRIDE) 
  * @author_mail steven.arzt@cased.de
- *
+ * 
  * @description Both source and sink are part of a global (application-level) lifecycle handler.
  * @dataflow OnCreate: source -> imei; sendMessage: imei -> sink
  * @number_of_leaks 1
@@ -18,13 +18,14 @@ import android.view.Menu;
  */
 public class MainActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        // Log.d("EX", "Activity.onCreate()");
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-    /*@Override
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		//Log.d("EX", "Activity.onCreate()");
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+	
+	/*@Override
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
 		//Log.d("EX", "Activity.onRestoreInstanceState()");
 		super.onRestoreInstanceState(savedInstanceState);
@@ -60,4 +61,5 @@ public class MainActivity extends Activity {
 		super.onPause();
 		Log.d("EX", "Activity.onPause()");
 	}*/
+
 }

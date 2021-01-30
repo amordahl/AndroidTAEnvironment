@@ -3,7 +3,6 @@ package cs.utd.soles;
 import com.github.javaparser.ast.CompilationUnit;
 import com.utdallas.cs.alps.flows.AQLFlowFileReader;
 import com.utdallas.cs.alps.flows.Flow;
-import org.apache.commons.lang3.SystemUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

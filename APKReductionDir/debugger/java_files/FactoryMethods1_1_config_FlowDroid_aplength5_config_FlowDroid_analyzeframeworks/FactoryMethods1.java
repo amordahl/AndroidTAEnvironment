@@ -25,8 +25,15 @@ public class FactoryMethods1 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_multi_handlers1);
         Criteria crit = new Criteria();
+        crit.setAccuracy(Criteria.ACCURACY_FINE);
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         Location data = locationManager.getLastKnownLocation(locationManager.getBestProvider(crit, true));
+        // sink, leak
+        Log.d("Latitude", "Latitude: " + data.getLatitude());
+        // sink, leak
+        Log.d("Longtitude", "Longtitude: " + data.getLongitude());
     }
 }

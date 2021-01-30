@@ -22,4 +22,42 @@ import android.widget.Toast;
  * @challenges the analysis must handle callbacks, anonymous inner classes and static fields.
  */
 public class AnnonymousClass1 extends Activity {
+
+    private static double latitude;
+
+    private static double longitude;
+
+    private LocationManager locationManager;
+
+    LocationListener locationListener = new LocationListener() {
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+        }
+
+        @Override
+        public void onLocationChanged(Location location) {
+            longitude = location.getLongitude();
+        }
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        // Register the listener with the Location Manager to receive location updates
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, locationListener);
+    }
+
+    @Override
+    protected void onResume() {
+        // sink, two leaks
+        Log.i("LOG", "Latitude: " + latitude + "Longtitude: " + longitude);
+    }
 }

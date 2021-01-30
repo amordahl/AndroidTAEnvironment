@@ -24,4 +24,25 @@ import android.util.Log;
  *  and connect the callback class to the activity via the interface.
  */
 public class LocationLeak3 extends Activity implements IDataProvider {
+
+    private String data = "";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        LocationListener locationListener = new MyLocationListener(this);
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, locationListener);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // sink, leak
+        Log.d("Location", "Location: " + data);
+    }
+
+    @Override
+    public void setData(String data) {
+        this.data = data;
+    }
 }

@@ -1,18 +1,18 @@
-Total Program Runtime: 653
+Total Program Runtime: 384
 
-Average Of Rotations: 326.156
+Average Of Rotations: 191.9505
 Total Rotations: 2
 
 Average Of AST Changes: NaN
 Total AST Changes: 0
 
-Average Of AQL Runs: 7.958266666666667
-Total AQL Runs: 15
+Average Of AQL Runs: 7.653428571428572
+Total AQL Runs: 21
 
-Average Of Compile Runs: 14.795555555555556
-Total Compiles: 36
+Average Of Compile Runs: 4.4554
+Total Compiles: 50
 
 Percentages:
 Percent Of Program Time Taken By AST Changes: 0.0
-Percent Of Program Time Taken By AQL Runs: 18.26572472117281
-Percent Of Program Time Taken By Compile Runs: 81.50062505642339
+Percent Of Program Time Taken By AQL Runs: 41.782547320641704
+Percent Of Program Time Taken By Compile Runs: 57.91303036684059

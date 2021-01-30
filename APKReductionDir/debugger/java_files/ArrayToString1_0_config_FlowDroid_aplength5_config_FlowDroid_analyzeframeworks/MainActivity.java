@@ -15,4 +15,14 @@ import android.util.Log;
  * @challenges - Have to model that Array.toString invokes toString() for each object of array
  */
 public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        TelephonyManager mgr = (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
+        String imei = mgr.getDeviceId();
+        String[] array = new String[1];
+        array[0] = imei;
+        String arrayToString = Arrays.toString(array);
+        Log.i("DroidBench", arrayToString);
+    }
 }

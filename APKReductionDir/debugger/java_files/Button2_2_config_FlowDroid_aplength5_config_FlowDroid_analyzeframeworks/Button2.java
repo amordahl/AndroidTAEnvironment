@@ -3,12 +3,12 @@ package de.ecspride;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-// import android.telephony.SmsManager;
+import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
-// import android.widget.Button;
 /**
  * @testcase_name Button2
  * @version 0.1
@@ -29,29 +29,7 @@ public class Button2 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button2);
-        /*Button button1= (Button) findViewById(R.id.button1);
-		button1.setOnClickListener(new View.OnClickListener() {
-		    @Override
-		    public void onClick(View v) {
-		    	
-		    	SmsManager sm = SmsManager.getDefault();
-		    	String number = "+49 1234";
-		    	sm.sendTextMessage(number, null, imei, null, null); //sink, potential leak
-		        Log.i("TAG", "sendIMEI: " + imei); //sink, potential leak
-		        
-		        imei = "";
-		    }
-		});
-		
-		
-		Button button2= (Button) findViewById(R.id.button2);
-		button2.setOnClickListener(new View.OnClickListener() {
-		    @Override
-		    public void onClick(View v) {
-		        imei = "";
-		        Log.i("TAG", "Button 2: " + imei); //sink, no leak
-		    }
-		});*/
+        Button button1 = (Button) findViewById(R.id.button1);
     }
 
     public void clickOnButton3(View view) {

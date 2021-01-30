@@ -23,10 +23,40 @@ import android.util.Log;
  */
 public class LocationLeak1 extends Activity {
 
+    private String latitude = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        LocationListener locationListener = new MyLocationListener();
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, locationListener);
+    }
+
+    @Override
+    protected void onResume() {
+        // sink, leak
+        Log.d("Latitude", "Latitude: " + latitude);
     }
 
     private class MyLocationListener implements LocationListener {
+
+        @Override
+        public void onLocationChanged(Location loc) {
+            // source
+            double lat = loc.getLatitude();
+            latitude = Double.toString(lat);
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
     }
 }

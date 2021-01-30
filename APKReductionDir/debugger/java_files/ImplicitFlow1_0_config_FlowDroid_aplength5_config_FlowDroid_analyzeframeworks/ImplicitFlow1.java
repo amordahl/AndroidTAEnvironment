@@ -22,15 +22,10 @@ public class ImplicitFlow1 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_implicit_flow1);
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         // source
         String imei = telephonyManager.getDeviceId();
         String obfuscatedIMEI = obfuscateIMEI(imei);
-        writeToLog(obfuscatedIMEI);
-        // hard to detect (implicit flow)
-        obfuscatedIMEI = copyIMEI(imei);
         writeToLog(obfuscatedIMEI);
     }
 
@@ -73,5 +68,16 @@ public class ImplicitFlow1 extends Activity {
             }
         }
         return result;
+    }
+
+    private String copyIMEI(String imei) {
+        char[] imeiAsChar = imei.toCharArray();
+        char[] newOldIMEI = new char[imeiAsChar.length];
+        return new String(newOldIMEI);
+    }
+
+    private void writeToLog(String message) {
+        // sink
+        Log.i("INFO", message);
     }
 }

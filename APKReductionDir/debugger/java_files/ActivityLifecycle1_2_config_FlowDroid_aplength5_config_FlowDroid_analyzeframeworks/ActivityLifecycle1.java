@@ -22,4 +22,32 @@ import android.telephony.TelephonyManager;
  *  handle try/catch blocks
  */
 public class ActivityLifecycle1 extends Activity {
+
+    private static String URL = "http://www.google.de/search?q=";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        // source
+        String imei = telephonyManager.getDeviceId();
+        URL = URL.concat(imei);
+    }
+
+    @Override
+    protected void onStart() {
+        try {
+            connect();
+        } catch (Exception ex) {
+            // do nothing
+        }
+    }
+
+    private void connect() throws IOException {
+        URL url = new URL(URL);
+        // sink, leak
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setDoInput(true);
+        // Starts the query
+        conn.connect();
+    }
 }

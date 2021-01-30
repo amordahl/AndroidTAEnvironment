@@ -27,21 +27,14 @@ public class Button2 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button2);
-        /*Button button1= (Button) findViewById(R.id.button1);
-		button1.setOnClickListener(new View.OnClickListener() {
-		    @Override
-		    public void onClick(View v) {
-		    	
-		    	SmsManager sm = SmsManager.getDefault();
-		    	String number = "+49 1234";
-		    	sm.sendTextMessage(number, null, imei, null, null); //sink, potential leak
-		        Log.i("TAG", "sendIMEI: " + imei); //sink, potential leak
-		        
-		        imei = "";
-		    }
-		});*/
+        Button button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+            }
+        });
         Button button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
 
@@ -58,6 +51,5 @@ public class Button2 extends Activity {
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         // source
         imei = telephonyManager.getDeviceId();
-        // Log.i("TAG", "Button3: " + imei); //sink, leak
     }
 }

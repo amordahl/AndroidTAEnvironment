@@ -26,9 +26,11 @@ public class LocationLeak2 extends Activity implements LocationListener {
 
     private String latitude = "";
 
-    // private String longtitude = "";
+    private String longtitude = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setContentView(R.layout.activity_location_leak2);
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, this);
     }
@@ -37,16 +39,15 @@ public class LocationLeak2 extends Activity implements LocationListener {
     protected void onResume() {
         // sink, leak
         Log.d("Latitude", "Latitude: " + latitude);
-        // Log.d("Longtitude", "Longtitude: " + longtitude); //sink, leak
     }
 
     @Override
     public void onLocationChanged(Location loc) {
         // source
         double lat = loc.getLatitude();
-        // double lon = loc.getLongitude();
+        double lon = loc.getLongitude();
         this.latitude = Double.toString(lat);
-        // this.longtitude = Double.toString(lon);
+        this.longtitude = Double.toString(lon);
     }
 
     @Override

@@ -20,7 +20,6 @@ public class PrivateDataLeak2 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_private_data_leak2);
         EditText mEdit = (EditText) findViewById(R.id.pwField);
         // source, sink, leak
         Log.v("Password", mEdit.getText().toString());

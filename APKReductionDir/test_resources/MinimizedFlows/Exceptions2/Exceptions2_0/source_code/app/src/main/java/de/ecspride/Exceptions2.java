@@ -9,9 +9,9 @@ import android.telephony.TelephonyManager;
 /**
  * @testcase_name Exceptions1
  * @version 0.2
- * @author Secure Software Engineering Group (SSE), European Center for Security and Privacy by Design (EC SPRIDE) 
+ * @author Secure Software Engineering Group (SSE), European Center for Security and Privacy by Design (EC SPRIDE)
  * @author_mail steven.arzt@cased.de
- * 
+ *
  * @description tainted data is created and sent out in an implicitly invoked exception handler
  * @dataflow source -> imei -> exception handler -> sink
  * @number_of_leaks 1
@@ -19,23 +19,22 @@ import android.telephony.TelephonyManager;
  */
 public class Exceptions2 extends Activity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_exceptions2);
-
-		String imei = "";		
-		try {
-			TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-			imei = telephonyManager.getDeviceId(); //source
-			int[] arr = new int[(int) Math.sqrt(49)];
-			if (arr[32] > 0)
-				imei = "";
-		}
-		catch (RuntimeException ex) {
-			SmsManager sm = SmsManager.getDefault();
-			sm.sendTextMessage("+49 1234", null, imei, null, null); //sink, leak
-		}
-	}
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_exceptions2);
+        String imei = "";
+        try {
+            TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+            // source
+            imei = telephonyManager.getDeviceId();
+            int[] arr = new int[(int) Math.sqrt(49)];
+            if (arr[32] > 0)
+                imei = "";
+        } catch (RuntimeException ex) {
+            SmsManager sm = SmsManager.getDefault();
+            // sink, leak
+            sm.sendTextMessage("+49 1234", null, imei, null, null);
+        }
+    }
 }

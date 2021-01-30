@@ -15,9 +15,9 @@ import android.view.ViewGroup;
 /**
  * @testcase_name Threading_Looper1
  * @version 0.1
- * @author Secure Software Engineering Group (SSE), European Center for Security and Privacy by Design (EC SPRIDE) 
+ * @author Secure Software Engineering Group (SSE), European Center for Security and Privacy by Design (EC SPRIDE)
  * @author_mail steven.arzt@cased.de
- * 
+ *
  * @description Sensitive Sensitive data is read in onCreate() and enqueued for
  * 		a custom thread hosting an Android Looper whose handler sends out the data.
  * @dataflow onCreate: source -> Handler.dispatchMessage() -> Looper -> Handler.handleMessage() -> sink
@@ -25,46 +25,37 @@ import android.view.ViewGroup;
  * @challenges The analysis must be able to correctly handle Android's Looper infrastructure.
  */
 public class MainActivity extends ActionBarActivity {
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
 
-		/*if (savedInstanceState == null) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        /*if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}*/
-		
-		LooperThread lpt = new LooperThread();
-		lpt.start();
-		
-		while (!lpt.ready)
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		
-		TelephonyManager telephonyManager = (TelephonyManager)
-				getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
-		String deviceId = telephonyManager.getDeviceId();
-
-		Message msg = new Message();
-		msg.obj = deviceId;
-		LooperThread.handler.dispatchMessage(msg);
-	}
-	
-	/*@Override
+        LooperThread lpt = new LooperThread();
+        lpt.start();
+        while (!lpt.ready) try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        TelephonyManager telephonyManager = (TelephonyManager) getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
+        String deviceId = telephonyManager.getDeviceId();
+        Message msg = new Message();
+        msg.obj = deviceId;
+        LooperThread.handler.dispatchMessage(msg);
+    }
+    /*@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}*/
-
-	/*@Override
+    /*@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
@@ -76,10 +67,10 @@ public class MainActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	*/
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	/*public static class PlaceholderFragment extends Fragment {
+    /**
+     * A placeholder fragment containing a simple view.
+     */
+    /*public static class PlaceholderFragment extends Fragment {
 
 		public PlaceholderFragment() {
 		}
@@ -92,5 +83,4 @@ public class MainActivity extends ActionBarActivity {
 			return rootView;
 		}
 	}*/
-
 }

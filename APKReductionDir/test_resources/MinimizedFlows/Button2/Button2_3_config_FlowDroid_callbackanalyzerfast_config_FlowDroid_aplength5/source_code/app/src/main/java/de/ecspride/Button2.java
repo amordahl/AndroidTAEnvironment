@@ -29,7 +29,7 @@ public class Button2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button2);
         
-        /*Button button1= (Button) findViewById(R.id.button1);
+        Button button1= (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(new View.OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
@@ -41,7 +41,7 @@ public class Button2 extends Activity {
 		        
 		        imei = "";
 		    }
-		});*/
+		});
 		
 		
 		Button button2= (Button) findViewById(R.id.button2);
@@ -57,6 +57,6 @@ public class Button2 extends Activity {
     public void clickOnButton3(View view){
 		TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 		imei = telephonyManager.getDeviceId(); //source
-		//Log.i("TAG", "Button3: " + imei); //sink, leak
+		Log.i("TAG", "Button3: " + imei); //sink, leak
 	}
 }

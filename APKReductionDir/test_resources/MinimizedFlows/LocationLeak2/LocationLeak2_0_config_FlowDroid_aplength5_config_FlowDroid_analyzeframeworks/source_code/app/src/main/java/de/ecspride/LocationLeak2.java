@@ -23,7 +23,7 @@ import android.util.Log;
  *  integrate the callback method onLocationChanged and detect the callback methods as source.
  */
 public class LocationLeak2 extends Activity implements LocationListener{
-	//private String latitude = "";
+	private String latitude = "";
 	private String longtitude = "";
 	
     @Override
@@ -41,17 +41,17 @@ public class LocationLeak2 extends Activity implements LocationListener{
     protected void onResume (){
     	super.onResume();
     	
-    	//Log.d("Latitude", "Latitude: " + latitude); //sink, leak
+    	Log.d("Latitude", "Latitude: " + latitude); //sink, leak
     	Log.d("Longtitude", "Longtitude: " + longtitude); //sink, leak
     }
 
     
 	@Override  
 	 public void onLocationChanged(Location loc) {  //source
-		//double lat = loc.getLatitude();
+		double lat = loc.getLatitude();
 		double lon = loc.getLongitude();
 			
-		//this.latitude =  Double.toString(lat);
+		this.latitude =  Double.toString(lat);
 		this.longtitude = Double.toString(lon);
 	 }  
 

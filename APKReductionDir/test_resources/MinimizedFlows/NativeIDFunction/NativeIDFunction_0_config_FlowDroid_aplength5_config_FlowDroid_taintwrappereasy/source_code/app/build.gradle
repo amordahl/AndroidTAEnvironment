@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 8
+    compileSdkVersion 19
     buildToolsVersion "29.0.2"
 
     defaultConfig {
         applicationId "mod.ndk"
-        minSdkVersion 8
+        minSdkVersion 19
 
 
         ndk {
@@ -23,5 +23,4 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
 }

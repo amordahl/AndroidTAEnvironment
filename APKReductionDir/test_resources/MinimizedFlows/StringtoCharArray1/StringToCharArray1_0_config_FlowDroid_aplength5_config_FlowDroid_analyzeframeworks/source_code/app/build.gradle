@@ -7,7 +7,6 @@ android {
     defaultConfig {
         applicationId "edu.mit.string_to_char"
         minSdkVersion 19
-        targetSdkVersion 19
     }
 
     buildTypes {

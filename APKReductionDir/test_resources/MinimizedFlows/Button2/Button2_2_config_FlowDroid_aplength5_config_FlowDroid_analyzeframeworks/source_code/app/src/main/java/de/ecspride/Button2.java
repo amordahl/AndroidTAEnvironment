@@ -3,11 +3,11 @@ package de.ecspride;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-//import android.telephony.SmsManager;
+import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
-//import android.widget.Button;
+import android.widget.Button;
 
 /**
  * @testcase_name Button2
@@ -29,7 +29,7 @@ public class Button2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_button2);
         
-        /*Button button1= (Button) findViewById(R.id.button1);
+        Button button1= (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(new View.OnClickListener() {
 		    @Override
 		    public void onClick(View v) {
@@ -51,7 +51,7 @@ public class Button2 extends Activity {
 		        imei = "";
 		        Log.i("TAG", "Button 2: " + imei); //sink, no leak
 		    }
-		});*/
+		});
     }
 
     public void clickOnButton3(View view){

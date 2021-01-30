@@ -24,7 +24,7 @@ import android.util.Log;
  */
 public class LocationLeak2 extends Activity implements LocationListener{
 	private String latitude = "";
-	//private String longtitude = "";
+	private String longtitude = "";
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,17 +42,17 @@ public class LocationLeak2 extends Activity implements LocationListener{
     	super.onResume();
     	
     	Log.d("Latitude", "Latitude: " + latitude); //sink, leak
-    	//Log.d("Longtitude", "Longtitude: " + longtitude); //sink, leak
+    	Log.d("Longtitude", "Longtitude: " + longtitude); //sink, leak
     }
 
     
 	@Override  
 	 public void onLocationChanged(Location loc) {  //source
 		double lat = loc.getLatitude();
-		//double lon = loc.getLongitude();
+		double lon = loc.getLongitude();
 			
 		this.latitude =  Double.toString(lat);
-		//this.longtitude = Double.toString(lon);
+		this.longtitude = Double.toString(lon);
 	 }  
 
 	 @Override  

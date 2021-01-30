@@ -34,7 +34,7 @@ public class FactoryMethods1 extends Activity {
         		getSystemService(Context.LOCATION_SERVICE);
         Location data = locationManager.getLastKnownLocation(locationManager.getBestProvider(crit, true));
         
-    	//Log.d("Latitude", "Latitude: " + data.getLatitude()); //sink, leak
+    	Log.d("Latitude", "Latitude: " + data.getLatitude()); //sink, leak
     	Log.d("Longtitude", "Longtitude: " + data.getLongitude()); //sink, leak
 	}
 	

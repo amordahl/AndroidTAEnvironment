@@ -30,6 +30,8 @@ public class TesterUtil {
     Flow targetFlow=null;
     String configFileName =null;
 
+    static int candidateCountJava=0;
+
     public TesterUtil(String targetFile, String xmlSchemaFile, String configFileName){
         this.targetFile=targetFile;
         this.xmlSchemaFile=xmlSchemaFile;
@@ -70,6 +72,16 @@ public class TesterUtil {
 
             if(i==positionChanged){
                 fw.write(changedUnit.toString());
+
+                //this writes the unit we changed to the intermedateJavaDir and gives it a number telling the order
+                File intermediateFile = new File(Runner.intermediateJavaDir+"/"+candidateCountJava+x.getName());
+                if(intermediateFile.exists())
+                    intermediateFile.delete();
+                intermediateFile.createNewFile();
+                FileWriter writer = new FileWriter(intermediateFile);
+                writer.write(changedUnit.toString());
+                candidateCountJava++;
+
             }else {
                 fw.write(list.get(i).toString());
             }
@@ -100,7 +112,6 @@ public class TesterUtil {
                 //assembling project failed we don't care why
                 if(Runner.LOG_MESSAGES)
                     System.out.println(out);
-                PerfTimer.endOneCompileRun();
                 return false;
             }
         }catch(IOException | InterruptedException e){
@@ -132,8 +143,8 @@ public class TesterUtil {
         }
         String command2Out =catchOutput(command2Run);
 
-        File output1 = handleOutput(Long.toHexString(System.currentTimeMillis()), command1Out,programConfigString);
-        File output2 = handleOutput(Long.toHexString(System.currentTimeMillis()), command2Out,programConfigString);
+        File output1 = handleOutput("1",Long.toHexString(System.currentTimeMillis()), command1Out,programConfigString);
+        File output2 = handleOutput("2",Long.toHexString(System.currentTimeMillis()), command2Out,programConfigString);
         PerfTimer.endOneAQLRun();
         return handleAQL(output1, output2);
 
@@ -166,9 +177,9 @@ public class TesterUtil {
     }
 
 
-    private File handleOutput(String id, String outString, String programConfigString) throws IOException {
+    private File handleOutput(String ID, String time, String outString, String programConfigString) throws IOException {
 
-        String fp = "debugger/tempfiles/aqlfiles/"+programConfigString+id+"out.xml";
+        String fp = "debugger/tempfiles/aqlfiles/"+programConfigString+time+"out"+ID+".xml";
 
         File f = Paths.get(fp).toFile();
         f.mkdirs();
@@ -184,6 +195,10 @@ public class TesterUtil {
             return null;
         }
         String header = "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n";
+
+        if(Runner.LOG_MESSAGES){
+            System.out.println("this run used this file:" +f.getName());
+        }
 
         FileWriter fw = new FileWriter(f);
         fw.write(header);

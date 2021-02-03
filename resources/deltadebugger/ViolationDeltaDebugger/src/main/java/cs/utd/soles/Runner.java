@@ -3,7 +3,6 @@ package cs.utd.soles;
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Node;
-import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.BlockStmt;
@@ -23,6 +22,8 @@ import java.util.List;
 
 public class Runner {
 
+
+    static File intermediateJavaDir=null;
     public static boolean LOG_MESSAGES=false;
     static TesterUtil testerForThis=null;
     static String configFileName="";
@@ -45,16 +46,27 @@ public class Runner {
 
         try{
             handleSrcDirectory(java_directory_path);
+            if(LOG_MESSAGES) {
+                String filePathName = "debugger/java_files/" + configFileName + "/intermediate_java/";
+                File f = new File(filePathName);
+                f.mkdirs();
+                intermediateJavaDir=f;
+
+            }
         }catch(IOException e){
             e.printStackTrace();
         }
         //start the delta debugging process
 
         while(!minimized){
-            //this is set here because if a change is made to ANY ast we want to say we haven't minimized yet
+
             PerfTimer.startOneRotation();
+            //this is set here because if a change is made to ANY ast we want to say we haven't minimized yet
             minimized=true;
             int i=0;
+            //TODO:: Test if this method actually works
+            //if(bestCUList.size()>1)
+            //    handleCUList(bestCUList);
             for (CompilationUnit compilationUnit : bestCUList) {
                 traverseTree(i, compilationUnit);
                 i++;
@@ -63,7 +75,7 @@ public class Runner {
             PerfTimer.endOneRotation();
         }
 
-
+        //log a bunch of information
         try {
             String filePathName = "debugger/java_files/"+configFileName+"/";
             for (int i = 0; i < bestCUList.size(); i++) {
@@ -103,7 +115,7 @@ public class Runner {
 
 
             //revert program to it's original form
-            TesterUtil.saveCompilationUnits(originalCUnits,javaFiles, originalCUnits.size()+1,null);
+            TesterUtil.saveCompilationUnits(originalCUnits,unchangedJavaFiles, originalCUnits.size()+1,null);
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -146,58 +158,9 @@ public class Runner {
     static ArrayList<CompilationUnit> originalCUnits = new ArrayList();
     static ArrayList<String> programFileNames= new ArrayList<>();
     static ArrayList<File> javaFiles = new ArrayList<>();
+    static ArrayList<File> unchangedJavaFiles = new ArrayList<>();
     //main recursion that loops through all nodes
     //we process parents before children
-
-    private static boolean changeMade=false;
-    public static Node depthFirstTraverse(int currentCU, Node currentNode){
-
-        if(!currentNode.getParentNode().isPresent()&&!(currentNode instanceof CompilationUnit)||currentNode==null){
-            return null;
-        }
-
-
-        //if(LOG_MESSAGES)
-        //    System.out.println(currentNode.toString());
-
-
-        Node beforeAttemptNode = currentNode;
-
-        process(currentCU,currentNode);
-
-        if(beforeAttemptNode == currentNode){
-            changeMade=true;
-        }
-
-        //if(LOG_MESSAGES)
-        //    System.out.println(currentNode == null ? "NULL":currentNode.toString());
-
-        if(currentNode==null)
-            return null;
-        //pass list and update when we copy tree through recursion?
-
-        List<Node> nodeChilds = new ArrayList<>(currentNode.getChildNodes());
-        int maxLength=nodeChilds.size();
-        int i=0;
-        while(!nodeChilds.isEmpty()&&i<maxLength){
-
-            Node cur = nodeChilds.remove(0);
-
-            Node childNode = depthFirstTraverse(currentCU, cur);
-            if(!(cur==childNode)){
-
-
-                System.out.println("The tree changed on this depthFirst so we see");
-                System.out.println("Old nodeChilds: "+nodeChilds);
-                nodeChilds = new ArrayList<>(childNode.getParentNode().get().getChildNodes());
-                currentNode=childNode.getParentNode().get();
-                System.out.println("New nodeChilds: "+nodeChilds);
-            }
-            i++;
-        }
-        return currentNode;
-    }
-
 
     public static void traverseTree(int currentCU, Node currentNode){
 
@@ -240,7 +203,7 @@ public class Runner {
                     index++;
                 }
 
-                if(checkChanges(compPosition, copiedUnit)){
+                if(checkChanges(compPosition, copiedUnit,false,null)){
                     //if changed remove the nodes we removed from the original ast
                     for(Node x:alterableRemoves){
                         currentNode.remove(x);
@@ -266,6 +229,39 @@ public class Runner {
         }
         //check changes
         //if they worked REMOVE THE SAME NODES FROM ORIGINAL DONT COPY ANYTHING
+    }
+
+    //this method trys to remove entire CompilationUnits from the list
+    public static void handleCUList(List<CompilationUnit> childList){
+
+        ArrayList<CompilationUnit> copiedList = new ArrayList<>();
+        for(CompilationUnit x: childList){
+            copiedList.add(x.clone());
+        }
+        for(int i=copiedList.size();i>0;i/=2){
+            for(int j=0;j<copiedList.size();j+=i){
+                List<CompilationUnit> subList = new ArrayList<>(copiedList.subList(j,Math.min((j+i),copiedList.size())));
+                copiedList.removeAll(subList);
+                if(checkChanges(childList.size()+1,null,true,copiedList)){
+                    //the copied list worked, update regular list to reflect changes
+                    childList=copiedList;
+                    //we also need to remove the javafiles associated with the compilationUnits from the list of files
+                    for(int h=0;h<subList.size();h++){
+                        javaFiles.remove(j);
+                    }
+                    //restart the loop
+                    copiedList = new ArrayList<>();
+                    for(CompilationUnit x: childList){
+                        copiedList.add(x.clone());
+                    }
+                    i=copiedList.size()/2;
+                }else{
+                    //the copied list didn't work, set it back to normal
+                    copiedList.addAll(j,subList);
+                }
+            }
+        }
+
     }
 
 
@@ -304,12 +300,8 @@ public class Runner {
 
     }
 
-    /**
-     * OK, so this method is required because when we remove something from an ast the way we "reset" the ast to it's pre-removal form is by replacing that ast with a copied ast, turns out
-     * the "currentNode" object is an object that is in the first tree (the tree we removed something from). So when we replace the entire tree we need to save our position. This method just finds the
-     * currentNode that we were working on in the copied tree and then returns it. If we don't do this then the only time we would ever change the tree would be the first time we complete a change-then-replace cycle.
-     */
 
+    //finds an equivalent node in an equivalent tree
     public static Node findCurrentNode(Node currentNode, int compPosition, CompilationUnit copiedUnit){
 
         Node curNode = currentNode;
@@ -357,91 +349,46 @@ public class Runner {
     }
 
 
-
-
-    private static Node handleNodeListCopy(int compPosition, Node currentNode, List<Node> list){
-
-        //make copy
-        CompilationUnit copiedUnit = bestCUList.get(compPosition).clone();
-        Node copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-        ArrayList<Node> alterableList = new ArrayList<Node>(list);
-        ArrayList<Node> copiedList = getCurrentNodeList(copiedNode, alterableList);
-
-        for(int i=copiedList.size();i>0;i/=2){
-            for(int j=0;j<copiedList.size();j+=i){
-
-                List<Node> subList = new ArrayList<>(copiedList.subList(j,Math.min((j+i),copiedList.size())));
-                //change copy
-                List<Node> removedNodes = new ArrayList<>();
-                for(Node x: subList){
-                    if(copiedList.contains(x)){
-                       copiedNode.remove(x);
-                       removedNodes.add(x);
-                    }
-                }
-
-                //check changes
-                if(checkChanges(compPosition, copiedUnit)){
-                    //if changed then replace compPositionWith CompilationUnit
-                    bestCUList.set(compPosition,copiedUnit);
-                    currentNode=copiedNode;
-                    copiedList.removeAll(removedNodes);
-
-
-                    //make another copy and try to run the loop again
-                    copiedUnit = bestCUList.get(compPosition).clone();
-                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-                    copiedList = getCurrentNodeList(copiedNode, alterableList);
-                    i=copiedList.size()/2;
-                    break;
-                } else{
-                    copiedUnit = bestCUList.get(compPosition).clone();
-                    copiedNode = findCurrentNode(currentNode, compPosition, copiedUnit);
-                    copiedList = getCurrentNodeList(copiedNode, alterableList);
-                }
-
-            }
-        }
-
-
-
-
-
-
-
-        return currentNode;
-    }
-
-
-
-
-
-
-
     //this method is run our ast and see if the changes we made are good or bad (returning true or false) depending
-    private static boolean checkChanges(int compPosition, CompilationUnit copiedu) {
+    private static boolean checkChanges(int compPosition, CompilationUnit copiedu, boolean replaceCU, ArrayList<CompilationUnit> cuList) {
 
         boolean returnVal=false;
 
         try {
+            if(!replaceCU) {
+                if (testerForThis.createApk(gradlew_path, project_root_path, bestCUList, javaFiles, compPosition, copiedu)) {
 
-            if(testerForThis.createApk(gradlew_path,project_root_path,bestCUList,javaFiles, compPosition, copiedu)) {
+                    if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path, configFileName)) {
 
-                if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path,configFileName)) {
+                        returnVal = true;
+                        minimized = false;
 
-                    returnVal = true;
-                    minimized = false;
-
-                    System.out.println("Successful One\n\n------------------------------------\n\n\n");
-                    for (CompilationUnit x : bestCUList) {
-                        System.out.println(x);
+                        System.out.println("Successful One\n\n------------------------------------\n\n\n");
+                        for (CompilationUnit x : bestCUList) {
+                            System.out.println(x);
+                        }
+                        System.out.println("CopiedUnit:" + copiedu);
                     }
-                    System.out.println("CopiedUnit:" + copiedu);
+                }
+            }else{
+                if (testerForThis.createApk(gradlew_path, project_root_path, cuList, javaFiles, compPosition, copiedu)) {
+
+                    if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path, configFileName)) {
+
+                        returnVal = true;
+                        minimized = false;
+
+                        System.out.println("Successful One\n\n------------------------------------\n\n\n");
+                        for (CompilationUnit x : bestCUList) {
+                            System.out.println(x);
+                        }
+                    }
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return returnVal;
     }
 
@@ -470,6 +417,7 @@ public class Runner {
                 cloneList.add(returnList.get(i).clone());
                 i++;
                 javaFiles.add(x.getAbsoluteFile());
+                unchangedJavaFiles.add(x.getAbsoluteFile());
             }
             createInPlaceCopy(x, f);
         }

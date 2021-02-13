@@ -20,8 +20,6 @@ import java.util.Iterator;
  * */
 
 
-
-
 public class TesterUtil {
 
     boolean soundness;
@@ -74,13 +72,15 @@ public class TesterUtil {
                 fw.write(changedUnit.toString());
 
                 //this writes the unit we changed to the intermedateJavaDir and gives it a number telling the order
-                File intermediateFile = new File(Runner.intermediateJavaDir+"/"+candidateCountJava+x.getName());
-                if(intermediateFile.exists())
-                    intermediateFile.delete();
-                intermediateFile.createNewFile();
-                FileWriter writer = new FileWriter(intermediateFile);
-                writer.write(changedUnit.toString());
-                candidateCountJava++;
+                if(Runner.LOG_MESSAGES) {
+                    File intermediateFile = new File(Runner.intermediateJavaDir + "/" + candidateCountJava + x.getName());
+                    if (intermediateFile.exists())
+                        intermediateFile.delete();
+                    intermediateFile.createNewFile();
+                    FileWriter writer = new FileWriter(intermediateFile);
+                    writer.write(changedUnit.toString());
+                    candidateCountJava++;
+                }
 
             }else {
                 fw.write(list.get(i).toString());

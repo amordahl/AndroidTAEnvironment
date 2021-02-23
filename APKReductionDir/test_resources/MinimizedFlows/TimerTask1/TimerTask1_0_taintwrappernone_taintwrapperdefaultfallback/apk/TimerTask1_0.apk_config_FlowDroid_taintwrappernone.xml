@@ -1,0 +1,60 @@
+<answer time="4108.152792789042">
+    <flows>
+        <flow>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r3, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity$MyTask: void run()&gt;</method>
+                <classname>de.ecspride.MainActivity$MyTask</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/TimerTask1/TimerTask1_0/apk/TimerTask1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">5a0972d5d17e6715dc2b00d0b0ddb756</hash>
+                        <hash type="SHA-1">cd6d1860fb68bfc1b13da6f46242d92527575bf9</hash>
+                        <hash type="SHA-256">faa3326be55dda24d27556379f3be9e3c88c852391a879a54e40a432180de844</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>test_resources/MinimizedFlows/TimerTask1/TimerTask1_0/apk/TimerTask1_0.apk</file>
+                    <hashes>
+                        <hash type="MD5">5a0972d5d17e6715dc2b00d0b0ddb756</hash>
+                        <hash type="SHA-1">cd6d1860fb68bfc1b13da6f46242d92527575bf9</hash>
+                        <hash type="SHA-256">faa3326be55dda24d27556379f3be9e3c88c852391a879a54e40a432180de844</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

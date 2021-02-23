@@ -104,3 +104,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Android Studio and Int
+.gradle
+.idea
+*.iml
+build/
+.idea/

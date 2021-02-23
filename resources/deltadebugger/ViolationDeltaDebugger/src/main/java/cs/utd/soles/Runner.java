@@ -98,16 +98,18 @@ public class Runner {
             file.createNewFile();
             FileWriter fw = new FileWriter(file);
             long finalRunTimeVar= PerfTimer.getProgramRunTime()/1000;
-            fw.write("Total Program Runtime: "+finalRunTimeVar+"\n"+"\n");
-            fw.write("Average Of Rotations: " + PerfTimer.getAverageOfRotations()/1000+"\n");
-            fw.write("Total Rotations: "+ PerfTimer.getTotalRotations()+"\n"+"\n");
-            fw.write("Average Of AST Changes: "+ PerfTimer.getAverageOfASTChanges()/1000+"\n");
-            fw.write("Total AST Changes: " + PerfTimer.getTotalASTChanges()+"\n"+"\n");
-            fw.write("Average Of AQL Runs: " + PerfTimer.getAverageOfAQLRuns()/1000+"\n");
-            fw.write("Total AQL Runs: "+PerfTimer.getTotalAQLRuns()+"\n"+"\n");
-            fw.write("Average Of Compile Runs: " +PerfTimer.getAverageOfCompileRuns()/1000+"\n");
-            fw.write("Total Compiles: "+ PerfTimer.getTotalCompileRuns()+"\n"+"\n");
+            fw.write("program_runtime: "+finalRunTimeVar+"\n"+"\n");
+            fw.write("average_of_rotations: " + PerfTimer.getAverageOfRotations()/1000+"\n");
+            fw.write("total_rotations: "+ PerfTimer.getTotalRotations()+"\n"+"\n");
+            fw.write("average_runtime_aql: " + PerfTimer.getAverageOfAQLRuns()/1000+"\n");
+            fw.write("total_aql_runs: "+PerfTimer.getTotalAQLRuns()+"\n"+"\n");
+            fw.write("average_runtime_compile: " +PerfTimer.getAverageOfCompileRuns()/1000+"\n");
+            fw.write("total_compile_runs: "+ PerfTimer.getTotalCompileRuns()+"\n"+"\n");
+            fw.write("total_proposed_node_changes: " + PerfTimer.proposedChangesCount);
+            fw.write("total_complete_node_changes: " + PerfTimer.totalChangesCount);
+            fw.write("num_candidate_ast: " + TesterUtil.candidateCountJava);
             fw.write("Percentages:\n"+PerfTimer.getPercentages());
+
 
 
             fw.flush();
@@ -199,6 +201,7 @@ public class Runner {
                         copiedNode.remove(x);
                         removedNodes.add(x);
                         alterableRemoves.add(alterableList.get(index));
+                        PerfTimer.addToProposedChanges(1);
                     }
                     index++;
                 }
@@ -207,6 +210,7 @@ public class Runner {
                     //if changed remove the nodes we removed from the original ast
                     for(Node x:alterableRemoves){
                         currentNode.remove(x);
+                        PerfTimer.addToTotalChanges(1);
                     }
 
 

@@ -1,6 +1,13 @@
 package cs.utd.soles;
 
 public class PerfTimer {
+
+
+    static int totalChangesCount=0;
+    static int proposedChangesCount=0;
+    public static void addToTotalChanges(int x){totalChangesCount+=x;}
+    public static void addToProposedChanges(int x){proposedChangesCount+=x;}
+
     public static long getTotalOfRotations() {
         return totalOfRotations;
     }

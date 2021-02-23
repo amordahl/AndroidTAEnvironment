@@ -1,0 +1,9 @@
+{
+  "gradlew_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/Unregister1/Unregister1_0_taintwrappernone_aplength5/source_code/gradlew",
+  "generating_config1": "/home/asm140830/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_taintwrappernone.xml",
+  "generating_config2": "/home/asm140830/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_aplength5.xml",
+  "java_directory_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/Unregister1/Unregister1_0_taintwrappernone_aplength5/source_code/app/src",
+  "project_root_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/Unregister1/Unregister1_0_taintwrappernone_aplength5/source_code/",
+  "apk_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/Unregister1/Unregister1_0_taintwrappernone_aplength5/source_code/app/build/outputs/apk/debug/app-debug.apk",
+  "target_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/resources/deltadebugger/ViolationDeltaDebugger/target_and_config_files2/target_files/Unregister1_0.json"
+}

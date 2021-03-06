@@ -79,6 +79,8 @@ public class TesterUtil {
                     intermediateFile.createNewFile();
                     FileWriter writer = new FileWriter(intermediateFile);
                     writer.write(changedUnit.toString());
+                    writer.flush();
+                    writer.close();
                     candidateCountJava++;
                 }
 

@@ -66,7 +66,7 @@ public class Runner {
             int i=0;
             //TODO:: Test if this method actually works
             //if(bestCUList.size()>1)
-                handleCUList(bestCUList);
+                //handleCUList(bestCUList);
             for (CompilationUnit compilationUnit : bestCUList) {
                 traverseTree(i, compilationUnit);
                 i++;

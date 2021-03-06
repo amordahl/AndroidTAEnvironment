@@ -15,12 +15,12 @@ configs = list()
 config_master = dict()
 file_index = 0
 with open(args.config_file) as f:
-    for line in f:
+    for linepos, line in enumerate(f):
         tokens = [t.strip() for t in line.split(" ")]
         tokens = [t for t in tokens if not (t.isspace() or t == '')]
         logging.debug(f"{tokens}")
         config = copy.deepcopy(config_master)
-        config["file"] = f"config_{file_index}"
+        config["file"] = f"config_{tokens[0]}" if not tokens[0].startswith('-') else f'config_{linepos}'
         file_index += 1
         for (ix,t) in enumerate(tokens):
             logging.debug(f"({ix}, {t})")

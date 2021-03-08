@@ -6,11 +6,6 @@ import re
 import os
 import logging
 from csv import DictWriter
-SUPPORTED_STRUCTURES = ['callbackMethods',
-                        'incoming',
-                        'methodSinks',
-                        'methodSideEffects',
-                        'callgraphEdges']
 import argparse
 p = argparse.ArgumentParser()
 p.add_argument('--list1',
@@ -27,13 +22,7 @@ p.add_argument('--list2',
                nargs='+',
                type=str,
                required=True)
-p.add_argument('output', help='The output CSV file.')
-p.add_argument('--structures',
-               help='Structures to track and record.',
-               nargs='+',
-               type=str,
-               choices=SUPPORTED_STRUCTURES,
-               default=SUPPORTED_STRUCTURES)
+p.add_argument('--output', help='The output CSV file.')
 p.add_argument('-v', '--verbose',
                help='Level of verbosity.',
                action='count', default=0)
@@ -68,6 +57,7 @@ def find_datastructure(content: Tuple[str], dataStructure: str) -> Set[str]:
     Finds the given structure, and returns it.
     and returns it.
     """
+    logging.debug(f'Finding datastructure {dataStructure}')
     if f'{hash(content)}_{dataStructure}' in cache:
         return cache[f'{hash(content)}_{dataStructure}']
     
@@ -75,9 +65,11 @@ def find_datastructure(content: Tuple[str], dataStructure: str) -> Set[str]:
     for line in content:
         ix = line.find('-')
         second_half = line[ix+1:len(line)].strip()
-        if not second_half.startswith(f'{dataStructure}:'):
+        logging.debug(f'second half is {second_half}')
+        if not second_half.startswith(dataStructure):
             continue
         else:
+            logging.debug(f'Found data structure {dataStructure} in line {line}.')
             full_list = re.search(r"{.*}", second_half).group()
             elements = re.findall(r"<<<<<.+?>>>>>", full_list)
             if len(elements) == 0:
@@ -141,10 +133,25 @@ def main() :
     logging.info('Opening files.')
     files = [{f: open_file(f) for f in l} for l in file_lists]
     logging.info(f'Files read in successfully.')
-        # Parse data structures.
-    logging.info(f'Now reading in data structures.')
-    structures = [{f: {s: find_datastructure(files[x][f], s) for s in args.structures}\
-                      for f in files[x].keys()} for x in range(len(files))]
+    # Parse data structures.
+    logging.info('Collecting data structures.')
+
+    # First pass through all files is to collect all data structures.
+    structures = set()
+    for di in files:
+        for _, content in di.items():
+            for c in content:
+                # Scan for lines that start with loggerhelper.
+                logger = 'soot.jimple.infoflow.util.LoggerHelper'
+                if logger in c:
+                    # lines look like this
+                    # [FlowDroid] INFO soot.jimple.infoflow.util.LoggerHelper - soot.jimple.infoflow.methodSummary.taintWrappers.SummaryTaintWrapper:776 res {[{NULL}]}
+                    log = '-'.join(c.split('-')[1:]).strip()
+                    struct = ' '.join([log.split(' ')[0], log.split(' ')[1]])
+                    # struct name is a combo of name and location
+                    structures.add(struct)
+                    
+
     
     # Print to csv.
     base_dict={'file': None,
@@ -153,11 +160,11 @@ def main() :
                'flows_equal': None,
                'this_subset_partner': None,
                'this_superset_partner': None,}
-    for s in args.structures:
-        base_dict[f'length_{s}'] = None
+    for s in structures:
+#        base_dict[f'length_{s}'] = None
         base_dict[f'equal_{s}'] = None
-        base_dict[f'this_{s}_minus_partner'] = None
-        base_dict[f'partner_{s}_minus_this'] = None
+ #       base_dict[f'this_{s}_minus_partner'] = None
+  #      base_dict[f'partner_{s}_minus_this'] = None
 
     lines = []
     for i in range(len(args.list1)):
@@ -176,27 +183,48 @@ def main() :
                 collect_flows(files[(j+1)%2][f_partner]))
             entry['this_superset_partner'] = collect_flows(files[j][f_this]).issuperset(
                 collect_flows(files[(j+1)%2][f_partner]))
-            for s in args.structures:
-                entry[f'length_{s}'] = len(find_datastructure(files[j][f_this], s))
+            for s in structures:
+#                entry[f'length_{s}'] = len(find_datastructure(files[j][f_this], s))
                 entry[f'equal_{s}'] = find_datastructure(files[j][f_this], s) == \
                     find_datastructure(files[(j+1)%2][f_partner], s)
-                entry[f'this_{s}_minus_partner'] = find_datastructure(files[j][f_this], s) -\
-                    find_datastructure(files[(j+1)%2][f_partner], s)
-                entry[f'partner_{s}_minus_this'] = find_datastructure(files[(j+1)%2][f_partner], s) -\
-                    find_datastructure(files[j][f_this], s)
-                entry[f'difference_{s}_overall'] = len(find_datastructure(files[j][f_this], s).union(find_datastructure(files[(j+1)%2][f_partner], s)) - find_datastructure(files[j][f_this], s).intersection(find_datastructure(files[(j+1)%2][f_partner], s)))
+#                entry[f'this_{s}_minus_partner'] = find_datastructure(files[j][f_this], s) -\
+#                    find_datastructure(files[(j+1)%2][f_partner], s)
+#                entry[f'partner_{s}_minus_this'] = find_datastructure(files[(j+1)%2][f_partner], s) -\
+#                    find_datastructure(files[j][f_this], s)
+#                entry[f'difference_{s}_overall'] = len(find_datastructure(files[j][f_this], s).union(find_datastructure(files[(j+1)%2][f_partner], s)) - find_datastructure(files[j][f_this], s).intersection(find_datastructure(files[(j+1)%2][f_partner], s)))
             lines.append(entry)
 
-    if os.path.exists(args.output):
-        exists = True
-    else:
-        exists = False
+    # compute suspiciousness
+    suspiciousness = []
+    for s in structures:
+        successful = len([e for e in lines if e[f'equal_{s}'] and e['this_subset_partner']])
+        logging.info(f'successful: {successful}')
+        failed = len([e for e in lines if not e[f'equal_{s}'] and not e['this_subset_partner']])
+        logging.info(f'failed: {failed}')
+        total_successful = len([e for e in lines if e['this_subset_partner']])
+        logging.info(f'total_successful: {total_successful}')
+        total_failed = len([e for e in lines if not e['this_subset_partner']])
+        logging.info(f'total_failed: {total_failed}')
+        suspiciousness.append( (s,
+                                1 - ((float(successful) / total_successful) / \
+                                     ( (successful / total_successful) + (failed / total_failed)))
+                                ))
 
-    with open(args.output,'a') as out:
-        writer = DictWriter(out, fieldnames=lines[0].keys(), dialect='excel-tab')
-        if not exists:
-            writer.writeheader()
-        [writer.writerow(e) for e in lines]
+    suspiciousness = sorted(suspiciousness, key=lambda s: s[1], reverse=True)
+    for s in suspiciousness:
+        print(f'{s[0]}: {s[1]}')
+    
+    if args.output is not None:
+        if os.path.exists(args.output):
+            exists = True
+        else:
+            exists = False
+            
+        with open(args.output,'a') as out:
+            writer = DictWriter(out, fieldnames=lines[0].keys(), dialect='excel-tab')
+            if not exists:
+                writer.writeheader()
+            [writer.writerow(e) for e in lines]
 
 if __name__ == '__main__':
     main()

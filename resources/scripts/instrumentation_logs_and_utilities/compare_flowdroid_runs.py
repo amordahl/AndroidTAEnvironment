@@ -1,7 +1,11 @@
 ### Austin Mordahl
 ### 2021-02-26
 
-from typing import List, Set, Tuple
+from typing import List, Set, Tuple, Dict
+from tqdm import tqdm
+from multiprocessing import Pool
+from threading import Lock
+from functools import partial
 import re
 import os
 import logging
@@ -9,7 +13,11 @@ from csv import DictWriter
 import argparse
 p = argparse.ArgumentParser()
 p.add_argument('--list1',
-               help='The first list of files.',
+               help="""The first list of files. Note that violations are computed
+               based on a subset relation. Anything where list1's flows are not a subset
+               of list2's flows is a violation. This means that list1 should either be from 
+               the less precise option (in the case of a precision partial order) or from the more
+               sound option (in the case of a soundness partial order).""",
                nargs='+',
                type=str,
                required=True)
@@ -26,6 +34,11 @@ p.add_argument('--output', help='The output CSV file.')
 p.add_argument('-v', '--verbose',
                help='Level of verbosity.',
                action='count', default=0)
+p.add_argument('-j', '--jobs', default=8)
+p.add_argument('--metric', '-m', help='The metric to calculate whether two structures are equal.',
+               choices=['last_log', 'superset'],
+               default='last_log')
+p.add_argument('--wei-transform', '-w', help="""Apply Dr. Wei's transformation""", action='store_true')
 args = p.parse_args()
 
 # Setup Logging
@@ -75,14 +88,13 @@ def find_datastructure(content: Tuple[str], dataStructure: str) -> Set[str]:
             if len(elements) == 0:
                 continue
             try:
-#                result = set([(e.split(',')[0].strip('[]'), e.split(',')[1].strip('[]')) for e in elements])
-                result = set(elements)
+                result.append(set(elements))
             except:
                 logging.critical(f'Could not parse the collection {dataStructure} on line {line}.')
-                result = []
-    logging.debug(f'Returning result {frozenset(result)}')
-    cache[f'{hash(content)}_{dataStructure}'] = frozenset(result)
-    return frozenset(result)
+                
+    logging.debug(f'Returning result {result}')
+    cache[f'{hash(content)}_{dataStructure}'] = result
+    return result
 
 # check different keys
 def get_different_positions(coll1, coll2, pos) -> int:
@@ -120,38 +132,107 @@ def collect_flows(lines):
             logging.debug(f'Appending flow. Flow is {(current_sink, l)}')
             flows.append((current_sink, l)) #l is a source
     return frozenset(flows)
-            
+
+def add_structures(content: List[str]) -> Set[str]:
+    """ Given a list of lines from a file, return the structures that 
+    are defined in that file."""
+    structures = set()
+    for c in content:
+        # Scan for lines that start with loggerhelper.
+        logger = 'LoggerHelper'
+        if logger in c:
+            # lines look like this
+            # [FlowDroid] INFO soot.jimple.infoflow.util.LoggerHelper - soot.jimple.infoflow.methodSummary.taintWrappers.SummaryTaintWrapper:776 res {[{NULL}]}
+            try:
+                log = '-'.join(c.split('-')[1:]).strip()
+                struct = ' '.join([log.split(' ')[0], log.split(' ')[1]])
+            except Exception as ex:
+                logging.critical(f'Could not parse {c}')
+                raise ex
+            structures.add(struct)
+    return structures
+
+def get_entry(base_dict: Dict[str, str],
+              file_lists: List[List[str]],
+              files: List[Dict[str, List[str]]],
+              structures: Set[str],
+              i: int) -> Dict[str, str]:
+    """
+    Given a base dictionary, all of the files, and an index,
+    create the entry for it.
+    """
+    j = 0
+    entry = base_dict.copy()
+    f_this = file_lists[j][i]
+    f_partner = file_lists[(j+1)%2][i]
+    entry['file'] = f_this
+    entry['partner'] = f_partner
+    entry['num_flows'] = len(collect_flows(files[j][f_this]))
+    entry['flows_equal'] = collect_flows(files[j][f_this]) == collect_flows(files[(j+1)%2][f_partner])
+    entry['this_subset_partner'] = collect_flows(files[j][f_this]).issubset(
+        collect_flows(files[(j+1)%2][f_partner]))
+    entry['this_superset_partner'] = collect_flows(files[j][f_this]).issuperset(
+        collect_flows(files[(j+1)%2][f_partner]))
+    for s in structures:
+        ds1 = find_datastructure(files[j][f_this], s)
+        ds2 = find_datastructure(files[(j+1)%2][f_partner], s)
+
+        # o1 and o2 are what to compare.
+        o1 = None
+        o2 = None
+        if args.metric == 'last_log':
+            # we compare the last element of each list.
+            o1 = ds1[-1] if ds1 != [] else []
+            o2 = ds2[-1] if ds2 != [] else []
+        elif args.metric == 'superset':
+            ds1_set = set()
+            ds2_set = set()
+            for s in ds1:
+                ds1_set.update(s)
+            for s in ds2:
+                ds2_set.update(s)
+            o1 = ds1_set
+            o2 = ds2_set
+        if args.wei_transform:
+            # We apply the following formula:
+            # [if the data structure is accessed in B’s execution, 1; otherwise, 0] *
+            #  [if the data structure is different in B than A, 1; otherwise, 0].
+            raise NotImplementedError('Wei transform not implemented yet.')
+        else:
+            entry[f'equal_{s}'] = (o1 == o2)
+    return entry
+
 def main() :
-    #1. Read in files.
+    # Read in files.
     if len(args.list1) != len(args.list2):
         logging.critical(f'list1 and list2 need to be the same length. '\
-                         f'list1 is {len(list1)} elements, and list2 is '\
-                         f'{len(list2)} elements.')
+                         f'list1 is {len(args.list1)} elements, and list2 is '\
+                         f'{len(args.list2)} elements.')
         exit(1)
 
     file_lists = [args.list1, args.list2]
-    logging.info('Opening files.')
+    print('Opening files.')
     files = [{f: open_file(f) for f in l} for l in file_lists]
-    logging.info(f'Files read in successfully.')
+    print(f'Files read in successfully.')
     # Parse data structures.
     logging.info('Collecting data structures.')
 
     # First pass through all files is to collect all data structures.
+    print('Starting first pass to find all data structures.')
     structures = set()
-    for di in files:
-        for _, content in di.items():
-            for c in content:
-                # Scan for lines that start with loggerhelper.
-                logger = 'soot.jimple.infoflow.util.LoggerHelper'
-                if logger in c:
-                    # lines look like this
-                    # [FlowDroid] INFO soot.jimple.infoflow.util.LoggerHelper - soot.jimple.infoflow.methodSummary.taintWrappers.SummaryTaintWrapper:776 res {[{NULL}]}
-                    log = '-'.join(c.split('-')[1:]).strip()
-                    struct = ' '.join([log.split(' ')[0], log.split(' ')[1]])
-                    # struct name is a combo of name and location
-                    structures.add(struct)
-                    
+    structures_lock = Lock()
 
+    # Flatten files (a list of dicts) into a list of the file
+    # contents, so that it can be passed to p.map()
+    content_list = []
+    for l in files:
+        for k,v in l.items():
+            content_list.append(v)
+    p = Pool(args.jobs)
+    all_structures = p.map(add_structures, content_list)
+    for a in all_structures:
+        structures.update(a)
+    print('First pass done.')
     
     # Print to csv.
     base_dict={'file': None,
@@ -161,43 +242,22 @@ def main() :
                'this_subset_partner': None,
                'this_superset_partner': None,}
     for s in structures:
-#        base_dict[f'length_{s}'] = None
         base_dict[f'equal_{s}'] = None
- #       base_dict[f'this_{s}_minus_partner'] = None
-  #      base_dict[f'partner_{s}_minus_this'] = None
 
     lines = []
+    print('Collecting data structures.')
+
+    # Get entries in parallel.
+    lines = list()
+    part = partial(get_entry, base_dict, file_lists, files, structures)
     for i in range(len(args.list1)):
-        # This is a little convoluted, but j is just an array giving the necessary elements to
-        # construct the entry, so that we don't have to have a bunch of if-conditions
-        # to write the line for entries from list1 and list2.
-        for j in [0]:
-            entry = base_dict.copy()
-            f_this = file_lists[j][i]
-            f_partner = file_lists[(j+1)%2][i]
-            entry['file'] = f_this
-            entry['partner'] = f_partner
-            entry['num_flows'] = len(collect_flows(files[j][f_this]))
-            entry['flows_equal'] = collect_flows(files[j][f_this]) == collect_flows(files[(j+1)%2][f_partner])
-            entry['this_subset_partner'] = collect_flows(files[j][f_this]).issubset(
-                collect_flows(files[(j+1)%2][f_partner]))
-            entry['this_superset_partner'] = collect_flows(files[j][f_this]).issuperset(
-                collect_flows(files[(j+1)%2][f_partner]))
-            for s in structures:
-#                entry[f'length_{s}'] = len(find_datastructure(files[j][f_this], s))
-                entry[f'equal_{s}'] = find_datastructure(files[j][f_this], s) == \
-                    find_datastructure(files[(j+1)%2][f_partner], s)
-#                entry[f'this_{s}_minus_partner'] = find_datastructure(files[j][f_this], s) -\
-#                    find_datastructure(files[(j+1)%2][f_partner], s)
-#                entry[f'partner_{s}_minus_this'] = find_datastructure(files[(j+1)%2][f_partner], s) -\
-#                    find_datastructure(files[j][f_this], s)
-#                entry[f'difference_{s}_overall'] = len(find_datastructure(files[j][f_this], s).union(find_datastructure(files[(j+1)%2][f_partner], s)) - find_datastructure(files[j][f_this], s).intersection(find_datastructure(files[(j+1)%2][f_partner], s)))
-            lines.append(entry)
+        lines.append(part(i))
 
     # compute suspiciousness
     suspiciousness = []
-    for s in structures:
-        successful = len([e for e in lines if e[f'equal_{s}'] and e['this_subset_partner']])
+    print('Now comparing data structures and computing suspiciousness.')
+    for s in tqdm(structures):
+        successful = len([e for e in lines if not e[f'equal_{s}'] and e['this_subset_partner']])
         logging.info(f'successful: {successful}')
         failed = len([e for e in lines if not e[f'equal_{s}'] and not e['this_subset_partner']])
         logging.info(f'failed: {failed}')
@@ -208,7 +268,7 @@ def main() :
         suspiciousness.append( (s,
                                 1 - ((float(successful) / total_successful) / \
                                      ( (successful / total_successful) + (failed / total_failed)))
-                                ))
+        ))
 
     suspiciousness = sorted(suspiciousness, key=lambda s: s[1], reverse=True)
     for s in suspiciousness:

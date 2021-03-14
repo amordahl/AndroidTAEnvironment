@@ -28,7 +28,8 @@ public class TesterUtil {
     Flow targetFlow=null;
     String configFileName =null;
 
-    static int candidateCountJava=0;
+    int candidateCountJava=0;
+    int compilationFailedCount=0;
 
     public TesterUtil(String targetFile, String xmlSchemaFile, String configFileName){
         this.targetFile=targetFile;
@@ -55,7 +56,7 @@ public class TesterUtil {
 
 
     //this saves the compilation units to the correct files
-    public static void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files, int positionChanged, CompilationUnit changedUnit) throws IOException {
+    public void saveCompilationUnits(ArrayList<CompilationUnit> list, ArrayList<File> files, int positionChanged, CompilationUnit changedUnit) throws IOException {
         int i=0;
         for(File x: files){
 
@@ -77,11 +78,12 @@ public class TesterUtil {
                     if (intermediateFile.exists())
                         intermediateFile.delete();
                     intermediateFile.createNewFile();
+                    candidateCountJava++;
                     FileWriter writer = new FileWriter(intermediateFile);
                     writer.write(changedUnit.toString());
                     writer.flush();
                     writer.close();
-                    candidateCountJava++;
+
                 }
 
             }else {
@@ -110,10 +112,12 @@ public class TesterUtil {
             while( (s = stream.readLine())!=null){
                 out+=s;
             }
-            if(out.length()>0){
+            if(out.contains("FAILURE: Build failed with an exception")){
                 //assembling project failed we don't care why
                 if(Runner.LOG_MESSAGES)
                     System.out.println(out);
+                compilationFailedCount++;
+                PerfTimer.endOneFailedCompileRun();
                 return false;
             }
         }catch(IOException | InterruptedException e){

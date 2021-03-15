@@ -233,8 +233,8 @@ public class TesterUtil {
         boolean returnVal=false;
         for(Flow x: flowList){
             if(Runner.LOG_MESSAGES) {
-                System.out.println("Flow Source: " + x.getSource().toString() + "  Flow Sink: " + x.getSink().toString());
-                System.out.println("Target Flow Source: " + targetFlow.getSource().toString() + "  Flow Sink: " + targetFlow.getSink().toString());
+                System.out.println("Flow Source: " + x.getSource().getStatement() + "  Flow Sink: " + x.getSink().getStatement());
+                System.out.println("Target Flow Source: " + targetFlow.getSource().getStatement() + "  Flow Sink: " + targetFlow.getSink().getStatement());
             }
             if(x.equals(targetFlow)){
                 returnVal=true;

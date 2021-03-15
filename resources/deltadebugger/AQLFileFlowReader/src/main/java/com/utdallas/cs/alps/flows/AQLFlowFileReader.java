@@ -276,6 +276,13 @@ public class AQLFlowFileReader extends XMLFlowFileReader {
                         currentFlow.getSink().setStatement(dataString);
                     }
                     break;
+                case "statementfull":
+                    if (source_mode) {
+                        currentFlow.getSource().setStatementFull(dataString);
+                    } else {
+                        currentFlow.getSink().setStatementFull(dataString);
+                    }
+                    break;
                 case "method":
                     if (source_mode) {
                         currentFlow.getSource().setMethod(dataString);

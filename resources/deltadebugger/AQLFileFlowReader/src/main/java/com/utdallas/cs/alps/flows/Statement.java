@@ -27,6 +27,7 @@ package com.utdallas.cs.alps.flows;
  */
 public class Statement {
     private String statement;
+    private String statementFull;
     private String classname;
     private String method;
 
@@ -34,6 +35,7 @@ public class Statement {
         statement = null;
         classname = null;
         method = null;
+        statementFull=null;
     }
 
     public String getStatement() {
@@ -47,6 +49,19 @@ public class Statement {
      */
     public void setStatement(String statement) {
         this.statement = statement;
+    }
+
+    public String getStatementFull() {
+        return statementFull;
+    }
+
+    /**
+     * Sets the actual statement from the flow report.
+     *
+     * @param statementFull The statement (typically the statementgeneric field from AQL).
+     */
+    public void setStatementFull(String statementFull) {
+        this.statementFull = statementFull;
     }
 
     public String getClassname() {
@@ -78,7 +93,8 @@ public class Statement {
             Statement other = (Statement) obj;
             return this.statement.equals(other.statement) &&
                     this.method.equals(other.method) &&
-                    this.classname.equals(other.classname);
+                    this.classname.equals(other.classname) &&
+                    this.statementFull.replaceAll("\\$r\\d+","r").equals(other.statementFull.replaceAll("\\$r\\d+","r"));
         } else {
             return false;
         }

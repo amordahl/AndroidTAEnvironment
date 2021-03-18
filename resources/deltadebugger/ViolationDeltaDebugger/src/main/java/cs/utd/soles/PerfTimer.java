@@ -79,6 +79,9 @@ public class PerfTimer {
         totalOfCompileRuns += System.currentTimeMillis() - thisCompileRun;
         totalCompileRuns++;
     }
+    public static void endOneFailedCompileRun(){
+        totalCompileRuns++;
+    }
     public static void startOneASTChange(){
         thisCompileRun=System.currentTimeMillis();
     }

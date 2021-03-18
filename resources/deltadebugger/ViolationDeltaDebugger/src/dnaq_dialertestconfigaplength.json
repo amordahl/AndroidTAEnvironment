@@ -1,0 +1,9 @@
+{
+  "target_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/resources/deltadebugger/ViolationDeltaDebugger/src/dnaq_dialertesttargetaplength.json",
+  "java_directory_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialeraplength/android_project/app/src/",
+  "gradlew_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialeraplength/android_project/gradlew",
+  "project_root_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialeraplength/android_project/",
+  "apk_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/minimized_fossdroid/dnaq_dialeraplength/android_project/app/build/outputs/apk/debug/app-debug.apk",
+  "generating_config1": "/home/asm140830/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_taintwrapperdefaultfallback.xml",
+  "generating_config2": "/home/asm140830/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_aplength5.xml"
+}

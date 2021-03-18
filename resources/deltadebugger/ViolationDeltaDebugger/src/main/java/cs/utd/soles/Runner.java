@@ -107,9 +107,9 @@ public class Runner {
             fw.write("total_compile_runs: "+ PerfTimer.getTotalCompileRuns()+"\n"+"\n");
             fw.write("total_proposed_node_changes: " + PerfTimer.proposedChangesCount);
             fw.write("total_complete_node_changes: " + PerfTimer.totalChangesCount);
-            fw.write("num_candidate_ast: " + TesterUtil.candidateCountJava);
+            fw.write("num_candidate_ast: " + testerForThis.candidateCountJava);
             fw.write("Percentages:\n"+PerfTimer.getPercentages());
-
+            fw.write("compilation_failed: "+testerForThis.compilationFailedCount);
 
 
             fw.flush();
@@ -117,7 +117,7 @@ public class Runner {
 
 
             //revert program to it's original form
-            TesterUtil.saveCompilationUnits(originalCUnits,unchangedJavaFiles, originalCUnits.size()+1,null);
+            testerForThis.saveCompilationUnits(originalCUnits,unchangedJavaFiles, originalCUnits.size()+1,null);
         }catch(IOException e){
             e.printStackTrace();
         }

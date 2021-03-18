@@ -1,0 +1,15 @@
+program_runtime: 717
+
+average_of_rotations: 238.71966666666665
+total_rotations: 3
+
+average_runtime_aql: 10.24040909090909
+total_aql_runs: 22
+
+average_runtime_compile: 5.277409090909091
+total_compile_runs: 22
+
+total_proposed_node_changes: 83total_complete_node_changes: 6num_candidate_ast: 61Percentages:
+Percent Of Program Time Taken By AST Changes: 0.0
+Percent Of Program Time Taken By AQL Runs: 31.41400606000605
+Percent Of Program Time Taken By Compile Runs: 16.189251785861195

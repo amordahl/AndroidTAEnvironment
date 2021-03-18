@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
 * Simple program with methods and main class used to test the ViolationDeltaDebugger
@@ -8,34 +10,33 @@ public class Main {
 
 
     public static void main(String[] args){
-        System.out.println("hello world!");
-        String fileContents ="";
-        UselessClass bob = new UselessClass();
-        ErrorClass error = new ErrorClass();
-        int yellowCount = countYellow(fileContents);
-        System.out.println(yellowCount);
-        System.out.println("Divide Yellow by 0");
-    }
 
-    private static int uselessMethod(){
-        return 0;
-    }
+        //Very readable and pretty writable
 
-    public static int countYellow(String fileContents){
-        int numOfYellow=0;
-        String[] contents = fileContents.split(" ");
-        for(int i=0;i<contents.length-1;i++){
-            if(contents[i+1].equals("y")){
-                numOfYellow+=Integer.parseInt(contents[i]);
-            }
-        }
+        UselessClass x = new UselessClass();
+        int hello =1;
+        boolean booleanGuy=true;
 
-        return numOfYellow;
-    }
+        //form of most variables/classes
+        //var var_name = something;
+
+        //if static then UselessClass.staticMethod();
+        UselessClass.staticMethod();
+        //if not static then x.method();
+        String returnVar = x.helloMethod();
+
+        //Reliability is bit constrictive
+        int[] arr = new int[5];
+        Arrays.fill(arr,1);
+        hello=arr[6];
 
 
-    private static int uselessmethod2(){
-        return 1;
+        //sometimes hard to read and write
+        (new ArrayList<Integer>(10)).forEach(integer->{
+            System.out.println(integer);
+        });
+        //also this does the same thing as above
+        (new ArrayList<Integer>(10)).forEach(System.out::println);
     }
 
 
@@ -45,4 +46,7 @@ class UselessClass{
     public UselessClass(){
         System.out.println("Wow that was useless");
     }
+
+    static void staticMethod(){}
+    String helloMethod(){return "hello";}
 }

@@ -33,12 +33,11 @@ public class Runner {
         for(LineObj x: lineObjs){
 
             try {
-                ArrayList<Flow> violationFlows = null;/*runAQL(x)*/
+                ArrayList<Flow> violationFlows =runAQL(x);
 
                 if(violationFlows.size()>0)
                     x.replicated=true;
 
-                throw new IOException();
             } catch (IOException e) {
                 e.printStackTrace();
             }

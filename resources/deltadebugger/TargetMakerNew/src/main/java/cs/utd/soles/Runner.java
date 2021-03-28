@@ -204,7 +204,7 @@ public class Runner {
 
             output+=s+"\n";
         }
-        //System.out.println("Output of AQL: "+output);
+        System.out.println("Output of AQL: "+output);
         return output;
     }
     private static ArrayList<Flow> getFlowStrings(File xmlFile){

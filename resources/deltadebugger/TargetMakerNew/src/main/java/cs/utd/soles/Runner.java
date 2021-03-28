@@ -1,8 +1,9 @@
+package cs.utd.soles;
 
 import com.utdallas.cs.alps.flows.AQLFlowFileReader;
 import com.utdallas.cs.alps.flows.Flow;
+import cs.utd.soles.SchemaGenerator;
 
-import javax.xml.validation.Schema;
 import java.io.*;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class Runner {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //for(LineObj x: lineObjs)
+        //for(cs.utd.soles.LineObj x: lineObjs)
           //  System.out.println(x);
         //slurp up
 

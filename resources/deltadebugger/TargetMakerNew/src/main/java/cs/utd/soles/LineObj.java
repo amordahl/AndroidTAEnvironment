@@ -1,3 +1,5 @@
+package cs.utd.soles;
+
 import java.io.File;
 
 public class LineObj {
@@ -15,7 +17,7 @@ public class LineObj {
 
     @Override
     public String toString() {
-        return "LineObj{" +
+        return "cs.utd.soles.LineObj{" +
                 "type='" + type + '\'' +
                 ", config1='" + config1 + '\'' +
                 ", config2='" + config2 + '\'' +

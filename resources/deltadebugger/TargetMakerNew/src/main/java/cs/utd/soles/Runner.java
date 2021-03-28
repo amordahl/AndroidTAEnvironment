@@ -23,8 +23,8 @@ public class Runner {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for(cs.utd.soles.LineObj x: lineObjs)
-            System.out.println(x);
+        //for(cs.utd.soles.LineObj x: lineObjs)
+        //    System.out.println(x);
         //slurp up
 
         //run aql and analyze
@@ -97,6 +97,7 @@ public class Runner {
                 returnList.add(new LineObj(trash[0], trash[2].equals("values")? (trash[1]+trash[4]).toLowerCase():(trash[2]+trash[3]).toLowerCase(), (trash[1]+trash[3]).toLowerCase(),trash[5]));
 
                 if(!Paths.get(returnList.get(i).config1).toFile().exists()||!Paths.get(returnList.get(i).config2).toFile().exists()){
+
                     System.out.println(!Paths.get(returnList.get(i).config1).toFile().exists()? returnList.get(i).config1 : returnList.get(i).config2);
 
                 }

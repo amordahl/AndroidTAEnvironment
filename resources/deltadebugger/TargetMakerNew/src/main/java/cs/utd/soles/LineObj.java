@@ -38,7 +38,7 @@ public class LineObj {
 
     public LineObj(String type, String config1, String config2, String apkPath) {
         this.type = !type.equals("precision");
-        this.apkPath = apkPath;
+        this.apkPath = apkPath.substring(1,apkPath.length()-2);
         this.config1=tryFix(config1,1);
         this.config2=tryFix(config2,2);
         this.apkName=apkPath.substring(apkPath.lastIndexOf("/")+1,apkPath.lastIndexOf(".apk"));

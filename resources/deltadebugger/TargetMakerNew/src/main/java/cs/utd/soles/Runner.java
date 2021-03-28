@@ -134,8 +134,8 @@ public class Runner {
         }
         String command2Out =catchOutput(command2Run);
 
-        File o1 = handleOutput(command1Out,x.configName1+x.apkPath);
-        File o2 = handleOutput(command2Out,x.configName2+x.apkPath);
+        File o1 = handleOutput(command1Out,x.configName1+x.apkName);
+        File o2 = handleOutput(command2Out,x.configName2+x.apkName);
         x.AQLconfig1=o1;
         x.AQLconfig2=o2;
         return handleAQL(x,o1,o2);

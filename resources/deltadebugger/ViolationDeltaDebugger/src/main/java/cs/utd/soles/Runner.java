@@ -21,8 +21,6 @@ import java.util.List;
 
 
 public class Runner {
-
-
     static File intermediateJavaDir=null;
     public static boolean LOG_MESSAGES=false;
     static TesterUtil testerForThis=null;
@@ -145,8 +143,6 @@ public class Runner {
         }
         return Paths.get(path).toFile().getName().replace(".json","");
     }
-
-
     static String targetFilePath=null;
     static String java_directory_path=null;
     static String gradlew_path = null;
@@ -163,6 +159,7 @@ public class Runner {
     static ArrayList<File> unchangedJavaFiles = new ArrayList<>();
     //main recursion that loops through all nodes
     //we process parents before children
+
 
     public static void traverseTree(int currentCU, Node currentNode){
 
@@ -368,9 +365,9 @@ public class Runner {
                         minimized = false;
 
                         System.out.println("Successful One\n\n------------------------------------\n\n\n");
-                        for (CompilationUnit x : bestCUList) {
-                            System.out.println(x);
-                        }
+                        //for (CompilationUnit x : bestCUList) {
+                        //    System.out.println(x);
+                        //}
                         System.out.println("CopiedUnit:" + copiedu);
                     }
                 }
@@ -383,9 +380,9 @@ public class Runner {
                         minimized = false;
 
                         System.out.println("Successful One\n\n------------------------------------\n\n\n");
-                        for (CompilationUnit x : bestCUList) {
-                            System.out.println(x);
-                        }
+                        //for (CompilationUnit x : bestCUList) {
+                        //    System.out.println(x);
+                        //}
                     }
                 }
             }
@@ -428,8 +425,6 @@ public class Runner {
         bestCUList = returnList;
         programFileNames = nameList;
         originalCUnits = cloneList;
-
-
         return true;
     }
     //creates a copy of the unmodified source files because we are going to modify them in-place

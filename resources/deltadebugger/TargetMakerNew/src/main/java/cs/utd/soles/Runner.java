@@ -23,8 +23,8 @@ public class Runner {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //for(cs.utd.soles.LineObj x: lineObjs)
-          //  System.out.println(x);
+        for(cs.utd.soles.LineObj x: lineObjs)
+            System.out.println(x);
         //slurp up
 
         //run aql and analyze
@@ -33,12 +33,12 @@ public class Runner {
         for(LineObj x: lineObjs){
 
             try {
-                ArrayList<Flow> violationFlows = runAQL(x);
+                ArrayList<Flow> violationFlows = null;/*runAQL(x)*/
 
                 if(violationFlows.size()>0)
                     x.replicated=true;
 
-
+                throw new IOException();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -135,8 +135,8 @@ public class Runner {
         }
         String command2Out =catchOutput(command2Run);
 
-        File o1 = handleOutput(command1Out,x.config1+x.apkPath);
-        File o2 = handleOutput(command2Out,x.config2+x.apkPath);
+        File o1 = handleOutput(command1Out,x.configName1+x.apkPath);
+        File o2 = handleOutput(command2Out,x.configName2+x.apkPath);
         x.AQLconfig1=o1;
         x.AQLconfig2=o2;
         return handleAQL(x,o1,o2);

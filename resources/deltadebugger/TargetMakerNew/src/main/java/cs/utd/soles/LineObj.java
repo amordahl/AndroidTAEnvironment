@@ -8,6 +8,9 @@ public class LineObj {
     final String configPrefix="config_FlowDroid_";
 
     boolean type;
+    String configName1;
+    String configName2;
+    String apkName;
     String config1;
     String config2;
     String apkPath;
@@ -17,25 +20,33 @@ public class LineObj {
 
     @Override
     public String toString() {
-        return "cs.utd.soles.LineObj{" +
-                "type='" + type + '\'' +
+        return "LineObj{" +
+                "configFilePath='" + configFilePath + '\'' +
+                ", configPrefix='" + configPrefix + '\'' +
+                ", type=" + type +
+                ", configName1='" + configName1 + '\'' +
+                ", configName2='" + configName2 + '\'' +
+                ", apkName='" + apkName + '\'' +
                 ", config1='" + config1 + '\'' +
                 ", config2='" + config2 + '\'' +
                 ", apkPath='" + apkPath + '\'' +
+                ", AQLconfig1=" + AQLconfig1 +
+                ", AQLconfig2=" + AQLconfig2 +
+                ", replicated=" + replicated +
                 '}';
     }
 
     public LineObj(String type, String config1, String config2, String apkPath) {
         this.type = !type.equals("precision");
         this.apkPath = apkPath;
-        this.config1=tryFix(config1);
-        this.config2=tryFix(config2);
-
+        this.config1=tryFix(config1,1);
+        this.config2=tryFix(config2,2);
+        this.apkName=apkPath.substring(apkPath.lastIndexOf("/")+1,apkPath.lastIndexOf(".apk"));
 
 
     }
 
-    private String tryFix(String config) {
+    private String tryFix(String config, int one) {
         switch(config){
             case "aliasalgoflowsensitive":
                 config="aliasalgofs";
@@ -74,8 +85,10 @@ public class LineObj {
             default:
                 break;
         }
-
-
+        if(one==1)
+            configName1=config;
+        else
+            configName2=config;
         return configFilePath+configPrefix+config+".xml";
     }
 }

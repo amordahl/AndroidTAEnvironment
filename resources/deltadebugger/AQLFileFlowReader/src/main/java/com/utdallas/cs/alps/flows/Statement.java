@@ -93,8 +93,8 @@ public class Statement {
             Statement other = (Statement) obj;
             return this.statement.equals(other.statement) &&
                     this.method.equals(other.method) &&
-                    this.classname.equals(other.classname) &&
-                    this.statementFull.replaceAll("\\$r\\d+","r").equals(other.statementFull.replaceAll("\\$r\\d+","r"));
+                    this.classname.equals(other.classname)/* &&
+                    this.statementFull.replaceAll("\\$r\\d+","r").equals(other.statementFull.replaceAll("\\$r\\d+","r"))*/;
         } else {
             return false;
         }

@@ -101,9 +101,20 @@ def find_datastructure(content: Tuple[str], dataStructure: str) -> Set[str]:
             except:
                 logging.critical(f'Could not parse the collection {dataStructure} on line {line}.')
                 
-    logging.debug(f'Returning result {result}')
-    cache[f'{hash(content)}_{dataStructure}'] = result
-    return result
+    
+    if args.metric == 'last_log':
+        # we compare the last element of each list.
+        final = set(result[-1]) if result != [] else set()
+    elif args.metric == 'superset':
+        final = set()
+        for se in result:
+            final.update(se)
+
+    logging.debug(f'Returning result {final}')
+    cache[f'{hash(content)}_{dataStructure}'] = final
+
+    return final
+
 
 # check different keys
 def get_different_positions(coll1, coll2, pos) -> int:
@@ -252,25 +263,10 @@ def get_entry(base_dict: Dict[str, str],
         entry['partner_false_positives'] = frozenset([k for k,v in f_partner_flows_groundtruths if not v == False])
     
     for s in structures:
-        ds1 = find_datastructure(files[j][f_this], s)
-        ds2 = find_datastructure(files[(j+1)%2][f_partner], s)
+        o1 = find_datastructure(files[j][f_this], s)
+        o2 = find_datastructure(files[(j+1)%2][f_partner], s)
 
         # o1 and o2 are what to compare.
-        o1 = None
-        o2 = None
-        if args.metric == 'last_log':
-            # we compare the last element of each list.
-            o1 = ds1[-1] if ds1 != [] else []
-            o2 = ds2[-1] if ds2 != [] else []
-        elif args.metric == 'superset':
-            ds1_set = set()
-            ds2_set = set()
-            for se in ds1:
-                ds1_set.update(se)
-            for se in ds2:
-                ds2_set.update(se)
-            o1 = ds1_set
-            o2 = ds2_set
         if args.wei_transform is not None:
             # We apply the following formula, assuming that B is the buggy configuration.
             # [if the data structure is accessed in B’s execution, 1; otherwise, 0] *
@@ -361,37 +357,44 @@ def main() :
                 logging.critical(f'Suspiciousness for {s} could not be computed because of '
                                  f'division by zero error: successful={successful}, failed={failed}, '
                                  f'total_successful={total_successful},total_failed={total_failed}')
-                suspiciousness.append( (s, 'N/A') )
+                #suspiciousness.append( (s, 'N/A') )
                 
         elif args.strategy == 'ground_truth':
             if args.partial_order == 'soundness':
                 # Find the flows that are in the less sound but not more sound configuration.
                 successful = len([e for e in lines if not e[f'equal_{s}'] and e['this_true_positives'].issubset(e['partner_true_positives'])])
-                failed = len([e for e in lines if not e[f'equal_{s}'] and not e['this_true_positives'].issubset(e['partner_true_positives'])])
+                failed_all = [e for e in lines if not e[f'equal_{s}'] and not e['this_true_positives'].issubset(e['partner_true_positives'])]
+                failed = len(failed_all)
                 total_successful = len([e for e in lines if e['this_true_positives'].issubset(e['partner_true_positives'])])
                 total_failed = len([e for e in lines if not e['this_true_positives'].issubset(e['partner_true_positives'])])
-                
+
+                for e in failed_all:
+                    s1 = find_datastructure(files[0][e['file']], s)
+                    s2 = find_datastructure(files[1][e['partner']], s)
+                    print(f'Difference in {s} between {e["file"]} and {e["partner"]}: {s1.union(s2).difference(s1.intersection(s2))} ',
+                          f'A - B is {s1 - s2}, B - A is {s2 - s1}')
+
                 logging.info(f'successful: {successful}')
                 logging.info(f'failed: {failed}')
                 logging.info(f'total_successful: {total_successful}')
                 logging.info(f'total_failed: {total_failed}')
-                
+
                 try:
-                    suspiciousness.append( (s, e['file'], e['partner'],
+                    suspiciousness.append((s,
                                             1 - ((float(successful) / total_successful) / \
                                                  ( (float(successful) / total_successful) + (float(failed) / total_failed))),
-                                            successful, failed, total_successful, total_failed
-                    ))
+                                            successful, failed, total_successful, total_failed))
                 except ZeroDivisionError as ex:
                     logging.critical(f'Suspiciousness for {s} could not be computed because of '
                                      f'division by zero error: successful={successful}, failed={failed}, '
                                      f'total_successful={total_successful},total_failed={total_failed}')
-                    suspiciousness.append( (s, e['file'], e['partner'], 'N/A', successful, failed, total_successful, total_failed) )
+                    #suspiciousness.append((s, 'N/A', successful, failed, total_successful, total_failed))
 
             elif args.partial_order == 'precision':
                 # Compute suspiciousness for each errant flow.
                 successful = len([e for e in lines if not e[f'equal_{s}'] and e['this_false_positives'].issubset(e['partner_false_positives'])])
-                failed = len([e for e in lines if not e[f'equal_{s}'] and not e['this_false_positives'].issubset(e['partner_false_positives'])])
+                failed_all = [e for e in lines if not e[f'equal_{s}'] and not e['this_false_positives'].issubset(e['partner_false_positives'])]
+                failed = len(failed_all)
                 total_successful = len([e for e in lines if e['this_false_positives'].issubset(e['partner_false_positives'])])
                 total_failed = len([e for e in lines if not e['this_false_positives'].issubset(e['partner_false_positives'])])
 
@@ -399,25 +402,29 @@ def main() :
                 logging.info(f'failed: {failed}')
                 logging.info(f'total_successful: {total_successful}')
                 logging.info(f'total_failed: {total_failed}')
-                
+
+                for e in failed_all:
+                    s1 = find_datastructure(files[0][e['file']], s)
+                    s2 = find_datastructure(files[1][e['partner']], s)
+                    print(f'Difference in {s} between {e["file"]} and {e["partner"]}: {s1.union(s2).difference(s1.intersection(s2))} ',
+                          f'A - B is {s1 - s2}, B - A is {s2 - s1}')
                 try:
-                    suspiciousness.append( (s, e['file'], e['partner'],
+                    suspiciousness.append( (s,
                                             1 - ((float(successful) / total_successful) / \
                                                  ( (float(successful) / total_successful) + (float(failed) / total_failed))),
-                                            successful, failed, total_successful, total_failed
-                    ))
+                                            successful, failed, total_successful, total_failed))
                 except ZeroDivisionError as ex:
                     logging.critical(f'Suspiciousness for {s} could not be computed because of '
                                      f'division by zero error: successful={successful}, failed={failed}, '
                                      f'total_successful={total_successful},total_failed={total_failed}')
-                    suspiciousness.append( (s, e['file'], e['partner'], 'N/A', successful, failed, total_successful, total_failed) )
+                    #suspiciousness.append((s, 'N/A', successful, failed, total_successful, total_failed))
                     
-            for s, fi, partner, score in sorted(suspiciousness, key=lambda s: s[-1] if isinstance(s[-1], float) else -1 , reverse=True):
-                print(f'{args.partial_order},{os.path.dirname(fi).strip(./)}/{os.path.dirname(partner).strip(./)},{fi},{partner},{s},{score}')
+            for s, score, succ, fail, total_succ, total_fail in sorted(suspiciousness, key=lambda s: s[1] if isinstance(s[1], float) else -1 , reverse=True):
+                print(f'{args.partial_order},{os.path.dirname(args.list1[0]).strip("./")}/{os.path.dirname(args.list2[0]).strip("./")},{s},{score},{succ},{fail},{total_succ},{total_fail}')
 
             
     if args.strategy == 'set':
-        suspiciousness = sorted(suspiciousness, key=lambda s: s[-1] if isinstance(s[-1], float) else -1 , reverse=True)
+        suspiciousness = sorted(suspiciousness, key=lambda s: s[1] if isinstance(s[1], float) else -1 , reverse=True)
         for s in suspiciousness:
             print(f'{s[0]}: {s[1]}')
             

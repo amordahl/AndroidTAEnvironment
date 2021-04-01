@@ -1,6 +1,7 @@
 package cs.utd.soles;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class LineObj {
 
@@ -17,6 +18,9 @@ public class LineObj {
     File AQLconfig1;
     File AQLconfig2;
     boolean replicated=false;
+
+
+    ArrayList<ClassifiedFlow> flows;
 
     @Override
     public String toString() {
@@ -43,7 +47,7 @@ public class LineObj {
         this.config2=tryFix(config2,2);
         this.apkName=apkPath.substring(apkPath.lastIndexOf("/")+1,apkPath.lastIndexOf(".apk"));
 
-
+        flows = new ArrayList<ClassifiedFlow>();
     }
 
     private String tryFix(String config, int one) {

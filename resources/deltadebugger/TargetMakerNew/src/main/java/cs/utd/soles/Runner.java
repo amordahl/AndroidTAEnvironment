@@ -1,8 +1,13 @@
 package cs.utd.soles;
 
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonParser;
 import com.utdallas.cs.alps.flows.AQLFlowFileReader;
 import com.utdallas.cs.alps.flows.Flow;
+import com.utdallas.cs.alps.flows.Statement;
 import cs.utd.soles.SchemaGenerator;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 import java.io.*;
 import java.nio.file.Paths;
@@ -12,7 +17,8 @@ import java.util.Scanner;
 
 public class Runner {
 
-
+    public static final String groundTruthDir="/home/dakota/AndroidTA/benchmarks/Droidbench30/benchmark/groundtruth";
+    public static final String groundTruthWinDir="D:\\Local_androidTAEnvironment\\Droidbench\\DroidBench30\\DroidBench30\\benchmark\\groundtruth";
     //1 args -> the file
     public static void main(String[] args) {
         //get all the files
@@ -27,6 +33,41 @@ public class Runner {
         //    System.out.println(x);
         //slurp up
 
+        //construct ground truths
+        ArrayList<APKObj> groundTruths = new ArrayList<>();
+
+        File[] category = Paths.get(groundTruthDir).toFile().listFiles();
+
+        for(File x: category){
+            if(!x.isDirectory())
+                continue;
+            File[] xmlFiles = x.listFiles();
+
+            for(File gt: xmlFiles){
+                if(!gt.getName().endsWith(".xml")){
+                    continue;
+                }
+                String ending = gt.getName();
+                String apkName= ending.substring(ending.lastIndexOf("_")+1,ending.indexOf(".xml"));
+                boolean type= ending.substring(ending.indexOf("_")+1,ending.lastIndexOf("_")).equals("tp");
+
+                //eat file, make a list of classified flows, add to apkObj that has name or make new
+                APKObj checker = new APKObj(apkName);
+                APKObj apkObj = groundTruths.contains(checker)? groundTruths.get(groundTruths.indexOf(checker)):checker;
+                if(checker==apkObj)
+                    groundTruths.add(apkObj);
+                ArrayList<Flow> flowsForThis = getFlowStrings(gt);
+                for(Flow f:flowsForThis){
+                    apkObj.addFlow(new ClassifiedFlow(f,type));
+                }
+
+
+            }
+
+        }
+
+
+
         //run aql and analyze
 
 
@@ -34,17 +75,54 @@ public class Runner {
 
             try {
                 ArrayList<Flow> violationFlows =runAQL(x);
+                //once we have all the flows, we need to classify these ones
 
-                if(violationFlows.size()>0)
-                    x.replicated=true;
+                //find the apkObj we need to look at
+                APKObj compare = new APKObj(x.apkName);
+                APKObj apkObj = groundTruths.contains(compare)?groundTruths.get(groundTruths.indexOf(compare)):null;
+                if(apkObj==null){
+                    System.out.println("NO APK FOR THIS????");
+                    continue;
+                }
 
+                ArrayList<ClassifiedFlow> classifiedViolationFlows = new ArrayList<>();
+                for(Flow f: violationFlows){
+                    ClassifiedFlow found = apkObj.classifyFlow(f);
+                    if(found==null){
+                        System.out.println("THIS FLOW HAS NO CLASSIFICATION!");
+                        continue;
+                    }
+                    classifiedViolationFlows.add(found);
+                }
+
+
+                //if we replicate the violation then we good
+
+                int numOfFalse=0;
+                int numOfTrue=0;
+
+                for(ClassifiedFlow l:classifiedViolationFlows) {
+                    int i = (l.type ? numOfFalse++ : numOfTrue++);
+                }
+                if(x.type){
+                    if(numOfTrue>0)
+                        x.replicated=true;
+                }else{
+                    if(numOfFalse>0)
+                        x.replicated=true;
+                }
+                x.flows=classifiedViolationFlows;
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
+
+
+
         //generate input
 
-        //our input is literally, a apk and 2 config files and the type of violation or if is not a violation
+        //our input is literally, a apk and 2 config files and the type of violation or if is not a violation. plus a json file of the flows we target
 
         File outPutFile= new File("targetmaker/output.txt");
         if(outPutFile.exists())
@@ -54,8 +132,11 @@ public class Runner {
             FileWriter fw = new FileWriter(outPutFile);
             for(LineObj x: lineObjs){
                 if(x.replicated){
+
+                    File file = writeFlowsToJson(x);
+
                     //the last false will be replaced when we generate non-violations
-                    fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"+",");
+                    fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"/*the name of the file*/+file.getAbsolutePath()+",");
                 }
             }
 
@@ -63,6 +144,47 @@ public class Runner {
             e.printStackTrace();
         }
 
+    }
+
+    private static File writeFlowsToJson(LineObj x) throws IOException {
+
+
+        File fil= new File("targetmaker/targetfiles/"+x.apkName+"_"+x.configName1+"_"+x.configName2+".json");
+        fil.mkdirs();
+        if(fil.exists())fil.delete();
+        fil.createNewFile();
+
+        JSONArray arr = new JSONArray();
+        for(ClassifiedFlow f: x.flows){
+            JSONObject obj = turnFlowToJSONObj(f.f);
+            arr.add(obj);
+        }
+
+        String formatJson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create().toJson(new JsonParser().parse(arr.toJSONString()));
+        FileWriter fw = new FileWriter(fil);
+        fw.write(formatJson);
+        fw.flush();
+        fw.close();
+        return fil;
+    }
+
+    private static JSONObject turnFlowToJSONObj(Flow f) {
+        JSONObject obj=new JSONObject();
+
+        obj.put("sink",turnStatementTOJSONObj(f.getSink()));
+        obj.put("source",turnStatementTOJSONObj(f.getSource()));
+
+
+        return obj;
+    }
+    private static JSONObject turnStatementTOJSONObj(Statement s){
+        JSONObject obj=new JSONObject();
+
+        obj.put("statement", s.getStatement());
+        obj.put("classname",s.getClassname());
+        obj.put("method",s.getMethod());
+
+        return obj;
     }
 
     private static ArrayList<LineObj> makeFiles(String[] args) {

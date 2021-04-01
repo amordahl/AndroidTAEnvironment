@@ -65,7 +65,7 @@ public class Runner {
             }
 
         }
-        
+
 
 
         //run aql and analyze
@@ -138,10 +138,11 @@ public class Runner {
 
                     //the last false will be replaced when we generate non-violations
                     fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"+" "/*the name of the file*/+file.getAbsolutePath()+"\n");
-                    fw.flush();
-                    fw.close();
+
                 }
             }
+            fw.flush();
+            fw.close();
 
         } catch (IOException e) {
             e.printStackTrace();

@@ -65,7 +65,7 @@ public class Runner {
             }
 
         }
-
+        
 
 
         //run aql and analyze
@@ -131,12 +131,15 @@ public class Runner {
             outPutFile.createNewFile();
             FileWriter fw = new FileWriter(outPutFile);
             for(LineObj x: lineObjs){
+                System.out.println(x);
                 if(x.replicated){
 
                     File file = writeFlowsToJson(x);
 
                     //the last false will be replaced when we generate non-violations
-                    fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"/*the name of the file*/+file.getAbsolutePath()+",");
+                    fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"+" "/*the name of the file*/+file.getAbsolutePath()+"\n");
+                    fw.flush();
+                    fw.close();
                 }
             }
 
@@ -216,7 +219,7 @@ public class Runner {
                 String[] trash=x.substring(10).split(" ");
                 //0 type, 2+4 genconfig1, 1+3 genconfig2, 5 apkpath
 
-                returnList.add(new LineObj(trash[0], trash[2].equals("values")? (trash[1]+trash[4]).toLowerCase():(trash[2]+trash[3]).toLowerCase(), (trash[1]+trash[3]).toLowerCase(),trash[5]));
+                returnList.add(new LineObj(trash[0], (trash[1]+trash[3]).toLowerCase(),trash[2].equals("values")? (trash[1]+trash[4]).toLowerCase():(trash[2]+trash[3]).toLowerCase() ,trash[5]));
 
                 if(!Paths.get(returnList.get(i).config1).toFile().exists()||!Paths.get(returnList.get(i).config2).toFile().exists()){
 

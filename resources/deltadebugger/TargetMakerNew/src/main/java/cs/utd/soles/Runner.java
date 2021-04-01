@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class Runner {
 
-    public static final String groundTruthDir="/home/dakota/AndroidTA/benchmarks/Droidbench30/benchmark/groundtruth";
+    public static final String groundTruthDir="/home/dakota/AndroidTA/benchmarks/DroidBench30/benchmark/groundtruth";
     public static final String groundTruthWinDir="D:\\Local_androidTAEnvironment\\Droidbench\\DroidBench30\\DroidBench30\\benchmark\\groundtruth";
     //1 args -> the file
     public static void main(String[] args) {

@@ -210,7 +210,7 @@ public class TesterUtil {
         }*/
 
         //check and see if we maintain all the flows we want to
-        ArrayList<Flow> checkList = new ArrayList<>(flowList);
+        ArrayList<Flow> checkList = new ArrayList<>(targetFlows);
         checkList.removeAll(flowList);
         if(checkList.size()==0){
             returnVal=true;

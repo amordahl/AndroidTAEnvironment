@@ -492,14 +492,14 @@ public class Runner {
         DroidbenchProjectCreator.createProject(args);
 
 
-        createProjectPathVars(APKReductionPath+File.separator+pathFile);
+        createProjectPathVars(File.separator+pathFile);
     }
 
     //this method just sets up variables we need to do a variety of things
     private static void createProjectPathVars(String pathFile) {
 
         projectRootPath=pathFile;
-        projectGradlewPath="/gradlew";
+        projectGradlewPath=pathFile+"/gradlew";
         projectAPKPath=pathFile+"/app/build/outputs/apk/debug/app-debug.apk";
         projectSrcPath=pathFile+"/app/src/";
     }
@@ -510,6 +510,6 @@ public class Runner {
     static String projectSrcPath;
     static String projectAPKPath;
     static String thisRunName;
-    static String APKReductionPath="/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir";
+    //static String APKReductionPath="/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir";
 
 }

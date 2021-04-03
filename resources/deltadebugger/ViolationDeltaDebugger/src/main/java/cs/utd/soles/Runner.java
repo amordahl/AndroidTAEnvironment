@@ -500,6 +500,8 @@ public class Runner {
 
         projectRootPath=pathFile;
         projectGradlewPath=pathFile+"/gradlew";
+        File f= new File(projectGradlewPath);
+        f.setExecutable(true);
         projectAPKPath=pathFile+"/app/build/outputs/apk/debug/app-debug.apk";
         projectSrcPath=pathFile+"/app/src/";
     }

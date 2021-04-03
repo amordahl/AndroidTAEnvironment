@@ -492,7 +492,7 @@ public class Runner {
         DroidbenchProjectCreator.createProject(args);
 
 
-        createProjectPathVars(File.separator+pathFile);
+        createProjectPathVars(pathFile);
     }
 
     //this method just sets up variables we need to do a variety of things

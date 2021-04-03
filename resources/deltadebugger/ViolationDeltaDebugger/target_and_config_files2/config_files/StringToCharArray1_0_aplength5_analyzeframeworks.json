@@ -1,9 +1,0 @@
-{
-  "gradlew_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/StringToCharArray1/StringToCharArray1_0_aplength5_analyzeframeworks/source_code/gradlew",
-  "generating_config1": "/home/asm140830/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_aplength5.xml",
-  "generating_config2": "/home/asm140830/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_analyzeframeworks.xml",
-  "java_directory_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/StringToCharArray1/StringToCharArray1_0_aplength5_analyzeframeworks/source_code/app/src",
-  "project_root_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/StringToCharArray1/StringToCharArray1_0_aplength5_analyzeframeworks/source_code/",
-  "apk_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/StringToCharArray1/StringToCharArray1_0_aplength5_analyzeframeworks/source_code/app/build/outputs/apk/debug/app-debug.apk",
-  "target_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/resources/deltadebugger/ViolationDeltaDebugger/target_and_config_files2/target_files/StringToCharArray1_0.json"
-}

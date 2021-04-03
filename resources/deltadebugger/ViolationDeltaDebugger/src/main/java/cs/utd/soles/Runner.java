@@ -7,10 +7,7 @@ import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.Statement;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.apache.commons.io.FileUtils;
-import org.json.simple.parser.ParseException;
 
 import java.io.*;
 import java.nio.file.StandardCopyOption;
@@ -21,13 +18,41 @@ import java.util.List;
 
 
 public class Runner {
+
+
     static File intermediateJavaDir=null;
     public static boolean LOG_MESSAGES=false;
     static TesterUtil testerForThis=null;
-    static String configFileName="";
+
+
     public static void main(String[] args){
         PerfTimer.startProgramRunTime();
+
+
+        //handle the arguments
+        handleArgs(args);
+
+        //generate schema file
         try {
+            SchemaGenerator.generateSchema();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(-1);
+        }
+
+        //after we handl the args we gotta do a couple of things
+        /*
+        * 1. build the project file to minimize
+        * 2. make the tester
+        * 3. setup intermediate trash
+        * 4. try to minimize
+        *
+        * */
+
+        //build the project file
+        createTargetProject();
+
+        /*try {
             configFileName=readConfig(args[0]);
             if(args.length==2){
                 if(args[1].equals("-l")){
@@ -41,11 +66,17 @@ public class Runner {
         }
 
         testerForThis = new TesterUtil(targetFilePath, SchemaGenerator.SCHEMA_PATH, configFileName);
+        *
+         */
 
+
+        testerForThis = new TesterUtil(targetFile, SchemaGenerator.SCHEMA_PATH, targetType);
+
+        //HANDLE THE SOURCE DIRECTORY (THIS SHOULD JUST BE JAVA DIR IN PROJECT)
         try{
-            handleSrcDirectory(java_directory_path);
+            handleSrcDirectory(projectSrcPath);
             if(LOG_MESSAGES) {
-                String filePathName = "debugger/java_files/" + configFileName + "/intermediate_java/";
+                String filePathName = "debugger/java_files/" + thisRunName + "/intermediate_java/";
                 File f = new File(filePathName);
                 f.mkdirs();
                 intermediateJavaDir=f;
@@ -54,8 +85,13 @@ public class Runner {
         }catch(IOException e){
             e.printStackTrace();
         }
-        //start the delta debugging process
 
+
+
+
+
+
+        //start the delta debugging process
         while(!minimized){
 
             PerfTimer.startOneRotation();
@@ -75,7 +111,7 @@ public class Runner {
 
         //log a bunch of information
         try {
-            String filePathName = "debugger/java_files/"+configFileName+"/";
+            String filePathName = "debugger/java_files/"+thisRunName+"/";
             for (int i = 0; i < bestCUList.size(); i++) {
                 File file = new File(filePathName +programFileNames.get(i) + ".java");
                 file.mkdirs();
@@ -88,7 +124,7 @@ public class Runner {
                 fw.close();
             }
 
-            filePathName = "debugger/"+configFileName+"_time.txt";
+            filePathName = "debugger/"+thisRunName+"_time.txt";
             File file = new File(filePathName);
 
             if (file.exists())
@@ -120,36 +156,34 @@ public class Runner {
             e.printStackTrace();
         }
     }
-    //this method handles the filepath to the fileconfig.json which is what we are going to be reading for our config
-    private static String readConfig(String path)throws Exception {
-        JSONParser parser = new JSONParser();
-        System.out.println(path);
-        try(FileReader reader = new FileReader(Paths.get(path).toFile())) {
 
-            JSONObject obj = (JSONObject) parser.parse(reader);
-            targetFilePath= (String) obj.get("target_path");
-            java_directory_path= (String) obj.get("java_directory_path");
-            gradlew_path= (String) obj.get("gradlew_path");
-            project_root_path= (String) obj.get("project_root_path");
-            apk_path= (String) obj.get("apk_path");
-            generating_config1_path= (String) obj.get("generating_config1");
-            generating_config2_path= (String) obj.get("generating_config2");
 
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
+    //INPUT FOR THE DEBUGGER SHOULD BE APK NAME (droidbench), CONFIG 1, CONFIG 2, TRUE OR FALSE (type of violation), TRUE OR FALSE (violation or nonviolation), target_file??
+
+    static String apkName;
+    static String config1;
+    static String config2;
+    static boolean targetType;
+    static boolean violationOrNot;
+    static String targetFile;
+
+    private static void handleArgs(String[] args) {
+        apkName=args[0];
+        config1=args[1];
+        config2=args[2];
+        targetType= args[3].equalsIgnoreCase("true");
+        violationOrNot= args[4].equalsIgnoreCase("true");
+        targetFile=args[5];
+
+        for(int i=6;i<args.length;i++) {
+
+            if (args[i].equals("-l")) {
+                LOG_MESSAGES = true;
+            }
+            //add other args here if we want em
         }
-        if(targetFilePath==null|java_directory_path==null|gradlew_path==null|project_root_path==null|apk_path==null|generating_config1_path==null|generating_config2_path==null){
-            throw new Exception("Config file incomplete");
-        }
-        return Paths.get(path).toFile().getName().replace(".json","");
     }
-    static String targetFilePath=null;
-    static String java_directory_path=null;
-    static String gradlew_path = null;
-    static String project_root_path =null;
-    static String apk_path =null;
-    static String generating_config1_path=null;
-    static String generating_config2_path=null;
+
 
     static boolean minimized=false;
     static ArrayList<CompilationUnit> bestCUList = new ArrayList<>();
@@ -357,9 +391,9 @@ public class Runner {
 
         try {
             if(!replaceCU) {
-                if (testerForThis.createApk(gradlew_path, project_root_path, bestCUList, javaFiles, compPosition, copiedu)) {
+                if (testerForThis.createApk(projectGradlewPath, projectRootPath, bestCUList, javaFiles, compPosition, copiedu)) {
 
-                    if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path, configFileName)) {
+                    if (testerForThis.runAQL(projectAPKPath, config1, config2, thisRunName)) {
 
                         returnVal = true;
                         minimized = false;
@@ -372,9 +406,9 @@ public class Runner {
                     }
                 }
             }else{
-                if (testerForThis.createApk(gradlew_path, project_root_path, cuList, javaFiles, compPosition, copiedu)) {
+                if (testerForThis.createApk(projectGradlewPath, projectRootPath, cuList, javaFiles, compPosition, copiedu)) {
 
-                    if (testerForThis.runAQL(apk_path, generating_config1_path, generating_config2_path, configFileName)) {
+                    if (testerForThis.runAQL(projectAPKPath, config1, config2, thisRunName)) {
 
                         returnVal = true;
                         minimized = false;
@@ -444,5 +478,39 @@ public class Runner {
         return true;
     }
 
+    //this method needs to create the project we are going to be debugging by calling a library DroidbenchProjectCreator
+    private static void createTargetProject(){
+
+        //this pathfile needs to be unique so it will be apk_config1_config2
+
+        String actualAPK = apkName.substring(apkName.lastIndexOf("/")+1,apkName.lastIndexOf(".apk"));
+        String actualConfig1 = config1.substring(config1.lastIndexOf("/")+1,config1.lastIndexOf(".xml"));
+        String actualConfig2 = config2.substring(config2.lastIndexOf("/")+1,config2.lastIndexOf(".xml"));
+        thisRunName=actualAPK+actualConfig1+actualConfig2;
+        String pathFile="debugger/project_files/"+thisRunName;
+        System.out.println(pathFile);
+
+        String[] args = {actualAPK, pathFile};
+        DroidbenchProjectCreator.createProject(args);
+
+
+        createProjectPathVars(pathFile);
+    }
+
+    //this method just sets up variables we need to do a variety of things
+    private static void createProjectPathVars(String pathFile) {
+
+        projectRootPath=pathFile;
+        projectGradlewPath="/gradlew";
+        projectAPKPath=pathFile+"/app/build/outputs/apk/debug/app-debug.apk";
+        projectSrcPath=pathFile+"/app/src/";
+    }
+
+    //root project of the file
+    static String projectRootPath;
+    static String projectGradlewPath;
+    static String projectSrcPath;
+    static String projectAPKPath;
+    static String thisRunName;
 
 }

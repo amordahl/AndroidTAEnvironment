@@ -1,9 +1,0 @@
-{
-  "target_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/resources/deltadebugger/ViolationDeltaDebugger/src/target.json",
-  "java_directory_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/ActivityEventSequence2/ActivityEventSequence2_0/source_code/app/src",
-  "gradlew_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/ActivityEventSequence2/ActivityEventSequence2_0/source_code/gradlew",
-  "project_root_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/ActivityEventSequence2/ActivityEventSequence2_0/source_code",
-  "apk_path": "/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/MinimizedFlows/ActivityEventSequence2/ActivityEventSequence2_0/source_code/app/build/outputs/apk/debug/app-debug.apk",
-  "generating_config1": "/home/dakota/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_aplength5.xml",
-  "generating_config2": "/home/dakota/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_analyzeframeworks.xml"
-}

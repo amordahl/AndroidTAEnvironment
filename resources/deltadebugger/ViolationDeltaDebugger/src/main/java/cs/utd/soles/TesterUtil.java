@@ -20,38 +20,27 @@ import java.util.Iterator;
  * */
 
 
+//TODO:: Modify tester to be able to handle new input
+
+
 public class TesterUtil {
 
     boolean soundness;
     String targetFile=null;
     String xmlSchemaFile=null;
-    Flow targetFlow=null;
-    String configFileName =null;
+
+
 
     int candidateCountJava=0;
     int compilationFailedCount=0;
 
-    public TesterUtil(String targetFile, String xmlSchemaFile, String configFileName){
+    ArrayList<Flow> targetFlows;
+
+    public TesterUtil(String targetFile, String xmlSchemaFile, boolean violationType){
         this.targetFile=targetFile;
         this.xmlSchemaFile=xmlSchemaFile;
-        this.configFileName=configFileName;
-        handleTargetFile();
-    }
-
-
-    //this method sets up the target file so we know what to aim at
-    private void handleTargetFile() {
-        JSONParser parser = new JSONParser();
-        try(FileReader reader = new FileReader(Paths.get(targetFile).toFile())) {
-            JSONObject obj = (JSONObject) parser.parse(reader);
-
-            soundness = (boolean) obj.get("flow_type");
-            String aqlString = (String) obj.get("aql_string");
-            targetFlow = handleTargetXMLString(aqlString,configFileName);
-
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
-        }
+        this.soundness=violationType;
+        targetFlows=FlowJSONHandler.turnTargetPathIntoFlowList(targetFile);
     }
 
 
@@ -157,32 +146,6 @@ public class TesterUtil {
     }
 
 
-    private Flow handleTargetXMLString(String xmlString, String uniqueTargetConfig){
-        String fp = "debugger/tempfiles/aqlfiles/"+uniqueTargetConfig+".xml";
-        File f = Paths.get(fp).toFile();
-        try {
-
-            f.mkdirs();
-            if(f.exists())
-                f.delete();
-            f.createNewFile();
-
-
-            FileWriter fw = new FileWriter(f);
-            String header = "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n";
-            fw.write(header);
-            fw.write(xmlString);
-            fw.flush();
-            fw.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //there is only one flow
-        return getFlowStrings(f).get(0);
-    }
-
-
     private File handleOutput(String ID, String time, String outString, String programConfigString) throws IOException {
 
         String fp = "debugger/tempfiles/aqlfiles/"+programConfigString+time+"out"+ID+".xml";
@@ -224,14 +187,17 @@ public class TesterUtil {
 
         //depending on if it is a precision or soundness error
         if(soundness){
-            flowList.addAll(getFlowStrings(o1));
-            flowList.removeAll(getFlowStrings(o2));
-        }else{
             flowList.addAll(getFlowStrings(o2));
             flowList.removeAll(getFlowStrings(o1));
+        }else{
+            flowList.addAll(getFlowStrings(o1));
+            flowList.removeAll(getFlowStrings(o2));
         }
         boolean returnVal=false;
-        for(Flow x: flowList){
+        /*for(Flow x: flowList){
+
+
+            //basically we need to compare this flowList to our targetFlowList
 
             if(x.equals(targetFlow)){
                 if(Runner.LOG_MESSAGES) {
@@ -241,6 +207,13 @@ public class TesterUtil {
                 returnVal=true;
             }
 
+        }*/
+
+        //check and see if we maintain all the flows we want to
+        ArrayList<Flow> checkList = new ArrayList<>(flowList);
+        checkList.removeAll(flowList);
+        if(checkList.size()==0){
+            returnVal=true;
         }
 
         //in the case of soundness, the first list has a flow the second does not (so we recreate the violation if we remove all the common flows AND the targetflow is still in the list)

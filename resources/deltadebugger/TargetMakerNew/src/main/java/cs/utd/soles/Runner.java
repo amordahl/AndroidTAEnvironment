@@ -273,14 +273,14 @@ public class Runner {
         ArrayList<Flow> flowMapTarget= new ArrayList<>();
         if(x.type){
             //soundness
-            flowMapTarget.addAll(getFlowStrings(o1));
-            flowMapTarget.removeAll(getFlowStrings(o2));
+            flowMapTarget.addAll(getFlowStrings(o2));
+            flowMapTarget.removeAll(getFlowStrings(o1));
 
 
         }else{
             //precision
-            flowMapTarget.addAll(getFlowStrings(o2));
-            flowMapTarget.removeAll(getFlowStrings(o1));
+            flowMapTarget.addAll(getFlowStrings(o1));
+            flowMapTarget.removeAll(getFlowStrings(o2));
         }
 
         return flowMapTarget;

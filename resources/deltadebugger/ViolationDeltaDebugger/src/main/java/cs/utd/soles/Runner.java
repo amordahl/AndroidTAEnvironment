@@ -149,7 +149,8 @@ public class Runner {
 
 
             //revert program to it's original form
-            testerForThis.saveCompilationUnits(originalCUnits,unchangedJavaFiles, originalCUnits.size()+1,null);
+            //we dont need to do this anymore
+            //testerForThis.saveCompilationUnits(originalCUnits,unchangedJavaFiles, originalCUnits.size()+1,null);
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -395,7 +396,8 @@ public class Runner {
 
                         returnVal = true;
                         minimized = false;
-
+                        //this is the best apk yet, save it.
+                        saveBestAPK();
                         System.out.println("Successful One\n\n------------------------------------\n\n\n");
                         //for (CompilationUnit x : bestCUList) {
                         //    System.out.println(x);
@@ -452,7 +454,6 @@ public class Runner {
                 javaFiles.add(x.getAbsoluteFile());
                 unchangedJavaFiles.add(x.getAbsoluteFile());
             }
-            createInPlaceCopy(x, f);
         }
         bestCUList = returnList;
         programFileNames = nameList;
@@ -460,21 +461,7 @@ public class Runner {
         return true;
     }
     //creates a copy of the unmodified source files because we are going to modify them in-place
-    private static boolean createInPlaceCopy(File f, File javaDir) throws IOException {
-        String javaDirPathString = javaDir.getPath();
-        String filePathString = f.getPath();
 
-        String javaDirParentPathString = javaDir.getParentFile().getAbsolutePath();
-        String correctRelativePath = filePathString.substring(filePathString.indexOf(javaDirPathString)+javaDirPathString.length());
-        File inPlaceCopy = new File(javaDirParentPathString+File.separator+"unmodified_src"+File.separator+correctRelativePath);
-        if(inPlaceCopy.exists())
-            inPlaceCopy.delete();
-        inPlaceCopy.mkdirs();
-        inPlaceCopy.createNewFile();
-        Files.copy(f.toPath(),inPlaceCopy.toPath(), StandardCopyOption.REPLACE_EXISTING);
-
-        return true;
-    }
 
     //this method needs to create the project we are going to be debugging by calling a library DroidbenchProjectCreator
     private static void createTargetProject(){
@@ -514,4 +501,22 @@ public class Runner {
     static String thisRunName;
     //static String APKReductionPath="/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir";
 
+
+    //this method updates the best apk for this run or creates it if it needs to, by the end of the run the best apk should be saved
+    private static void saveBestAPK(){
+        try {
+            File f= new File("debugger/minimized_apks/"+thisRunName+".apk");
+            f.mkdirs();
+            if(f.exists()){
+                f.delete();
+            }
+            f.createNewFile();
+            File fA = new File(projectAPKPath);
+            FileUtils.copyFile(fA, f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }

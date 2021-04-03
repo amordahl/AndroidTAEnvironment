@@ -492,7 +492,7 @@ public class Runner {
         DroidbenchProjectCreator.createProject(args);
 
 
-        createProjectPathVars(debuggerFPath+File.separator+pathFile);
+        createProjectPathVars(APKReductionPath+File.separator+pathFile);
     }
 
     //this method just sets up variables we need to do a variety of things
@@ -510,6 +510,6 @@ public class Runner {
     static String projectSrcPath;
     static String projectAPKPath;
     static String thisRunName;
-    static String debuggerFPath="/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/debugger";
+    static String APKReductionPath="/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir";
 
 }

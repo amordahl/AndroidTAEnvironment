@@ -1,9 +1,0 @@
-"PrivateDataLeak2.1": {
-    "config_pairs_length": 1,
-    "flow_type": true,
-    "sink": "android.util.Log: int v(java.lang.String,java.lang.String)",
-    "source": "de.ecspride.PrivateDataLeak2: android.view.View findViewById(int)",
-    "config_pairs": [
-      "[\\home\\asm140830\\AndroidTA\\AndroidTAEnvironment\\configurations\\FlowDroid\\1-way\\config_FlowDroid_aplength5.xml, \\home\\asm140830\\AndroidTA\\AndroidTAEnvironment\\configurations\\FlowDroid\\1-way\\config_FlowDroid_analyzeframeworks.xml]"
-    ]
-  }

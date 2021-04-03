@@ -68,16 +68,6 @@ public class Runner {
         testerForThis = new TesterUtil(targetFilePath, SchemaGenerator.SCHEMA_PATH, configFileName);
         *
          */
-        File fD = new File("debugger");
-        if(!fD.exists()) {
-            try {
-                fD.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        debuggerFPath = fD.getAbsolutePath();
-
         testerForThis = new TesterUtil(targetFile, SchemaGenerator.SCHEMA_PATH, targetType);
 
         //HANDLE THE SOURCE DIRECTORY (THIS SHOULD JUST BE JAVA DIR IN PROJECT)
@@ -520,6 +510,6 @@ public class Runner {
     static String projectSrcPath;
     static String projectAPKPath;
     static String thisRunName;
-    static String debuggerFPath;
+    static String debuggerFPath="/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/debugger";
 
 }

@@ -68,7 +68,15 @@ public class Runner {
         testerForThis = new TesterUtil(targetFilePath, SchemaGenerator.SCHEMA_PATH, configFileName);
         *
          */
-
+        File fD = new File("debugger");
+        if(!fD.exists()) {
+            try {
+                fD.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        debuggerFPath = fD.getAbsolutePath();
 
         testerForThis = new TesterUtil(targetFile, SchemaGenerator.SCHEMA_PATH, targetType);
 
@@ -494,7 +502,7 @@ public class Runner {
         DroidbenchProjectCreator.createProject(args);
 
 
-        createProjectPathVars(pathFile);
+        createProjectPathVars(debuggerFPath+File.separator+pathFile);
     }
 
     //this method just sets up variables we need to do a variety of things
@@ -512,5 +520,6 @@ public class Runner {
     static String projectSrcPath;
     static String projectAPKPath;
     static String thisRunName;
+    static String debuggerFPath;
 
 }

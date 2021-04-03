@@ -69,8 +69,6 @@ public class Runner {
 
 
         //run aql and analyze
-
-
         for(LineObj x: lineObjs){
 
             try {
@@ -102,7 +100,7 @@ public class Runner {
                 int numOfTrue=0;
 
                 for(ClassifiedFlow l:classifiedViolationFlows) {
-                    int i = (l.type ? numOfFalse++ : numOfTrue++);
+                    int i = (l.type ? numOfTrue++ : numOfFalse++);
                 }
                 if(x.type){
                     if(numOfTrue>0)

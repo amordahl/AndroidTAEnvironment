@@ -479,11 +479,11 @@ public class Runner {
         DroidbenchProjectCreator.createProject(args);
 
 
-        createProjectPathVars(pathFile);
+        createProjectPathVars(actualAPK,pathFile);
     }
 
     //this method just sets up variables we need to do a variety of things
-    private static void createProjectPathVars(String pathFile) {
+    private static void createProjectPathVars(String APKName, String pathFile) {
 
         projectRootPath=pathFile;
         projectGradlewPath=pathFile+"/gradlew";
@@ -491,6 +491,30 @@ public class Runner {
         f.setExecutable(true);
         projectAPKPath=pathFile+"/app/build/outputs/apk/debug/app-debug.apk";
         projectSrcPath=pathFile+"/app/src/";
+        dealWithSpecialProjects(APKName, pathFile);
+    }
+
+    private static void dealWithSpecialProjects(String name, String pathFile) {
+
+        //some projects are weird
+        switch(name){
+            case "DynamicSink1":
+                projectRootPath=pathFile;
+                projectGradlewPath=pathFile+"/gradlew";
+                File f= new File(projectGradlewPath);
+                f.setExecutable(true);
+                projectAPKPath=pathFile+"/dynamicLoading_DynamicSink1/build/outputs/apk/debug/dynamicLoading_DynamicSink1-debug.apk";
+                projectSrcPath=pathFile+"/dynamicLoading_DynamicSink1/src/";
+                break;
+            case "Library2":
+                projectRootPath=pathFile;
+                projectGradlewPath=pathFile+"/gradlew";
+                File fw= new File(projectGradlewPath);
+                fw.setExecutable(true);
+                projectAPKPath=pathFile+"/androidSpecific_Library2/build/outputs/apk/debug/androidSpecific_Library2-debug.apk";
+                projectSrcPath=pathFile+"/androidSpecific_Library2/src/";
+                break;
+        }
     }
 
     //root project of the file

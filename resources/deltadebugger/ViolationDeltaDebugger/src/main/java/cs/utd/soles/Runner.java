@@ -504,7 +504,7 @@ public class Runner {
                 File f= new File(projectGradlewPath);
                 f.setExecutable(true);
                 projectAPKPath=pathFile+"/dynamicLoading_DynamicSink1/build/outputs/apk/debug/dynamicLoading_DynamicSink1-debug.apk";
-                projectSrcPath=pathFile+"/dynamicLoading_DynamicSink1/src/";
+                projectSrcPath=pathFile+"/dynamicLoading_DynamicSink1/src/main/java/";
                 break;
             case "Library2":
                 projectRootPath=pathFile;
@@ -512,7 +512,7 @@ public class Runner {
                 File fw= new File(projectGradlewPath);
                 fw.setExecutable(true);
                 projectAPKPath=pathFile+"/androidSpecific_Library2/build/outputs/apk/debug/androidSpecific_Library2-debug.apk";
-                projectSrcPath=pathFile+"/androidSpecific_Library2/src/";
+                projectSrcPath=pathFile+"/androidSpecific_Library2/src/main/java/";
                 break;
         }
     }

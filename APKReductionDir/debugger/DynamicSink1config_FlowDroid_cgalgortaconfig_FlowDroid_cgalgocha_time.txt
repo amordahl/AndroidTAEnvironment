@@ -1,0 +1,16 @@
+program_runtime: 0
+
+average_of_rotations: 0.0
+total_rotations: 1
+
+average_runtime_aql: NaN
+total_aql_runs: 0
+
+average_runtime_compile: NaN
+total_compile_runs: 0
+
+total_proposed_node_changes: 0total_complete_node_changes: 0num_candidate_ast: 0Percentages:
+Percent Of Program Time Taken By AST Changes: 0.0
+Percent Of Program Time Taken By AQL Runs: 0.0
+Percent Of Program Time Taken By Compile Runs: 0.0
+compilation_failed: 0

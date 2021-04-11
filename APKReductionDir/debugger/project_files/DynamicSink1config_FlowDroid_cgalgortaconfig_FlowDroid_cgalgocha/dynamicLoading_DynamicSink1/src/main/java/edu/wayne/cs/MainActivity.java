@@ -1,7 +1,6 @@
 package edu.wayne.cs;
 
 import java.io.File;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
@@ -12,7 +11,7 @@ import edu.wayne.lib.ParentClass;
  * @testcase_name DynamicSink1
  * @author Wayne State University,
  * @author_mail zhenyu.ning@wayne.edu
- * 
+ *
  * @description Use dynamically loaded code to create a sink.
  * @dataflow onCreate: source -> sink() -> sink
  * @number_of_leaks 1
@@ -26,25 +25,22 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         FileUtils.copyDex(MainActivity.this, FILE_NAME);
         File dexOutputDir = getDir("dex", 0);
-        DexClassLoader dcl = new DexClassLoader(dexOutputDir.getPath()
-                + File.separator + FILE_NAME, getDir("odex", 0).getPath(),
-                getApplicationInfo().nativeLibraryDir, getClassLoader());
+        DexClassLoader dcl = new DexClassLoader(dexOutputDir.getPath() + File.separator + FILE_NAME, getDir("odex", 0).getPath(), getApplicationInfo().nativeLibraryDir, getClassLoader());
         try {
             Class<?> c = dcl.loadClass("edu.wayne.lib.ChildClass");
             ParentClass pc = (ParentClass) c.newInstance();
-
             TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
-            String info = tm.getDeviceId(); // source
-            pc.sink(info); // sink
+            // source
+            String info = tm.getDeviceId();
+            // sink
+            pc.sink(info);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
         }
     }
 }

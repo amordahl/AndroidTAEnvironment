@@ -1,0 +1,49 @@
+# Install dependencies
+sudo apt install mvn
+
+# Android SDK
+wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+unzip sdk-tools-linux-4333796.zip
+cd tools
+./bin/sdkmanager "packages;android-25"
+cd ~
+
+
+# 1. Checkout main repo
+git clone https://github.com/amordahl/AndroidTAEnvironment.git
+
+# Set environmental variables
+export ANDROID_TA_ENVIRONMENT_HOME=/path/to/cloned/repo
+export ANDROID_SDK_HOME=/path/to/android/platforms/directory
+
+# 2. Checkout all submodules
+git submodule update --init --recursive
+
+# (If on new machine):
+# - Install openjdk8
+sudo apt install openjdk-8-jdk
+# - Set as default
+sudo apt update-alternatives --config java
+# (select java8 from menu)
+# Rollback javafx packages
+sudo apt install openjfx=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu2
+# mark them so they won't be updated
+sudo apt-mark hold openjfx=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu
+
+# 3. Setup BREW
+cd BREW
+mvn
+cd ..
+
+# 4. Setup FlowDroid
+cd ../tools/FlowDroid
+mvn -DskipTests install
+cd ../..
+
+# 5. Setup BrewRunner
+cd BrewRunner
+python setup.py develop
+
+# 6. Copy manipulate output
+cd resources
+cp manipulateOutput.py ../tools/FlowDroid/soot-infoflow-cmd/target

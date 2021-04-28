@@ -4,12 +4,13 @@
 # 1: .apk file
 # 2: App name without .apk
 
-# Export paths
-export DROIDSAFE_SRC_HOME=/home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/droidsafe-src
-export ANDROID_SDK_HOME=/home/asm140830/Documents/Android/platforms
+# The following environmental variables must be set.
+# DROIDSAFE_SRC_HOME, which must point to the droidsafe-src directory.
+# ANDROID_SDK_HOME, which must point to the platforms directory.
+
 # Create folder structure
-mkdir /home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/runs/${2}
-cd /home/asm140830/Documents/git/AndroidTAEnvironment/tools/DroidSafe/runs/${2}
+mkdir $DROIDSAFE_SRC_HOME/runs/${2}
+cd $DROIDSAFE_SRC_HOME/runs/${2}
 cp ${1} .
 
 # Create Makefile

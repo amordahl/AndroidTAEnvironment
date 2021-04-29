@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <config>
-    <androidPlatforms>/home/vagrant/Android/platforms/</androidPlatforms>
+    <androidPlatforms>/home/issta2021/Android/platforms/</androidPlatforms>
     <maxMemory>4</maxMemory>
     <tools>
         <tool name="DroidSafe" version="1">
             <priority>1</priority>
-            <path>/home/vagrant/AndroidTAEnvironment/tools/DroidSafe</path>
-            <run>/home/vagrant/AndroidTAEnvironment/tools/config/DroidSafe/2-way/aqlRun_38.sh %APP_APK% %APP_APK_FILENAME% 48e77850ed87885b596451df0b6d9040</run>
-            <runOnExit>/home/vagrant/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
-            <runOnAbort>/home/vagrant/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>/home/vagrant/AndroidTAEnvironment/tools/DroidSafe/runs/%APP_APK_FILENAME%_48e77850ed87885b596451df0b6d9040</result>
+            <path>/home/issta2021/AndroidTAEnvironment/tools/DroidSafe</path>
+            <run>/home/issta2021/AndroidTAEnvironment/tools/config/DroidSafe/2-way/aqlRun_38.sh %APP_APK% %APP_APK_FILENAME% 48e77850ed87885b596451df0b6d9040</run>
+            <runOnExit>/home/issta2021/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <runOnAbort>/home/issta2021/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
+            <result>/home/issta2021/AndroidTAEnvironment/tools/DroidSafe/runs/%APP_APK_FILENAME%_48e77850ed87885b596451df0b6d9040</result>
             <questions>IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>
@@ -18,10 +18,10 @@
     <preprocessors>
         <tool name="ApkCombiner" version="1">
             <priority>1</priority>
-            <path>/home/vagrant/AndroidTAEnvironment/preprocessor/ApkCombiner</path>
-            <run>/home/vagrant/AndroidTAEnvironment/preprocessor/ApkCombiner/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
-            <runOnExit>/home/vagrant/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
-            <result>/home/vagrant/AndroidTAEnvironment/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_combined.apk</result>
+            <path>/home/issta2021/AndroidTAEnvironment/preprocessor/ApkCombiner</path>
+            <run>/home/issta2021/AndroidTAEnvironment/preprocessor/ApkCombiner/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
+            <runOnExit>/home/issta2021/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <result>/home/issta2021/AndroidTAEnvironment/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_combined.apk</result>
             <questions>COMBINE</questions>
             <instances>1</instances>
             <memoryPerInstance>4</memoryPerInstance>

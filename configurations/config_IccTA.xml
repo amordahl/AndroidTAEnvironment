@@ -5,11 +5,11 @@
     <tools>
         <tool name="IccTA" version="1">
             <priority>1</priority>
-            <path>/home/vagrant/AndroidTAEnvironment/tools/IccTA</path>
-            <run>/home/vagrant/AndroidTAEnvironment/tools/IccTA/aqlRun.sh %APP_APK% %MEMORY% results/%APP_APK_FILENAME%_result.txt</run>
-            <runOnExit>/home/vagrant/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
-            <runOnAbort>/home/vagrant/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>/home/vagrant/AndroidTAEnvironment/tools/IccTA/results/%APP_APK_FILENAME%_result.txt</result>
+            <path>/home/issta2021/AndroidTAEnvironment/tools/IccTA</path>
+            <run>/home/issta2021/AndroidTAEnvironment/tools/IccTA/aqlRun.sh %APP_APK% %MEMORY% results/%APP_APK_FILENAME%_result.txt</run>
+            <runOnExit>/home/issta2021/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <runOnAbort>/home/issta2021/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
+            <result>/home/issta2021/AndroidTAEnvironment/tools/IccTA/results/%APP_APK_FILENAME%_result.txt</result>
             <questions>IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>
@@ -18,10 +18,10 @@
     <preprocessors>
         <tool name="ApkCombiner" version="1">
             <priority>1</priority>
-            <path>/home/vagrant/AndroidTAEnvironment/preprocessor/ApkCombiner</path>
-            <run>/home/vagrant/AndroidTAEnvironment/preprocessor/ApkCombiner/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
-            <runOnExit>/home/vagrant/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
-            <result>/home/vagrant/AndroidTAEnvironment/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_combined.apk</result>
+            <path>/home/issta2021/AndroidTAEnvironment/preprocessor/ApkCombiner</path>
+            <run>/home/issta2021/AndroidTAEnvironment/preprocessor/ApkCombiner/aqlRun.sh %APP_APK_FILENAME% %ANDROID_PLATFORMS% %APP_APK%</run>
+            <runOnExit>/home/issta2021/AndroidTAEnvironment/AQL-System/flushMemory.sh</runOnExit>
+            <result>/home/issta2021/AndroidTAEnvironment/preprocessor/ApkCombiner/results/%APP_APK_FILENAME%_combined.apk</result>
             <questions>COMBINE</questions>
             <instances>1</instances>
             <memoryPerInstance>4</memoryPerInstance>

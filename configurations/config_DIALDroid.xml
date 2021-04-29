@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <config>
-    <androidPlatforms>/home/vagrant/Android/platforms</androidPlatforms>
+    <androidPlatforms>/home/issta2021/Android/platforms</androidPlatforms>
     <maxMemory>4</maxMemory>
     <tools>
         <tool name="DIALDroid" version="1">
             <priority>1</priority>
-            <path>/home/vagrant/AndroidTAEnvironment/tools/DIALDroid/build</path>
-            <run>/home/vagrant/AndroidTAEnvironment/tools/DIALDroid/build/aqlRun.sh %APP_APK% results/%APP_APK_FILENAME%.log %MEMORY%</run>
-            <runOnExit>/home/vagrant/AndroidTAEnvironment/tools/DIALDroid/resetDB.sh</runOnExit>
-            <runOnAbort>/home/vagrant/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
-            <result>/home/vagrant/AndroidTAEnvironment/tools/DIALDroid/build/results/%APP_APK_FILENAME%.log</result>
+            <path>/home/issta2021/AndroidTAEnvironment/tools/DIALDroid/build</path>
+            <run>/home/issta2021/AndroidTAEnvironment/tools/DIALDroid/build/aqlRun.sh %APP_APK% results/%APP_APK_FILENAME%.log %MEMORY%</run>
+            <runOnExit>/home/issta2021/AndroidTAEnvironment/tools/DIALDroid/resetDB.sh</runOnExit>
+            <runOnAbort>/home/issta2021/AndroidTAEnvironment/AQL-System/killpid.sh %PID%</runOnAbort>
+            <result>/home/issta2021/AndroidTAEnvironment/tools/DIALDroid/build/results/%APP_APK_FILENAME%.log</result>
             <questions>InterAppFlows, IntraAppFlows</questions>
             <instances>0</instances>
             <memoryPerInstance>4</memoryPerInstance>

@@ -1,7 +1,0 @@
-[System]
-Name: Amandroid
-
-[Parameter]
-ini (enum): config_sitrue_k7.ini, config_sitrue_k8.ini, config_sitrue_k9.ini, config_sitrue_k10.ini, config_sitrue_k20.ini, config_sitrue_k30.ini, config_sitrue_k40.ini, config_sitrue_k50.ini, config_sitrue_k100.ini, config_default.ini, config_sifalse_k1.ini, config_sifalse_k2.ini, config_sifalse_k3.ini, config_sifalse_k4.ini, config_sifalse_k5.ini, config_sifalse_k6.ini, config_sifalse_k7.ini, config_sifalse_k8.ini, config_sifalse_k9.ini, config_sifalse_k10.ini, config_sifalse_k20.ini, config_sifalse_k30.ini, config_sifalse_k40.ini, config_sifalse_k50.ini, config_sifalse_k100.ini, config_sitrue_k1.ini, config_sitrue_k2.ini, config_sitrue_k3.ini, config_sitrue_k4.ini, config_sitrue_k5.ini, config_sitrue_k6.ini
-module (enum): COMMUNICATION_LEAKAGE, TOKEN_TRACKING, PASSWORD_TRACKING, INTENT_INJECTION, DATA_LEAKAGE
-approach (enum): BOTTOM_UP, COMPONENT_BASED

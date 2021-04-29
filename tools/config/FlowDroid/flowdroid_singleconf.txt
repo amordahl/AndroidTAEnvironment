@@ -64,5 +64,5 @@ staticmodecsfs, --staticmode CONTEXTFLOWSENSITIVE
 staticmodefins, --staticmode CONTEXTFLOWINSENSITIVE
 staticmodenone, --staticmode NONE
 taintwrappernone, --taintwrapper NONE
-taintwrappereasy, --taintwrapper EASY -t ~/Documents/git/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
+taintwrappereasy, --taintwrapper EASY -t /home/issta2021/AndroidTAEnvironment/tools/FlowDroid/soot-infoflow-android/EasyTaintWrapperSource.txt
 taintwrapperdefaultfallback, --taintwrapper DEFAULTFALLBACK

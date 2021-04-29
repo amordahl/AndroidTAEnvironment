@@ -17,3 +17,6 @@
 [submodule "AQL-System"]
 	path = AQL-System
 	url = https://github.com/amordahl/AQL-System.git
+[submodule "resources/checkmate"]
+	path = resources/checkmate
+	url = https://github.com/amordahl/checkmate.git

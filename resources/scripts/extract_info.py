@@ -3,9 +3,9 @@ from Flow import Flow
 
 delim = ";"
 parser = argparse.ArgumentParser()
-parser.add_argument("--result")
 parser.add_argument("--header", action="store_true")
 parser.add_argument("--groundtruths")
+parser.add_argument("--results", nargs="+")
 args = parser.parse_args()
 import logging
 logging.basicConfig(level=logging.INFO)
@@ -16,19 +16,19 @@ if (args.header):
         print(f'apk{delim}generating_script{delim}num_flows{delim}time{delim}total_TP{delim}detected_TP{delim}total_FP{delim}detected_FP')
     else:
         print(f"apk{delim}generating_script{delim}num_flows{delim}time")
-else:
-    import xml.etree.ElementTree as ET
 
-    tree = ET.parse(args.result)
+import xml.etree.ElementTree as ET
+
+for r in args.results:
+    tree = ET.parse(r)
     root = tree.getroot()
     time = root.get("time")
-    
     try:
         numflows = int(len(root[0]))
     except IndexError as ie:
         numflows = 0
 
-    tokens = args.result.replace('apk_config_', f'apk{delim}config_').split(delim)
+    tokens = r.replace('apk_config_', f'apk{delim}config_').split(delim)
     apk = tokens[0]
     config = tokens[1]
     #logging.info(f'{args.result}')

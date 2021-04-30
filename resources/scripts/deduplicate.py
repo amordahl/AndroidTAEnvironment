@@ -11,22 +11,26 @@ import xml.etree.ElementTree as ET
 from Flow import Flow
 from tqdm import tqdm
 
-
 # Read input file
 tree = ET.parse(args.input)
 root = tree.getroot()
+time = root.get('time')
 
 result = set()
 for f in tqdm(root):
-    flow = Flow(f)
-    result.add(flow)
+    for f1 in f:
+        flow = Flow(f1)
+        result.add(flow)
 result = sorted(result)
 
 print(f"Finished deduplicating. In total, {len(result)} flows are unique.")
 print(f"Writing to file...")
-newRoot = ET.Element("flows")
+newRoot = ET.Element("answers")
+newRoot.set('time', time)
 newTree = ET.ElementTree(newRoot)
+newFlows = ET.Element("flows")
+newRoot.append(newFlows)
 for r in tqdm(result):
-    newRoot.append(r.element)
+    newFlows.append(r.element)
 
 newTree.write(args.output)

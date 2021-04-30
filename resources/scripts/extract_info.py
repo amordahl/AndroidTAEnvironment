@@ -1,7 +1,7 @@
 import argparse
 from Flow import Flow
 
-delim = ";"
+delim = ","
 parser = argparse.ArgumentParser()
 parser.add_argument("--header", action="store_true")
 parser.add_argument("--groundtruths")

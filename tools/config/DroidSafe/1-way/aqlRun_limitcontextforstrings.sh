@@ -5,12 +5,12 @@
 # 2: App name without .apk
 
 # Export paths
-export DROIDSAFE_SRC_HOME=/home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DroidSafe/droidsafe-src
+export DROIDSAFE_SRC_HOME=/home/issta2021/AndroidTAEnvironment/tools/DroidSafe/droidsafe-src
 export ANDROID_SDK_HOME=/home/asm140830/AndroidTA/Android/platforms
 
 # Create folder structure
-mkdir /home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DroidSafe/runs/${2}_${3}
-cd /home/asm140830/AndroidTA/AndroidTAEnvironment/tools/DroidSafe/runs/${2}_${3}
+mkdir /home/issta2021/AndroidTAEnvironment/tools/DroidSafe/runs/${2}_${3}
+cd /home/issta2021/AndroidTAEnvironment/tools/DroidSafe/runs/${2}_${3}
 cp ${1} .
 
 # Create Makefile

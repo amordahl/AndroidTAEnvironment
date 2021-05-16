@@ -17,12 +17,12 @@ import java.util.Scanner;
 
 public class Runner {
 
-    public static final String groundTruthDir="/home/dakota/AndroidTA/benchmarks/DroidBench30/benchmark/groundtruth";
+    //change this to a resources/ groundtruth dir
+    public static final String groundTruthDir="/home/dakota/AndroidTA/AndroidTAEnvironment/resources/deltadebugger/flow_groundtruths/";
     public static final String groundTruthWinDir="D:\\Local_androidTAEnvironment\\Droidbench\\DroidBench30\\DroidBench30\\benchmark\\groundtruth";
     //1 args -> the file
     public static void main(String[] args) {
         //get all the files
-
         ArrayList<LineObj> lineObjs = makeFiles(args);
         try {
             SchemaGenerator.generateSchema();
@@ -32,7 +32,6 @@ public class Runner {
         //for(cs.utd.soles.LineObj x: lineObjs)
         //    System.out.println(x);
         //slurp up
-
         //construct ground truths
         ArrayList<APKObj> groundTruths = new ArrayList<>();
 
@@ -44,21 +43,42 @@ public class Runner {
             File[] xmlFiles = x.listFiles();
 
             for(File gt: xmlFiles){
-                if(!gt.getName().endsWith(".xml")){
+                if(!gt.getName().endsWith(".xml")||!gt.getName().endsWith(".json")){
                     continue;
                 }
-                String ending = gt.getName();
-                String apkName= ending.substring(ending.lastIndexOf("_")+1,ending.indexOf(".xml"));
-                boolean type= ending.substring(ending.indexOf("_")+1,ending.lastIndexOf("_")).equals("tp");
+                if(gt.getName().endsWith(".xml")) {
 
-                //eat file, make a list of classified flows, add to apkObj that has name or make new
-                APKObj checker = new APKObj(apkName);
-                APKObj apkObj = groundTruths.contains(checker)? groundTruths.get(groundTruths.indexOf(checker)):checker;
-                if(checker==apkObj)
-                    groundTruths.add(apkObj);
-                ArrayList<Flow> flowsForThis = getFlowStrings(gt);
-                for(Flow f:flowsForThis){
-                    apkObj.addFlow(new ClassifiedFlow(f,type));
+                    String ending = gt.getName();
+                    String apkName = ending.substring(ending.lastIndexOf("_") + 1, ending.indexOf(".xml"));
+                    boolean type = ending.substring(ending.indexOf("_") + 1, ending.lastIndexOf("_")).equals("tp");
+
+                    //eat file, make a list of classified flows, add to apkObj that has name or make new
+                    APKObj checker = new APKObj(apkName);
+                    APKObj apkObj = groundTruths.contains(checker) ? groundTruths.get(groundTruths.indexOf(checker)) : checker;
+                    if (checker == apkObj)
+                        groundTruths.add(apkObj);
+                    ArrayList<Flow> flowsForThis = getFlowStrings(gt);
+                    for (Flow f : flowsForThis) {
+                        apkObj.addFlow(new ClassifiedFlow(f, type));
+                    }
+                }else{
+                    //handle json ground truths
+
+                    String ending = gt.getName();
+                    String apkName = ending.substring(ending.lastIndexOf("_") + 1, ending.indexOf(".json"));
+                    boolean type = ending.substring(ending.indexOf("_") + 1, ending.lastIndexOf("_")).equals("tp");
+
+                    //eat file, make a list of classified flows, add to apkObj that has name or make new
+                    APKObj checker = new APKObj(apkName);
+                    APKObj apkObj = groundTruths.contains(checker) ? groundTruths.get(groundTruths.indexOf(checker)) : checker;
+                    if (checker == apkObj)
+                        groundTruths.add(apkObj);
+
+                    ArrayList<Flow> flowsForThis = FlowJSONHandler.turnTargetFileIntoFlowList(gt);
+
+                    for (Flow f : flowsForThis) {
+                        apkObj.addFlow(new ClassifiedFlow(f, type));
+                    }
                 }
 
 
@@ -135,7 +155,7 @@ public class Runner {
                     File file = writeFlowsToJson(x);
 
                     //the last false will be replaced when we generate non-violations
-                    fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"+" "/*the name of the file*/+file.getAbsolutePath()+"\n");
+                    fw.write(x.apkPath+" "+x.config1+" "+x.config2+" "+x.type +" "+"false"+" "/*the name of the file*/+file.getAbsolutePath()+System.lineSeparator());
 
                 }
             }
@@ -194,41 +214,43 @@ public class Runner {
         ArrayList<LineObj> returnList = new ArrayList<>();
         try{
             File f = Paths.get(args[0]).toFile();
-            Scanner sc = new Scanner(f);
-            String inFull="";
-            while(sc.hasNextLine()){
-                inFull+=sc.nextLine();
-            }
 
-            //we got it now break it up
+            //format 1
 
-            String[] lines = inFull.split(",");
-            ArrayList<String> noDupes=new ArrayList<>();
-            for(String x: lines){
-                if(!noDupes.contains(x))
-                    noDupes.add(x);
-            }
-            //each thing in lines is one violation
-
-            //make lin objects for them
-
-            //System.out.println(noDupes);
-            int i=0;
-            for(String x: noDupes){
-                String[] trash=x.substring(10).split(" ");
-                //0 type, 2+4 genconfig1, 1+3 genconfig2, 5 apkpath
-
-                returnList.add(new LineObj(trash[0], (trash[1]+trash[3]).toLowerCase(),trash[2].equals("values")? (trash[1]+trash[4]).toLowerCase():(trash[2]+trash[3]).toLowerCase() ,trash[5]));
-
-                if(!Paths.get(returnList.get(i).config1).toFile().exists()||!Paths.get(returnList.get(i).config2).toFile().exists()){
-
-                    System.out.println(!Paths.get(returnList.get(i).config1).toFile().exists()? returnList.get(i).config1 : returnList.get(i).config2);
-
+                Scanner sc = new Scanner(f);
+                String inFull = "";
+                while (sc.hasNextLine()) {
+                    inFull += sc.nextLine();
                 }
 
-                i++;
-            }
+                //we got it now break it up
 
+                String[] lines = inFull.split(",");
+                ArrayList<String> noDupes = new ArrayList<>();
+                for (String x : lines) {
+                    if (!noDupes.contains(x))
+                        noDupes.add(x);
+                }
+                //each thing in lines is one violation
+
+                //make lin objects for them
+
+                //System.out.println(noDupes);
+                int i = 0;
+                for (String x : noDupes) {
+                    String[] trash = x.substring(10).split(" ");
+                    //0 type, 2+4 genconfig1, 1+3 genconfig2, 5 apkpath
+
+                    returnList.add(new LineObj(trash[0], (trash[1] + trash[3]).toLowerCase(), trash[2].equals("values") ? (trash[1] + trash[4]).toLowerCase() : (trash[2] + trash[3]).toLowerCase(), trash[5]));
+
+                    if (!Paths.get(returnList.get(i).config1).toFile().exists() || !Paths.get(returnList.get(i).config2).toFile().exists()) {
+
+                        System.out.println(!Paths.get(returnList.get(i).config1).toFile().exists() ? returnList.get(i).config1 : returnList.get(i).config2);
+
+                    }
+
+                    i++;
+                }
 
 
 

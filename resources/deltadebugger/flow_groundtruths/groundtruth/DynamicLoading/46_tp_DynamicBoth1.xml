@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r12.&lt;edu.wayne.cs.ParentClass: java.lang.String source(android.content.Context)&gt;($r0)</statementfull>
+                    <statementgeneric>edu.wayne.cs.ParentClass: java.lang.String source(android.content.Context)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>$r0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\DynamicLoading\DynamicBoth1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f364b83ea79d6fcab6f48ca84b434368</hash>
+                        <hash type="SHA-1">7ea11e482b655b1de0245d39ad3af36095af01f6</hash>
+                        <hash type="SHA-256">9ab3254991d1acc08684e3d5dbec24cb88836e1a2bb7049082c885869c4477</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("DroidBench", $r1)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.ParentClass: void sink(java.lang.String)&gt;</method>
+                <classname>edu.wayne.cs.ParentClass</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\DynamicLoading\DynamicBoth1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f364b83ea79d6fcab6f48ca84b434368</hash>
+                        <hash type="SHA-1">7ea11e482b655b1de0245d39ad3af36095af01f6</hash>
+                        <hash type="SHA-256">9ab3254991d1acc08684e3d5dbec24cb88836e1a2bb7049082c885869c4477</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r12.&lt;edu.wayne.cs.ParentClass: java.lang.String source(android.content.Context)&gt;($r0)</statementfull>
+                    <statementgeneric>edu.wayne.cs.ParentClass: java.lang.String source(android.content.Context)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>$r0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\DynamicLoading\DynamicBoth1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f364b83ea79d6fcab6f48ca84b434368</hash>
+                        <hash type="SHA-1">7ea11e482b655b1de0245d39ad3af36095af01f6</hash>
+                        <hash type="SHA-256">9ab3254991d1acc08684e3d5dbec24cb88836e1a2bb7049082c885869c4477</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r12.&lt;edu.wayne.cs.ParentClass: void sink(java.lang.String)&gt;($r5)</statementfull>
+                    <statementgeneric>edu.wayne.cs.ParentClass: void sink(java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\DynamicLoading\DynamicBoth1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f364b83ea79d6fcab6f48ca84b434368</hash>
+                        <hash type="SHA-1">7ea11e482b655b1de0245d39ad3af36095af01f6</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

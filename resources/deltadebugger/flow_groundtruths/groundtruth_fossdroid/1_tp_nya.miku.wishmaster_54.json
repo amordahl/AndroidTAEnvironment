@@ -1,0 +1,38 @@
+[
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void send()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void send()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void send()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  }
+]

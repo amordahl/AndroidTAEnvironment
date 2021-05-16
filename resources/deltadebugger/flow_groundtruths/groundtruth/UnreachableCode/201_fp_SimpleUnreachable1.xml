@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;droidbench.sit.fraunhofer.de.simpleunreachable1.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>droidbench.sit.fraunhofer.de.simpleunreachable1.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\UnreachableCode\SimpleUnreachable1.apk</file>
+                    <hashes>
+                        <hash type="MD5">6a4e58c4267f154cd910a1e406005416</hash>
+                        <hash type="SHA-1">58ee7ee848fe9b8ba59e7e14e4195f7c56eb0888</hash>
+                        <hash type="SHA-256">7624bddfcb529b0a46d355a5027965fe737a3b0e7ed644249f08520adc0855d9</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("DroidBench", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;droidbench.sit.fraunhofer.de.simpleunreachable1.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>droidbench.sit.fraunhofer.de.simpleunreachable1.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\UnreachableCode\SimpleUnreachable1.apk</file>
+                    <hashes>
+                        <hash type="MD5">6a4e58c4267f154cd910a1e406005416</hash>
+                        <hash type="SHA-1">58ee7ee848fe9b8ba59e7e14e4195f7c56eb0888</hash>
+                        <hash type="SHA-256">7624bddfcb529b0a46d355a5027965fe737a3b0e7ed644249f08520adc0855d9</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

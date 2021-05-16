@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.shared_preferences.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.shared_preferences.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\SharedPreferences1.apk</file>
+                    <hashes>
+                        <hash type="MD5">47669a318892e1a03c92c99c97c83d0b</hash>
+                        <hash type="SHA-1">28bfc9bff63b6e639e8844877ddb9557074dbdb9</hash>
+                        <hash type="SHA-256">8eb019569c8f53af32273fcd25b73b32ad41280259c7b80d910101f0a09efde2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("imeino", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"imeino"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.shared_preferences.AnotherActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.shared_preferences.AnotherActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\SharedPreferences1.apk</file>
+                    <hashes>
+                        <hash type="MD5">47669a318892e1a03c92c99c97c83d0b</hash>
+                        <hash type="SHA-1">28bfc9bff63b6e639e8844877ddb9557074dbdb9</hash>
+                        <hash type="SHA-256">8eb019569c8f53af32273fcd25b73b32ad41280259c7b80d910101f0a09efde2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.shared_preferences.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.shared_preferences.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\SharedPreferences1.apk</file>
+                    <hashes>
+                        <hash type="MD5">47669a318892e1a03c92c99c97c83d0b</hash>
+                        <hash type="SHA-1">28bfc9bff63b6e639e8844877ddb9557074dbdb9</hash>
+                        <hash type="SHA-256">8eb019569c8f53af32273fcd25b73b32ad41280259c7b80d910101f0a09efde2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>$r12 = staticinvoke &lt;android.widget.Toast: android.widget.Toast makeText(android.content.Context,java.lang.CharSequence,int)&gt;($r10, $r5, 0)</statementfull>
+                    <statementgeneric>android.widget.Toast: android.widget.Toast makeText(android.content.Context,java.lang.CharSequence,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>$r10</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.CharSequence</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.shared_preferences.AnotherActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.shared_preferences.AnotherActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\SharedPreferences1.apk</file>
+                    <hashes>
+                        <hash type="MD5">47669a318892e1a03c92c99c97c83d0b</hash>
+                        <hash type="SHA-1">28bfc9bff63b6e639e8844877ddb9557074dbdb9</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

@@ -1,0 +1,146 @@
+[
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper",
+      "method": "<com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Adapter.ExerciseAdapter",
+      "method": "<com.github.yeriomin.workoutlog.Adapter.ExerciseAdapter: void <init>(android.content.Context,java.util.List)>",
+      "statement": "java.text.DateFormat: java.lang.String format(java.util.Date)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper",
+      "method": "<com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: void addExercise(android.view.View)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper",
+      "method": "<com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: java.util.List getTodayExercises(java.lang.Long)>",
+      "statement": "java.util.Date: int getSeconds()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper",
+      "method": "<com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Adapter.TodayAdapter",
+      "method": "<com.github.yeriomin.workoutlog.Adapter.TodayAdapter: android.view.View getView(int,android.view.View,android.view.ViewGroup)>",
+      "statement": "android.content.Context: java.lang.String getString(int,java.lang.Object[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper",
+      "method": "<com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: java.util.List getTodayExercises(java.lang.Long)>",
+      "statement": "java.util.Date: int getMinutes()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper",
+      "method": "<com.github.yeriomin.workoutlog.Model.DaoMaster$DevOpenHelper: void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: java.util.List getTodayExercises(java.lang.Long)>",
+      "statement": "java.util.Date: int getHours()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.ExerciseDao",
+      "method": "<com.github.yeriomin.workoutlog.Model.ExerciseDao: void createTable(android.database.sqlite.SQLiteDatabase,boolean)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: void addExercise(android.view.View)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.ExerciseDao",
+      "method": "<com.github.yeriomin.workoutlog.Model.ExerciseDao: void createTable(android.database.sqlite.SQLiteDatabase,boolean)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Adapter.TodayAdapter",
+      "method": "<com.github.yeriomin.workoutlog.Adapter.TodayAdapter: android.view.View getView(int,android.view.View,android.view.ViewGroup)>",
+      "statement": "android.content.Context: java.lang.String getString(int,java.lang.Object[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.ExerciseDao",
+      "method": "<com.github.yeriomin.workoutlog.Model.ExerciseDao: void createTable(android.database.sqlite.SQLiteDatabase,boolean)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: java.util.List getTodayExercises(java.lang.Long)>",
+      "statement": "java.util.Date: int getHours()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.ExerciseDao",
+      "method": "<com.github.yeriomin.workoutlog.Model.ExerciseDao: void createTable(android.database.sqlite.SQLiteDatabase,boolean)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: java.util.List getTodayExercises(java.lang.Long)>",
+      "statement": "java.util.Date: int getMinutes()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.ExerciseDao",
+      "method": "<com.github.yeriomin.workoutlog.Model.ExerciseDao: void createTable(android.database.sqlite.SQLiteDatabase,boolean)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Activity.AddExerciseActivity",
+      "method": "<com.github.yeriomin.workoutlog.Activity.AddExerciseActivity: java.util.List getTodayExercises(java.lang.Long)>",
+      "statement": "java.util.Date: int getSeconds()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.github.yeriomin.workoutlog.Model.ExerciseDao",
+      "method": "<com.github.yeriomin.workoutlog.Model.ExerciseDao: void createTable(android.database.sqlite.SQLiteDatabase,boolean)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.github.yeriomin.workoutlog.Adapter.ExerciseAdapter",
+      "method": "<com.github.yeriomin.workoutlog.Adapter.ExerciseAdapter: void <init>(android.content.Context,java.util.List)>",
+      "statement": "java.text.DateFormat: java.lang.String format(java.util.Date)"
+    }
+  }
+]

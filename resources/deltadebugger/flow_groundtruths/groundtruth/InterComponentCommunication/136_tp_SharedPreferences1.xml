@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.shared_preferences.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.shared_preferences.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterComponentCommunication\SharedPreferences1.apk</file>
+                    <hashes>
+                        <hash type="MD5">07135d307cd67fd09a67d6ab299dcd6c</hash>
+                        <hash type="SHA-1">b3106a6f24b96fb66d228d0dd0b7c76aef807a3d</hash>
+                        <hash type="SHA-256">c11b1a45603b16854c90a99b074b9a5728ef733ac63ddf3dca6b5fc4f64820c1</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.shared_preferences.AnotherActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.shared_preferences.AnotherActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterComponentCommunication\SharedPreferences1.apk</file>
+                    <hashes>
+                        <hash type="MD5">07135d307cd67fd09a67d6ab299dcd6c</hash>
+                        <hash type="SHA-1">b3106a6f24b96fb66d228d0dd0b7c76aef807a3d</hash>
+                        <hash type="SHA-256">c11b1a45603b16854c90a99b074b9a5728ef733ac63ddf3dca6b5fc4f64820c1</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

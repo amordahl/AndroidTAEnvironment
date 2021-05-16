@@ -1,0 +1,626 @@
+[
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioPlayer$PcmImpl",
+      "method": "<org.jsl.wfwt.AudioPlayer$PcmImpl: void run()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioPlayer$PcmImpl",
+      "method": "<org.jsl.wfwt.AudioPlayer$PcmImpl: void run()>",
+      "statement": "android.util.Log: int d(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.HandshakeClientSession",
+      "method": "<org.jsl.wfwt.HandshakeClientSession: void onDataReceived(org.jsl.collider.RetainableByteBuffer)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.HandshakeServerSession",
+      "method": "<org.jsl.wfwt.HandshakeServerSession: void onDataReceived(org.jsl.collider.RetainableByteBuffer)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void shutdown()>",
+      "statement": "android.util.Log: int e_ds_method_clone_22(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.util.Log: int i_ds_method_clone_9(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.util.Log: int i_ds_method_clone_9(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.util.Log: int e_ds_method_clone_23(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: int getPort()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.util.Log: int e_ds_method_clone_20(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void <init>(java.lang.String,java.lang.String,java.lang.String,org.jsl.collider.Collider,android.net.nsd.NsdManager,java.lang.String,java.lang.String,org.jsl.wfwt.SessionManager,org.jsl.collider.TimerQueue,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_9(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void onServiceLost(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int w_ds_method_clone_18(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void <init>(java.lang.String,java.lang.String,java.lang.String,org.jsl.collider.Collider,android.net.nsd.NsdManager,java.lang.String,java.lang.String,org.jsl.wfwt.SessionManager,org.jsl.collider.TimerQueue,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_9(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void stop(java.util.concurrent.CountDownLatch)>",
+      "statement": "android.util.Log: int d_ds_method_clone_27(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void stop(java.util.concurrent.CountDownLatch)>",
+      "statement": "android.util.Log: int d_ds_method_clone_26(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity",
+      "method": "<org.jsl.wfwt.MainActivity: void onPause()>",
+      "statement": "android.content.ContextWrapper: void unbindService(android.content.ServiceConnection)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity",
+      "method": "<org.jsl.wfwt.MainActivity: void onPause()>",
+      "statement": "android.content.ContextWrapper: void unbindService(android.content.ServiceConnection)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity",
+      "method": "<org.jsl.wfwt.MainActivity: void onResume()>",
+      "statement": "android.util.Log: int d_ds_method_clone_14(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity",
+      "method": "<org.jsl.wfwt.MainActivity: void onResume()>",
+      "statement": "android.content.ContextWrapper: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity",
+      "method": "<org.jsl.wfwt.MainActivity: void onResume()>",
+      "statement": "android.content.ContextWrapper: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity$5",
+      "method": "<org.jsl.wfwt.MainActivity$5: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_38(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity$5",
+      "method": "<org.jsl.wfwt.MainActivity$5: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_38(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity$5",
+      "method": "<org.jsl.wfwt.MainActivity$5: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_38(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_37(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_38(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: int getPort()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.SwitchButton",
+      "method": "<org.jsl.wfwt.SwitchButton: boolean onTouchEvent(android.view.MotionEvent)>",
+      "statement": "android.util.Log: int d_ds_method_clone_16(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.SwitchButton",
+      "method": "<org.jsl.wfwt.SwitchButton: boolean onTouchEvent(android.view.MotionEvent)>",
+      "statement": "android.util.Log: int d_ds_method_clone_16(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void resolveNextLocked(java.lang.String)>",
+      "statement": "android.util.Log: int i_ds_method_clone_21(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int i_ds_method_clone_16(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onResolveFailed(android.net.nsd.NsdServiceInfo,int)>",
+      "statement": "android.util.Log: int e_ds_method_clone_22(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.MainActivity",
+      "method": "<org.jsl.wfwt.MainActivity: void onPause()>",
+      "statement": "android.content.ContextWrapper: void unbindService(android.content.ServiceConnection)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: void setStreamVolume(int,int,int)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: void onCreate()>",
+      "statement": "android.util.Log: int d(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_3(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: void setStreamVolume(int,int,int)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: void onCreate()>",
+      "statement": "android.util.Log: int d(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: void onDestroy()>",
+      "statement": "android.util.Log: int d_ds_method_clone_6(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.util.Log: int d_ds_method_clone_4(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: int getPort()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: android.os.IBinder onBind(android.content.Intent)>",
+      "statement": "android.util.Log: int d_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService$ColliderThread",
+      "method": "<org.jsl.wfwt.WalkieService$ColliderThread: void run()>",
+      "statement": "android.util.Log: int i_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceLost(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int i_ds_method_clone_5(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceFound(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: java.lang.String getServiceName()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceLost(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int w_ds_method_clone_5(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: int getPort()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.WalkieService$DiscoveryListener",
+      "method": "<org.jsl.wfwt.WalkieService$DiscoveryListener: void onServiceLost(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int w_ds_method_clone_5(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void onServiceLost(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int w_ds_method_clone_18(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.MainActivity$SettingsDialogClickListener",
+      "method": "<org.jsl.wfwt.MainActivity$SettingsDialogClickListener: void onClick(android.content.DialogInterface,int)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  }
+]

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
+                <classname>mod.ndk.ActMain$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Native\NativeIDFunction.apk</file>
+                    <hashes>
+                        <hash type="MD5">fa2f82763c92d2737b9ed84d3235bc3c</hash>
+                        <hash type="SHA-1">84e23979f8dd5a5cf423548915ca255482cd5a4</hash>
+                        <hash type="SHA-256">f9d5dba507a05bff1c356bd6ca596796b8dbe563dfa610f5e9f764d559252185</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r9.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r6, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
+                <classname>mod.ndk.ActMain$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Native\NativeIDFunction.apk</file>
+                    <hashes>
+                        <hash type="MD5">fa2f82763c92d2737b9ed84d3235bc3c</hash>
+                        <hash type="SHA-1">84e23979f8dd5a5cf423548915ca255482cd5a4</hash>
+                        <hash type="SHA-256">f9d5dba507a05bff1c356bd6ca596796b8dbe563dfa610f5e9f764d559252185</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

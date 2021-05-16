@@ -1,0 +1,14 @@
+[
+  {
+    "sink": {
+      "classname": "eu.kanade.tachiyomi.data.backup.BackupRestoreService",
+      "method": "<eu.kanade.tachiyomi.data.backup.BackupRestoreService: java.io.File writeErrorLog()>",
+      "statement": "java.io.BufferedWriter: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "eu.kanade.tachiyomi.data.database.mappers.BaseMangaGetResolver$DefaultImpls",
+      "method": "<eu.kanade.tachiyomi.data.database.mappers.BaseMangaGetResolver$DefaultImpls: eu.kanade.tachiyomi.data.database.models.Manga mapBaseFromCursor(eu.kanade.tachiyomi.data.database.mappers.BaseMangaGetResolver,eu.kanade.tachiyomi.data.database.models.Manga,android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  }
+]

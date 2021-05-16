@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r12.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.newedtester.MainActivity: void onClick(android.view.View)&gt;</method>
+                <classname>com.example.newedtester.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\EmulatorDetection\PI1.apk</file>
+                    <hashes>
+                        <hash type="MD5">ebaaf970f0d3d283c6af2b97a239c15d</hash>
+                        <hash type="SHA-1">3d273ac24711335ddf7541405333543083a776a0</hash>
+                        <hash type="SHA-256">ead6b74b2de2287e89ef869473a58935aaffe6d7f200589849956e4b5ffc36c8</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r13.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r7, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r7</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.newedtester.MainActivity: void onClick(android.view.View)&gt;</method>
+                <classname>com.example.newedtester.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\EmulatorDetection\PI1.apk</file>
+                    <hashes>
+                        <hash type="MD5">ebaaf970f0d3d283c6af2b97a239c15d</hash>
+                        <hash type="SHA-1">3d273ac24711335ddf7541405333543083a776a0</hash>
+                        <hash type="SHA-256">ead6b74b2de2287e89ef869473a58935aaffe6d7f200589849956e4b5ffc36c8</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

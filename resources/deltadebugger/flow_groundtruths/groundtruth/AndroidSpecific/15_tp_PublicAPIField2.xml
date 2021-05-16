@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.icc_intent_class_modeling.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.icc_intent_class_modeling.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\PublicAPIField2.apk</file>
+                    <hashes>
+                        <hash type="MD5">362d03869ed61c13bc756953e98c3f01</hash>
+                        <hash type="SHA-1">2cd5c4cf27f92db1b981b3ced8c7c09d0f7ee66c</hash>
+                        <hash type="SHA-256">27c24074ee54d184bfa0033d0824fa222e4e07b5d94c70a85f3c9ce971d35cc7</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.icc_intent_class_modeling.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.icc_intent_class_modeling.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\PublicAPIField2.apk</file>
+                    <hashes>
+                        <hash type="MD5">362d03869ed61c13bc756953e98c3f01</hash>
+                        <hash type="SHA-1">2cd5c4cf27f92db1b981b3ced8c7c09d0f7ee66c</hash>
+                        <hash type="SHA-256">27c24074ee54d184bfa0033d0824fa222e4e07b5d94c70a85f3c9ce971d35cc7</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

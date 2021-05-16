@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.newedtester.MainActivity$1: void onReceive(android.content.Context,android.content.Intent)&gt;</method>
+                <classname>com.example.newedtester.MainActivity$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\EmulatorDetection\Battery1.apk</file>
+                    <hashes>
+                        <hash type="MD5">565c9f3552f4cfd881ff0b13ff5fc481</hash>
+                        <hash type="SHA-1">f82011e6de33d3a8e4930818ebdd93d11f36b5f7</hash>
+                        <hash type="SHA-256">123909db017111a6771b85144087038bdae9d6712e2e1d4f5086b62392a63af4</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r8.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r7, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r7</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.newedtester.MainActivity$1: void onReceive(android.content.Context,android.content.Intent)&gt;</method>
+                <classname>com.example.newedtester.MainActivity$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\EmulatorDetection\Battery1.apk</file>
+                    <hashes>
+                        <hash type="MD5">565c9f3552f4cfd881ff0b13ff5fc481</hash>
+                        <hash type="SHA-1">f82011e6de33d3a8e4930818ebdd93d11f36b5f7</hash>
+                        <hash type="SHA-256">123909db017111a6771b85144087038bdae9d6712e2e1d4f5086b62392a63af4</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ActivityLifecycle1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ActivityLifecycle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f362a4fed1943d8e433e4b60204a5794</hash>
+                        <hash type="SHA-1">8fcfc61d3538e22fe77934242b965ee15f2f5431</hash>
+                        <hash type="SHA-256">fda3910a95c08297ea31c3fd370451fe997e430fe67171fdfb9de62d9b789c8</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>specialinvoke $r1.&lt;java.net.URL: void &lt;init&gt;(java.lang.String)&gt;($r3)</statementfull>
+                    <statementgeneric>java.net.URL: void &lt;init&gt;(java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.ActivityLifecycle1: void connect()&gt;</method>
+                <classname>de.ecspride.ActivityLifecycle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f362a4fed1943d8e433e4b60204a5794</hash>
+                        <hash type="SHA-1">8fcfc61d3538e22fe77934242b965ee15f2f5431</hash>
+                        <hash type="SHA-256">fda3910a95c08297ea31c3fd370451fe997e430fe67171fdfb9de62d9b789c8</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ActivityLifecycle1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ActivityLifecycle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f362a4fed1943d8e433e4b60204a5794</hash>
+                        <hash type="SHA-1">8fcfc61d3538e22fe77934242b965ee15f2f5431</hash>
+                        <hash type="SHA-256">fda3910a95c08297ea31c3fd370451fe997e430fe67171fdfb9de62d9b789c8</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>$r2 = virtualinvoke $r1.&lt;java.net.URL: java.net.URLConnection openConnection()&gt;()</statementfull>
+                    <statementgeneric>java.net.URL: java.net.URLConnection openConnection()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ActivityLifecycle1: void connect()&gt;</method>
+                <classname>de.ecspride.ActivityLifecycle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f362a4fed1943d8e433e4b60204a5794</hash>
+                        <hash type="SHA-1">8fcfc61d3538e22fe77934242b965ee15f2f5431</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ActivityLifecycle1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.ActivityLifecycle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f362a4fed1943d8e433e4b60204a5794</hash>
+                        <hash type="SHA-1">8fcfc61d3538e22fe77934242b965ee15f2f5431</hash>
+                        <hash type="SHA-256">fda3910a95c08297ea31c3fd370451fe997e430fe67171fdfb9de62d9b789c8</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;java.net.HttpURLConnection: void connect()&gt;()</statementfull>
+                    <statementgeneric>java.net.HttpURLConnection: void connect()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ActivityLifecycle1: void connect()&gt;</method>
+                <classname>de.ecspride.ActivityLifecycle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">f362a4fed1943d8e433e4b60204a5794</hash>
+                        <hash type="SHA-1">8fcfc61d3538e22fe77934242b965ee15f2f5431</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

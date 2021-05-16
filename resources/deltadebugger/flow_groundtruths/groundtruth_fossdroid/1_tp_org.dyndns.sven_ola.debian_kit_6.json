@@ -1,0 +1,26 @@
+[
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.File: java.lang.String getAbsolutePath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.lang.System: java.lang.String getenv_ds_method_clone_3(java.lang.String)"
+    }
+  }
+]

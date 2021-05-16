@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.TestReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;</method>
+                <classname>de.ecspride.TestReceiver</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\BroadcastReceiverLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">6e2c10c8c006d2573ff781828cf31dda</hash>
+                        <hash type="SHA-1">75d5987be400015b1f63984f8fc4b37d49852daf</hash>
+                        <hash type="SHA-256">4a399b81e32a2510dbdb7e480defcbf6b8cbb658b924efeda5a26302a02ab899</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r5, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.TestReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;</method>
+                <classname>de.ecspride.TestReceiver</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\BroadcastReceiverLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">6e2c10c8c006d2573ff781828cf31dda</hash>
+                        <hash type="SHA-1">75d5987be400015b1f63984f8fc4b37d49852daf</hash>
+                        <hash type="SHA-256">4a399b81e32a2510dbdb7e480defcbf6b8cbb658b924efeda5a26302a02ab899</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

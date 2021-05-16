@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r5.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;org.cert.WriteFile.Button1Listener: java.lang.String getMyLocation()&gt;</method>
+                <classname>org.cert.WriteFile.Button1Listener</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\StartActivityForResult1.apk</file>
+                    <hashes>
+                        <hash type="MD5">188693a57f3820a8ba19a75f3dffa04e</hash>
+                        <hash type="SHA-1">479578bcba41aaf376e96c8ff87a9866feaa6825</hash>
+                        <hash type="SHA-256">641f4103352cdd393477484ab838c7875e02cfcbfd1dda7f675376bd5a3c2a91</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("Data recieved in Echoer: ", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Data recieved in Echoer: "</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.cert.echoer.MainActivity: void getDataFromIntent()&gt;</method>
+                <classname>org.cert.echoer.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Echoer.apk</file>
+                    <hashes>
+                        <hash type="MD5">7d7df5fe8e7ea3e66078c643fce804cb</hash>
+                        <hash type="SHA-1">ab96e8cbf2cea0599b8b24df4134d397610af0af</hash>
+                        <hash type="SHA-256">bdb8d9b3128ed0352348797a7d5ecc5ce957a61088e92e5419c56c5834153f13</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r4.&lt;android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)&gt;("gps")</statementfull>
+                    <statementgeneric>android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"gps"</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.cert.WriteFile.Button1Listener: java.lang.String getMyLocation()&gt;</method>
+                <classname>org.cert.WriteFile.Button1Listener</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\StartActivityForResult1.apk</file>
+                    <hashes>
+                        <hash type="MD5">188693a57f3820a8ba19a75f3dffa04e</hash>
+                        <hash type="SHA-1">479578bcba41aaf376e96c8ff87a9866feaa6825</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("Data recieved in Echoer: ", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Data recieved in Echoer: "</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.cert.echoer.MainActivity: void getDataFromIntent()&gt;</method>
+                <classname>org.cert.echoer.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Echoer.apk</file>
+                    <hashes>
+                        <hash type="MD5">7d7df5fe8e7ea3e66078c643fce804cb</hash>
+                        <hash type="SHA-1">ab96e8cbf2cea0599b8b24df4134d397610af0af</hash>
+                        <hash type="SHA-256">bdb8d9b3128ed0352348797a7d5ecc5ce957a61088e92e5419c56c5834153f13</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d1 = virtualinvoke $r5.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;org.cert.WriteFile.Button1Listener: java.lang.String getMyLocation()&gt;</method>
+                <classname>org.cert.WriteFile.Button1Listener</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\StartActivityForResult1.apk</file>
+                    <hashes>
+                        <hash type="MD5">188693a57f3820a8ba19a75f3dffa04e</hash>
+                        <hash type="SHA-1">479578bcba41aaf376e96c8ff87a9866feaa6825</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("Data recieved in Echoer: ", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Data recieved in Echoer: "</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.cert.echoer.MainActivity: void getDataFromIntent()&gt;</method>
+                <classname>org.cert.echoer.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Echoer.apk</file>
+                    <hashes>
+                        <hash type="MD5">7d7df5fe8e7ea3e66078c643fce804cb</hash>
+                        <hash type="SHA-1">ab96e8cbf2cea0599b8b24df4134d397610af0af</hash>
+                        <hash type="SHA-256">bdb8d9b3128ed0352348797a7d5ecc5ce957a61088e92e5419c56c5834153f13</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

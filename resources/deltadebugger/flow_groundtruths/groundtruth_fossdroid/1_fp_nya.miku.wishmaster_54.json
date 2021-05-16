@@ -1,0 +1,986 @@
+[
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.chans.anonfm.AnonFmModule",
+      "method": "<nya.miku.wishmaster.chans.anonfm.AnonFmModule: void setCurrentThreadNumber(java.lang.String)>",
+      "statement": "android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getFavoriteBoards(nya.miku.wishmaster.api.ChanModule)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.containers.WriteableMHTML",
+      "method": "<nya.miku.wishmaster.containers.WriteableMHTML: java.io.OutputStream openStream(java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.containers.WriteableMHTML",
+      "method": "<nya.miku.wishmaster.containers.WriteableMHTML: java.io.OutputStream openStream(java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.containers.WriteableMHTML",
+      "method": "<nya.miku.wishmaster.containers.WriteableMHTML: void <init>(java.io.File)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.containers.WriteableMHTML",
+      "method": "<nya.miku.wishmaster.containers.WriteableMHTML: void <init>(java.io.File)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.ClickableToast",
+      "method": "<nya.miku.wishmaster.lib.ClickableToast: void show()>",
+      "statement": "android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.ClickableToast",
+      "method": "<nya.miku.wishmaster.lib.ClickableToast: void show()>",
+      "statement": "android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb",
+      "method": "<nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb: nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo setActionBarUpIndicator(nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo,android.app.Activity,android.graphics.drawable.Drawable,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb",
+      "method": "<nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb: nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo setActionBarUpIndicator(nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo,android.app.Activity,android.graphics.drawable.Drawable,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb",
+      "method": "<nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb: nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo setActionBarUpIndicator(nya.miku.wishmaster.lib.appcompat_v7_actionbartoogle.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo,android.app.Activity,android.graphics.drawable.Drawable,int)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONArray",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONArray: java.io.Writer write(java.io.Writer,int,int)>",
+      "statement": "java.io.Writer: void write(int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONArray",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONArray: java.io.Writer write(java.io.Writer,int,int)>",
+      "statement": "java.io.Writer: void write(int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONArray",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONArray: java.io.Writer write(java.io.Writer,int,int)>",
+      "statement": "java.io.Writer: void write(int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONArray",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONArray: java.io.Writer write(java.io.Writer,int,int)>",
+      "statement": "java.io.Writer: void write(int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer quote(java.lang.String,java.io.Writer)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.BoardsListFragment",
+      "method": "<nya.miku.wishmaster.ui.BoardsListFragment: nya.miku.wishmaster.ui.BoardsListFragment newInstance(long)>",
+      "statement": "android.os.Bundle: void putLong(java.lang.String,long)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.MainActivity",
+      "method": "<nya.miku.wishmaster.ui.MainActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.IntentFilter: void addAction(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.MainActivity",
+      "method": "<nya.miku.wishmaster.ui.MainActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.IntentFilter: void addAction(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.MainActivity",
+      "method": "<nya.miku.wishmaster.ui.MainActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.MainActivity",
+      "method": "<nya.miku.wishmaster.ui.MainActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.MainActivity",
+      "method": "<nya.miku.wishmaster.ui.MainActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.MainActivity",
+      "method": "<nya.miku.wishmaster.ui.MainActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.IntentFilter: void addAction(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: void onStart()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingProgressActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingService",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingService: void onStart(android.content.Intent,int)>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask",
+      "method": "<nya.miku.wishmaster.ui.downloading.DownloadingService$DownloadingTask: void run()>",
+      "statement": "nya.miku.wishmaster.ui.downloading.DownloadingService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildHeader(java.lang.String,java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)>(\"<!DOCTYPE html"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildHeader(java.lang.String,java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildHeader(java.lang.String,java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)>(\"<!DOCTYPE html"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildHeader(java.lang.String,java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)>(\"<!DOCTYPE html"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildHeader(java.lang.String,java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildHeader(java.lang.String,java.lang.String)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onCreate(android.os.Bundle)>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getFavoriteBoards(nya.miku.wishmaster.api.ChanModule)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onCreate(android.os.Bundle)>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onCreate(android.os.Bundle)>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onCreate(android.os.Bundle)>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getHistory()>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onCreate(android.os.Bundle)>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: void startActivityForResult(android.content.Intent,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostingProgressActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostingProgressActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.IntentFilter: void addAction(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostingProgressActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostingProgressActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.IntentFilter: void addAction(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.presentation.BoardFragment$PageGetter",
+      "method": "<nya.miku.wishmaster.ui.presentation.BoardFragment$PageGetter: void createPresentationModel(nya.miku.wishmaster.cache.SerializablePage,boolean,boolean)>",
+      "statement": "nya.miku.wishmaster.ui.MainActivity: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.settings.ApplicationSettings",
+      "method": "<nya.miku.wishmaster.ui.settings.ApplicationSettings: void setSubscriptionsClear(boolean)>",
+      "statement": "android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.settings.ApplicationSettings",
+      "method": "<nya.miku.wishmaster.ui.settings.ApplicationSettings: void setCustomTheme(java.lang.String)>",
+      "statement": "android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.tabs.TabsTrackerService",
+      "method": "<nya.miku.wishmaster.ui.tabs.TabsTrackerService: void onCreate()>",
+      "statement": "nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.tabs.TabsTrackerService",
+      "method": "<nya.miku.wishmaster.ui.tabs.TabsTrackerService: void onCreate()>",
+      "statement": "nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.tabs.TabsTrackerService$TrackerLoop",
+      "method": "<nya.miku.wishmaster.ui.tabs.TabsTrackerService$TrackerLoop: void run()>",
+      "statement": "nya.miku.wishmaster.ui.tabs.TabsTrackerService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.tabs.TabsTrackerService$TrackerLoop",
+      "method": "<nya.miku.wishmaster.ui.tabs.TabsTrackerService$TrackerLoop: void run()>",
+      "statement": "nya.miku.wishmaster.ui.tabs.TabsTrackerService: void sendBroadcast(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.common.IOUtils",
+      "method": "<nya.miku.wishmaster.common.IOUtils: void copyStream(java.io.InputStream,java.io.OutputStream)>",
+      "statement": "java.io.OutputStream: void write(byte[],int,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getHistory()>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.common.IOUtils",
+      "method": "<nya.miku.wishmaster.common.IOUtils: void copyStream(java.io.InputStream,java.io.OutputStream)>",
+      "statement": "java.io.OutputStream: void write(byte[],int,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.common.IOUtils",
+      "method": "<nya.miku.wishmaster.common.IOUtils: void copyStream(java.io.InputStream,java.io.OutputStream)>",
+      "statement": "java.io.OutputStream: void write(byte[],int,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer writeValue(java.io.Writer,java.lang.Object,int,int)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer writeValue(java.io.Writer,java.lang.Object,int,int)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer writeValue(java.io.Writer,java.lang.Object,int,int)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer quote(java.lang.String,java.io.Writer)>",
+      "statement": "java.io.Writer: void write(int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer quote(java.lang.String,java.io.Writer)>",
+      "statement": "java.io.Writer: void write(int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer writeValue(java.io.Writer,java.lang.Object,int,int)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.lib.org_json.JSONObject",
+      "method": "<nya.miku.wishmaster.lib.org_json.JSONObject: java.io.Writer write(java.io.Writer,int,int)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildAttachment(nya.miku.wishmaster.api.models.AttachmentModel,boolean)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildPost(nya.miku.wishmaster.api.models.PostModel,boolean)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.downloading.HtmlBuilder",
+      "method": "<nya.miku.wishmaster.ui.downloading.HtmlBuilder: void buildPost(nya.miku.wishmaster.api.models.PostModel,boolean)>",
+      "statement": "java.io.Writer: void write(java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putString(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void downloadAttachment()>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: nya.miku.wishmaster.ui.Database$IsHiddenDelegate getCachedIsHiddenDelegate(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putString(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putString(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.lib.UriFileUtils",
+      "method": "<nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void downloadAttachment()>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onCreate(android.os.Bundle)>",
+      "statement": "nya.miku.wishmaster.ui.gallery.GalleryActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getFavorites()>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.tabs.TabsTrackerService",
+      "method": "<nya.miku.wishmaster.ui.tabs.TabsTrackerService: void onCreate()>",
+      "statement": "nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getFavorites()>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.tabs.TabsTrackerService",
+      "method": "<nya.miku.wishmaster.ui.tabs.TabsTrackerService: void onCreate()>",
+      "statement": "nya.miku.wishmaster.ui.tabs.TabsTrackerService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void setViews()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.view.View findViewById(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.gallery.GalleryActivity",
+      "method": "<nya.miku.wishmaster.ui.gallery.GalleryActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putString(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.posting.PostFormActivity",
+      "method": "<nya.miku.wishmaster.ui.posting.PostFormActivity: void send()>",
+      "statement": "nya.miku.wishmaster.ui.posting.PostFormActivity: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB",
+      "method": "<nya.miku.wishmaster.ui.presentation.Subscriptions$SubscriptionsDB: java.lang.String[] getSubscriptions(java.lang.String,java.lang.String,java.lang.String)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "nya.miku.wishmaster.ui.settings.ApplicationSettings",
+      "method": "<nya.miku.wishmaster.ui.settings.ApplicationSettings: void unlockChan(java.lang.String,boolean)>",
+      "statement": "android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)"
+    },
+    "source": {
+      "classname": "nya.miku.wishmaster.ui.Database",
+      "method": "<nya.miku.wishmaster.ui.Database: java.util.List getHistory()>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  }
+]

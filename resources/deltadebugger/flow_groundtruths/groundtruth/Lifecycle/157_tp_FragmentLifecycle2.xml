@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.fragments.HeadlinesFragment: void onListItemClick(android.widget.ListView,android.view.View,int,long)&gt;</method>
+                <classname>edu.mit.fragments.HeadlinesFragment</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\FragmentLifecycle2.apk</file>
+                    <hashes>
+                        <hash type="MD5">8912ad6a86ac9a75c696a2913ff7df7b</hash>
+                        <hash type="SHA-1">982cd361969b89a4a1b192de0469412fc40663c8</hash>
+                        <hash type="SHA-256">7cad8b1a8ef2e835fe245b0cd9118a984a25aa339c204e4e4f3bf108b1b131cd</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r1)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.fragments.ArticleFragment: void updateArticleView(int,java.lang.String)&gt;</method>
+                <classname>edu.mit.fragments.ArticleFragment</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\FragmentLifecycle2.apk</file>
+                    <hashes>
+                        <hash type="MD5">8912ad6a86ac9a75c696a2913ff7df7b</hash>
+                        <hash type="SHA-1">982cd361969b89a4a1b192de0469412fc40663c8</hash>
+                        <hash type="SHA-256">7cad8b1a8ef2e835fe245b0cd9118a984a25aa339c204e4e4f3bf108b1b131cd</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

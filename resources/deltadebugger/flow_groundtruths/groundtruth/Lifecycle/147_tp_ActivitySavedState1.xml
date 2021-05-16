@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.activity_saved_state.MainActivity: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.activity_saved_state.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivitySavedState1.apk</file>
+                    <hashes>
+                        <hash type="MD5">62629b5351cdb76e15a297828018a04f</hash>
+                        <hash type="SHA-1">b853b681f9c86248ee2d87e9e251c741c0df9711</hash>
+                        <hash type="SHA-256">3859f2bc0f44813ab579be20fe1d5972e0f7c15fa5c9a16a7fb1d177e3c7aa0f</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r2)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.activity_saved_state.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.activity_saved_state.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivitySavedState1.apk</file>
+                    <hashes>
+                        <hash type="MD5">62629b5351cdb76e15a297828018a04f</hash>
+                        <hash type="SHA-1">b853b681f9c86248ee2d87e9e251c741c0df9711</hash>
+                        <hash type="SHA-256">3859f2bc0f44813ab579be20fe1d5972e0f7c15fa5c9a16a7fb1d177e3c7aa0f</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

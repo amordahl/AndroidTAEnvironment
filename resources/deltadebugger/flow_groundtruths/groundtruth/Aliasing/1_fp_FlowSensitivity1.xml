@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void aliasFlowTest()&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Aliasing\FlowSensitivity1.apk</file>
+                    <hashes>
+                        <hash type="MD5">69d6f1fa9d41a59a43d3e76f2b2c037f</hash>
+                        <hash type="SHA-1">452133d4f5540e18d90c9d5f7fb00acf54abcca0</hash>
+                        <hash type="SHA-256">8b8f0d004c33c6e8d554a5c3f99c2b351c6e92503037f12b67201de74adfb540</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r5.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r4, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void aliasFlowTest()&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Aliasing\FlowSensitivity1.apk</file>
+                    <hashes>
+                        <hash type="MD5">69d6f1fa9d41a59a43d3e76f2b2c037f</hash>
+                        <hash type="SHA-1">452133d4f5540e18d90c9d5f7fb00acf54abcca0</hash>
+                        <hash type="SHA-256">8b8f0d004c33c6e8d554a5c3f99c2b351c6e92503037f12b67201de74adfb540</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

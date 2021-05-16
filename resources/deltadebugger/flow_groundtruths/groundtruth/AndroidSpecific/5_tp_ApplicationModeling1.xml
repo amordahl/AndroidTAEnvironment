@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.application_modeling.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.application_modeling.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\ApplicationModeling1.apk</file>
+                    <hashes>
+                        <hash type="MD5">054530f6ef5c2d1c0b9cfd21a30048e9</hash>
+                        <hash type="SHA-1">993bac944c0b0f4fafd31fce12c3018a9c6dc7cb</hash>
+                        <hash type="SHA-256">f0ad141f3765c18f4204c518094dd67707f67aacad02aa3440543cd20099019a</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.application_modeling.AnotherActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.application_modeling.AnotherActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\ApplicationModeling1.apk</file>
+                    <hashes>
+                        <hash type="MD5">054530f6ef5c2d1c0b9cfd21a30048e9</hash>
+                        <hash type="SHA-1">993bac944c0b0f4fafd31fce12c3018a9c6dc7cb</hash>
+                        <hash type="SHA-256">f0ad141f3765c18f4204c518094dd67707f67aacad02aa3440543cd20099019a</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

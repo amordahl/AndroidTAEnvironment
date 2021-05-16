@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.InactiveActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.InactiveActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\InactiveActivity.apk</file>
+                    <hashes>
+                        <hash type="MD5">c6a2764e06d4f9dc942c0e48050a5dfa</hash>
+                        <hash type="SHA-1">b72073cdd7a9c19e06db0b503242d6f199a8fdf2</hash>
+                        <hash type="SHA-256">89e0feefaa2af0c0c9941c6d746ced2096ffd3aa22f3483e6f3bd38f6e8bc714</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("INFO", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"INFO"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.InactiveActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.InactiveActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\InactiveActivity.apk</file>
+                    <hashes>
+                        <hash type="MD5">c6a2764e06d4f9dc942c0e48050a5dfa</hash>
+                        <hash type="SHA-1">b72073cdd7a9c19e06db0b503242d6f199a8fdf2</hash>
+                        <hash type="SHA-256">89e0feefaa2af0c0c9941c6d746ced2096ffd3aa22f3483e6f3bd38f6e8bc714</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

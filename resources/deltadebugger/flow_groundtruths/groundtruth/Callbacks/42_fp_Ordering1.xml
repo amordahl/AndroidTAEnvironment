@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d1 = virtualinvoke $r1.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity$1: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>de.ecspride.MainActivity$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Callbacks\Ordering1.apk</file>
+                    <hashes>
+                        <hash type="MD5">56d858d7ee63a488870d77b12fe125fc</hash>
+                        <hash type="SHA-1">e13bdd991243008c5244e205c2e8aa40c4dd8a71</hash>
+                        <hash type="SHA-256">ec57d1c3eabcae35eb0184bff45da4146aef3c79b630a7c6064a70c5a3ac1bfe</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Latitude", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Latitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Callbacks\Ordering1.apk</file>
+                    <hashes>
+                        <hash type="MD5">56d858d7ee63a488870d77b12fe125fc</hash>
+                        <hash type="SHA-1">e13bdd991243008c5244e205c2e8aa40c4dd8a71</hash>
+                        <hash type="SHA-256">ec57d1c3eabcae35eb0184bff45da4146aef3c79b630a7c6064a70c5a3ac1bfe</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity$1: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>de.ecspride.MainActivity$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Callbacks\Ordering1.apk</file>
+                    <hashes>
+                        <hash type="MD5">56d858d7ee63a488870d77b12fe125fc</hash>
+                        <hash type="SHA-1">e13bdd991243008c5244e205c2e8aa40c4dd8a71</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("Latitude", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"Latitude"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Callbacks\Ordering1.apk</file>
+                    <hashes>
+                        <hash type="MD5">56d858d7ee63a488870d77b12fe125fc</hash>
+                        <hash type="SHA-1">e13bdd991243008c5244e205c2e8aa40c4dd8a71</hash>
+                        <hash type="SHA-256">ec57d1c3eabcae35eb0184bff45da4146aef3c79b630a7c6064a70c5a3ac1bfe</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

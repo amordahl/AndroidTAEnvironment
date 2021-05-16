@@ -1,0 +1,26 @@
+[
+  {
+    "sink": {
+      "classname": "pt.isec.tp.am.Help",
+      "method": "<pt.isec.tp.am.Help: void onCreate(android.os.Bundle)>",
+      "statement": "android.widget.TabHost$TabSpec: android.widget.TabHost$TabSpec setContent(int)"
+    },
+    "source": {
+      "classname": "pt.isec.tp.am.Score",
+      "method": "<pt.isec.tp.am.Score: void onLoad_ds_method_clone_2(android.content.Context)>",
+      "statement": "java.io.BufferedReader: java.lang.String readLine()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "pt.isec.tp.am.TP_AMActivity",
+      "method": "<pt.isec.tp.am.TP_AMActivity: void OnClickSettings(android.view.View)>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "pt.isec.tp.am.Score",
+      "method": "<pt.isec.tp.am.Score: void onLoad_ds_method_clone_2(android.content.Context)>",
+      "statement": "java.io.BufferedReader: java.lang.String readLine()"
+    }
+  }
+]

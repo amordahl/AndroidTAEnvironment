@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r10 = virtualinvoke $r13.&lt;java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])&gt;($r11, $r15)</statementfull>
+                    <statementgeneric>java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.Object</type>
+                            <value>$r11</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.Object[]</type>
+                            <value>$r15</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.onlytelephony.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.onlytelephony.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\OnlyTelephony_Reverse.apk</file>
+                    <hashes>
+                        <hash type="MD5">af0dea59711afd99cf41c2a067d678ca</hash>
+                        <hash type="SHA-1">6560ec865565ecea171966855f4f80c1b8da0008</hash>
+                        <hash type="SHA-256">835fdd204fc2c8d78b8426c4af4a8eb5800af98e46cfd7a0ffadaff83ef16e40</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r6.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r5, null, $r7, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r7</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.onlytelephony.Activity2: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.onlytelephony.Activity2</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\OnlyTelephony_Reverse.apk</file>
+                    <hashes>
+                        <hash type="MD5">af0dea59711afd99cf41c2a067d678ca</hash>
+                        <hash type="SHA-1">6560ec865565ecea171966855f4f80c1b8da0008</hash>
+                        <hash type="SHA-256">835fdd204fc2c8d78b8426c4af4a8eb5800af98e46cfd7a0ffadaff83ef16e40</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

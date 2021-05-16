@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r9 = virtualinvoke $r11.&lt;java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])&gt;($r10, $r2)</statementfull>
+                    <statementgeneric>java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.Object</type>
+                            <value>$r10</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.Object[]</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.sms.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.sms.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\AllReflection.apk</file>
+                    <hashes>
+                        <hash type="MD5">d8852090ba5d806042c2f55f3b321e1e</hash>
+                        <hash type="SHA-1">62e25daea80f26f5971f746ac00d66d53183cfb8</hash>
+                        <hash type="SHA-256">74ddb16721ca2e0af28ac2d6573da4c78d8d5c39db3a5cd61823716e48190ca3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r3.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r1, null, $r2, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.sms.send: void se(java.lang.String,java.lang.String)&gt;</method>
+                <classname>com.example.sms.send</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection_ICC\AllReflection.apk</file>
+                    <hashes>
+                        <hash type="MD5">d8852090ba5d806042c2f55f3b321e1e</hash>
+                        <hash type="SHA-1">62e25daea80f26f5971f746ac00d66d53183cfb8</hash>
+                        <hash type="SHA-256">74ddb16721ca2e0af28ac2d6573da4c78d8d5c39db3a5cd61823716e48190ca3</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

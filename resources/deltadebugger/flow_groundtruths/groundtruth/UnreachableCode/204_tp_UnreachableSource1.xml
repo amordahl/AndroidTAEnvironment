@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\UnreachableCode\UnreachableSource1.apk</file>
+                    <hashes>
+                        <hash type="MD5">a080d3456d9ef84b05d4fb9959314fff</hash>
+                        <hash type="SHA-1">9ad72e74c641f6dddaf0241ae069e0ee7b44b6a9</hash>
+                        <hash type="SHA-256">9734fcf60b85e75b1a883cae7a405209243d9fb5387cfb33fa3fd4bcff7ea7b9</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("DroidBench", $r5)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\UnreachableCode\UnreachableSource1.apk</file>
+                    <hashes>
+                        <hash type="MD5">a080d3456d9ef84b05d4fb9959314fff</hash>
+                        <hash type="SHA-1">9ad72e74c641f6dddaf0241ae069e0ee7b44b6a9</hash>
+                        <hash type="SHA-256">9734fcf60b85e75b1a883cae7a405209243d9fb5387cfb33fa3fd4bcff7ea7b9</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

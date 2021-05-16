@@ -1,0 +1,230 @@
+[
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "android.os.Environment: java.io.File getDataDirectory_ds_method_clone_3()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.os.Environment: java.io.File getDataDirectory()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.BufferedReader: java.lang.String readLine()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "android.os.Environment: java.io.File getDataDirectory_ds_method_clone_3()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.os.Environment: java.io.File getDataDirectory()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.File: java.lang.String getAbsolutePath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.lang.System: java.lang.String getenv_ds_method_clone_3(java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.InputStream: int read(byte[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onDownload()>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.BufferedReader: java.lang.String readLine()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.InputStream: int read(byte[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: java.lang.String execShell(boolean,java.lang.String[])>",
+      "statement": "java.lang.ProcessBuilder: java.lang.Process start()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.File: java.lang.String getAbsolutePath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.lang.System: java.lang.String getenv_ds_method_clone_3(java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "android.os.Environment: java.io.File getDataDirectory_ds_method_clone_3()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.os.Environment: java.io.File getDataDirectory()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.InputStream: int read(byte[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.dyndns.sven_ola.debian_kit.ReadmeActivity",
+      "method": "<org.dyndns.sven_ola.debian_kit.ReadmeActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.webkit.WebView: void loadUrl(java.lang.String)"
+    },
+    "source": {
+      "classname": "org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask",
+      "method": "<org.dyndns.sven_ola.debian_kit.DebianKitActivity$CourtTask: java.lang.Void doInBackground(java.lang.Void[])>",
+      "statement": "java.io.BufferedReader: java.lang.String readLine()"
+    }
+  }
+]

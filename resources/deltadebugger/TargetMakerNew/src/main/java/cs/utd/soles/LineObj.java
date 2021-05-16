@@ -55,6 +55,9 @@ public class LineObj {
             case "aliasalgoflowsensitive":
                 config="aliasalgofs";
                 break;
+            case "pathspecificresultstrue":
+                config="pathspecificresults";
+                break;
             case "callbackanalyzerdefault":
                 config="callbackanalyzerdef";
                 break;
@@ -64,6 +67,7 @@ public class LineObj {
             case "taintwrapperdefault":
 
             case "aliasflowinsfalse":
+            case "pathspecificresultsfalse":
             case "analyzeframeworksfalse":
             case "onecomponentatatimefalse":
                 config="aplength5";

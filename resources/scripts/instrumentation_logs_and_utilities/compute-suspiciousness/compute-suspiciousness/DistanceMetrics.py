@@ -27,7 +27,7 @@ class DistanceMetrics:
     def wei_distance(o1: Set[str],
                      o2: Set[str],
                      which_is_buggy: int = 0,
-                     distance: Callable = basic_distance) -> float:
+                     distance: Callable = basic_distance.__func__) -> float:
         """ Assuming A is the buggy configuration, return [if the data structure 
         is accessed in A's execution ? 1 : 0] * [if the data structure is different
         between the two executions ? 1 : 0].

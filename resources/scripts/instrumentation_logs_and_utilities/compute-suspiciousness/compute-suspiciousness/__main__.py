@@ -48,7 +48,7 @@ p.add_argument('--content', help='How to determine the content of a data structu
                default='last_log')
 p.add_argument('--distance', help='The metric to calculate the distance between two structures..',
                choices=DistanceMetrics.get_registry(),
-               default='basic_equality')
+               default='basic_distance')
 p.add_argument('--strategy',  help="""Whether to use the subset or ground truth strategy.""",
                choices=['set', 'ground_truth'],
                default='ground_truth')
@@ -110,9 +110,18 @@ def find_datastructure(content: Tuple[str], dataStructure: str) -> Set[str]:
             except:
                 logging.critical(f'Could not parse the collection {dataStructure} on line {line}.')
                 
-    logging.debug(f'Returning result {result}')
-    cache[f'{hash(content)}_{dataStructure}'] = result
-    return result
+    if args.content == 'last_log':
+        # we compare the last element of each list.
+        o1 = set(result[-1]) if len(result) != 0 else set()
+    elif args.content == 'superset':
+        result_set = set()
+        for se in result:
+            result_set.update(se)
+        o1 = result_set
+
+    logging.debug(f'Returning result {o1}')
+    cache[f'{hash(content)}_{dataStructure}'] = o1
+    return o1
 
 # check different keys
 def get_different_positions(coll1, coll2, pos) -> int:
@@ -261,27 +270,9 @@ def get_entry(base_dict: Dict[str, str],
         entry['partner_false_positives'] = frozenset([k for k,v in f_partner_flows_groundtruths if not v == False])
     
     for s in structures:
-        ds1 = find_datastructure(files[j][f_this], s)
-        ds2 = find_datastructure(files[(j+1)%2][f_partner], s)
-
-        # o1 and o2 are what to compare.
-        o1 = None
-        o2 = None
-        if args.content == 'last_log':
-            # we compare the last element of each list.
-            o1 = set(ds1[-1]) if len(ds1) != 0 else set()
-            o2 = set(ds2[-1]) if len(ds2) != 0 else set()
-        elif args.content == 'superset':
-            ds1_set = set()
-            ds2_set = set()
-            for se in ds1:
-                ds1_set.update(se)
-            for se in ds2:
-                ds2_set.update(se)
-            o1 = ds1_set
-            o2 = ds2_set
-
-        structure_similarity = getattr(EqualityMetrics, args.equality)(o1, o2)
+        o1 = find_datastructure(files[j][f_this], s)
+        o2 = find_datastructure(files[(j+1)%2][f_partner], s)
+        structure_similarity = getattr(DistanceMetrics, args.distance)(o1, o2)
         #print(f'structure_similarity = {structure_similarity}')
         entry[f'equal_{s}'] = structure_similarity
     return entry
@@ -341,10 +332,7 @@ def main() :
     # compute suspiciousness
     suspiciousness = []
     logging.info('Now comparing data structures and computing suspiciousness.')
-    if args.score == 'tarantula':
-        score_func = lambda suc, fai, tsuc, tfail: 1 - ((float(suc) / tsuc) / (float(suc)/tsuc + float(fai) / tfail))
-    elif args.score == 'ochiai':
-        score_func = lambda suc, fai, tsuc, tfail: float(fai) / math.sqrt(tfail * (fai + suc))
+    score_func = getattr(SuspiciousnessMetrics, args.score)
     
     for s in tqdm(structures):
         logging.info(f'structure: {s}')
@@ -375,10 +363,8 @@ def main() :
             # Find the flows that are in the less sound but not more sound configuration.
             successful_list = [e[f'equal_{s}'] for e in lines if e[f'equal_{s}'] > 0 and
                                e[f'this_{to_check}'].issubset(e[f'partner_{to_check}'])]
-            print(f'successful_list: { successful_list }')
             failed_list = [e[f'equal_{s}'] for e in lines if e[f'equal_{s}'] > 0 and not
                            e[f'this_{to_check}'].issubset(e[f'partner_{to_check}'])]
-            print(f'failed_list: { failed_list }')
             successful=sum(successful_list)
             failed=sum(failed_list)
             total_successful = len([e for e in lines if e[f'this_{to_check}'].issubset(e[f'partner_{to_check}'])])
@@ -388,6 +374,20 @@ def main() :
             logging.info(f'failed: {failed}')
             logging.info(f'total_successful: {total_successful}')
             logging.info(f'total_failed: {total_failed}')
+
+            for e in lines:
+                # Print out intersection information for each entry.
+                # difference,file1/file2'structure,size1,size2,size_intersect,a-b,b-a
+                sb = 'difference\t'
+                sb += f'{e["file"]}/{e["partner"]}\t'
+                sb += f'{s}\t'
+                set1 = find_datastructure(files[0][e['file']], s)
+                set2 = find_datastructure(files[1][e['partner']], s)
+                sb += f'{len(set1)}\t{len(set2)}\t'
+                sb += f'{len(set1.intersection(set2))}\t'
+                sb += f'{len(set1.difference(set2))}\t{len(set2.difference(set1))}\t'
+                sb += f'{set1}\t{set2}\t{set1.intersection(set2)}\t{set1.difference(set2)}\t{set2.difference(set1)}'
+                print(sb)
             
             try:
                 suspiciousness.append( (s, score_func(successful, failed, total_successful, total_failed),
@@ -403,7 +403,7 @@ def main() :
         f'{"LESS SOUND THAN" if args.partial_order == "soundness" else "MORE PRECISE THAN"} ' +
         f'{os.path.dirname(args.list2[0]).strip("./")}')
     for s, score, succ, failed, total_succ, total_failed in sorted(suspiciousness, key=lambda s: s[1] if isinstance(s[1], float) else -1 , reverse=True):
-        print(f'{args.partial_order},{v},{s},{score},{succ},{failed},{total_succ},{total_failed}')
+        print(f'{args.score}/{args.distance}/{args.content},{args.partial_order},{v},{s},{score},{succ},{failed},{total_succ},{total_failed}')
 
             
     if args.strategy == 'set':

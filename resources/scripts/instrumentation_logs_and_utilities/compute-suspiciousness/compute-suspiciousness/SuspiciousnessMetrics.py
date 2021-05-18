@@ -12,31 +12,31 @@ class SuspiciousnessMetrics:
         return [l for l in dir(SuspiciousnessMetrics) if
                 (not l.startswith('__') and not l == 'get_registry')]
 
-    def tarantula(successful: int, failed: int,
-                  total_successful: int, total_failed: int) -> float:
+    def tarantula(passed: int, failed: int,
+                  total_passed: int, total_failed: int) -> float:
         """ Returns the tarantula metric. """
-        return 1 - ((float(successful) / float(total_successful)) /
-                    ((float(successful) / float(total_successful)) +
+        return 1 - ((float(passed) / float(total_passed)) /
+                    ((float(passed) / float(total_passed)) +
                       (float(failed) / float(total_failed))))
 
-    def ochiai(successful: int, failed: int,
-               total_successful: int, total_failed: int) -> float:
+    def ochiai(passed: int, failed: int,
+               total_passed: int, total_failed: int) -> float:
         """ Returns the ochiai metric. """
-        return float(failed) / math.sqrt(total_failed* (failed + successful))
+        return float(failed) / math.sqrt(total_failed* (failed + passed))
 
-    def op2(successful: int, failed: int,
-               total_successful: int, total_failed: int) -> float:
+    def op2(passed: int, failed: int,
+               total_passed: int, total_failed: int) -> float:
         """ Returns the ochiai metric. """
-        return failed - (float(successful) / (total_successful + 1))
+        return failed - (float(passed) / (total_passed + 1))
 
-    def barinel(successful: int, failed: int,
-               total_successful: int, total_failed: int) -> float:
+    def barinel(passed: int, failed: int,
+               total_passed: int, total_failed: int) -> float:
         """ Returns the ochiai metric. """
         return 1 - float(passed) / (passed + failed)
 
-    def dstar(successful: int, failed: int,
-               total_successful: int, total_failed: int) -> float:
+    def dstar(passed: int, failed: int,
+               total_passed: int, total_failed: int) -> float:
         """ Returns the ochiai metric. """
-        return (math.pow(failed, 2) / (successful + (total_failed - failed)))
+        return (math.pow(failed, 2) / (passed + (total_failed - failed)))
 
     

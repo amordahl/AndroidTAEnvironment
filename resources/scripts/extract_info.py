@@ -3,7 +3,7 @@ from Flow import Flow
 
 delim = ","
 parser = argparse.ArgumentParser()
-parser.add_argument("--header", action="store_true")
+parser.add_argument("--header", action="store_true", default=True)
 parser.add_argument("--groundtruths")
 parser.add_argument("--results", nargs="+")
 args = parser.parse_args()

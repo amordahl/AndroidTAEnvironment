@@ -1,4 +1,5 @@
 import csv
+import os
 import argparse
 import logging
 logging.basicConfig(level = logging.WARNING)
@@ -167,8 +168,13 @@ for r in records:
             r['fp'] = 0
             r['tn'] = 1
             r['fn'] = 0
-    
-with open(args.output, 'w') as f:
-    writer = csv.DictWriter(f, fieldnames=records[0].keys())
-    writer.writeheader()
-    [writer.writerow(r) for r in records]
+
+if os.path.exists(args.output):
+    with open(args.output, 'a') as f:
+        writer = csv.DictWriter(f, fieldnames=records[0].keys())
+        [writer.writerow(r) for r in records]
+else:
+    with open(args.output, 'w') as f:
+        writer = csv.DictWriter(f, fieldnames=records[0].keys())
+        writer.writeheader()
+        [writer.writerow(r) for r in records]

@@ -55,12 +55,12 @@ for r in args.results:
                     total_TP += 1 #increment total tp
                     if f in flows:
                         detected_TP += 1 #if our flow is this flow, detected tp +1
-                        foundFlows.append(namedtuple("true",f))
+                        foundFlows.append(f)
                 elif classification_result.lower() == 'false': #if false
                     total_FP += 1 #incremen total fp
                     if f in flows:
                         detected_FP += 1 # if our flow is this flow, detected fp +1
-                        foundFlows.append(namedtuple("false",f))
+                        foundFlows.append(f)
         print(f"{apk}{delim}{config}{delim}{numflows}{delim}{time}{delim}{total_TP}{delim}{detected_TP}{delim}{total_FP}{delim}{detected_FP}{delim}{foundFlows}") #print the result
     else:
         print(f"{apk}{delim}{config}{delim}{numflows}{delim}{time}")

@@ -24,6 +24,22 @@ class Flow:
         logging.debug(f"Extracted file: {f}")
         return f
 
+    def get_classification(self) -> bool:
+        for e in self.element:
+            if e.tag = 'classification':
+                return e.text
+        return None
+
+    def add_classification(classification: str) -> None:
+        for e in self.element:
+            if e.tag = 'classification':
+                e.text = classification
+                return
+
+        # We have to add it if it doesn't exist.
+        cl = ET.Element('classification')
+        cl.text=classification
+        self.element.append(element)
     def update_file(self):
         for e in self.element:
             if e.tag == "reference":

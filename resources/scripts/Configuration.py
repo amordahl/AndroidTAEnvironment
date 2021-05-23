@@ -1,4 +1,5 @@
 from typing import Dict, Any
+from frozendict import frozendict
 
 class Configuration:
 
@@ -6,7 +7,7 @@ class Configuration:
                  configuration: Dict[str, str],
                  config_file : str):
         self.option_under_investigation = option_under_investigation
-        self.configuration = configuration
+        self.configuration = frozendict(configuration)
         self.config_file = config_file
 
     def __eq__(self, o1: Any):

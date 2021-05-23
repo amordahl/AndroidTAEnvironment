@@ -75,6 +75,9 @@ class Flow:
         result["sink_classname"] = sink.find("classname").text
         return result
 
+    def __str__(self) -> str:
+        return f'File: {self.get_file}, Flow: {str(self.get_source_and_sink())}'
+    
     def __eq__(self, other):
         """
         Return true if two flows are equal

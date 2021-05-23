@@ -76,7 +76,7 @@ class Flow:
         return result
 
     def __str__(self) -> str:
-        return f'File: {self.get_file}, Flow: {str(self.get_source_and_sink())}'
+        return f'File: {self.get_file()}, Flow: {str(self.get_source_and_sink())}'
     
     def __eq__(self, other):
         """

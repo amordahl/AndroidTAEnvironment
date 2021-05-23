@@ -26,20 +26,20 @@ class Flow:
 
     def get_classification(self) -> bool:
         for e in self.element:
-            if e.tag = 'classification':
+            if e.tag == 'classification':
                 return e.text
         return None
 
-    def add_classification(classification: str) -> None:
+    def add_classification(self, classification: str) -> None:
         for e in self.element:
-            if e.tag = 'classification':
+            if e.tag == 'classification':
                 e.text = classification
                 return
 
         # We have to add it if it doesn't exist.
         cl = ET.Element('classification')
         cl.text=classification
-        self.element.append(element)
+        self.element.append(cl)
     def update_file(self):
         for e in self.element:
             if e.tag == "reference":

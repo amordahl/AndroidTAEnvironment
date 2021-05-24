@@ -1,22 +1,22 @@
 [submodule "BREW"]
 	path = BREW
-	url = https://github.com/amordahl/BREW
+	url = git@github.com:amordahl/BREW
 	branch = batch_run
 [submodule "tools/FlowDroid"]
 	path = tools/FlowDroid
-	url = https://github.com/secure-software-engineering/FlowDroid
+	url = git@github.com:secure-software-engineering/FlowDroid
 [submodule "BrewRunner"]
 	path = BrewRunner
-	url = https://github.com/amordahl/BrewRunner.git
+	url = git@github.com:amordahl/BrewRunner.git
 [submodule "preprocessor/ApkCombiner"]
 	path = preprocessor/ApkCombiner
-	url = https://github.com/lilicoding/ApkCombiner.git
+	url = git@github.com:lilicoding/ApkCombiner.git
 [submodule "tools/DroidSafe/droidsafe-src"]
 	path = tools/DroidSafe/droidsafe-src
-	url = https://github.com/MIT-PAC/droidsafe-src.git
+	url = git@github.com:MIT-PAC/droidsafe-src.git
 [submodule "AQL-System"]
 	path = AQL-System
-	url = https://github.com/amordahl/AQL-System.git
+	url = git@github.com:amordahl/AQL-System.git
 [submodule "resources/checkmate"]
 	path = resources/scripts/checkmate
-	url = https://github.com/amordahl/checkmate.git
+	url = git@github.com:amordahl/checkmate.git

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>virtualinvoke $r2.&lt;mod.ndk.ActMain: boolean cFuncDoTheMagic(android.content.Context)&gt;($r4)</statementfull>
+                    <statementgeneric>mod.ndk.ActMain: boolean cFuncDoTheMagic(android.content.Context)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
+                <classname>mod.ndk.ActMain$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Native\JavaIDFunction.apk</file>
+                    <hashes>
+                        <hash type="MD5">3549b3c1e64f41a2c2fac34cd63901ba</hash>
+                        <hash type="SHA-1">f81a288e62b74824767bb3e09f87f9a2df080bfe</hash>
+                        <hash type="SHA-256">136ab4241499c9c6b09205c978378bc7a2b48c659183a42b1855cd27efd08daf</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r2.&lt;mod.ndk.ActMain: boolean cFuncDoTheMagic(android.content.Context)&gt;($r4)</statementfull>
+                    <statementgeneric>mod.ndk.ActMain: boolean cFuncDoTheMagic(android.content.Context)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;mod.ndk.ActMain$1: void onClick(android.view.View)&gt;</method>
+                <classname>mod.ndk.ActMain$1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Native\JavaIDFunction.apk</file>
+                    <hashes>
+                        <hash type="MD5">3549b3c1e64f41a2c2fac34cd63901ba</hash>
+                        <hash type="SHA-1">f81a288e62b74824767bb3e09f87f9a2df080bfe</hash>
+                        <hash type="SHA-256">136ab4241499c9c6b09205c978378bc7a2b48c659183a42b1855cd27efd08daf</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

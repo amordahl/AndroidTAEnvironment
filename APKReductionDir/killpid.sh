@@ -1,0 +1,1 @@
+../../AndroidTAEnvironment/AQL-System/target/build/killpid.sh

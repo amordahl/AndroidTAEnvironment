@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.button_object_allocation.Button1: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.button_object_allocation.Button1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Callbacks\Button5.apk</file>
+                    <hashes>
+                        <hash type="MD5">e67237005393b075bb126c6047acad6c</hash>
+                        <hash type="SHA-1">fb9a575dfe0251d9f9d62e5fa3f8c4483c1e37f1</hash>
+                        <hash type="SHA-256">c5b890f74a2c7c7c8c8eee966cd56355d808d37f6b40850c57624fac350e0e3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.button_object_allocation.Button1: void sendMessage(android.view.View)&gt;</method>
+                <classname>edu.mit.button_object_allocation.Button1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Callbacks\Button5.apk</file>
+                    <hashes>
+                        <hash type="MD5">e67237005393b075bb126c6047acad6c</hash>
+                        <hash type="SHA-1">fb9a575dfe0251d9f9d62e5fa3f8c4483c1e37f1</hash>
+                        <hash type="SHA-256">c5b890f74a2c7c7c8c8eee966cd56355d808d37f6b40850c57624fac350e0e3</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

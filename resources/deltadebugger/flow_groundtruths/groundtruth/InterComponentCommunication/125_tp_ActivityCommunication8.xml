@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.icc_pass_action_string_through_api.OutFlowActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.icc_pass_action_string_through_api.OutFlowActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterComponentCommunication\ActivityCommunication8.apk</file>
+                    <hashes>
+                        <hash type="MD5">7cdd435b5923b8cf15378e5578b62b98</hash>
+                        <hash type="SHA-1">255c4c61d44a4261866bfce50060e737e2ecbd8a</hash>
+                        <hash type="SHA-256">5f2664153087bddddaca42ac4ed55e69bcb104b082b28c3416c3c351d60acb0</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.icc_pass_action_string_through_api.InFlowActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.icc_pass_action_string_through_api.InFlowActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterComponentCommunication\ActivityCommunication8.apk</file>
+                    <hashes>
+                        <hash type="MD5">7cdd435b5923b8cf15378e5578b62b98</hash>
+                        <hash type="SHA-1">255c4c61d44a4261866bfce50060e737e2ecbd8a</hash>
+                        <hash type="SHA-256">5f2664153087bddddaca42ac4ed55e69bcb104b082b28c3416c3c351d60acb0</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

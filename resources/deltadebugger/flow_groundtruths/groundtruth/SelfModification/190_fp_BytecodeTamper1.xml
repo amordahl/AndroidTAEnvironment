@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\SelfModification\BytecodeTamper1.apk</file>
+                    <hashes>
+                        <hash type="MD5">7e3076dcdf08b39a9132411e72a4c19f</hash>
+                        <hash type="SHA-1">6e50c09a5297a22f00cc6dbdd827395475516de7</hash>
+                        <hash type="SHA-256">b0a1081b73aa6c2831b6b017f376b8d5b3f82c1fd59ed8f524c0b5c77c3071ea</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int e(java.lang.String,java.lang.String)&gt;("DroidBench", "FAKE")</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"FAKE"</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void benignMethod(java.lang.String)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\SelfModification\BytecodeTamper1.apk</file>
+                    <hashes>
+                        <hash type="MD5">7e3076dcdf08b39a9132411e72a4c19f</hash>
+                        <hash type="SHA-1">6e50c09a5297a22f00cc6dbdd827395475516de7</hash>
+                        <hash type="SHA-256">b0a1081b73aa6c2831b6b017f376b8d5b3f82c1fd59ed8f524c0b5c77c3071ea</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

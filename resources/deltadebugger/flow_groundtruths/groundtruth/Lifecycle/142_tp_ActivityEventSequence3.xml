@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r1 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.uta.ActivityEventSequence3: void onUserLeaveHint()&gt;</method>
+                <classname>edu.uta.ActivityEventSequence3</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityEventSequence3.apk</file>
+                    <hashes>
+                        <hash type="MD5">29b80b07405510ae4143b9ec6ea0b6d9</hash>
+                        <hash type="SHA-1">5b7393af495323d788bf7d33bde0fc259aacbbed</hash>
+                        <hash type="SHA-256">d3ad09de63165621c4e22b806e76e0e9139b8135c35ea0738b7acf216da3d85</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;($r5, null, $r1, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.uta.ActivityEventSequence3: void onResume()&gt;</method>
+                <classname>edu.uta.ActivityEventSequence3</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ActivityEventSequence3.apk</file>
+                    <hashes>
+                        <hash type="MD5">29b80b07405510ae4143b9ec6ea0b6d9</hash>
+                        <hash type="SHA-1">5b7393af495323d788bf7d33bde0fc259aacbbed</hash>
+                        <hash type="SHA-256">d3ad09de63165621c4e22b806e76e0e9139b8135c35ea0738b7acf216da3d85</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

@@ -1,0 +1,482 @@
+[
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.GenericTermSession",
+      "method": "<jackpal.androidterm.GenericTermSession: void setPtyUTF8Mode(boolean)>",
+      "statement": "android.util.Log: int e_ds_method_clone_22(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: java.lang.CharSequence getText()>",
+      "statement": "android.content.ClipData$Item: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.GenericTermSession",
+      "method": "<jackpal.androidterm.GenericTermSession: void setPtyUTF8Mode(boolean)>",
+      "statement": "android.util.Log: int e_ds_method_clone_22(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.compat.FileCompat$Api8OrEarlier",
+      "method": "<jackpal.androidterm.compat.FileCompat$Api8OrEarlier: boolean canExecute(java.io.File)>",
+      "statement": "java.io.File: java.lang.String getAbsolutePath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.RunShortcut",
+      "method": "<jackpal.androidterm.RunShortcut: void handleIntent()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.util.ShortcutEncryption",
+      "method": "<jackpal.androidterm.util.ShortcutEncryption: java.lang.String encrypt(java.lang.String,jackpal.androidterm.util.ShortcutEncryption$Keys)>",
+      "statement": "java.security.SecureRandom: void nextBytes(byte[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.RunShortcut",
+      "method": "<jackpal.androidterm.RunShortcut: void handleIntent()>",
+      "statement": "android.app.Activity: void setResult(int,android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.RunScript",
+      "method": "<jackpal.androidterm.RunScript: void handleIntent()>",
+      "statement": "android.content.Intent: android.net.Uri getData()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.ShellTermSession",
+      "method": "<jackpal.androidterm.ShellTermSession: java.lang.String checkPath(java.lang.String)>",
+      "statement": "java.lang.StringBuilder: java.lang.String substring(int,int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession$2",
+      "method": "<jackpal.androidterm.emulatorview.TermSession$2: void run()>",
+      "statement": "java.io.InputStream: int read(byte[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.ShellTermSession",
+      "method": "<jackpal.androidterm.ShellTermSession: java.lang.String checkPath(java.lang.String)>",
+      "statement": "java.lang.StringBuilder: java.lang.String substring(int,int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.KeyCharacterMapCompat$KeyCharacterMapApi11OrLater",
+      "method": "<jackpal.androidterm.emulatorview.compat.KeyCharacterMapCompat$KeyCharacterMapApi11OrLater: int getModifierBehaviour()>",
+      "statement": "android.view.KeyCharacterMap: int getModifierBehavior()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: boolean onOptionsItemSelected(android.view.MenuItem)>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.RunScript",
+      "method": "<jackpal.androidterm.RunScript: void handleIntent()>",
+      "statement": "android.net.Uri: java.lang.String getScheme()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: boolean onOptionsItemSelected(android.view.MenuItem)>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.TermKeyListener",
+      "method": "<jackpal.androidterm.emulatorview.TermKeyListener: void keyDown(int,android.view.KeyEvent,boolean,boolean)>",
+      "statement": "android.view.KeyEvent: int getUnicodeChar(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: boolean onOptionsItemSelected(android.view.MenuItem)>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.util.ShortcutEncryption",
+      "method": "<jackpal.androidterm.util.ShortcutEncryption: java.lang.String encrypt(java.lang.String,jackpal.androidterm.util.ShortcutEncryption$Keys)>",
+      "statement": "java.security.SecureRandom: void nextBytes(byte[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void updatePrefs()>",
+      "statement": "android.app.Activity: void setRequestedOrientation(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.PaintRenderer",
+      "method": "<jackpal.androidterm.emulatorview.PaintRenderer: void <init>(int,jackpal.androidterm.emulatorview.ColorScheme)>",
+      "statement": "android.graphics.Paint: float getFontSpacing()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: boolean onOptionsItemSelected(android.view.MenuItem)>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.EmulatorView",
+      "method": "<jackpal.androidterm.emulatorview.EmulatorView: int createLinks(int)>",
+      "statement": "android.text.SpannableStringBuilder: java.lang.Object[] getSpans(int,int,java.lang.Class)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.ContextWrapper: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.TermKeyListener",
+      "method": "<jackpal.androidterm.emulatorview.TermKeyListener: void keyDown(int,android.view.KeyEvent,boolean,boolean)>",
+      "statement": "android.view.KeyEvent: int getUnicodeChar(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void updatePrefs()>",
+      "statement": "android.app.Activity: void setRequestedOrientation(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.AddShortcut$1",
+      "method": "<jackpal.androidterm.shortcuts.AddShortcut$1: void onFocusChange(android.view.View,boolean)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: boolean onOptionsItemSelected(android.view.MenuItem)>",
+      "statement": "android.app.Activity: void startActivityForResult(android.content.Intent,int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.AddShortcut",
+      "method": "<jackpal.androidterm.shortcuts.AddShortcut: void onActivityResult(int,int,android.content.Intent)>",
+      "statement": "android.content.Intent: android.net.Uri getData()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void updatePrefs()>",
+      "statement": "android.app.Activity: void setRequestedOrientation(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.TermKeyListener",
+      "method": "<jackpal.androidterm.emulatorview.TermKeyListener: boolean isEventFromToggleDevice(android.view.KeyEvent)>",
+      "statement": "android.view.KeyEvent: int getDeviceId()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: boolean onOptionsItemSelected(android.view.MenuItem)>",
+      "statement": "android.app.Activity: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.FSNavigator",
+      "method": "<jackpal.androidterm.shortcuts.FSNavigator: java.lang.String getCanonicalPath(java.io.File)>",
+      "statement": "java.io.File: java.lang.String getPath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void updatePrefs()>",
+      "statement": "android.app.Activity: void setRequestedOrientation(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.TermKeyListener",
+      "method": "<jackpal.androidterm.emulatorview.TermKeyListener: void keyDown(int,android.view.KeyEvent,boolean,boolean)>",
+      "statement": "android.view.KeyEvent: int getUnicodeChar(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.ContextWrapper: void sendOrderedBroadcast(android.content.Intent,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.RunScript",
+      "method": "<jackpal.androidterm.RunScript: void handleIntent()>",
+      "statement": "android.content.Intent: android.net.Uri getData()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.WindowList",
+      "method": "<jackpal.androidterm.WindowList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>",
+      "statement": "android.app.Activity: void setResult(int,android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.FSNavigator$2",
+      "method": "<jackpal.androidterm.shortcuts.FSNavigator$2: boolean onKey(android.view.View,int,android.view.KeyEvent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.WindowList",
+      "method": "<jackpal.androidterm.WindowList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>",
+      "statement": "android.app.Activity: void setResult(int,android.content.Intent)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "android.os.Process: int myPid_ds_method_clone_5()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "java.io.DataOutputStream: void writeLong(long)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.FSNavigator",
+      "method": "<jackpal.androidterm.shortcuts.FSNavigator: java.lang.String getCanonicalPath(java.io.File)>",
+      "statement": "java.io.File: java.lang.String getPath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "java.io.DataOutputStream: void writeLong(long)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.AddShortcut",
+      "method": "<jackpal.androidterm.shortcuts.AddShortcut: void onActivityResult(int,int,android.content.Intent)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "java.io.DataOutputStream: void writeLong(long)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: java.lang.CharSequence getText()>",
+      "statement": "android.content.ClipData: android.content.ClipData$Item getItemAt(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.compat.ServiceForegroundCompat",
+      "method": "<jackpal.androidterm.compat.ServiceForegroundCompat: void invokeMethod(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])>",
+      "statement": "java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.RunScript",
+      "method": "<jackpal.androidterm.RunScript: void handleIntent()>",
+      "statement": "android.content.Intent: android.net.Uri getData()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.EmulatorView",
+      "method": "<jackpal.androidterm.emulatorview.EmulatorView: void sendMouseEventCode(android.view.MotionEvent,int)>",
+      "statement": "android.util.Log: int e_ds_method_clone_14(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.FSNavigator$2",
+      "method": "<jackpal.androidterm.shortcuts.FSNavigator$2: boolean onKey(android.view.View,int,android.view.KeyEvent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.EmulatorView",
+      "method": "<jackpal.androidterm.emulatorview.EmulatorView: void sendMouseEventCode(android.view.MotionEvent,int)>",
+      "statement": "android.util.Log: int e_ds_method_clone_14(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "java.lang.System: long nanoTime()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession",
+      "method": "<jackpal.androidterm.emulatorview.TermSession: void notifyNewOutput()>",
+      "statement": "android.os.Handler: boolean sendEmptyMessage(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.RunScript",
+      "method": "<jackpal.androidterm.RunScript: void handleIntent()>",
+      "statement": "android.net.Uri: java.lang.String getPath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession",
+      "method": "<jackpal.androidterm.emulatorview.TermSession: void notifyNewOutput()>",
+      "statement": "android.os.Handler: boolean sendEmptyMessage(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.AddShortcut$2",
+      "method": "<jackpal.androidterm.shortcuts.AddShortcut$2: void onClick(android.view.View)>",
+      "statement": "java.io.File: java.io.File getParentFile()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession",
+      "method": "<jackpal.androidterm.emulatorview.TermSession: void finish()>",
+      "statement": "android.os.Handler: boolean sendEmptyMessage(int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "java.lang.System: long nanoTime()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession$2",
+      "method": "<jackpal.androidterm.emulatorview.TermSession$2: void run()>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.EmulatorView",
+      "method": "<jackpal.androidterm.emulatorview.EmulatorView: int createLinks(int)>",
+      "statement": "android.text.SpannableStringBuilder: java.lang.Object[] getSpans(int,int,java.lang.Class)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession$2",
+      "method": "<jackpal.androidterm.emulatorview.TermSession$2: void run()>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.FSNavigator",
+      "method": "<jackpal.androidterm.shortcuts.FSNavigator: java.lang.String getCanonicalPath(java.io.File)>",
+      "statement": "java.io.File: java.lang.String getPath()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.TermSession$3",
+      "method": "<jackpal.androidterm.emulatorview.TermSession$3: void writeToOutput()>",
+      "statement": "java.io.FileOutputStream: void write(byte[],int,int)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: java.lang.CharSequence getText()>",
+      "statement": "android.content.ClipData$Item: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.shortcuts.AddShortcut",
+      "method": "<jackpal.androidterm.shortcuts.AddShortcut: void buildShortcut(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)>",
+      "statement": "android.util.Log: int e_ds_method_clone_32(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.TermKeyListener",
+      "method": "<jackpal.androidterm.emulatorview.TermKeyListener: void keyDown(int,android.view.KeyEvent,boolean,boolean)>",
+      "statement": "android.view.KeyEvent: int getUnicodeChar(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1: void setText(java.lang.CharSequence)>",
+      "statement": "android.content.ClipboardManager: void setText(java.lang.CharSequence)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "android.os.Process: int myUid()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1: void setText(java.lang.CharSequence)>",
+      "statement": "android.content.ClipboardManager: void setText(java.lang.CharSequence)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.RunScript",
+      "method": "<jackpal.androidterm.RunScript: void handleIntent()>",
+      "statement": "android.net.Uri: java.lang.String getFragment()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1: void setText(java.lang.CharSequence)>",
+      "statement": "android.content.ClipboardManager: void setText(java.lang.CharSequence)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: java.lang.CharSequence getText()>",
+      "statement": "android.content.ClipData: android.content.ClipData$Item getItemAt(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV1: void setText(java.lang.CharSequence)>",
+      "statement": "android.content.ClipboardManager: void setText(java.lang.CharSequence)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.compat.PRNGFixes",
+      "method": "<jackpal.androidterm.compat.PRNGFixes: byte[] generateSeed()>",
+      "statement": "java.lang.System: long nanoTime()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: void setText(java.lang.CharSequence)>",
+      "statement": "android.content.ClipboardManager: void setPrimaryClip(android.content.ClipData)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.shortcuts.AddShortcut$1",
+      "method": "<jackpal.androidterm.shortcuts.AddShortcut$1: void onFocusChange(android.view.View,boolean)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: void setText(java.lang.CharSequence)>",
+      "statement": "android.content.ClipboardManager: void setPrimaryClip(android.content.ClipData)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: java.lang.CharSequence getText()>",
+      "statement": "android.content.ClipData: android.content.ClipData$Item getItemAt(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "jackpal.androidterm.Term",
+      "method": "<jackpal.androidterm.Term: void onCreate(android.os.Bundle)>",
+      "statement": "android.content.ContextWrapper: void sendOrderedBroadcast(android.content.Intent,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"
+    },
+    "source": {
+      "classname": "jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11",
+      "method": "<jackpal.androidterm.emulatorview.compat.ClipboardManagerCompatV11: java.lang.CharSequence getText()>",
+      "statement": "android.content.ClipboardManager: android.content.ClipData getPrimaryClip()"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "sink": {
+      "classname": "daniel_32.flexiblewallpaper.FlexibleWallpaperSettingsActivity",
+      "method": "<daniel_32.flexiblewallpaper.FlexibleWallpaperSettingsActivity: void onActivityResult(int,int,android.content.Intent)>",
+      "statement": "java.io.FileOutputStream: void write(byte[],int,int)"
+    },
+    "source": {
+      "classname": "daniel_32.flexiblewallpaper.FlexibleWallpaperSettingsActivity",
+      "method": "<daniel_32.flexiblewallpaper.FlexibleWallpaperSettingsActivity: void onActivityResult(int,int,android.content.Intent)>",
+      "statement": "java.io.InputStream: int read(byte[])"
+    }
+  }
+]

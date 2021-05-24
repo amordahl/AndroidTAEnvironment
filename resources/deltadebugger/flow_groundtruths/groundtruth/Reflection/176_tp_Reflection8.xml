@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = virtualinvoke $r5.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection\Reflection8.apk</file>
+                    <hashes>
+                        <hash type="MD5">5e6d70f4f280cce6f857813d8d30f59c</hash>
+                        <hash type="SHA-1">609a5bd76ab9a53056b3aafc9149caf0618519a4</hash>
+                        <hash type="SHA-256">f68181252c7e07ca08bc91b5e2efaf8e88f869a002e3f9240818585170938205</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("DroidBench", $r1)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.ConcreteClass: void foo(java.lang.String)&gt;</method>
+                <classname>edu.wayne.cs.ConcreteClass</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Reflection\Reflection8.apk</file>
+                    <hashes>
+                        <hash type="MD5">5e6d70f4f280cce6f857813d8d30f59c</hash>
+                        <hash type="SHA-1">609a5bd76ab9a53056b3aafc9149caf0618519a4</hash>
+                        <hash type="SHA-256">f68181252c7e07ca08bc91b5e2efaf8e88f869a002e3f9240818585170938205</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

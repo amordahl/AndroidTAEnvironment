@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.location.MainActivity: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>com.example.location.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Location_leakage\Location1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0e749bd875590e4576e0888e97e82e75</hash>
+                        <hash type="SHA-1">5ab0d83f28cdcaebc2ada993b67e4dc999652ce2</hash>
+                        <hash type="SHA-256">c190ddcd90fd3364bd95d5f1b6cf4a9d2328e60bccf44f4c51eb5b13a88ea0c1</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)&gt;($r9)</statementfull>
+                    <statementgeneric>java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.CharSequence</type>
+                            <value>$r9</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.collector.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.collector.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Collector\Collector.apk</file>
+                    <hashes>
+                        <hash type="MD5">f6bc630a165a322db0c919896fbcd1e1</hash>
+                        <hash type="SHA-1">8d9b773e300472f440ab7902d953b587a36e6e03</hash>
+                        <hash type="SHA-256">8b12debd1f8e37823f0720ed91547f7532eaeca207840cb1568c2ee3e96d3823</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.location.MainActivity: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>com.example.location.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Location_leakage\Location1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0e749bd875590e4576e0888e97e82e75</hash>
+                        <hash type="SHA-1">5ab0d83f28cdcaebc2ada993b67e4dc999652ce2</hash>
+                        <hash type="SHA-256">c190ddcd90fd3364bd95d5f1b6cf4a9d2328e60bccf44f4c51eb5b13a88ea0c1</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>specialinvoke $r3.&lt;java.io.FileOutputStream: void &lt;init&gt;(java.io.File)&gt;($r2)</statementfull>
+                    <statementgeneric>java.io.FileOutputStream: void &lt;init&gt;(java.io.File)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.io.File</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.collector.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.collector.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Collector\Collector.apk</file>
+                    <hashes>
+                        <hash type="MD5">f6bc630a165a322db0c919896fbcd1e1</hash>
+                        <hash type="SHA-1">8d9b773e300472f440ab7902d953b587a36e6e03</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.location.MainActivity: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>com.example.location.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Location_leakage\Location1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0e749bd875590e4576e0888e97e82e75</hash>
+                        <hash type="SHA-1">5ab0d83f28cdcaebc2ada993b67e4dc999652ce2</hash>
+                        <hash type="SHA-256">c190ddcd90fd3364bd95d5f1b6cf4a9d2328e60bccf44f4c51eb5b13a88ea0c1</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>specialinvoke $r4.&lt;java.io.OutputStreamWriter: void &lt;init&gt;(java.io.OutputStream)&gt;($r3)</statementfull>
+                    <statementgeneric>java.io.OutputStreamWriter: void &lt;init&gt;(java.io.OutputStream)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.io.OutputStream</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.collector.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.collector.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Collector\Collector.apk</file>
+                    <hashes>
+                        <hash type="MD5">f6bc630a165a322db0c919896fbcd1e1</hash>
+                        <hash type="SHA-1">8d9b773e300472f440ab7902d953b587a36e6e03</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.location.MainActivity: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>com.example.location.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Location_leakage\Location1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0e749bd875590e4576e0888e97e82e75</hash>
+                        <hash type="SHA-1">5ab0d83f28cdcaebc2ada993b67e4dc999652ce2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r4.&lt;java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)&gt;($r9)</statementfull>
+                    <statementgeneric>java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.CharSequence</type>
+                            <value>$r9</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.collector.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.collector.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Collector\Collector.apk</file>
+                    <hashes>
+                        <hash type="MD5">f6bc630a165a322db0c919896fbcd1e1</hash>
+                        <hash type="SHA-1">8d9b773e300472f440ab7902d953b587a36e6e03</hash>
+                        <hash type="SHA-256">8b12debd1f8e37823f0720ed91547f7532eaeca207840cb1568c2ee3e96d3823</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.location.MainActivity: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>com.example.location.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Location_leakage\Location1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0e749bd875590e4576e0888e97e82e75</hash>
+                        <hash type="SHA-1">5ab0d83f28cdcaebc2ada993b67e4dc999652ce2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>specialinvoke $r3.&lt;java.io.FileOutputStream: void &lt;init&gt;(java.io.File)&gt;($r2)</statementfull>
+                    <statementgeneric>java.io.FileOutputStream: void &lt;init&gt;(java.io.File)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.io.File</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.collector.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.collector.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Collector\Collector.apk</file>
+                    <hashes>
+                        <hash type="MD5">f6bc630a165a322db0c919896fbcd1e1</hash>
+                        <hash type="SHA-1">8d9b773e300472f440ab7902d953b587a36e6e03</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d0 = virtualinvoke $r1.&lt;android.location.Location: double getLatitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLatitude()</statementgeneric>
+                </statement>
+                <method>&lt;com.example.location.MainActivity: void onLocationChanged(android.location.Location)&gt;</method>
+                <classname>com.example.location.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Location_leakage\Location1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0e749bd875590e4576e0888e97e82e75</hash>
+                        <hash type="SHA-1">5ab0d83f28cdcaebc2ada993b67e4dc999652ce2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>specialinvoke $r4.&lt;java.io.OutputStreamWriter: void &lt;init&gt;(java.io.OutputStream)&gt;($r3)</statementfull>
+                    <statementgeneric>java.io.OutputStreamWriter: void &lt;init&gt;(java.io.OutputStream)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.io.OutputStream</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.example.collector.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.example.collector.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterAppCommunication\Collector\Collector.apk</file>
+                    <hashes>
+                        <hash type="MD5">f6bc630a165a322db0c919896fbcd1e1</hash>
+                        <hash type="SHA-1">8d9b773e300472f440ab7902d953b587a36e6e03</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

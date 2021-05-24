@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.service_lifecycle.MyService: int onStartCommand(android.content.Intent,int,int)&gt;</method>
+                <classname>edu.mit.service_lifecycle.MyService</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ServiceLifecycle2.apk</file>
+                    <hashes>
+                        <hash type="MD5">f9cebc5247adf69c88fcdc0a88c9d7c6</hash>
+                        <hash type="SHA-1">d32813347c1978dc3e9c28413d16abeb10f4b083</hash>
+                        <hash type="SHA-256">4587bf36ef2e1f1b48a82fea0154af8c811dbf17753169e1840193c32f9735c3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r2)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.service_lifecycle.MyService: int onStartCommand(android.content.Intent,int,int)&gt;</method>
+                <classname>edu.mit.service_lifecycle.MyService</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ServiceLifecycle2.apk</file>
+                    <hashes>
+                        <hash type="MD5">f9cebc5247adf69c88fcdc0a88c9d7c6</hash>
+                        <hash type="SHA-1">d32813347c1978dc3e9c28413d16abeb10f4b083</hash>
+                        <hash type="SHA-256">4587bf36ef2e1f1b48a82fea0154af8c811dbf17753169e1840193c32f9735c3</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

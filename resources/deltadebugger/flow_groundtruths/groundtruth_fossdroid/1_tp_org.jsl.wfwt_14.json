@@ -1,0 +1,50 @@
+[
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.AudioRecorder",
+      "method": "<org.jsl.wfwt.AudioRecorder: void run()>",
+      "statement": "android.media.AudioRecord: int read(byte[],int,int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void resolveNextLocked(java.lang.String)>",
+      "statement": "android.util.Log: int i_ds_method_clone_21(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel",
+      "method": "<org.jsl.wfwt.Channel: void resolveNextLocked(java.lang.String)>",
+      "statement": "android.util.Log: int i_ds_method_clone_21(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.net.nsd.NsdServiceInfo: int getPort()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "org.jsl.wfwt.Channel$ResolveListener",
+      "method": "<org.jsl.wfwt.Channel$ResolveListener: void onServiceResolved(android.net.nsd.NsdServiceInfo)>",
+      "statement": "android.util.Log: int i_ds_method_clone_16(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "org.jsl.wfwt.WalkieService",
+      "method": "<org.jsl.wfwt.WalkieService: java.lang.String getDeviceID(android.content.ContentResolver)>",
+      "statement": "android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)"
+    }
+  }
+]

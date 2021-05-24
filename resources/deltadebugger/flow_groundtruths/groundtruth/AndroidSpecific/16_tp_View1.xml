@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\View1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0af65f3721b5ac749d11d5b7402f5816</hash>
+                        <hash type="SHA-1">e07ec0b176f90d533ecb3d81a81a1103797988c0</hash>
+                        <hash type="SHA-256">4a2727f1b23ca0c425017a8b9459abb3423145b77bcd0d1f595500f9cde22e7c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r3.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r4, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MyView: void onDraw(android.graphics.Canvas)&gt;</method>
+                <classname>de.ecspride.MyView</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\AndroidSpecific\View1.apk</file>
+                    <hashes>
+                        <hash type="MD5">0af65f3721b5ac749d11d5b7402f5816</hash>
+                        <hash type="SHA-1">e07ec0b176f90d533ecb3d81a81a1103797988c0</hash>
+                        <hash type="SHA-256">4a2727f1b23ca0c425017a8b9459abb3423145b77bcd0d1f595500f9cde22e7c</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+    <inputfile-path>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/button2/violations_for_button2filled.csv</inputfile-path>
+    <groundtruth-path>/home/dakota/AndroidTA/benchmarks/DroidBench30/benchmark/groundtruth</groundtruth-path>
+    <outputdir-path>/home/dakota/AndroidTA/AndroidTAEnvironment/APKReductionDir/test_resources/button2/classifier_outputs/</outputdir-path>
+</config>

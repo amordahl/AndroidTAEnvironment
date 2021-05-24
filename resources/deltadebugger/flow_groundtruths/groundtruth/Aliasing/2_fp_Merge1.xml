@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = virtualinvoke $r6.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void aliasFlowTest()&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Aliasing\Merge1.apk</file>
+                    <hashes>
+                        <hash type="MD5">ee94b36471609b226108f92e1877c396</hash>
+                        <hash type="SHA-1">f901840c874d54b03020bcc38534141316ecd2ad</hash>
+                        <hash type="SHA-256">5cf36c0f820d18431dcb09d1d2fbaafdd5e0a18f31738789b6d3a2e613e57bd5</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r8.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r7, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r7</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void aliasFlowTest()&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Aliasing\Merge1.apk</file>
+                    <hashes>
+                        <hash type="MD5">ee94b36471609b226108f92e1877c396</hash>
+                        <hash type="SHA-1">f901840c874d54b03020bcc38534141316ecd2ad</hash>
+                        <hash type="SHA-256">5cf36c0f820d18431dcb09d1d2fbaafdd5e0a18f31738789b6d3a2e613e57bd5</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

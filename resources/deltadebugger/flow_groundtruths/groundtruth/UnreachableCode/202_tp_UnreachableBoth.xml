@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r5 = virtualinvoke $r4.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\UnreachableCode\UnreachableBoth.apk</file>
+                    <hashes>
+                        <hash type="MD5">098965720e6b3d935b3f747bd8490f97</hash>
+                        <hash type="SHA-1">98d302a1eff8013fbf2de8e9992324a4a0accf01</hash>
+                        <hash type="SHA-256">400028a33fd8a6c3b9c2bb226a36a97c30f69cd2e0cff416fdda43b2b62ae865</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>lookupswitch($i0) {     case 21: goto staticinvoke &lt;android.util.Log: int d(java.lang.String,java.lang.String)&gt;("DroidBench", $r5);     default: goto return; }</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>$i0</type>
+                            <value>java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.wayne.cs.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.wayne.cs.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\UnreachableCode\UnreachableBoth.apk</file>
+                    <hashes>
+                        <hash type="MD5">098965720e6b3d935b3f747bd8490f97</hash>
+                        <hash type="SHA-1">98d302a1eff8013fbf2de8e9992324a4a0accf01</hash>
+                        <hash type="SHA-256">400028a33fd8a6c3b9c2bb226a36a97c30f69cd2e0cff416fdda43b2b62ae865</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

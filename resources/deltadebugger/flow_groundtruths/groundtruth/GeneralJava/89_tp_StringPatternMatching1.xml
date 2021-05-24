@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = virtualinvoke $r3.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.pattern_matcher.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.pattern_matcher.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\GeneralJava\StringPatternMatching1.apk</file>
+                    <hashes>
+                        <hash type="MD5">01ac533f02fd50d55b76976d26952c4d</hash>
+                        <hash type="SHA-1">4822cdb8dc276bea68b4c309d0a7ba83ab31961d</hash>
+                        <hash type="SHA-256">beca747c94903134718d8f156494a06a130d9759e8b1f4cc593b8dd150a38075</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r4)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r4</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.pattern_matcher.MainActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.pattern_matcher.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\GeneralJava\StringPatternMatching1.apk</file>
+                    <hashes>
+                        <hash type="MD5">01ac533f02fd50d55b76976d26952c4d</hash>
+                        <hash type="SHA-1">4822cdb8dc276bea68b4c309d0a7ba83ab31961d</hash>
+                        <hash type="SHA-256">beca747c94903134718d8f156494a06a130d9759e8b1f4cc593b8dd150a38075</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

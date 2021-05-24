@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = virtualinvoke $r2.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;de.ecspride.ApplicationLifecyle1: void onCreate()&gt;</method>
+                <classname>de.ecspride.ApplicationLifecyle1</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ApplicationLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">92ef0d15a019b0f4a9bf3857516150f1</hash>
+                        <hash type="SHA-1">6f00fb031e9d44b0ee2b5cf714e2fc547fa2032b</hash>
+                        <hash type="SHA-256">d29cc58986f22c0e3c576346b09e5e91ec829e3147443a5cef995cb94712dd1a</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r2.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;("+49 1234", null, $r1, null, null)</statementfull>
+                    <statementgeneric>android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"+49 1234"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>android.app.PendingIntent</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;de.ecspride.MainActivity: void onResume()&gt;</method>
+                <classname>de.ecspride.MainActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\Lifecycle\ApplicationLifecycle1.apk</file>
+                    <hashes>
+                        <hash type="MD5">92ef0d15a019b0f4a9bf3857516150f1</hash>
+                        <hash type="SHA-1">6f00fb031e9d44b0ee2b5cf714e2fc547fa2032b</hash>
+                        <hash type="SHA-256">d29cc58986f22c0e3c576346b09e5e91ec829e3147443a5cef995cb94712dd1a</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

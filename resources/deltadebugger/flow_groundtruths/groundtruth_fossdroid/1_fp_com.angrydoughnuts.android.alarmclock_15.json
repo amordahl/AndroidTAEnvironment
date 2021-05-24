@@ -1,0 +1,2510 @@
+[
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockActivity$3",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putInt(java.lang.String,int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putInt(java.lang.String,int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onSaveInstanceState(android.os.Bundle)>",
+      "statement": "android.os.Bundle: void putInt(java.lang.String,int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void maybeShowDismiss(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm(android.content.Context,int)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAllAlarms(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotificationBar(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void maybeShowDismiss(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleAlarmTrigger(android.content.Context,long,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm(android.content.Context,int)>",
+      "statement": "android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotificationBar(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAllAlarms(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleAlarmTrigger(android.content.Context,long,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleAlarmTrigger(android.content.Context,long,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAllAlarms(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm(android.content.Context,int)>",
+      "statement": "android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAllAlarms(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void maybeShowDismiss(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void maybeShowDismiss(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void rescheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void scheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void clearSnooze(android.content.Context)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void clearSnooze(android.content.Context)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void clearSnooze(android.content.Context)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void scheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void scheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void scheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void rescheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void scheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void clearSnooze(android.content.Context)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void rescheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockProvider$DbAlarmClockHelper",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockProvider$DbAlarmClockHelper: void onCreate(android.database.sqlite.SQLiteDatabase)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockProvider$DbAlarmClockHelper",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockProvider$DbAlarmClockHelper: void onCreate(android.database.sqlite.SQLiteDatabase)>",
+      "statement": "android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.util.Log: int i_ds_method_clone_9(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.app.ContextImpl: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm_ds_method_clone_2(android.content.Context,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_11(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.app.ContextImpl: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.ContextWrapper: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.content.Intent: android.os.Bundle getExtras()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm(android.content.Context,int)>",
+      "statement": "android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int e_ds_method_clone_3(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e_ds_method_clone_2(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm_ds_method_clone_2(android.content.Context,int)>",
+      "statement": "android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.ContextWrapper: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimePicker",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimePicker: void refresh(android.widget.EditText,android.widget.TextView,android.widget.Button)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i_ds_method_clone_7(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm_ds_method_clone_2(android.content.Context,int)>",
+      "statement": "android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$AlbumsQuery",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$AlbumsQuery: void <init>(com.angrydoughnuts.android.alarmclock.MediaPicker,long)>",
+      "statement": "android.provider.MediaStore$Audio$Artists$Albums: android.net.Uri getContentUri(java.lang.String,long)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm(android.content.Context,int)>",
+      "statement": "android.util.Log: int i_ds_method_clone_10(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w_ds_method_clone_3(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.content.ContextWrapper: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: int onStartCommand(android.content.Intent,int,int)>",
+      "statement": "android.content.ContextWrapper: void startActivity(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int,long)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeAlarmTrigger(android.content.Context,long)>",
+      "statement": "android.content.ContextWrapper: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w_ds_method_clone_3(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.os.Handler: boolean sendEmptyMessage(int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.os.Handler: boolean sendEmptyMessage(int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockProvider",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>",
+      "statement": "android.content.ContentValues: java.lang.Long getAsLong(java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "android.content.Context: java.lang.String getString(int,java.lang.Object[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.media.MediaPlayer: void setDataSource(android.content.Context,android.net.Uri)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e_ds_method_clone_4(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w_ds_method_clone_17(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e_ds_method_clone_4(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockProvider",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>",
+      "statement": "android.content.ContentValues: java.lang.Long getAsLong(java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.os.Handler: boolean sendEmptyMessage(int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.media.AudioManager: int getStreamMaxVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1: void handleMessage(android.os.Message)>",
+      "statement": "android.util.Log: int i_ds_method_clone_9(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1: void handleMessage(android.os.Message)>",
+      "statement": "android.os.Handler: boolean sendMessageDelayed(android.os.Message,long)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1: void handleMessage(android.os.Message)>",
+      "statement": "android.os.Handler: boolean sendMessageDelayed(android.os.Message,long)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "android.content.Context: java.lang.String getString(int,java.lang.Object[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$1: void handleMessage(android.os.Message)>",
+      "statement": "android.os.Handler: boolean sendMessageDelayed(android.os.Message,long)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.media.AudioManager: int getStreamVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w_ds_method_clone_7(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockProvider",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>",
+      "statement": "android.content.ContentValues: java.lang.Long getAsLong(java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.test.mock.MockContext: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$AlbumsQuery",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$AlbumsQuery: void <init>(com.angrydoughnuts.android.alarmclock.MediaPicker,long)>",
+      "statement": "android.provider.MediaStore$Audio$Artists$Albums: android.net.Uri getContentUri(java.lang.String,long)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.test.mock.MockContext: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimePicker",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimePicker: void refresh(android.widget.EditText,android.widget.TextView,android.widget.Button)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i_ds_method_clone_6(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "android.content.Context: java.lang.String getString(int,java.lang.Object[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker: android.view.View newFlip()>",
+      "statement": "android.widget.ViewAnimator: void setInAnimation(android.content.Context,int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.util.Log: int e_ds_method_clone_26(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.util.Log: int e_ds_method_clone_26(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockProvider",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>",
+      "statement": "android.content.ContentValues: java.lang.Long getAsLong(java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void rescheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i_ds_method_clone_4(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "java.util.Calendar: long getTimeInMillis()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void scheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i_ds_method_clone_5(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.lang.String until(android.content.Context,java.util.Calendar,java.util.Calendar)>",
+      "statement": "android.content.Context: java.lang.String getString(int,java.lang.Object[])"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void rescheduleAll(android.content.Context)>",
+      "statement": "android.util.Log: int i_ds_method_clone_4(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimeUtil",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimeUtil: java.util.Calendar nextOccurrence(java.util.Calendar,int,int)>",
+      "statement": "java.util.Calendar: int get(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void clearSnooze(android.content.Context)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.MediaPicker$6",
+      "method": "<com.angrydoughnuts.android.alarmclock.MediaPicker$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.widget.TextView: java.lang.CharSequence getText()"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.os.Handler: boolean sendMessage(android.os.Message)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.media.AudioManager: void setStreamVolume(int,int,int)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.media.AudioManager: int getStreamVolume(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmClockActivity$3",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmClockActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll(long)>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAllAlarms(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void maybeShowDismiss(android.content.Context)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void <init>(android.content.Context,android.os.PowerManager$WakeLock,com.angrydoughnuts.android.alarmclock.DbUtil$Settings)>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms: void release()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$ActiveAlarms$2: void run()>",
+      "statement": "android.util.Log: int w(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.content.Context: android.content.ComponentName startService(android.content.Intent)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void clearSnooze(android.content.Context)>",
+      "statement": "android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: com.angrydoughnuts.android.alarmclock.DbUtil$Alarm get(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.SystemMessageReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.SystemMessageReceiver: java.util.List enabledAlarms(android.content.ContentResolver)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Alarm",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Alarm: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()>",
+      "statement": "android.util.Log: int e(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: android.database.Cursor query(android.content.Context,long)>",
+      "statement": "android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService$AlarmTriggerReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "statement": "android.util.Log: int i(java.lang.String,java.lang.String)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.DbUtil$Settings",
+      "method": "<com.angrydoughnuts.android.alarmclock.DbUtil$Settings: void <init>(android.database.Cursor)>",
+      "statement": "android.database.Cursor: java.lang.String getString(int)"
+    }
+  },
+  {
+    "sink": {
+      "classname": "com.angrydoughnuts.android.alarmclock.AlarmNotificationService",
+      "method": "<com.angrydoughnuts.android.alarmclock.AlarmNotificationService: long newAlarm_ds_method_clone_2(android.content.Context,int)>",
+      "statement": "android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)"
+    },
+    "source": {
+      "classname": "com.angrydoughnuts.android.alarmclock.TimePicker",
+      "method": "<com.angrydoughnuts.android.alarmclock.TimePicker: void refresh(android.widget.EditText,android.widget.TextView,android.widget.Button)>",
+      "statement": "android.widget.EditText: android.text.Editable getText()"
+    }
+  }
+]

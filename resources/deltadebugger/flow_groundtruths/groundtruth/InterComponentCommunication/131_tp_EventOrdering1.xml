@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<answer>
+    <flows>
+        <flow>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = virtualinvoke $r2.&lt;android.telephony.TelephonyManager: java.lang.String getDeviceId()&gt;()</statementfull>
+                    <statementgeneric>android.telephony.TelephonyManager: java.lang.String getDeviceId()</statementgeneric>
+                </statement>
+                <method>&lt;edu.mit.icc_event_ordering.InFlowActivity: void writePreferences()&gt;</method>
+                <classname>edu.mit.icc_event_ordering.InFlowActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterComponentCommunication\EventOrdering1.apk</file>
+                    <hashes>
+                        <hash type="MD5">af9f544e099e342bc92a0db3d9397f0b</hash>
+                        <hash type="SHA-1">55557337957c707a47a3a827e0babf7af66574aa</hash>
+                        <hash type="SHA-256">70e565d4f99c7b2ede705480ec394c562114b0a6905a294adff49a1bbd9e8f4b</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("DroidBench", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"DroidBench"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;edu.mit.icc_event_ordering.InFlowActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>edu.mit.icc_event_ordering.InFlowActivity</classname>
+                <app>
+                    <file>D:\benchmarks\droidbench_3_0\apk\InterComponentCommunication\EventOrdering1.apk</file>
+                    <hashes>
+                        <hash type="MD5">af9f544e099e342bc92a0db3d9397f0b</hash>
+                        <hash type="SHA-1">55557337957c707a47a3a827e0babf7af66574aa</hash>
+                        <hash type="SHA-256">70e565d4f99c7b2ede705480ec394c562114b0a6905a294adff49a1bbd9e8f4b</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    </flows>
+</answer>

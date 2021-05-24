@@ -168,9 +168,9 @@ public class Runner {
 
         //everything we need is in this here object
         Violation thisViolation = reader.getThisViolation(Paths.get(args[0]).toFile());
-        apkName=thisViolation.getApk();
-        config1=thisViolation.getConfig1();
-        config2=thisViolation.getConfig2();
+        apkName="/"+thisViolation.getApk();
+        config1="/home/dakota/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_"+thisViolation.getConfig1()+".xml";
+        config2="/home/dakota/AndroidTA/AndroidTAEnvironment/configurations/FlowDroid/1-way/config_FlowDroid_"+thisViolation.getConfig2()+".xml";
         targetType=thisViolation.isType();
 
 

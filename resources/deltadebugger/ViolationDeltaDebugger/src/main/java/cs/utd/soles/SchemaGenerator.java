@@ -208,11 +208,11 @@ public class SchemaGenerator {
             "    <xsd:element name=\"justification\" type=\"xsd:string\"/>\n" +
             "    <xsd:element name=\"result\" type=\"xsd:string\"/>\n" +
             "    <xsd:element name=\"crossref\" type=\"xsd:string\"/>\n" +
-            "    <xsd:element name=\"classification\">\n" +
-            "        <xsd:complexType>\n" +
+            "    <xsd:element name=\"classification \" >\n" +
+            "        <xsd:complexType mixed=\"true\">\n" +
             "            <xsd:sequence>\n" +
-            "                <xsd:element ref=\"result\"/>\n" +
-            "                <xsd:element ref=\"justification\"/>\n" +
+            "                <xsd:element ref=\"result\" minOccurs=\"0\"/>\n" +
+            "                <xsd:element ref=\"justification\" minOccurs=\"0\"/>\n" +
             "                <xsd:element ref=\"crossref\" minOccurs=\"0\"/>\n" +
             "            </xsd:sequence>\n" +
             "        </xsd:complexType>\n" +
@@ -257,6 +257,16 @@ public class SchemaGenerator {
             "            <xsd:sequence>\n" +
             "                <xsd:element ref=\"flow\" maxOccurs=\"unbounded\" minOccurs=\"0\"/>\n" +
             "            </xsd:sequence>\n" +
+            "        </xsd:complexType>\n" +
+            "    </xsd:element>\n" +
+            "    <xsd:element name=\"violation\">\n" +
+            "        <xsd:complexType>\n" +
+            "            <xsd:sequence>\n" +
+            "                <xsd:element ref=\"flow\" maxOccurs=\"unbounded\" minOccurs=\"0\"/>\n" +
+            "            </xsd:sequence>\n" +
+            "            <xsd:attribute type=\"xsd:string\" name=\"config1\"/>\n" +
+            "            <xsd:attribute type=\"xsd:string\" name=\"config2\"/>\n" +
+            "            <xsd:attribute type=\"xsd:string\" name=\"type\"/>\n" +
             "        </xsd:complexType>\n" +
             "    </xsd:element>\n" +
             "    <xsd:element name=\"answer\">\n" +

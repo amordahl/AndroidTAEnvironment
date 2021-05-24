@@ -2,7 +2,7 @@ package cs.utd.soles;
 
 
 /*
-* All this program does it take in the name of a droidbench project and the filepath to create it in
+* All this program does it take in the name of a project and the filepath to create it in
 * use it as a library in the delta debugger
 * */
 
@@ -17,6 +17,9 @@ import java.util.logging.Logger;
 public class DroidbenchProjectCreator {
     static final String PREFIXW="D:\\Local_androidTAEnvironment\\Droidbench_projects\\";
     static final String PREFIXL="/home/dakota/AndroidTA/AndroidTAEnvironment/resources/droidbench_android_projects/";
+    static final String PREFIXFOSS="/home/dakota/documents/fossdroid_android_projects/";
+
+    static final String[] POTENTIALPREFIX = {PREFIXL,PREFIXFOSS};
     static String projName;
     static File pathFile;
     public static void createProject(String[] args){
@@ -34,7 +37,19 @@ public class DroidbenchProjectCreator {
         if(System.getProperty("os.name").toLowerCase().contains("win")){
             createCopy(Paths.get(PREFIXW+projName).toFile());
         }else{
-            createCopy(Paths.get(PREFIXL+projName).toFile());
+
+            for(String pre: POTENTIALPREFIX) {
+                File projectFile = Paths.get(pre + projName).toFile();
+                if (projectFile.exists()) {
+                    //if our project is exists then lets copy it
+                    createCopy(projectFile);
+                    return;
+                }
+            }
+
+
+            Logger.getGlobal().log(Level.INFO, "Project Creation: Failure");
+            System.exit(-1);
         }
 
     }
@@ -52,11 +67,7 @@ public class DroidbenchProjectCreator {
     //which file we are copying
     private static void createCopy(File projectFile){
 
-        if(!projectFile.exists()) {
-            Logger.getGlobal().log(Level.INFO, "Project Creation: Failure");
-            System.exit(-1);
-            return;
-        }
+
         try {
             FileUtils.copyDirectory(projectFile,pathFile);
 

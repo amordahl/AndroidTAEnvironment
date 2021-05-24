@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class FlowJSONHandler {
 
-
     public static ArrayList<Flow> turnTargetPathIntoFlowList(String filePath){
         ArrayList<Flow> returnList= new ArrayList<>();
         JSONParser pb = new JSONParser();

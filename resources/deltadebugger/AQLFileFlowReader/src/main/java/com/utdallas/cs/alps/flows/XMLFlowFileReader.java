@@ -79,7 +79,7 @@ public abstract class XMLFlowFileReader implements FlowFileReader {
      *                                      be created which satisfies the requested configuration.
      * @throws SAXException                 If an error occurs while setting up the schema or during parsing.
      */
-    public Iterator<com.utdallas.cs.alps.flows.Flow> getFlows(File flowFile, File schemaFile) throws IOException, SAXException, ParserConfigurationException {
+    public Iterator<Flow> getFlows(File flowFile, File schemaFile) throws IOException, SAXException, ParserConfigurationException {
         // set up SAX parser factory (using SAX because the files can be very large).
         SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
         if (schemaFile != null) {

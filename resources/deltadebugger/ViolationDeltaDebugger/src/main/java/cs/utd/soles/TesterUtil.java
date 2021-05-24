@@ -28,9 +28,6 @@ public class TesterUtil {
     boolean soundness;
     String targetFile=null;
     String xmlSchemaFile=null;
-
-
-
     int candidateCountJava=0;
     int compilationFailedCount=0;
 
@@ -41,6 +38,12 @@ public class TesterUtil {
         this.xmlSchemaFile=xmlSchemaFile;
         this.soundness=violationType;
         targetFlows=FlowJSONHandler.turnTargetPathIntoFlowList(targetFile);
+    }
+
+    public TesterUtil(ArrayList<Flow> list, String xmlSchemaFile, boolean violationType){
+        this.targetFlows=list;
+        this.xmlSchemaFile=xmlSchemaFile;
+        this.soundness=violationType;
     }
 
 
@@ -127,15 +130,16 @@ public class TesterUtil {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         String command1Out =catchOutput(command1Run);
-
-
         Process command2Run = Runtime.getRuntime().exec(command2);
+
         try {
             command2Run.waitFor();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         String command2Out =catchOutput(command2Run);
 
         File output1 = handleOutput("1",Long.toHexString(System.currentTimeMillis()), command1Out,programConfigString);
@@ -225,6 +229,8 @@ public class TesterUtil {
         AQLFlowFileReader aff = new AQLFlowFileReader(xmlSchemaFile);
         Iterator<Flow> flowIt = aff.getFlows(xmlFile);
         ArrayList<Flow> out = new ArrayList<Flow>();
+
+        //maybe deduplicate here to keep consistent with Austin
         while(flowIt.hasNext()){
             out.add(flowIt.next());
 

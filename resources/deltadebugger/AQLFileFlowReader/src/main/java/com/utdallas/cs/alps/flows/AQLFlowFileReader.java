@@ -46,13 +46,14 @@ import java.util.logging.Logger;
 public class AQLFlowFileReader extends XMLFlowFileReader {
     private final Logger LOGGER = Logger.getLogger(XMLFlowFileReader.class.getName());
     private static File SCHEMA = null;
-
+    private Violation thisViolation;
     @Override
     DefaultHandler getFlowHandler() {
         return new AQLFlowHandler();
     }
     public AQLFlowFileReader(String schemaFilePath){
         SCHEMA = Paths.get(schemaFilePath).toFile();
+        thisViolation=new Violation();
     }
     /**
      * Returns the flows from the default handler
@@ -79,11 +80,23 @@ public class AQLFlowFileReader extends XMLFlowFileReader {
         }
     }
 
+
+    public Violation getThisViolation(File file){
+        Iterator<Flow> theseFlows = getFlows(file);
+        ArrayList<Flow> flowList = new ArrayList<>();
+        while(theseFlows.hasNext()){
+
+            flowList.add(theseFlows.next());
+            thisViolation.setApk(flowList.get(0).getApk());
+        }
+        thisViolation.setFlowList(flowList);
+        return thisViolation;
+    }
     /**
      * Reads the passed file and returns a list of flows. Validates flows with Felix Pauck's AQL-Answer schema.
      *
      * @param file The XML file holding the flows.
-     * @return An iterator pointing to a list of flows.
+     * @return a iterator flows
      */
     @Override
     public Iterator<Flow> getFlows(File file) {
@@ -209,6 +222,11 @@ public class AQLFlowFileReader extends XMLFlowFileReader {
                             throw new SAXNotRecognizedException("reference element had a value different" +
                                     "from 'from' or 'to'");
                     }
+                    break;
+                case "violation":
+                    thisViolation.setConfig1(attributes.getValue("config1"));
+                    thisViolation.setConfig2(attributes.getValue("config2"));
+                    thisViolation.setType(Boolean.parseBoolean(attributes.getValue("type")));
                     break;
             }
         }

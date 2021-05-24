@@ -115,7 +115,6 @@ public class Runner {
 
 
                 //if we replicate the violation then we good
-
                 int numOfFalse=0;
                 int numOfTrue=0;
 

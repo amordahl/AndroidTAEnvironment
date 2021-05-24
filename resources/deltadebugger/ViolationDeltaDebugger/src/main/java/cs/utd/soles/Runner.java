@@ -7,6 +7,9 @@ import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.Statement;
+import com.utdallas.cs.alps.flows.AQLFlowFileReader;
+import com.utdallas.cs.alps.flows.Flow;
+import com.utdallas.cs.alps.flows.Violation;
 import org.apache.commons.io.FileUtils;
 
 import java.io.*;
@@ -39,6 +42,13 @@ public class Runner {
             e.printStackTrace();
             System.exit(-1);
         }
+        //test new aql file flow reader
+        /*AQLFlowFileReader bob = new AQLFlowFileReader(SchemaGenerator.SCHEMA_PATH);
+        Violation b = bob.getThisViolation(Paths.get(args[0]).toFile());
+        System.out.println(b.getConfig1() + " " + b.getConfig2() + " " + b.getApk());
+        for(Flow x: b.getFlowList()){
+            System.out.println(x);
+        }*/
 
         //after we handl the args we gotta do a couple of things
         /*
@@ -52,23 +62,7 @@ public class Runner {
         //build the project file
         createTargetProject();
 
-        /*try {
-            configFileName=readConfig(args[0]);
-            if(args.length==2){
-                if(args[1].equals("-l")){
-                    LOG_MESSAGES=true;
-                }
-            }
-            SchemaGenerator.generateSchema();
-        }catch(Exception e){
-            e.printStackTrace();
-            System.exit(-1);
-        }
-
-        testerForThis = new TesterUtil(targetFilePath, SchemaGenerator.SCHEMA_PATH, configFileName);
-        *
-         */
-        testerForThis = new TesterUtil(targetFile, SchemaGenerator.SCHEMA_PATH, targetType);
+       // testerForThis = new TesterUtil(targetFile, SchemaGenerator.SCHEMA_PATH, targetType);
 
         //HANDLE THE SOURCE DIRECTORY (THIS SHOULD JUST BE JAVA DIR IN PROJECT)
         try{
@@ -78,7 +72,6 @@ public class Runner {
                 File f = new File(filePathName);
                 f.mkdirs();
                 intermediateJavaDir=f;
-
             }
         }catch(IOException e){
             e.printStackTrace();
@@ -154,6 +147,7 @@ public class Runner {
         }catch(IOException e){
             e.printStackTrace();
         }
+
     }
 
 
@@ -164,17 +158,25 @@ public class Runner {
     static String config2;
     static boolean targetType;
     static boolean violationOrNot;
-    static String targetFile;
+
+
+
+    //args should be one filepath that is the <violation xml file>
 
     private static void handleArgs(String[] args) {
-        apkName=args[0];
-        config1=args[1];
-        config2=args[2];
-        targetType= args[3].equalsIgnoreCase("true");
-        violationOrNot= args[4].equalsIgnoreCase("true");
-        targetFile=args[5];
+        AQLFlowFileReader reader = new AQLFlowFileReader(SchemaGenerator.SCHEMA_PATH);
 
-        for(int i=6;i<args.length;i++) {
+        //everything we need is in this here object
+        Violation thisViolation = reader.getThisViolation(Paths.get(args[0]).toFile());
+        apkName=thisViolation.getApk();
+        config1=thisViolation.getConfig1();
+        config2=thisViolation.getConfig2();
+        targetType=thisViolation.isType();
+
+
+        testerForThis = new TesterUtil(thisViolation.getFlowList(), SchemaGenerator.SCHEMA_PATH,targetType);
+
+        for(int i=1;i<args.length;i++) {
 
             if (args[i].equals("-l")) {
                 LOG_MESSAGES = true;
@@ -298,7 +300,6 @@ public class Runner {
 
     }
 
-
     //matches the currentNode to what type it is and handles appropriately
     //this returns the currentNode (could be the node we gave it or it's equivalent copy whenever we copied and killed tons of trees)
     public static void process(int currentCUPos, Node currentNode){
@@ -333,7 +334,6 @@ public class Runner {
 
 
     }
-
 
     //finds an equivalent node in an equivalent tree
     public static Node findCurrentNode(Node currentNode, int compPosition, CompilationUnit copiedUnit){

@@ -171,11 +171,11 @@
     <xsd:element name="justification" type="xsd:string"/>
     <xsd:element name="result" type="xsd:string"/>
     <xsd:element name="crossref" type="xsd:string"/>
-    <xsd:element name="classification">
-        <xsd:complexType>
+    <xsd:element name="classification " >
+        <xsd:complexType mixed="true">
             <xsd:sequence>
-                <xsd:element ref="result"/>
-                <xsd:element ref="justification"/>
+                <xsd:element ref="result" minOccurs="0"/>
+                <xsd:element ref="justification" minOccurs="0"/>
                 <xsd:element ref="crossref" minOccurs="0"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -220,6 +220,16 @@
             <xsd:sequence>
                 <xsd:element ref="flow" maxOccurs="unbounded" minOccurs="0"/>
             </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="violation">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="flow" maxOccurs="unbounded" minOccurs="0"/>
+            </xsd:sequence>
+            <xsd:attribute type="xsd:string" name="config1"/>
+            <xsd:attribute type="xsd:string" name="config2"/>
+            <xsd:attribute type="xsd:string" name="type"/>
         </xsd:complexType>
     </xsd:element>
     <xsd:element name="answer">

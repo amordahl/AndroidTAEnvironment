@@ -32,8 +32,7 @@ public class Runner {
         PerfTimer.startProgramRunTime();
 
 
-        //handle the arguments
-        handleArgs(args);
+
 
         //generate schema file
         try {
@@ -42,6 +41,10 @@ public class Runner {
             e.printStackTrace();
             System.exit(-1);
         }
+
+        //handle the arguments
+        handleArgs(args);
+        
         //test new aql file flow reader
         /*AQLFlowFileReader bob = new AQLFlowFileReader(SchemaGenerator.SCHEMA_PATH);
         Violation b = bob.getThisViolation(Paths.get(args[0]).toFile());

@@ -16,7 +16,7 @@ config_master = dict()
 file_index = 0
 with open(args.config_file) as f:
     for linepos, line in enumerate(f):
-        tokens = [t.strip() for t in line.split(" ")]
+        tokens = [t.strip().strip(',') for t in line.split(" ")]
         tokens = [t for t in tokens if not (t.isspace() or t == '')]
         logging.debug(f"{tokens}")
         config = copy.deepcopy(config_master)

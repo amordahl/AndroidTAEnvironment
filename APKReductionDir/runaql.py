@@ -1,1 +1,0 @@
-../resources/scripts/runaql.py

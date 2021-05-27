@@ -1,1 +1,0 @@
-../../AndroidTAEnvironment/AQL-System/target/build/flushMemory.sh

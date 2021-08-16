@@ -21,6 +21,8 @@ class Flow:
     
     def get_file(self) -> str:
         f = self.element.find("reference").findall("app")[0].findall("file")[0].text
+        f = f.replace('\\', '/')
+        f = f.split('/')[-1]
         logging.debug(f"Extracted file: {f}")
         return f
 
